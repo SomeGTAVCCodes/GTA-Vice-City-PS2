@@ -1,9 +1,8 @@
 TITLE: 			Project "PACC-GTA Vice City PS2"	(PACC = Provide All Cheats, Codes)
 Author:			TKBS
 Game:			GTA Vice City 2003 [PAL]
-Info:			another Mod-Kit by TKBS.
-			cheats & codes, information & discoveries.
-			Starter Save
+Info:			cheats & codes, information & discoveries.
+			Starter Save Game
    			PS2 Mods
 
 ---- GTA Vice City PS2 ----
@@ -12,27 +11,13 @@ SLES_510.61.GTA-VC(2002) = version Beta 1.50 [PAL]	...
 SLES_510.61.GTA-VC(2003) = version 2.03 [PAL]		**This is our Target Version** - This is what we are using
 SLES_510.61.GTA-VC(2004) = version 3.00 [PAL]		Not use, but i included some codes.
 
-
 ---- Fast Read ----
-* Brand New Codes
-* use save game for a fun start experience.
-* create your own starter save game as a speed run project with stuff provided.
-* enjoy new cheats, & if you can, help improve them 
-* some new info, unique stuff here, some messy not great stuff.
+* Brand New Codes: enjoy new cheats, & if you can, help improve them 
+* close to perfect starter save game for PS2, PCSX2 and PS3
+* unique content for pal version 2003:  new info
 * If you don't like reading the crap, just slam the .pnach into PCSX2, or the save on your PS2/ PS3 & check out some of the images included to see whats going on.
 
-Enjoy! & sorry the messy rants etc :)
-
----- Before we began ----
-**Before going through this Mod-Kit know these things;
-At the end of the painful process of users going through this pack - they will be rewarded & can enjoy the following;-
-a) a close to perfect starter save game for PS2, PCSX2 and PS3
-b) experience new cheats, codes and modding methods
-c) unique content for pal version 2003: 
-d) speed run your own save game creation, let me know how it goes! 
-
 ---- Intro: ----
-
 Highlights of this Kit include:
 * Instructions to modify game files
 	- simple but for some reason not much documented online - completely neglected other than 1 project with no public info.
@@ -46,15 +31,12 @@ Highlights of this Kit include:
 
  [Starting a New Game]
 * ever chasing that perfect run? have more fun creating the perfect save after you finished the game? enjoy finding codes?...fed up of the ambulance missions?
-* start game with 0% progress but!...
-+ with all the benefits of 100% completion. No progression made or lost, or create your own starter save using info provided - fun to do!
-* enjoy the game for just the story will a no hassle save game starter, or do all the side quests etc with all the benefits of them, before doing them!
 
 [Starter Save]
 * Whilst there are many NTSC 100% or part complete saves online, this is the only useful PAL Starter Save.
 * There was only something ridicuolous like 3 codes for this PAL version. Now we have most of them.
 
-* 0% complete, ...but with all the benefits of 100% completion
+* start game with 0% complete/progress but!... with all the benefits of 100% completion
 * 1st save point  (start position)
 * Mega Cash
 * 150 Health & Armour
@@ -63,10 +45,10 @@ Highlights of this Kit include:
 * Infinite Ammo
 * Fireproof!!
 * No "Cheater Status" present in save file. (No "Cheats Used" Save-Game Warning).
-* Special Vehicles in garage:  
-*		+ Start with Both Starter Vehicles; admiral & faggio cutscene vehicles, both damage proof!
+* Special Vehicles in garage:
+* Start with Both Starter Vehicles; admiral & faggio cutscene vehicles, both damage proof!
 * No Storm Warning Barriers mod baked into save; free roam from the start.
-* GodFather Criminal Rating
+* GodFather Criminal Rating o ruse the pnach to set it to Your Name instead of numbers.
 * DTS enabled by default for PS2 & PS3 users. 
 
 [How to Replicate: If you want to speed run a start save game creation(?)]
@@ -108,6 +90,10 @@ Note: * Modify "Handling.cfg" file to make the Fire-truck & Ambulance Invincible
 [Super Vehicles: Vehicle handling]		// definately do this!
 * modify "Handling.cfg"
 * Use the INFERNUS as reference, set (Y) to 0.00, and increase the vehicle mass to the same as the RHINO tank.
+  
+[Unique Vehicles: Vehicle handling]
+* See the Garge Editor, and the Clone & Inherit methods.
+* Using .pnach cheats.
 
 [Vehicle colours]						// optional,  not required if using garage editor
 * modify the .dat file
