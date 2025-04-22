@@ -1,10 +1,12 @@
 //--------------------------------------------------------------------------//
-//TITLE: 			GTA: Vice City Cheats
+//TITLE: 			GTA: Vice City Cheats COVER NOTES
 //AUTHOR:			TKBS
 //DATE:				2025
 //GAME:				GTA: Vice City
 //GAME Version:		2003: (PAL) (2.03) (SLES-51061)
 //CRC: 				CFCB0D20
+
+//THIS IS THE DIRTY NOTES PAGE - CAN BE IGNORED BY PUBLIC.
 
 //- Notes: - 		This is a re-make: I lost all my stuff from years ago so many codes are missing. This is a re-do.
 //					over 23 years either no codes have been made or posted for this version or they have been lost from sites closing etc.
