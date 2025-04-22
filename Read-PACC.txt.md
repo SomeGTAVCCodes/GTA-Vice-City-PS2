@@ -2,15 +2,15 @@ TITLE: 			Project "PACC-GTA Vice City PS2"	(PACC = Provide All Cheats, Codes)
 Author:			TKBS
 Game:			GTA Vice City 2003 [PAL]
 Info:			another Mod-Kit by TKBS.
-				cheats & codes, information & discoveries.
-				Starter Save
+			cheats & codes, information & discoveries.
+			Starter Save
+   			PS2 Mods
 
 ---- GTA Vice City PS2 ----
 SLES_510.61.GTA-VC(2002) = version 1.50 [PAL]		Deprecated: No Longer required
-SLES_510.61.GTA-VC(2003) = version Beta 1.50 [PAL]	...
+SLES_510.61.GTA-VC(2002) = version Beta 1.50 [PAL]	...
 SLES_510.61.GTA-VC(2003) = version 2.03 [PAL]		**This is our Target Version** - This is what we are using
 SLES_510.61.GTA-VC(2004) = version 3.00 [PAL]		Not use, but i included some codes.
-
 
 
 ---- Fast Read ----
@@ -23,8 +23,7 @@ SLES_510.61.GTA-VC(2004) = version 3.00 [PAL]		Not use, but i included some code
 
 Enjoy! & sorry the messy rants etc :)
 
----- Before we began ... ----
-
+---- Before we began ----
 **Before going through this Mod-Kit know these things;
 At the end of the painful process of users going through this pack - they will be rewarded & can enjoy the following;-
 a) a close to perfect starter save game for PS2, PCSX2 and PS3
