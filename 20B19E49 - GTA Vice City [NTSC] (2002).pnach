@@ -1,0 +1,317 @@
+gametitle=Grand Theft Auto: Vice City.
+comment= (NTSC) (2002) (1.40) (SLUS_205.52) (CRC=20B19E49).
+
+
+//THESE Confirmed Working
+
+//----------------VEHICLES--------------------//
+//VEHICLE SPAWNING (BIKES) - last line A6 == the bytes for vehicles.
+//Line 1 = Wheels | Line 4 Vehicle | Line 2 and 3 probably colours, hopefully 1 line is damage proof.
+//presss select - but again - no good coz its baked into session, requires shutdown.
+//patch=1,EE,202795B0,extended,0C0E5C74
+//patch=1,EE,10275F8C,extended,0000001A
+//patch=1,EE,10275F9C,extended,00000042
+//patch=1,EE,20275FB0,extended,0C09E528
+//patch=1,EE,20275FB4,extended,240400A6
+
+//-----------------STATS----------------------//
+// Distance Travelled. (on foot)
+//patch=1,EE,204B1408,extended,00000000
+
+// Distance Travelled. (by car)
+//patch=1,EE,204B140C,extended,00000000
+
+// Distance Travelled. (by bike)
+//patch=1,EE,204B1410,extended,00000000
+
+//-----------------HUD----------------------//
+//Toggle HUD
+//patch=1,EE,202D0CF0,extended,03E00008
+//patch=1,EE,202D0CF4,extended,00000000
+
+//-------------THESE ARE NOT TESTED - IT IS ASSUMED THIS IS THE CORRECT VERSION.--------------------
+//TODO: add the other cheats from the non-CRC labelled 2002 version.
+
+//-------------------------------------------//
+
+//-------------------------------------------//
+//cars
+82 - Landstalker
+83 - Idaho
+84 - Stinger
+85 - Linerunner
+86 - Perennial
+87 - Sentinel
+88 - Patriot (Boat)
+89 - Firetruck
+8A - Trashmaster
+8B - Stretch (Limo)
+8C - Manana
+8D - Infernus
+8E - Voodoo
+8F - Pony
+90 - Mule
+91 - Cheetah
+92 - Ambulance
+93 - FBI Washington
+94 - Moonbeam
+95 - Esperanto
+96 - Taxi
+97 - Washington
+98 - Bobcat
+99 - Mr. Whoopee
+9A - BF Injection
+9B - Hunter (Chopper)
+9C - Police
+9D - Enforcer
+9E - Securica
+9F - Banshee
+A1 - Bus
+A2 - Rhino (Tank)
+A3 - Barracks
+A4 - Cuban Hermes
+A7 - Coach
+A8 - Cabbie
+A9 - Stallion
+AA - Rumpo
+AC - Romero's Hearse
+AE - Sentinel XS
+AF - Admiral
+B1 - Sea Sparrow (Chopper)
+B3 - Gang Burrito
+B9 - Flatbed
+BA - Yankee
+BB - Caddy
+BC - Zebra Cab
+BD - Top Fun
+BE - Sea Plane (Plane)
+C4 - Glendale
+C5 - Oceanic
+C7 - Sparrow (Chopper)
+C8 - Patriot
+C9 - Love Fist (Limo)
+CC - Hermes
+CD - Sabre
+CE - Sabre Turbo
+CF - Phoenix
+D0 - Walton
+D1 - Regina
+D2 - Comet
+D3 - Deluxo
+D4 - Burrito
+D5 - Spand Express
+D7 - Baggage Handler
+D8 - Kaufman Cab
+D9 - Maverick (Chopper)
+DA - VCN Maverick (Chopper)
+DB - Rancher
+DC - FBI Rancher
+DD - Virgo
+DE - Greenwood
+E0 - Hotring Racer 1
+E1 - Sandking
+E2 - Blister Compact
+E3 - Police Maverick (Chopper)
+E4 - Boxville
+E5 - Benson
+E6 - Mesa Grande
+E8 - Hotring Racer 2
+E9 - Hotring Racer 3
+EA - Bloodring Banger 1
+EB - Bloodring Banger 2
+EC - Cheetah 2
+//bikes
+A6 - Angel
+B2 - Pizza Boy
+BF - PCJ-600
+C0 - Faggio
+C1 - Freeway
+C6 - Sanchez
+
+
+
+
+
+//author=Code Master, GameMasterZer0, GFCC, DA | Codejunkies | InterAct - these are noted from online, although their is ZERO evidence they are not just copy/ paste or the original creators.
+//all codes where stated have been check by TKBS. not just in-game, but in memory regions too.
+
+//Mastercodes
+//patch=1,EE,DEADFACE,extended,04030209
+//patch=1,EE,F01D5B66,extended,589BEA0D
+
+//Aggressive Traffic
+//patch=1,EE,004B04FC,extended,00000001
+
+//All Assasinations 1
+//NULL: patch=1,EE,EE24613E,extended,1015D466
+//All Assasinations 2
+//patch=1,EE,204B146C,extended,40A00000
+
+//Law Enforcement Vehicles Can't Move
+//patch=1,EE,201DF5C0,extended,03E00008
+//patch=1,EE,201DF5C4,extended,24020000
+
+//Cars Are Immune To Weapons
+//patch=1,EE,201864F0,extended,03E00008
+//patch=1,EE,201864F4,extended,00000000
+
+[BYTES]
+//				//20 00 B2 7B 10 00 B1 7B 00 00 B0 7B 08 00 E0 03 40 00 BD 27 00 00 00 00 00 00 00 00 00 00 00 00
+//[201864F0]	//70 FF BD 27 70 00 BF FF 80 00 A3 27 60 00 B5 7F 50 00 B4 7F 40 00 B3 7F 30 00 B2 7F 2D 98 C0 00
+//				//20 00 B1 7F 10 00 B0 7F 2D 88 80 00 04 00 B5 E7 2D 80 A0 00 00 00 B4 E7 00 00 E2 C4 04 00 E1 C4
+[4 BYTE HEX]
+//				//7BB20020 7BB10010 7BB00000 03E00008 27BD0040 00000000 00000000 00000000
+//	[201864F0]	//27BDFF70 FFBF0070 27A30080 7FB50060 7FB40050 7FB30040 7FB20030 00C0982D
+//				//7FB10020 7FB00010 0080882D E7B50004 00A0802D E7B40000 C4E20000 C4E10004
+
+//Helicopters Have Hunter Properties
+//patch=1,EE,2016BF44,extended,00000000
+
+//Helicopters 1-6 After You:
+//patch=1,EE,2029E230,extended,03E00008
+//patch=1,EE,2029E234,extended,24020001			- 02 | 03 | 04 | 05 | 06
+
+//Game Speed: 50%
+//patch=1,EE,204B0BE8,extended,3F000000			- 3F000000 = 50% | 42C80000 = 100% | 40000000 = 200% | 40800000 = 400%
+
+//### Ice Cream Sold
+//patch=1,EE,204B1478,extended,00000000
+
+//100% Hidden Packages
+//patch=1,EE,205C6F64,extended,00000064
+//NULL: patch=1,EE,EED70C36,extended,50B5D4C2
+
+//100% Rampages
+//patch=1,EE,204B1440,extended,00000023
+//NULL: patch=1,EE,EE24619A,extended,50B5D401
+
+//All Stores Knocked Off
+//patch=1,EE,EE246136,extended,11C5D466
+//patch=1,EE,EE246136,extended,11C5D466
+//patch=1,EE,204B1464,extended,41700000
+
+//All Unique Jumps
+//patch=1,EE,EE2460CA,extended,50B5D402
+
+//All Vehicles Can Do Vigilante Missions
+//patch=1,EE,10184B5A,extended,00001000
+
+//pal - //		      30 FB 
+//ntsc- //A2 00 02 24 F4 F6 0C 0C 2D 20 80 02 6B 02 00 10 48 00 83 92 46 00 62 14 2D 20 80 02
+//[2016837C]	//A28000E1 A3A00120 44806000 0280202D 0C05BDA4 0000282D 86830054 24020089 14620005
+//[2016839C]	//14620005 240200A2 0C0CF6F4 0280202D 1000026B 92830048 14620046 0280202D 0C056858
+//All Vehicles Have Firetruck Properties Default is 2016839C 14620005
+//patch=1,EE,2016839C,extended,00000000
+
+//All Vehicles Have Sirens
+//patch=1,EE,101855AA,extended,00001000
+
+//All Vehicles Tank Properties
+//patch=1,EE,1016839E,extended,00001000
+//patch=1,EE,201683B4,extended,00000000
+
+//All Weapons 1 (Press L3+Up )
+//patch=1,EE,D05C0182,extended,0000FFED
+//patch=1,EE,20277708,extended,00000000
+//patch=1,EE,D05C0182,extended,0000FFFF
+//patch=1,EE,20277708,extended,14400004
+
+//All Weapons 2 (Katana) (Press L3+Down)
+//patch=1,EE,D05C0182,extended,0000FFBD
+//patch=1,EE,2027772C,extended,00000000
+//patch=1,EE,D05C0182,extended,0000FFFF
+//patch=1,EE,2027772C,extended,14400004
+
+//All Weapons 3 (Chainsaw) (Press L3+Left)
+//patch=1,EE,D05C0182,extended,0000FF7D
+//patch=1,EE,20277750,extended,00000000
+//patch=1,EE,D05C0182,extended,0000FFFF
+//patch=1,EE,20277750,extended,14400006
+
+//Wanted Level 0-6
+//patch=1,EE,200C0060,extended,0C0A7918	
+//patch=1,EE,200C0064,extended,24050000				- 01 | 02 | 03 | 04 | 05 | 06		
+
+//Armor Cheat (Press R3+Up To Activate)
+//patch=1,EE,D05C0182,extended,0000FFEB
+//patch=1,EE,20277798,extended,14400000
+//patch=1,EE,D05C0182,extended,0000FFFF
+//patch=1,EE,20277798,extended,1440001C
+
+//Auto Repair And Painting Budget
+//patch=1,EE,204B14AC,extended,00000000
+
+//Black Traffic
+//patch=1,EE,004B0E48,extended,00000001
+//patch=1,EE,004B0E4C,extended,00000000
+
+//Pink Traffic
+//patch=1,EE,004B0E48,extended,00000000
+//patch=1,EE,004B0E4C,extended,00000001
+
+//FPS Limiter: use PCSX2 GS Settings frame limiter.
+//patch=1,EE,206CCF2C,extended,????????
+
+//tyres pop ? or ## of...
+//patch=1,EE,204B13A0,word,05F5E0FF
+
+//widescreen fix
+//201325bc 3c013f9d
+//201325c0 44810000
+//201325c4 46006302
+//201325c8 03e00008
+//201325cc e78c86f8
+//202434ec 0c04c96f
+//2026fe1c 0c04c972
+//202703f4 0c04c972
+
+//Mastercode
+//90122214 0C041F54
+
+//Infinite Health 
+//200C0220 3C0142C8
+//200C0224 AC410368
+//200C0228 03E00008
+//200C022C 44020000
+//202D2034 0C030088
+
+//Infinite Armor 
+//200C0230 3C0142C8
+//200C0234 AC41036C
+//200C0238 03E00008
+//200C023C 46000836
+//202D220C 0C03008C
+
+//Max Money 
+//205C6F5C 05F5E0FF
+//205C6F60 05F5E0FF
+
+//Infinite Ammo-All Weapons 
+//20158874 00000000
+//201588CC 00000000
+
+//Infinite Ammo-All Weapons (Inside Car) 
+//20158100 00000000
+//20158164 00000000
+
+//Only Your Car Receives No Damage From Collisions 
+//2016FAF8 00000000
+//2016FB0C 00000000
+
+//Vehicles Are Immune To Weapons (Only Your Car) 
+//201865A4 00000000
+//201865B8 00000000
+
+//Can Not Be Arrested 
+//20198D60 03E00008
+//20198D64 00000000
+//20198F30 03E00008
+//20198F34 00000000
+
+//Never Wanted 
+//2029E5F0 03E00008
+//2029E5F4 00000000
+
+//Infinite Time
+//202B5140 03E00008
+//202B5144 00000000
