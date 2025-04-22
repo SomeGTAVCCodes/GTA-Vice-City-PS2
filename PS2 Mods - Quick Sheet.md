@@ -8,10 +8,10 @@ List Of Mods (Both Made and theoretical)
 
 1. Modding the Game Data file
 	a) audio
-		i) Add 2002 flash & wild.vb to 2003 version.
-		ii)  Add 2002 cut scene bank3a to 2003 version.
+	i) Add 2002 flash & wild.vb to 2003 version.
+	ii)  Add 2002 cut scene bank3a to 2003 version.
 	b) handling
-		i) super infernus or cheetah, and super emergency vehicles will do, optional: everything else
+	i) super infernus or cheetah, and super emergency vehicles will do, optional: everything else
 	c) object.dat: change values to allow driving through storm warning barriers to access all islands, palm trees, stubborn objects
 	
 2. Modding the Game with Cheats
@@ -26,7 +26,6 @@ b) PCSX2 		- ".pnach"
 	i) the creation of 
 	ii) using or modify existing ones. I have provided a starter save for people that i feel is better than anything available online currently (PAL).
 	iii) porting ntsc - pal etc
-
 
 4. Modifying the main.scm
 	i understand the possiblities, but not much about doing them. The current mods i have made include working mods, theortetical mods, and partial working/ broken mods.
@@ -71,11 +70,6 @@ I have provided an example of this for GTA in the form of the free  roam mod.
 a 6KB patch that converts your PAL 2003 2.03 main.scm file into the the same file with the DEBUG code block from the beta.
 applying the same method to every DIFFERENCE File that exists allos you  to chaneg between them.
 
-
-	
-	
-	
-	
 
 
 ---- Modding GTAVC PS2 - Just 1 example (See the mdos folder for each one) ----
