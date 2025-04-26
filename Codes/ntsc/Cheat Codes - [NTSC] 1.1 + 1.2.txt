@@ -1,0 +1,139 @@
+Grand Theft Auto Vice City Version 1.1 			|[OFFSET]|	Grand Theft Auto Vice City Version 1.2			Gameshark v1 & Action Replay v1								Gameshark v3-4 & Xploder v4								UNKNOWN	
+
+Master Code: FA7A006E 32C6A821								Master Code: FA7A006E 32C6A9B9
+
+All Weapons at Safehouse:
+2A577812 00000064								|7D7|				2A577FE9 00000064							||			######## ########								||			######## ########								||
+
+Unlimited Run:
+0A2F6F38 00000001								|7|					0A2F6F31 00000001							||			######## ########								||			######## ########								||
+
+Riot Mode:
+1A32CA45 00000008								|800002|			1AB2CA47 00000008							||			######## ########								||			######## ########								||
+
+Siren and Alarm sounds disabled:
+1A8733BD 00001000								|7FFFFF|			1A0733BE 00001000							||			######## ########								||			######## ########								||
+
+All Vehicles have Firetruck Abilities:
+2ADF3691 00000000								|7FFFFE|			2A5F3693 00000000							||			######## ########								||			######## ########								||
+
+All Helicopters have Hunter Abilities:
+2AA73656 00000000								|7FFFFF|			2A273657 00000000							||			######## ########								||			######## ########								||
+
+Tires Never Pop:								800006 + 15 = 80001B (Armor)
+2ADF352E 00000000								|800006|			2A5F3528 00000000							||			######## ########								||			######## ########								||
+
+All Vehicles can do Vigilante Missions:
+1A70C678 00001000								|800001|			1AF0C679 00001000
+
+Super Jump:
+1AAEC4E9 00004208								|3FFFF6|			1AEEC4DF 00004208
+
+Mega Jump:
+1AAEC4E9 00004308								|3FFFF6|			1AEEC4DF 00004308  (00004208 + 100)
+
+Ultra Jump:
+1AAEC4E9 00004408								|3FFFF6|			1AEEC4DF 00004408	(00004308 + 100)
+
+Sniper Rockets:
+2A2B2724 0C094460								|900002|			2ABB2726 0C095698
+
+Unlimited Health
+2AACC91F 3C0142C8								||			2AACC91F 3C0142C8
+2AA8C91F AC410368								||			2AA8C91F AC410368
+2A94C91F 03E00008								||			2A94C91F 03E00008
+2A90C91F 44020000								||			2A90C91F 44020000
+2A332F60 0C030088								|2FFFFD|	2A032F63 0C030088
+
+Unlimited Armor
+2A9CC91F 3C0142C8								||			2A9CC91F 3C0142C8
+2A98C91F AC41036C								||			2A98C91F AC41036C
+2A84C91F 03E00008								||			2A84C91F 03E00008
+2A80C91F 46000836								||			2A80C91F 46000836
+2A6B2F62 0C03008C								|80001B|	2AEB2F7D 0C03008C
+
+Unlimited Ammo for All Weapons (Inside Car)
+2A2B3799 00000000								|80 0002|			2AAB379B 00000000
+2A57379E 00000000								|20 0003|			2A37379B 00000000
+
+Unlimited Ammo for All Weapons
+2ABF3791 00000000								|7F FFFF|			2A3F3792 00000000		
+2AFF3795 00000000								|38 0003|			2AC73792 00000000		[Line 2 = 400004  || 880000 > Line 1]
+
+Quick Money Earned
+1A9509CD 0000FFFF								|9|			1A9509C4 0000FFFF
+1A9909CD 0000FFFF								|9|			1A9909C4 0000FFFF		[Line 2 = 4000 > Line 1]
+
+Max Money
+2A6F7812 05F5E0FF								||			2A6F7FE9 05F5E0FF
+2A6B7812 05F5E0FF								||			2A6B7FE9 05F5E0FF
+
+Walk and drive through most walls
+2A673135 00000000								||			2AE73136 00000000
+2A5B3135 00000000								||			2ADB3136 00000000
+
+Pedestrians don't have weapons ?????????????????
+2ADB3793 03E00008								||
+2AC73793 00000000								||
+
+No damage from collisions (All Cars)
+2A1B361F 03E00008								||			2A9B3619 03E00008
+2A07361F 00000000								||			2A873619 00000000
+
+You can't be arrested
+2A9B3B7D 03E00008								||			2A1B3B7E 03E00008
+2A9B3B7D 00000000								||			2A073B7E 00000000
+2A9B3B6C 03E00008								||			2A4B3B78 03E00008
+2A873B6C 00000000								||			2A373B78 00000000
+
+Cops Get Out and Walk Away
+2ADB3B7B 03E00008								||			2A5B3B75 03E00008
+2AC73B7B 00000000								||			2A473B75 00000000
+
+Cars Don't stop for Pedestrians
+2ADB3E3D 03E00008								||			2A5B3E3F 03E00008
+2AC73E3D 00000000								||			2A473E3F 00000000
+
+Unlimited Time for Missions (Side Quests?)
+2A8B294A 03E00008								||			2A0B2945 03E00008
+2A77294A 00000000								||			2AF72945 00000000
+
+No Damage from Collisions
+2A7B3614 00000000								||			2AFB3615 00000000
+2A573614 00000000								||			2AD73615 00000000
+
+Cars Ignore Sirens
+2ACB3F11 03E00008								||			2A4B3F12 03E00008
+2AB73F11 00000000								||			2A373F12 00000000
+
+Law Enforcement Vehicles are Frozen
+2A2B3EE8 03E00008								||			2A0B3F0A 03E00008
+2A173EE8 24020000								||			2AF73F0A 24020000
+
+Cars don't stop for Traffic Lights
+2ABB23D1 03E00008								||			2A3B23D2 03E00008
+2AA723D1 24020000								||			2A2723D2 24020000
+
+Cars and Helicopters Never Explode
+2A4B372C 03E00008								||			2ACB372E 03E00008
+2A37372C 00000000								||			2AB7372E 00000000
+
+Boats and Planes Never Explode
+2AFB35A8 03E00008								||			2A7B35AA 03E00008
+2AE735A8 00000000								||			2A6735AA 00000000
+
+Vehicles Immune to Weapons (All Cars)
+2ABB348F 03E00008								||			2A3B3488 03E00008
+2AA7348F 00000000								||			2A273488 00000000
+
+Vehicles Immune to Weapons (Only Your Car)
+2AF7348F 00000000								||			2A773489 00000000
+2AE3348F 00000000								||			2A633489 00000000
+
+Weapons Aren't lost when Wasted or Busted
+2ACB39D8 03E00008								||			2A4B39D9 03E00008
+2AB739D8 00000000								||			2A3739D9 00000000
+
+No Damage taken when falling from High Places
+2A433946 00000000								||			2AC33947 00000000
+2AAF3947 00000000								||			2A2F3940 00000000
