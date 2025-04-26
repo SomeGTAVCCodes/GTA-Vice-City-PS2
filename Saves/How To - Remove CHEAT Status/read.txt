@@ -1,0 +1,15 @@
+
+
+
+
+it is probably widely accepted that there are no negative consequences to using cheats in vice city,
+other than the one time warnign message when saving. 
+The exception - or rather - reason the message appears is most likely in the event the player uses a cheat which is irreversible. 
+
+anyway, if you want to bring the one time message back i have included an image of a hex edit example
+
+I am not sure if any other data in the save file pertains to what i call the "cheat status" other flags and such, peopel who mod pc versions will know..
+
+do the hex edit on a save game that has saved using cheats. load the game, try to save it and the message will pop up again, thus confirming the status was removed.
+
+
