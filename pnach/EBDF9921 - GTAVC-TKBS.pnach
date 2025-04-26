@@ -1,0 +1,39 @@
+gametitle=GTA: Vice City
+comment=| PAL | 2003 | Modded
+
+//Modded NTSC FrameRate & YPOS.
+
+//---- Fun Stuff:----
+
+// Criminal Rating - Set to "TKBS"
+patch=1,EE,204ADDF8,extended,4D495243
+patch=1,EE,204ADDFC,extended,2E2E4152
+patch=1,EE,204ADE00,extended,53424B54
+patch=1,EE,204ADE04,extended,00000000
+
+//Cinematic Cameras - Switch Camera Angle.
+//Cinematic Camera	 (1)							- made by converting xploder 100x gamespeed 2AE30A12 42C80000 = 204B0DD8 42C80000 then add 100 for the v1 - v2 0ffset
+//patch=1,EE,204B0ED8,extended,42C80000
+//Cinematic Camera	 (2)
+//patch=1,EE,204B0ED8,extended,40800000
+//Cinematic Camera	 (3)
+//patch=1,EE,204B0ED8,extended,40000000
+//Cinematic Camera	 (4) maybe 3F000000
+
+//Max Money (AR MAX CD)        05F5E0FF
+patch=1,EE,205C845C,extended,00001B58
+patch=1,EE,205C8460,extended,00001B58
+
+//tank sel + up
+patch=1,EE,D05C1702,extended,0000FFEE
+patch=1,EE,20278560,extended,00000000
+patch=1,EE,D05C1702,extended,0000FFFF
+patch=1,EE,20278560,extended,14400007
+
+//Infinite Health & Armour
+patch=1,EE,200FFF00,extended,3C0542C8
+patch=1,EE,200FFF04,extended,AC450368
+patch=1,EE,200FFF08,extended,AC45036C
+patch=1,EE,200FFF0C,extended,03E00008
+patch=1,EE,200FFF10,extended,46000024
+patch=1,EE,202D2F14,extended,0C03FFC0

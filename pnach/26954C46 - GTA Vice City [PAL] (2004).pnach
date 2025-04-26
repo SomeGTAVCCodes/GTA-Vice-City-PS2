@@ -1,0 +1,68 @@
+gametitle=Grand Theft Auto: Vice City
+comment=SLES_510.61 (2004) (ver 3.00).
+
+// ---- ---- NOT TESTED ------ ---- //
+
+
+//[Enable Code] author=CMX description=
+//patch=1,EE,901220EC,extended,0C041C64
+
+//[Max Money] [Quick Money Gain] 1
+//patch=1,EE,105D265C,extended,0000FFFF
+//patch=1,EE,105D2660,extended,0000FFFF
+//[Max Money] [Quick Money Gain] 2
+//patch=1,EE,205D265C,extended,05F5E0FF
+//patch=1,EE,205D2660,extended,05F5E0FF
+
+//Never Wanted:
+//patch=1,EE,202A594C,word,8C060000
+
+//No Vehicle Damage:
+//patch=1,EE,20168E5C,word,0805A398
+
+//Never Lose Weapons:
+//patch=1,EE,201B4480,word,080B4DF9
+
+//Kill Mission Timers:
+//patch=1,EE,20275F98,word,00000000
+
+//Infinite Sprint
+//patch=1,EE,20B5B05C,extended,4479C000
+//patch=1,EE,20B5B05C,word,4479C000
+
+//Infinite Health & Armour:
+//patch=1,EE,200FFE00,word,3C054348
+//patch=1,EE,200FFE00,word,AC45036C
+//patch=1,EE,200FFE00,word,AC450368
+//patch=1,EE,200FFE00,word,03E00008
+//patch=1,EE,202DAEA4,word,0C03FF80
+//patch=1,EE,202DAEA8,word,00000000
+
+//Infinite ammo:
+//patch=1,EE,20158620,extended,00000000
+//patch=1,EE,20158684,extended,00000000
+
+//One-Hit Kills:
+//patch=1,EE,200FFE30,word,3C0500B6
+//patch=1,EE,200FFE34,word,20A5AA40
+//patch=1,EE,200FFE38,word,10B40003
+//patch=1,EE,200FFE3C,word,00000000
+//patch=1,EE,200FFE40,word,AE800368
+//patch=1,EE,200FFE44,word,AE80036C
+//patch=1,EE,200FFE48,word,DFBF00A0
+//patch=1,EE,200FFE4C,word,C7B60008
+//patch=1,EE,200FFE50,word,080D5B96
+//patch=1,EE,20356E50,word,0803FF8C
+//patch=1,EE,20356E54,word,00000000
+
+// ---- Widescreen Support ---- //
+//- widescreen  -
+//Widescreen converted from NTSC fix by nemesis2000 (pnach by Some Chump)
+//patch=1,EE,001324BC,word,3C013F9D
+//patch=1,EE,001324C0,word,44810000
+//patch=1,EE,001324C4,word,46006302
+//patch=1,EE,001324C8,word,03E00008
+//patch=1,EE,001324CC,word,E78C87F8
+//patch=1,EE,002485dc,word,0C04C92F
+//patch=1,EE,002764AC,word,0C04C932
+//patch=1,EE,00276A7C,word,0C04C932

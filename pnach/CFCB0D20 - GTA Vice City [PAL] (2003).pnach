@@ -1,0 +1,960 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (SLES-51061) (2003)
+comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
+
+//TITLE:		GTA:Vice City ".pnach" Cheat Codes & Mods.
+//AUTHOR:		TKBS
+//DATE:			22 04 2025
+//INFO:			Provides More than just cheat codes for GTA:VC (PS2) (PAL) (2003) (2.03)
+//INSTRUCTIONS:	Put in cheats folder for pcsx2.
+
+//TODO:				Some Codes Missing, or need changing;-
+// Main Concerns is not Having the following;-
+//* 
+//1. Vehicle Spawn 	-	needed 50+ hours literally failing. Why the fuk can i not find this?>
+//2. garage editor 	- 	needs work, and all other garages but for that i need to paly the game, and that wil lneevr happen, coz i can;t solve this shit.
+//3. missing codes 	- 	theres a few, changing peds to thriler, which i lost the code for after having it liek 4 times. other stuff like snipe rockets etc.
+//4. Anything that would be easy codes to make during the game play session, like later property purchases, or STATS related coz i haven't played it!
+// Optional: but still missing;-
+//. No Fall Damge
+//. nitro boost VHs
+//. Pay-N-Spray anywhere
+//. Pedestrians Have Weapons (Toggle)
+//. Pedestrians In Thriller outfits
+//. Never Drown | Infinite Air
+
+//ChangeLog;-
+//Absoultely fuk all - i spent almost 3 hours trying to get the vehicle spawn to work. Fucking crashes everytime, and doesn't even port over with press select, nothing happens except game crashes on press triangle.
+//ntsc codes do not work either. maybe the bike, but the cars crash the game.
+
+// ---- Quick Access: Notes: ----
+// 20000000-21FFFFFF
+
+// ---- Quick Access: In-Game Cheats: ----
+
+//----Notes:----
+
+//----Tests:----
+//patch=1,EE,1018496A,extended,00000000
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+
+//---- Fun Stuff:----
+
+// Criminal Rating - Set to "TKBS"
+//patch=1,EE,204ADDF8,extended,4D495243
+//patch=1,EE,204ADDFC,extended,2E2E4152
+//patch=1,EE,204ADE00,extended,53424B54
+//patch=1,EE,204ADE04,extended,00000000
+
+//-------------------------Quick Access Commonly used Codes-----------------------------------	---	---//
+//* these can be deleted, they are duplicates for quick access only.
+
+//FUK DA POLICE
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000
+
+//Max Money (AR MAX CD)        05F5E0FF
+//patch=1,EE,205C845C,extended,00001B58
+//patch=1,EE,205C8460,extended,00001B58
+
+//Spawn Tank										Select + Up
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,14400007
+
+//Explode Vehicles (1)	with cheat notification 	Select + LEFT
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400028
+
+//-----------------			 Rendering System Codes & debug -----------------------------------		------//
+
+//NTSC 20554674 - PAL 204B1F30 = A2744
+//20554674 (beta time of day) - 9AC0C (offset from beta  time of day and occulsion)= 204B9A68 (BETA Occulsion)
+
+//TODO TEST Beta Occlusion OPTION :: Rendering System:
+//patch=1,EE,204B9A68,extended,00000001
+
+//---- Render System Info (debug)----
+//After this random "rendering system" discovery some time later i randomly found a post online about a PS2 beta. Interestingly, this beta has a "time [hour of day]" option that goes from 0-255
+//This option is identical to what i discoverd below. Which means even though i am 20 years late to "the party" it appears i discovered the debug menu first?
+//Had i known about the beta years ago, i would have relasied then that was already at the memory region for the debug menu.
+// pretty crazy stuff. With this patch bewlo about the pnach i created for the beta maybe the menu can be portwed over.
+//... again another pointless ask since i am on my own, and pc is probably lightyears ahead of thisps2 stuff, but this random discovveries are not coherantly odcumented.
+
+//* Rendering System & Weather System Jump: Change Weather & viewmodes - Use values, 1,2,3,4,5,etc 65535
+//* Similar to a debugging option. True results need real PS2 hardware tests as PCSX2 may show issues not present on PS2.
+//* 1 Render mode looks like Silent Hill, another is Film noire, disable sky, keep clouds, tone, weather 1-5, a variety of things.
+
+//Rendering System & Weather System Jump 				- Use values, 1,2,3,4,5,etc 65535
+//patch=1,EE,204B1F30,extended,00000000
+
+//In BETA PS2: [20554674] "Debug Menu - [14] Time [Hour of Day]:U8: ###   (0-255)" - (0-255) || Change Last 2 BYTES
+//patch=1,EE,204B1F2C,extended,00000000
+
+//-----------------			 		 Weather Codes		-----------------------------------		------//
+
+//* To activate Weather i think it is Click & Hold L3 then press UP twice.
+// "ntsc weapons" 	(20278278) 	- 	"pal weapons" (202780C8) 	= 1B0
+// "ntsc weapons" 				+ 	400 						= "ntsc weather 4"
+// "pal weapons" 				+ 	400 						= "pal weather 4" (202784C8)
+
+//Weather 1  - Press L3+UP same time				- ntcs u 20277A70 + 9C0 = 20278430
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278430,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278430,extended,1440000F
+
+//Weather 2  - Press L3+UP same time				- ntcs u 20277A24 + 9CO = 202783E4 || 202783E4 - 9CO = 20277A24
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,202783E4,extended,00000000				- ntcs u 20277A24 + 9CO = 202783E4 || 202783E4 - 9CO = 20277A24
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202783E4,extended,1440000F
+
+//Weather 3  - Press L3+UP same time
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027847C,extended,00000000				- ntcs u 20277ABC + 9CO = 2027847C
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027847C,extended,1440000F
+
+//Weather 4 Rain Storm - Press L3+UP				- calculated using - "ntsc weapons" + 400 = "weather"
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,202784C8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF				- ntcs u 20277B08 + 9C0 = 202784C8
+//patch=1,EE,202784C8,extended,1440000F
+
+//Weather 5 Fog - Press L3+UP
+//patch=1,EE,D05C1702,extended,0000FFED				- calculated using - "ntsc weapons" + 44C = "weather"
+//patch=1,EE,20278514,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF				- 20277B54 + 9C0 = 20278514
+//patch=1,EE,20278514,extended,1440000F
+
+//-----------------			  Hidden Packages Codes		--------------------------------//
+
+//100% Hidden Packages;-
+//* enable 1 at a time to get all pop up notifications. - "105C8464" Also works.
+
+//00 Hidden Packages
+//patch=1,EE,205C8464,extended,00000000
+//10 Hidden Packages
+//patch=1,EE,205C8464,extended,0000000B
+//20 Hidden Packages
+//patch=1,EE,205C8464,extended,00000014
+//30 Hidden Packages
+//patch=1,EE,205C8464,extended,0000001E
+//40 Hidden Packages
+//patch=1,EE,205C8464,extended,00000028
+//50 Hidden Packages
+//patch=1,EE,205C8464,extended,00000032
+//60 Hidden Packages
+//patch=1,EE,205C8464,extended,0000003C
+//70 Hidden Packages
+//patch=1,EE,205C8464,extended,00000046
+//80 Hidden Packages
+//patch=1,EE,205C8464,extended,00000050
+//90 Hidden Packages
+//patch=1,EE,205C8464,extended,0000005A
+//100 (100%) Hidden Packages						-	"NTSC 100% Packages Version Unknown" (205D1464) - "PAL" (205C8464) = 9000
+//patch=1,EE,205C8464,extended,00000064
+
+//-----------------			  Player Codes		--------------------------------//
+
+//Infinite Sprint
+patch=1,EE,201CF504,extended,10000014				- 	"NTSC Version Unknown Infinite Sprint" (201D1254) - (1D50) = "PAL Infinites Sprint" || (201CF504) + (1D50) = (201D1254)
+
+//Suicide Fix: Set Health to 0 instead of using suicide patches that fuck the game and require shutdown.
+// Health (float) 									- 42C80000 = 100 | 43480000 = 200  | 44268000 = 666 | 4479C000  = 999|
+//patch=1,EE,20B50FF8,extended,4479C000
+// Armour (float)
+//patch=1,EE,20B5101C,extended,4479C000
+
+//Suicide - any button 								- Requires SHUTDOWN to disable. Do not use this, Instead Use set health 0
+//patch=1,EE,D05C1702,extended,0000FFEE				
+//patch=1,EE,20278BA0,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278BA0,extended,14400007
+
+//Infinite Health & Armour
+//patch=1,EE,200FFF00,extended,3C0542C8
+//patch=1,EE,200FFF04,extended,AC450368
+//patch=1,EE,200FFF08,extended,AC45036C
+//patch=1,EE,200FFF0C,extended,03E00008
+//patch=1,EE,200FFF10,extended,46000024
+//patch=1,EE,202D2F14,extended,0C03FFC0
+
+//					//Infinite Health				- Not required, but maybe useful for other converts.
+//					//200FFF00 3C0542C8
+//					//200FFF04 AC450368
+//					//200FFF08 03E00008
+//					//200FFF0C 46000024
+//					//202D2F14 0C03FFC0
+//
+//					//Infinite Armour				- Not required, but maybe useful for other converts.
+//					//200FFF00 3C0542C8
+//					//200FFF04 AC45036C
+//					//200FFF08 03E00008
+//					//200FFF0C 46000836
+//					//202D2F14 0C03FFC0
+
+//Infinite Ammo	1 - [Game Cheat version]			- Not required, To avoid "Cheater Status": use 100% completion ammo replenish instead. (Clip refills as bullets as fire).
+//patch=1,EE,200FFF00,extended,3C0542C8
+//patch=1,EE,200FFF04,extended,AC450368
+//patch=1,EE,200FFF08,extended,03E00008
+//patch=1,EE,200FFF0C,extended,46000024
+//patch=1,EE,202D2CA4,extended,0C03FFC0
+
+//Infinite Ammo	2 - (NOT TESTED)					- Not required, (NOT TESTED).
+//patch=1,EE,20158670,extended,24420000
+//patch=1,EE,201586D8,extended,24420000
+//patch=1,EE,20157EFC,extended,24420000
+//patch=1,EE,20157F60,extended,24420000
+
+//Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF40,extended,3C01005C
+//patch=1,EE,200FFF44,extended,80211703
+//patch=1,EE,200FFF48,extended,2403007F
+//patch=1,EE,200FFF4C,extended,1461000C
+//patch=1,EE,200FFF54,extended,3C013E00
+//patch=1,EE,200FFF58,extended,9384F108
+//patch=1,EE,200FFF5C,extended,2403016C
+//patch=1,EE,200FFF60,extended,3C02005D
+//patch=1,EE,200FFF64,extended,244283C0
+//patch=1,EE,200FFF68,extended,00831818
+//patch=1,EE,200FFF70,extended,00431021
+//patch=1,EE,200FFF74,extended,8C420000
+//patch=1,EE,200FFF7C,extended,AC410074
+//patch=1,EE,200FFF84,extended,24030070
+//patch=1,EE,200FFF80,extended,080487E4
+//patch=1,EE,20121F8C,extended,0803FFD0
+
+//----Player Speed:----
+
+//Player: Speed is Faster (Maniac Runner)
+//patch=1,EE,2012A790,extended,3C024080
+
+//Bizaare Effect - Player Flips Horizontal and wiggles. Movement Freezes, disable cheats and he pops into standing again.
+//Use Address from Maniac Runner with the speed fast, slow, normal below 
+
+//FAIL:
+//Speed Fast		L2+R2+UP
+//patch=1,EE,D05C1702,extended,0000FCEF
+//patch=1,EE,204B1C58,extended,42000000
+
+//FAIL:
+//Speed Slow 		L2+R2+DOWN
+//patch=1,EE,D05C1702,extended,0000FCBF
+//patch=1,EE,204B1C58,extended,3E800000
+
+//FAIL:
+//Speed Normal 		L2+R2+Select
+//patch=1,EE,D05C1702,extended,0000FCFE
+//patch=1,EE,204B1C58,extended,3F800000
+
+//No Clip Walls - L3+L2 | L3+R2 To Stop
+//patch=1,EE,D05C1702,extended,0000FEFD
+//patch=1,EE,2013D568,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FDFD
+//patch=1,EE,2013D568,extended,0C0E1490
+
+//Never Lose Weapons									-	(PAL 2002) - (PAL 2003) = 1A0
+//patch=1,EE,201B2930,extended,03E00008
+//patch=1,EE,201B2934,extended,00000000
+
+//PAL 2002: Never Lose Weapons
+//patch=1,EE,201B2AD0,extended,03E00008
+//patch=1,EE,201B2AD4,extended,00000000
+
+//unknown:  Never Lose Weapons patch=1,EE,201B4480,extended,080B4DF9
+
+//-----------------			  AI  & NPC 		--------------------------------//
+
+//Chick Magnet		- L3+RIGHT+RIGHT
+//patch=1,EE,D05C1702,extended,0000FFDD
+//patch=1,EE,202792D8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202792D8,extended,1440000F
+
+//"Chick Magnet"	(Select+UP)							- this area may also have addresses for pedestrians changing etc.
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,202792D8,extended,00000001
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202792D8,extended,14400007
+
+//NPC: Cops Have No AI Ignore you (unless provoked)
+//patch=1,EE,20199580,extended,03E00008
+//patch=1,EE,20199584,extended,00000000
+
+//Toggle Blood (00 off,  01 on)
+//patch=1,EE,204ADF54,extended,00000001
+
+//-----------------			  Clock  & Timers 		--------------------------------//
+
+//Clock: Freeze Mission Timers (Side Quests)
+//patch=1,EE,20270238,extended,00000000
+
+//Clock: *** Fast time (Toggle: Press Select + UP (or any button?) ) ***
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,1440000F
+
+//-----------------			  Property Codes		--------------------------------//
+
+//Set Property Purchase Cost;-
+
+//TODO TEST: // 206AE548 + 34 = 206AE57C
+//TODO TEST: // 206AE57C - 34 = 206AE4AC
+//TODO EL Swanko
+//TODO S Shack
+
+//$$$ Ocean Heights Apartment $1						-	[206AE548 - 34 = 206AE514]
+patch=1,EE,206AE548,extended,00000001
+
+//$$$ Hyman Condo Apartment $1
+//patch=1,EE,206AE514,extended,00000001					- 	[206AE514 - 34 = 206AE4E0]
+
+//$$$ Links View Apartment $1							-
+//patch=1,EE,206AE4E0,extended,00000001
+
+//$$$ 1102 Washington Street $1							-
+//patch=1,EE,206AE57C,extended,00000001
+
+//$$$ [Vice Point 3321] [$1]
+//patch=1,EE,206AE5B0,extended,00000001
+
+//-----------------		£££	     MONEY-Cash		$$$		--------------------------------//
+//* TODO: Stop Money Decreasing on purchases.
+//* TODO: Start at $0 press and hold button to increase. same as clock.
+
+//$$$ Max Money (1)
+//patch=1,EE,205C845C,extended,05F5E0FF
+//patch=1,EE,205C8460,extended,05F5E0FF
+
+//$$$ Max Money (2) & No Reduction:
+//patch=1,EE,205C845C,extended,3B9AC9FF
+//patch=1,EE,205C8460,extended,3B9AC9FF
+//OPTIONAL:	patch=1,EE,204B1E54,extended,3B9AC9FF
+
+//[NTSC] $$$ Max Cash 1.1 ?						||			[NTSC] $$$ Max Cash 1.2 ?
+//2A6F7812										||			2A6F7FE9 - pal = A12FB8D
+//2A6B7812										||			2A6B7FE9
+
+//$$$ Unlimited cash: $10,000,000							- This is not needed.
+//patch=1,EE,205C6F5C,extended,00989680
+
+//$$$ Money always $1,234 - Hold Select to increase Cash to 65535 (FFFF on final line)
+//* this would be good if it was start at $0 and hold to increase forever.
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,205C8460,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,205C8460,extended,00000000
+//patch=1,EE,D05C1702,extended,00000000
+//patch=1,EE,205C845C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,205C845C,extended,0000FFFF
+
+//-----------------		###	     STATS 	£££	$$$		--------------------------------//
+// Mostly +4 bytes from each other but cannot find 0.00 value stuff, disttance travelled etc.
+//TODO: Not all Stats done.
+
+//$$$ Property Budget (This is a Float)
+//patch=1,EE,204B2218,extended,000F423F
+
+//$$$ Taxi (Cash Made in Taxi) - by TKBS
+//patch=1,EE,204B2174,extended,075BCD15
+
+//$$$ Daily POLICE Spending - by TKBS
+//patch=1,EE,204B2264,extended,00000000
+
+//### Road Vehicles Destroyed
+//patch=1,EE,204B2108,extended,00000000
+
+//### CRIMINAL RATING: GODFATHER							- 204B2224 + 10
+//patch=1,EE,204B2234,extended,42200000
+
+//[PAL][BETA 2002]### CRIMINAL RATING						- 204B95D8 - 73A4 = PAL 2003
+//patch=1,EE,204B95D8,extended,42200000
+
+//### Boats Destroyed 										- "ntsc Boats Destroyed"  (204B139C) + D70
+//patch=1,EE,204B210C,extended,0000029A
+
+//### Kgs of Explosives used 								- 204B13B4 +  D70
+//patch=1,EE,204B2124,extended,00000000
+
+//### HotRing Best Result 									- 204B2124 + 10
+//patch=1,EE,204B2224,extended,0000029A
+
+//### Hospital Visits 										- Made by "NTSC Number Of Head Shots" - "OFFSET" (-9000)
+//patch=1,EE,204B213C,extended,00000000
+
+//### Rampages Passed SIDE 1 Left Value
+//patch=1,EE,204B21B0,extended,0000029A
+
+//### Rampages Passed SIDE 2 Right Value
+//patch=1,EE,204B21B4,extended,0000029A
+
+//### Photographs Taken
+//patch=1,EE,204B21AC,extended,000F423F
+
+//### Fishes Fed - Mabe by converting "Ice Cream Sold"
+//patch=1,EE,204B21C0,extended,0000029A
+
+//### Headshots											- "NTSC 100% COMPLETE" (204B13AC) + D80 = "PAL Headshots" (204B212C). -  NTSC version 1
+//patch=1,EE,204B212C,extended,00000001
+
+//Percentage Completion	100%:							- "NTSC 100% COMPLETE" (204B13AC) + D70 = "PAL Percentage Completion" (204B211C). -  NTSC version 1
+//patch=1,EE,204B211C,extended,431A0000
+
+//Percentage Completion	100%: 							* This was Required after using 1st code - then reset to 00000000 and wanting to go back to 100%
+//patch=1,EE,204B2120,extended,431A0000
+
+//### Hospital Visits 									- PAL Headshots (204B212C) + 10 = 204B213C
+//patch=1,EE,204B213C,extended,00000000
+
+//### seagulls
+//patch=1,EE,204B21C4,extended,00000001
+
+//### Bullets fired 666
+//patch=1,EE,204B2114,extended,00000000
+
+//### Bullets that hit 666
+//patch=1,EE,204B2128,extended,00000000
+
+//### $$$ Property Destroyed
+//patch=1,EE,204B2220,extended,0000029A
+
+//### "Toal Number of Wanted Stars Obtained"
+//patch=1,EE,204B2130,extended,00000000
+
+//### "Toal Number of Wanted Stars Evaded"  +4 from stars obtained
+//patch=1,EE,204B2134,extended,00000000
+
+//### "People You've Wasted"
+//patch=1,EE,204B2100,extended,00000000
+
+//### "People Wasted by Others"
+//patch=1,EE,204B2104,extended,00000000
+
+//### Pedestrians OFF
+//patch=1,EE,204AB578,extended,00000000
+
+//### Tyres popped (tires - incorrect spelling in game) 	- ntsc (204BB120) diff = 9010
+//patch=1,EE,204B2110,extended,00000000
+
+//### Bullets that hit 	(29A = 666)
+//patch=1,EE,204B2128,extended,00000000
+
+//### Bullets fired		(29A = 666)
+//patch=1,EE,204B2114,extended,00000000
+
+//### Bullets Fired No count = Accuracy 0%.
+//patch=1,EE,204B211D,extended,00000000
+//patch=1,EE,204B2113,extended,00000000
+
+//### Max INSANE Jump Rotation
+//patch=1,EE,204B2158,extended,00000000
+
+//### Mission Attempts
+//patch=1,EE,204B2168,extended,00000000
+
+//### Number of Criminals Wasted						- This address is totally out of range compared the others.
+//patch=1,EE,206ADEA8,extended,00000000
+
+//### Unique Jumps Completed Part 1 - Left Side Value
+//patch=1,EE,204B2160,extended,00000064
+//### Unique Jumps Completed Part 2 - Right Side Value
+//patch=1,EE,204B2164,extended,00000064
+
+//### Max. Insane Jump Flips
+//patch=1,EE,204B2154,extended,00000000
+
+//### Max Insane Jump Height [m] -1 from Insane Jump Flips
+//patch=1,EE,204B2153,extended,00000000
+
+//### Max Insane Jump Distance
+//patch=1,EE,204B214E,extended,00000000
+
+//### Passengers Dropped off 							-	[(PAL 2002: 204B2280) - (PAL 2003: 204B2170) = (hex 110 | dec 272)]
+//patch=1,EE,204B2170,extended,00000064
+
+//### Higest Vigilante Mission
+//patch=1,EE,204B21A0,extended,00000064
+
+//### People Saved in Ambulance
+//patch=1,EE,204B2194,extended,00000000
+
+//### Total Fires Extinguished
+//patch=1,EE,204B219C,extended,00000000
+//### Total Fires Extinguished + 2
+//patch=1,EE,204B219E,extended,00000000
+
+//### Higest Vigilante Mission
+//patch=1,EE,204B21A0,extended,00000000
+
+//### Highest Paramedic Mission Level
+//patch=1,EE,204B21A4,extended,00000000
+
+//### Fire Truck Mission Level
+//patch=1,EE,204B21A8,extended,00000000
+
+//### Criminals Killed on Vigilante Mission
+//patch=1,EE,204B2198,extended,00000064
+
+//### Safehouse visits (Save Game number) - set to -1 for perfect starter save stats.
+//patch=1,EE,204B2144,extended,FFFFFFFF
+
+//### Days passed in game
+//patch=1,EE,204B2140,extended,FFFFFFFF
+
+//### [PAL] Distance Travelled. (by bike)		- (PAL - D70 = NTSC)
+//patch=1,EE,204B2180,extended,00000000
+
+//### [PAL] Distance Travelled. (by car)		- (PAL - D70 = NTSC)
+//patch=1,EE,204B217C,extended,00000000
+
+//### [NTSC] Distance Travelled. (by car)		- 204B140C + D70 = PAL
+//patch=1,EE,204B140C,extended,00000000
+
+//### [PAL] Distance Travelled. (on foot)		- (PAL - NTSC = D70) || Was found by comparing the 2002 version in CE and just wiggling the thumbstick about.
+//patch=1,EE,204B2178,extended,00000000
+
+//### [NTSC] Distance Travelled. (on foot)		- 204B1408 + D70 = PAL
+//patch=1,EE,204B1408,extended,00000000
+
+//------------								Weapons						----------------------//
+
+//ntsc 20278278 - pal 202780C8 = 1B0
+//ntsc weapons + 400 = weather
+
+//Weapons 1 (Set 1) Press L3+UP
+//patch=1,EE,D05C1702,extended,0000FFED			- ntsc 2027D168 - 50A0 = 202780C8	|| 	ntsc "weapons" - "tyres" = FFDFC
+//patch=1,EE,202780C8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202780C8,extended,14400004
+
+//Weapons 2 (Set 2) Press L3+DOWN (RL)
+//patch=1,EE,D05C1702,extended,0000FFBD
+//patch=1,EE,202780EC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202780EC,extended,14400004
+
+//Weapons 3 (Set 3) Press L3+LEFT
+//patch=1,EE,D05C1702,extended,0000FF7D
+//patch=1,EE,20278110,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278110,extended,14400006
+
+//------------								Wanted Level					----------------------//
+
+//No Wanted level (Never Wanted) 1
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000			- this line probably not needed.
+
+//No Wanted level (Never Wanted) 2 				- made by using -4 steps down until no effect or crash
+//patch=1,EE,2029F030,extended,03E00008
+//patch=1,EE,2029F034,extended,00000000
+
+//[NTSC] Never Wanted							- offset ntsc - pal may be wrong becuas enot sure the pal code is correct, but it works.
+//2029E5F0 03E00008
+//2029E5F4 00000000
+
+//Wanted level Cheat Add 2 Stars Press L3+UP same time
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278300,extended,00000000			- NTSC 202782B4 ?
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278300,extended,1440000F
+
+//-----------				  ---- Character Modifier Codes ----					------------------//
+
+//*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) *** 		- TODO: Change FBI texture to xfiles mulder texture dump.
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027868C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027868C,extended,14400006
+
+//Character Modifier - Press L1+L2+DOWN
+//White Suit										-	//note: "07" for all except Hawaiin Taxi Guy & Fat Guy ?
+//patch=1,EE,D05C1702,extended,0000FABF
+//patch=1,EE,20278EE4,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278EE4,extended,14400007
+
+//Character List: 									- Diaz Sonny candy buddy ken hilary jezz phil merc dick player
+//dude at start	= 	20278FEC
+//Lance 		= 	20278EE4
+//Chick			= 	20278F10
+//Mauve Suit 	= 	20278F3C
+//LoveFist Punk	=	20278F94
+//X 			= 	20278FC0
+//Prostitute 	=	202791FC
+//Hooligan 		=	20279228
+//Fat Guy		=	20278F68
+//Hawaiian shirt fixed = 20279324					- codes online crash game. see fix below.
+//NOT WORKING   = Invisible; only works with Glitch, or scm mod - see free roam mod.
+//NOT WORKING   = accessing the other 3DModels that have no animations, like concrete shoes guy.
+
+//Fat Guy   L1+L2+DOWN										- 	//note: "0F" instead of 05 or 07
+//patch=1,EE,D05C1702,extended,0000FABF
+//patch=1,EE,20278F68,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278F68,extended,1440000F
+
+// Hawaiian guy	fixed	 									- fix crash by TKBS. The "DE, ger" region codes crashed game.
+//(Flower Shirt guy) 	- L1+L2+DOWN  						- calculated by using + 30C on the other codes.	- [20279018 + 30C = 20279324]
+//patch=1,EE,D05C1702,extended,0000FABF
+//patch=1,EE,20279324,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279324,extended,14400005
+
+//------------						Vehicle Codes:	Traffic								------------------//
+
+//Clean Streets: Both Traffic & Pedestrians removed
+//No Pedestrians
+//patch=1,EE,204AB578,extended,00000000
+//No Traffic
+//patch=1,EE,204AB610,extended,00000000
+
+//[PAL] Aggressive Traffic (OFF) 00 ||  (on) 01			- Made using [(NTSC) 004BA27C - (OFFSET) 9000 = (PAL) 004B127C]
+//patch=1,EE,004B127C,extended,00000000
+
+//[NTSC] Aggressive Traffic: //patch=1,EE,004BA27C,extended,00000001					- an offset: 1FCCC5F0
+
+//Traffic: Combining these 2 Lines Will give you Black Traffic With Purple Trim Taxi
+//Black or Pink, Purple Traffic - With Black or Purple Trim Taxi (change line 1: 00 to 01)
+//patch=1,EE,004B1BC8,extended,00000000
+//patch=1,EE,004B1BCC,extended,00000001
+
+//patch=1,EE,004B1BC8,extended,00000001
+//patch=1,EE,004B1BC8,extended,00000000
+//patch=1,EE,004B1BCC,extended,00000001
+//patch=1,EE,004B1BCC,extended,00000001
+//patch=1,EE,004B1BD0,extended,00000001
+
+//------------				  ---- Vehicle Codes: Spawns ----								--------------//
+
+//Spawn Tank 				Select + UP
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,14400007
+
+//Spawn Bloodring Banger		(L1+L2+UP)			- [Love fist - "2C"  = Bloodring]
+//patch=1,EE,D05C1702,extended,0000FAEF
+//patch=1,EE,20279254,extended,14400000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279254,extended,14400007
+
+//Spawn Vehicle: TrashMaster	(Select+UP)			- by TKBS	Converted From NTSC to PAL
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278E60,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278E60,extended,14400007
+
+//Spawn Vehicle: Herse			(L1+L2+UP)
+//patch=1,EE,D05C1702,extended,0000FAEF
+//patch=1,EE,20278E08,extended,14400000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278E08,extended,14400007
+
+//Spawn Vehicle List:
+//* Most are +2C for each vehicle. but then some weird stuff with Blood and Hot ring bangers.
+//* a total guesss of the range is 44C but there are 106 vehicles plus some special variations like the cut scene vehicles, the Street car, the helicopters in cut scenes and maybe more that noone has psawned in yet.
+//No Code effect	- 20278DB0
+//Bloodring 1 		- 20278DDC			+2C = 	||	20279254 - 20278DDC = 478
+//Herse				- 20278E08	||		+2C =	|| 	20278E08 + 44C = 20279254	|| 20278E08 + 478 = 20279280
+//Love Fist 		- 20278E34	||		+2C =
+//Trashmaster 		- 20278E60	||		+2C =
+//Sabre Turbo 		- 20278E8C	||		+2C =
+//Caddy 			- 20278EB8	||		+2C = 	...Character Modifiers after this.
+//Bloodring 2 		- 20279254
+//Hotring Racer 	- 20279280				- 20279280 - 20278DDC =	4A4
+//Hotring Racer 	- 202792AC
+
+//---------------- Vehicle Codes: Attrributes &  Properties --------------//
+
+//*** Vehicles: New Damage Proof *** 			- Flip over no explode, Fire Proof, melee proof, but not weapon proof Vehicles. ****
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//*** Vehicles: No Collision Damage  ***		- (fists etc still do dmg)
+//patch=1,EE,2016819C,extended,00000000
+//TODO: TEST 20168E5C
+
+//*** Vehicles: No Tyre Damage (TYRES Do Not Pop) FINAL ****		- made using MEMORY REGION snippet from NTSC.
+//patch=1,EE,2017C4C4,extended,03E00008					- (ntsc 2017D36C) - 2017C4C8 = EA4
+//patch=1,EE,2017C4C8,extended,00000000
+
+//*** Vehicles: No Weapons Damage ***
+//patch=1,EE,20186300,extended,03E00008
+//patch=1,EE,20186304,extended,00000000
+
+//*** Vehicles: Can do Vigilante Missions			-	  created using off NTSC - 1F0 = PAL - ["NTSC 2002" (10184B5A)] - 1F0 = PAL 1018496A
+//patch=1,EE,1018496A,extended,00001000
+
+//*** Vehicles: Can Spray Firetruck hose.				-	  created using off NTSC - 1F0 = PAL - ["NTSC 2002" (2016839C)] - 1F0 = PAL 201681AC
+//patch=1,EE,201681AC,extended,00000000
+
+//*** Vehicles: Better Handling	-	Select + left or right  does something crazy.
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278AF0,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278AF0,extended,14400007
+
+//**** All Vehicles Tank Properties ****			- (NTSC //patch=1,EE,201683B4,extended,00000000) - 1F0 = 201681C4
+//patch=1,EE,1016839E,extended,00001000
+//patch=1,EE,201681C4,extended,00000000
+
+//*** Cars Float On Water ***									-	[(by skiller + TKBS) NTSC -> PAL (-9000)].
+//patch=1,EE,004B1050,extended,00000001
+
+//*** Cars Fly ***	-	R1+R2+RIGHT (toggle)
+//patch=1,EE,D05C1702,extended,0000F5DF
+//patch=1,EE,20278A8C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278A8C,extended,14400015
+
+//[PAL] Invisible VH Models:					(press any button to toggle)			- coverted using [2027DAC8 - 50A0 = 20278A28]
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278A28,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278A28,extended,14400007
+
+//[NTSC] See Through Cars 						(Press Select+Right To Activate) 		- by Codejunkies
+//patch=1,EE,D05CA682,extended,0000FFDE
+//patch=1,EE,2027DAC8,extended,00000000
+//patch=1,EE,D05CA682,extended,0000FFFF
+//patch=1,EE,2027DAC8,extended,14400015
+
+//Explode Vehicles (1)	with cheat notification 	Select + LEFT
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400028
+
+//Explode Vehicles (2)	without cheat notification 	Press Any Button
+//patch=1,EE,D05C1702,extended,0000FABF || or 0000FFEE || 0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400007 || 14400028
+
+//Explode Vehicles Info;-
+//* The more buttons you press the bigger it is.		- Made using   [(NTSC) 2027D67C - 50A0 = 202785DC]
+//* stays in ram? - requires shutdown PS2.
+//204BB12C - 2027D67C =	23DAB0		- 	50A0 =	238A10
+//2027D67C - 2018E390 = EF2EC		-	50A0 =  EA24C
+//2027D67C - 2018E394 =	EF2E8		-	50A0 = 	EA248
+// "NTSC Exploding Vehicles" (2027D67C) - " NTSC Do Not Render Water" (2018E394) = "NTSC OFFSET from Explode & Water" (EF2E8)
+// "NTSC Explode VH" - "PAL Explode VH" = 50A0
+// "NTSC OFFSET from Explode & Water" (EF2E8) - "OFFSET from explode vehicles nts - pal" (50A0) = EA248
+// "204BB12C" is "NTSC Criminal Rating 2004 ver 3.00" address.
+
+//Vehicles: [NTSC] Exploding Vehicles 					(Press Select+Left To Activate)
+//D05CA682 0000FF7E
+//2027D67C 00000000
+//D05CA682 0000FFFF
+//2027D67C 14400028
+
+//Vehicles: handbrake always on ?					2016A484 - 20169434	= 1050  was supposed to be super nitro boots from ntsc
+//patch=1,EE,20169434,extended,00000000
+//patch=1,EE,2016AA46,extended,00000000
+//patch=1,EE,2016A942,extended,00000000
+
+//Vehicles: faster?
+//patch=1,EE,20169434,extended,00000000
+//patch=1,EE,2017E618,extended,00000000
+//patch=1,EE,2017E514,extended,00000000
+
+//TODO: Fix this
+//Vehicles: Traffic: LOD Switch 1 - 004B1BC8 -1 = 004B1BE4
+//Vehicles: Traffic: Unknown effect: This appears to set R,G,B,Y Colours only and executive vehicles, Emergency , Landstalker, cheetah, hermes
+//patch=1,EE,004B1BE4,extended,03E00008
+//patch=1,EE,004B1BE8,extended,00000000
+//patch=1,EE,004B1C00,extended,03E00008
+//patch=1,EE,004B1BEC,extended,00000000
+//Unknown effect: 004B1BC8 + 20 or 004B1BCC + 1C = 004B1BE8 (UNKNOWN EFFECT)
+
+//Heli.FireHunterGun() || hex: 02 30 09 06 33 B3 50 C4		- Just a reference guess. i have never edited .scm before, ZERO documentation on it for ps2.
+//Fire Helicopter gun
+//patch=1,EE,20556780,extended,06093002
+//patch=1,EE,20556784,extended,C450B333
+
+//------------		Vehicle [Garage Editor Codes]	----------------------//
+
+// ---- [Garage Editor Explained]; ----
+//* Colours 	0-94	||	00-5E - see colors.dat
+//* Vehicles	130-236	||	82-EC - see default.ide
+//* Damage Properties	||	0000006D = No mirrors	| 6F = no right mirror & Bullet pass through || //0000006F + hex 20 [or (dec 32) (8 x 4 bytes)] = 05F5E0FF 	= Explode when you sit in.
+// 1F = Damage proof from stuf fliek cutscene vehicles and glitches.
+//	Line 1 = Garage Location + Vehicle ID		//patch=1,EE,206B6070,extended,00000089
+//	Line 2 = Colour 1							//patch=1,EE,206B6090,extended,000000AF		|| 006B6090
+//	Line 3 = Colour 2							//patch=1,EE,206B6091,extended,0000004F		|| 006B6091
+//	Line 4 = Position (x,y) 1					//patch=1,EE,206B6080,extended,3DE93BB1
+//	Line 5 = Position (x,y) 2					//patch=1,EE,206B6084,extended,3F7E55A2
+//	Line 6 = damage proof						//patch=1,EE,206B608C,extended,0000006F		|| 006B608C || 000000FF || 0000001F is what you get from a cutscene special vehicle.
+//	Line 7 = Unknown							//patch=1,EE,206B6094,extended,000000FF
+//	Line 0 = Vehicle ID SLOT 2,3 ,4 etc			//the other slots are listed below for each garage that can hold multiple vehicles.
+
+//Line 3 & Line 4 Combined would be: Honestly i dont really understand it, i get teh switcing reversing, calucalting stuff,
+//i just do no tunderstadn why this code above works which i basically guessed at but in cheat engine the color codes make no sense, using 01, 02, changes line 2 to FFFF0001
+//patch=1,EE,206B6090,extended,0000AF4F
+
+//So in the end i use just 1 address for the colour:
+//206B6090	FF00324E			= FF00|#1|#2|
+//206B6091  FFFF0032			= FFFF00|#2
+
+//**** Garage Editor: Ocean Beach ****
+//- VH - colour 1,2  - pos x,y - damage proof, fire proof, bullet proof. but tyres pop.
+//patch=1,EE,206B6070,extended,000000EC
+//patch=1,EE,206B6090,extended,00000001
+//patch=1,EE,206B6091,extended,00000002
+//patch=1,EE,206B6080,extended,3DE93BB1
+//patch=1,EE,206B6084,extended,3F7E55A2
+//patch=1,EE,206B608C,extended,000000FF
+//patch=1,EE,206B6094,extended,000000FF
+
+//**** New Garage Editor Stuff ****
+//Vehicle Position (x,y): (values set it to whatever it was when i parked it nice, facing out)
+//patch=1,EE,206B6080,extended,3DE93BB1
+//patch=1,EE,206B6084,extended,3F7E55A2
+
+//Spawn Vehicle in Garage "Ocean Beach"		||	Colour Vehicle in Garage "Ocean Beach"		||	Set "No Damage" Vehicle in Garage "Ocean Beach"
+//patch=1,EE,206B6070,extended,000000EC		|| 	patch=1,EE,206B6090,extended,0000004E		|| 	patch=1,EE,206B608C,extended,0000006F
+
+//Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
+//patch=1,EE,206B6070,extended,000000EC
+//patch=1,EE,206B6090,extended,00000001
+//patch=1,EE,206B6091,extended,00000002
+//patch=1,EE,206B608C,extended,0000001F
+//patch=1,EE,206B6080,extended,3DE93BB1
+//patch=1,EE,206B6084,extended,3F7E55A2
+
+//Spawn Vehicle in Garage "Ocean Beach" [Left VH 1]
+//patch=1,EE,206B6098,extended,000000AF
+//patch=1,EE,206B60B8,extended,00000001
+//patch=1,EE,206B60B9,extended,00000002
+//patch=1,EE,206B60B4,extended,0000001F
+//patch=1,EE,206B60AC,extended,########
+//patch=1,EE,206B60A8,extended,########
+
+//Spawn Vehicle in Garage "Links View "
+//patch=1,EE,206B6110,extended,000000AF
+//patch=1,EE,206B6120,extended,00000031
+//patch=1,EE,206B6130,extended,0000006F
+
+//Spawn Vehicle in Garage "Vice Point"
+//patch=1,EE,206B6110,extended,000000EC
+
+//Spawn Vehicle in Garage "Hyman Condo [Left VH 1]"		-		Colour: 206B5E90 + 20 = 206B5EB0	|| Damage proof: 206B5E90 + 1C = 206B5EAC
+//patch=1,EE,206B5E90,extended,000000EC
+//patch=1,EE,206B5EB0,extended,00000034
+//patch=1,EE,206B5EB1,extended,00000003
+//patch=1,EE,206B5EAC,extended,0000001F
+
+//Spawn Vehicle in Garage "Hyman Condo [Left VH 2]"
+//patch=1,EE,206B5EB8,extended,000000EC
+
+//Spawn Vehicle in Garage "Hyman Condo [Middle VH 1]"
+//patch=1,EE,206B5F30,extended,000000EC
+
+//Spawn Vehicle in Garage "Hyman Condo [Right VH 1]"
+//patch=1,EE,206B5FD0,extended,000000EC
+
+//* ---- How the Garage Editor Was Made ----
+//* Example Code
+
+//* Made using	-	"add decimel 32" to "garage address code" to discover the colour ID address.
+//* Made using	-	i used A site that had working ntsc car/color in garage swap code and a screenshot from a vice city stories video, and did the following steps;
+//				i) calculated difference of car & color addresses, which was (offset) "32 decimel  (20 hex)" & applied it to my codes.
+//				ii) To get the garage car swap code: park admiral in ocean beach, cheat engine to search value of admiral ID [or park vicechee in garage which is ID 236 (hex=EC)] - opening a garage makes it turn to 0 so you know you got the right value.
+//				ii) my color address code was then made by applying the offset 32 to my garage car swap code. color range hex calculated using the colors.dat id numbers.
+//				iii) to find the Damage proof address i used the same method, calculated the exisiting ntsc difference from a garage (el swanko) and the Damage proof code for that garage. which was offset by 1C
+//				iv) additional garage slots (untested) but assumed to be simply 1 decimel value up per slot.
+//
+//* Set Vehicle & Colour 1,2 in Ocean Beach | //No slot 2 in this garage - it would be +1 = 206B6090  - for the 2nd slot/space, and so on for 3rd, 4th in hyman condo.
+//* add 1C to garage to make damage proof [206B6070 + 1C = 206B608C], calculated using reference code from the site, calculated difference from working el swanko garage and proof.
+//* Colours can be 0-94	||	00-5E - see colors.dat
+//* Vehicles can be 130-236	||	82-EC - see default.ide
+// 	E.G:	//0000003A 	- blue		//58 || //00000048	- greyish	//72 || //00000031 	- green ish	//49
+//  convert VH ID to Hex	[000000EC = 236 (vicechee)]
+
+
+//----------------		 Missions: Side Quests: 			  		--------------//
+
+// Set Time Bonuses Ambulance Missions. (string only?)
+//patch=1,EE,204E37D0,extended,0000029A
+
+//Best not to use this until fixed. May cause a crash later on.
+//Set Timer Ambulance Missions
+//patch=1,EE,205531B8,extended,00000000
+//patch=1,EE,205531BC,extended,00027ECE
+
+//Clock: Freeze Mission Timers (Side Quests)
+//patch=1,EE,20270238,extended,00000000
+
+//----------------		 Audio: For starter save: 			  		--------------//
+
+//**** Force DTS Audio "FEA_DTS" ****				- GTA Vice City PS2 using DTS (for Starter Save SP2 & PS3 Users)
+//What follows makes no sense, it looks like just a string switch, but i assure you, the game loads thinking it's in DTS.
+//I have no idea why this worked and sometimes it doesn't.
+//* it is also a useful memory to note for possibly creating a fast boot.
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,204ADB84,extended,204ADE30
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,204ADE30,extended,5F414546
+//patch=1,EE,204ADB84,extended,00000000
+
+//----------------		HUD 			  		--------------//
+
+// -HUD- Flashing Armour Icon 						- Disable ICON so that Armour or Health Values will show, do not know how to move icon images or replace with opaque.
+//patch=1,EE,205C849C,extended,CFE44B00
+
+//---------------- Camera, FOV, Visuals, HUD, Rendering etc:   		--------------//
+
+//Do Not Render Water: (Hold Press L3 + UP, release and it switches back. ) )
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2018E394,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2018E394,extended,14400007
+
+//[NTSC] Do Not Render Water
+//2018E390 03E00008										- // [202785DC - EA24C	= 2018E390]	&& [202785DC - EA248	= 2018E394]
+//2018E394 00000000
+
+//---------------- Camera, ---------------- ---------------- ---------------- 
+
+//Cinematic Cameras - Switch Camera Angle.
+//Cinematic Camera	 (1)							- made by converting xploder 100x gamespeed 2AE30A12 42C80000 = 204B0DD8 42C80000 then add 100 for the v1 - v2 0ffset
+//patch=1,EE,204B0ED8,extended,42C80000
+//Cinematic Camera	 (2)
+//patch=1,EE,204B0ED8,extended,40800000
+//Cinematic Camera	 (3)
+//patch=1,EE,204B0ED8,extended,40000000
+//Cinematic Camera	 (4) maybe 3F000000
+
+//---------------- widescreen change    		--------------//
+
+//comment=Widescreen converted from NTSC fix by Snake356		- Has an effect in game, but VC is a bit weird with Widescreen, game looks better in 4:3.
+//widescreen fix
+//patch=1,EE,001323AC,word,3C013F9D
+//patch=1,EE,001323B0,word,44810000
+//patch=1,EE,001323B4,word,46006302
+//patch=1,EE,001323B8,word,03E00008
+//patch=1,EE,001323BC,word,E78C87F8
+//
+//patch=1,EE,0024335C,word,0C04C8EB
+//patch=1,EE,002706DC,word,0C04C8EE
+//patch=1,EE,00270CB4,word,0C04C8EE
+
+//no interlacing												- Not Working , pointless, or needs PS2 hardware to benefit.
+//patch=1,EE,201123C4,extended,00000000
+
+//60 fps														- Not Working , pointless, or needs PS2 hardware to benefit.
+//patch=1,EE,20272AD4,extended,28420001
+
+// ---- Master Codes ----
+//MASTER Enable Code: patch=1,EE,901220EC,extended,0C041C64
+//MASTER Enable Code: patch=1,EE,901220EC,extended,0C041C647
+
