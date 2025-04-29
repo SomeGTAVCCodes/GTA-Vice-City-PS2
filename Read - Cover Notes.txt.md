@@ -6,16 +6,22 @@
 //GAME Version:		2003: (PAL) (2.03) (SLES-51061)
 //CRC: 				CFCB0D20
 
-//- Notes: - 		This is a re-make: I lost my stuff from years ago so many codes are missing.
-//					Some codes are redundant but useful for comparisons, finding ranges, patterns, read, writes etc.
-//					ntsc has the opposite problem - too many codes copy pasted around sites make it confusing and difficult to manage.
-//					any sites that do have codes are usually copy pasted from another, not working, not labelled correctly or not truly tested.
+//--------------------------------------------------------------------------//
+//* ---- ONLY READ ME IF YOU WANT TO CREATE CODES & CHEATS ---- //
+//--------------------------------------------------------------------------//
+
+//- Notes: - 		
+//* This is a re-make: I lost my stuff from years ago so many codes are missing.
+//* Some codes are redundant but useful for comparisons, finding ranges, patterns, read, writes etc.
+//* ntsc has the opposite problem - too many codes copy pasted around sites make it confusing and difficult to manage.
+//* any sites that do have codes are usually copy pasted from another, not working, not labelled correctly or not truly tested.
 
 //- Converting Codes: -
-//					i have incldued a list of offsets and simple equations that - although trial & error, and guess work, - have led to discovering stuff.
-//					whenever an offset works for one convert but not another, the likelihood of the correct address being within a small range of that offset is very high.
-// 					step up values, 4 bytes, or +/- offset like 1BO, 5A0A, 9000, or any of the common ones found and then write a random value to each address and scan for those changes you forced.
-//					searching for 1440000F etc will net useful results || 01 -00 changes etc.
+//* i have a list of offsets and simple equations that - although trial & error, and guess work, - have led to discovering stuff.
+//* whenever an offset works for one convert but not another, the likelihood of the correct address being within a small range of that offset is very high.
+//* step up values, 4 bytes, or +/- offset like 1BO, 5A0A, 9000, or any of the common ones found and then write a random value to each address and scan for those changes you forced.
+//* searching for 1440000F etc will net useful results || 01 -00 changes etc.
+//** the easiest method is porbably just comparing memory regions with your eyes.
 
 //TODO:
 // Main Concerns is not Having the following;-
@@ -66,7 +72,6 @@
 //----------------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------//
 
-
 // ---- Render System Info (debug) ----
 //After the random "rendering system" discovery some time later i randomly found a post online about a PS2 beta. Interestingly, this beta has a "time [hour of day]" option that goes from 0-255
 //This option is identical to what i discoverd below. Which means even though i am 20 years late to "the party" it appears i discovered the debug menu first?
@@ -76,6 +81,8 @@
 //* Similar to a debugging option. True results need real PS2 hardware tests as PCSX2 may show issues not present on PS2.
 //* 1 Render mode looks like Silent Hill, another is Film noire, disable sky, keep clouds, tone, weather 1-5, a variety of things.
 
+//----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
 
 // ---- How the Garage Editor Was Made ----
 
@@ -94,9 +101,11 @@
 // 	E.G:	//0000003A 	- blue		//58 || //00000048	- greyish	//72 || //00000031 	- green ish	//49
 //  convert VH ID to Hex	[000000EC = 236 (vicechee)]
 
-// ------------------------------------ Previous Tests and Fails: ---------------------------------------- //
+//----------------------------------------------------------------------------------------------//
+// ------------------------------------ Previous Tests and Fails: ----------------------------- //
+//----------------------------------------------------------------------------------------------//
 
-fuk off vehicle spawn shit fucking 50 tests and cant fidn the fucking address... BASTARD!
+vehicle spawn shit 50 tests and cant fidn the fucking address... BASTARD!
 
 20279400 0C0E5C74
 10275F8C 0000001A
