@@ -1,0 +1,38 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2002-Beta) (SLES-51061)
+comment=GTA:VC, PAL, 2002-Beta Codes..
+
+//Author = 	TKBS
+//Notes  =	See the CheatTable (.ct) File.
+//Offset =  PAL 2002-BETA -> PAL 2003 = "-73A4"				- probably won't help much for anything else.
+
+
+//In-Game: Debug Menu: (Press L1+ R1+ L3+ R3). 
+
+//---------------------------------------- Confirmed Working; ------------------------------------------------//
+
+//GTA_#2-6.img Removal
+patch=1,EE,202DAAF4,extended,24070001
+
+//### Number of Bullets Fired
+//patch=1,EE,204B94B8,extended,0000029A
+//patch=1,EE,204B94B8,extended,0000029A
+
+//### Planes & Helicopters Destroyed
+//patch=1,EE,204B94B9,extended,0000029A
+//patch=1,EE,204B94BA,extended,0000029A
+
+//[PAL][BETA 2002]### CRIMINAL RATING						- 204B95D8 - 73A4 = PAL 2003
+//patch=1,EE,204B95D8,extended,42200000
+
+//100% Completion- offset 73A4
+//patch=1,EE,204B94C0,extended,431A0000
+//patch=1,EE,204B94C4,extended,431A0000
+
+//100 (100%) Hidden Packages								- (205D5064 ntsc) - (205C8464 pal) = CC00 
+//patch=1,EE,205D5064,extended,00000064
+
+//Toggle HUD: TODO: Add button Commands
+//On
+//patch=1,EE,204B91C4,extended,00000001
+//Off
+//patch=1,EE,204B91C4,extended,00000000
