@@ -8,11 +8,12 @@ My feelings on the matter:
 
 * This base version used is PAL 2003 , for that exact reason & more;-
 
-This content is put together entirely by TKBS, there are no other projects like this for PAL 2003, nor GTAVC PS2 as a whole.
+EVERY cheat, code and mod is produced by TKBS, from the ground up so some of them are probably crap - or borked! :)
 
-EVERY cheat, code and mod is produced by TKBS, from the ground up
 
 Completely unique. Includes information and discoveries never been seen before.
 
 
  
+Downloads: https://www.moddb.com/mods/gta-vice-city-mods
+Videos: (Play list) https://www.youtube.com/watch?v=YsE_eKA4SUs&list=PLrjU1sU6ftAR8SI3aVuPntyXI89BAPj3v
