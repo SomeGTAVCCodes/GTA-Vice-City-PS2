@@ -1,53 +1,185 @@
 //--------------------------------------------------------------------------//
-//TITLE: 			GTA: Vice City Cheats COVER NOTES
+//TITLE: 			GTA: Vice City Cheats
 //AUTHOR:			TKBS
 //DATE:				2025
 //GAME:				GTA: Vice City
 //GAME Version:		2003: (PAL) (2.03) (SLES-51061)
 //CRC: 				CFCB0D20
 
-//THIS IS THE DIRTY NOTES PAGE - CAN BE IGNORED BY PUBLIC.
-
-//- Notes: - 		This is a re-make: I lost all my stuff from years ago so many codes are missing. This is a re-do.
-//					over 23 years either no codes have been made or posted for this version or they have been lost from sites closing etc.
-//					Some codes are redundant but still useful for comparisons, finding ranges, patterns, read, writes etc.
+//- Notes: - 		This is a re-make: I lost my stuff from years ago so many codes are missing.
+//					Some codes are redundant but useful for comparisons, finding ranges, patterns, read, writes etc.
 //					ntsc has the opposite problem - too many codes copy pasted around sites make it confusing and difficult to manage.
 //					any sites that do have codes are usually copy pasted from another, not working, not labelled correctly or not truly tested.
 
-
 //- Converting Codes: -
-//					a few equations work for calculating conversions, many that do not convert to the equivalent effect land on other addresses with unknown effects so memory region comparisons are the way forward.
-//					i have incldued a list of offsets and simple equations that - although trial & error, and guess work, - have led to discovering stuff. Bad practice though, just boot up 1 rgion, or version that has a code working, then just copy some bytes and search in the other rgiona, or version.
-//					a collection of saves at various locations and intervals are required for faster iteration of tests to discover what some codes do, but stuck with the too many ntsc vs pal issues again there.
+//					i have incldued a list of offsets and simple equations that - although trial & error, and guess work, - have led to discovering stuff.
 //					whenever an offset works for one convert but not another, the likelihood of the correct address being within a small range of that offset is very high.
-// 					To simplfiy that approach which is not the best a list can be generated of step up values, 4 bytes, or +/- offset like 1BO, 5A0A, 9000, or any of the common ones found and then write a random value to each address and scan for those changes you forced.
-//					searching for 1440000F etc will net the most useful results.
+// 					step up values, 4 bytes, or +/- offset like 1BO, 5A0A, 9000, or any of the common ones found and then write a random value to each address and scan for those changes you forced.
+//					searching for 1440000F etc will net useful results || 01 -00 changes etc.
 
-//- TODO:- 			
-Clean-House , re-organise.
-Visuals; UI stuff, like changing property cost shown on purchase to that of the new values. (1 instead of 7000)
-there are 100s of codes that are UNAVAIALBLE for this version. vehicle properties, weapon modifiers.
-There are UNCOMMON codes that exist for NTSC but not pal any version like dan's widescreen and img hack
-All VH's Have Sirens
-VH Codes have issues, not toggle on off, or unknown effect etc.
-// # of helicopters chasing you
-// # wanted stars
-// spawn any vehicle, anywhere.
-// jump height variants
-// pedestrian  and vehilce spawn pool mods. i had them  but didnt realise until after i dleted the tests. it will be +2C from somewhere. and i probably tried like 100 etsts or more lol.. damn!
-// Try to make a code that shows the pop-up notifications for every cheat ever made for GTA VC, so that we have that "Cheat" pop-up every time we test a code.
-// all vehicels vigilante, amb, fireturck or tank properties.
-// missing stats stuff
-// weapon mods - sniper rockets etc. | one hit kills - stronger weapons
-// Unknown: Does something - screen flash in emu. - 20278818 1440000F
-//it should be possible to do DIRT | WATER_WHEEL | BOOD_SPURT | DEBRIS ... etc etc. See "CHANGE a PARTICLE EFFECT" Blood for Water Swap example   OR...CT file.
-// UNKNOWN CHEAT ACTIVATED ???
-// water render, hud render, sky render.
-// vehicles have sirens
-//Cinematic camera control
-// increasing doplhin spawn count, or spawning them near the mansion etc turn of water render to see them
+//TODO:
+// Main Concerns is not Having the following;-
+//1. Vehicle Spawn 	-	Priority is Spawn Any Vehicle 
+//2. LOD switch ... - 		broken or not working correctly, and this is an important one, low LOD's need to be stopped.
+//3. garage editor 	- 	needs work, all other garages , pos, cols etc.
+//4. missing codes 	- 	theres a few, changing peds to thriler, which i lost the code for after having it liek 4 times. other stuff like snipe rockets etc.
+//5. Anything that would be easy codes to make during the game play session, like later property purchases, or STATS related coz i haven't played it!
+//. No Fall Damge | jump height variants
+//. Pay-N-Spray anywhere
+//. Pedestrians Have Weapons (Toggle)
+//. Pedestrians In Thriller outfits
+//. Never Drown | Infinite Air
+//. Removal of Garage Doors fixes ocean beach issue. drive through walls mod swap worked on Pay n Spray but would be better to do with pnach.
+//. Debug port.
+//* Visuals; 
+//		- UI stuff, like changing property cost shown on purchase to that of the new values. (1 instead of 7000)
+//		- water render, hud render, sky render.
+//* vehicle properties; 
+//		- nitro boost VHs sirens, firing weapons damage proof etc, all vehicels vigilante, amb, fireturck or tank properties. etc, 
+//* weapon modifiers; like increase damage, or sniper rockets.
+//* UNCOMMON codes that exist for NTSC but not pal any version like dan's widescreen and img hack
+//* Set #of helicopters chasing you
+//* Set # wanted stars
+//* pedestrian  and vehilce spawn pool mods. 
+//...^^ i had them  but didnt realise until after i dleted the tests. it will be +2C from somewhere. and i probably tried like 100 etsts or more lol.. damn!
+//* Try to make a code that shows the pop-up notifications for every cheat ever made for GTA VC, so that we have that "Cheat" pop-up every time we test a code.
+//* missing stats stuff
+//* Particle Effects swap: tested and worked but not saved as i had to many random changes on the go.
+//...^^  DIRT | WATER_WHEEL | BOOD_SPURT | DEBRIS ... etc etc. See "CHANGE a PARTICLE EFFECT" Blood for Water Swap example   OR...CT file.
+//* UNKNOWN CHEATS ACTIVATED ? has anyoone ever tested them??
+//* Cinematic camera control
+//* increasing doplhin spawn count, or spawning them near the mansion etc turn of water render to see them
+//* Spawn new Garages on Beach - lots of them or replace the beach huts?
+//4. car x,y position in garage						- 		partial, not understood.
+//5. visuals, fov, camera control, etc.				- 		partial
+//6. taxi color change (hard coded?)				- 		im sure i fixed this- but probably needs re-doing. fixes the black missing textures.
+//7. fast, slow, normal game speeds					- 		partial
+//8. sky toggle, models toggle,						- 		broken or not working or not done.
+//12. pedestrians rage								- 		i had this code, but didnt realsie it had worked, may get lucy with iterations or may take forveer.
+//13. some stats stuff								- 		can be easily done with a 100% save vs 0%, not that useful unless used for simply obtaining offsets from versions.
+//14. free pay n spray, pay n spray any vehicles & anywhere.	
+//16. boats are cars, with wheels etc				- and cars with water_wheels
+//18. Infinite Air:									- this is not infionite health. it is air under water.
+//19. all white cars								- this should be possible.
+
 
 //----------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------//
+
+
+// ---- Render System Info (debug) ----
+//After the random "rendering system" discovery some time later i randomly found a post online about a PS2 beta. Interestingly, this beta has a "time [hour of day]" option that goes from 0-255
+//This option is identical to what i discoverd below. Which means even though i am 20 years late to "the party" it appears i discovered the debug menu first?
+//Had i known about the beta years ago, i would have relasied then that was already at the memory region for the debug menu.
+// pretty crazy stuff. With this patch bewlo about the pnach i created for the beta maybe the menu can be portwed over.
+//... again another pointless ask since i am on my own, and pc is probably lightyears ahead of thisps2 stuff, but this random discovveries are not coherantly odcumented.
+//* Similar to a debugging option. True results need real PS2 hardware tests as PCSX2 may show issues not present on PS2.
+//* 1 Render mode looks like Silent Hill, another is Film noire, disable sky, keep clouds, tone, weather 1-5, a variety of things.
+
+
+// ---- How the Garage Editor Was Made ----
+
+//* Made using	-	"add decimel 32" to "garage address code" to discover the colour ID address.
+//* Made using	-	i used A site that had working ntsc car/color in garage swap code and a screenshot from a vice city stories video, and did the following steps;
+//				i) calculated difference of car & color addresses, which was (offset) "32 decimel  (20 hex)" & applied it to my codes.
+//				ii) To get the garage car swap code: park admiral in ocean beach, cheat engine to search value of admiral ID [or park vicechee in garage which is ID 236 (hex=EC)] - opening a garage makes it turn to 0 so you know you got the right value.
+//				ii) my color address code was then made by applying the offset 32 to my garage car swap code. color range hex calculated using the colors.dat id numbers.
+//				iii) to find the Damage proof address i used the same method, calculated the exisiting ntsc difference from a garage (el swanko) and the Damage proof code for that garage. which was offset by 1C
+//				iv) additional garage slots (untested) but assumed to be simply 1 decimel value up per slot.
+//
+//* Set Vehicle & Colour 1,2 in Ocean Beach | //No slot 2 in this garage - it would be +1 = 206B6090  - for the 2nd slot/space, and so on for 3rd, 4th in hyman condo.
+//* add 1C to garage to make damage proof [206B6070 + 1C = 206B608C], calculated using reference code from the site, calculated difference from working el swanko garage and proof.
+//* Colours can be 0-94	||	00-5E - see colors.dat
+//* Vehicles can be 130-236	||	82-EC - see default.ide
+// 	E.G:	//0000003A 	- blue		//58 || //00000048	- greyish	//72 || //00000031 	- green ish	//49
+//  convert VH ID to Hex	[000000EC = 236 (vicechee)]
+
+// ------------------------------------ Previous Tests and Fails: ---------------------------------------- //
+
+fuk off vehicle spawn shit fucking 50 tests and cant fidn the fucking address... BASTARD!
+
+20279400 0C0E5C74
+10275F8C 0000001A
+10275F9C 00000042
+20275E00 0C09E528
+20275E04 240400BF
+
+// ---------------- UNKNOWN: or OTHER: ..or Broken: 	--------------//
+
+// Unknown: Does something - screen flash in emu. - 20278818 1440000F
+
+//Water Wheels - From that image in my folder.
+//* These images might be very useful, i foget how i got to the address showing the read write access.
+//* the activate lance and water wheels is also interesting 
+//patch=1,EE,206BD848,extended,00000000
+//patch=1,EE,206BD850,extended,00000000
+//patch=1,EE,206BD858,extended,0000C843
+//patch=1,EE,20ABB000,extended,01DC9000
+
+//  last address -4 = ... no effect or unknown
+//patch=1,EE,204B21BC,extended,00002457
+//patch=1,EE,204B2190,extended,00002457
+//patch=1,EE,204B218C,extended,00002457
+//patch=1,EE,204B2188,extended,00002457
+//patch=1,EE,204B2184,extended,00002457
+//patch=1,EE,204B2180,extended,00002457
+//patch=1,EE,204B217C,extended,00002457
+//patch=1,EE,204B2178,extended,00002457
+//patch=1,EE,204B216C,extended,00002457
+//patch=1,EE,204B215C,extended,00002457
+
+//--
+//patch=1,EE,307AD282,extended,0000005A
+//patch=1,EE,30C6E80A,extended,0000005A
+//patch=1,EE,30C6E80B,extended,0000005A
+//patch=1,EE,307AD282,extended,0000008B
+//patch=1,EE,307AD282,extended,00000001
+
+//?????????????????????????????????????
+//patch=1,EE,205C7DE4,extended,00000064
+
+//?????????????????????????????????????
+//patch=1,EE,204BAB60,extended,40800000
+
+//patch=1,EE,204B1428,extended,00000001
+//UNKNOWN: patch=1,EE,04B0F50,extended,00000000
+//STRING: GTA3_ = 2043C100
+
+//STRING: remap virgo name to cougar: virgo - 2065D634 || 208AE4F4   ..  cougar - 208B46A0 || 2109AF08
+//patch=1,EE,208B46A0,extended,2065D634
+//patch=1,EE,2109AF08,extended,208AE4F4
+
+//PCSX2 Disc Menu Jumper
+//patch=1,EE,0025E5E0,extended,0000006F
+//patch=1,EE,0025ED2C,extended,0000006F
+
+// CHANGE a PARTICLE EFFECT TO a different PE.
+//206BD8CC 4F4F4C42 = BLOOD || 206BD7C4 444E4153 = SAND
+
+//FAIL: test No Wanted level -
+//patch=1,EE,202A594C,extended,8C060000
+
+//FAIL: Wanted Level
+//patch=1,EE,200C0DD0,extended,0C0A7918
+//patch=1,EE,200C0DD4,extended,24050002
+///Different to the other one. Doesn't really work. These are Floats maybe?
+//Both addresses are needed one effects the other, dunno why.
+
+//### Wanted Level Stars (Currently Active) [01-06]
+patch=1,EE,20EBC280,extended,00000001
+patch=1,EE,204B1E64,extended,00000001
+//patch=1,EE,8000057C,extended,0000000F
+
+//BRowse or scan memory region shows CHEAT1 , CHEAT 2 ETC
+//patch=1,EE,204AE070,extended,00000001
+//patch=1,EE,204AD000,extended,00000001
+
+//press any button for weather cheat notification pop up
+//patch=1,EE,D05C1702,extended,0000FFED
+
+//NOT TESTED
+//patch=1,EE,204AE000,extended,00000000
+//patch=1,EE,204AECD0,extended,00000000
 
 
 // ---- Starter Save: ----
@@ -152,28 +284,6 @@ Step-ups with 4 Bytes.
 //0000FABF || 14400005 = DOWN
 //0000FAEF || 14400007 = UP
 
-// ---- Missing Codes: ---- 
-//4. car x,y position in garage						- 		partial, not understood.
-//5. visuals, fov, camera control, etc.				- 		partial
-//6. taxi color change (hard coded?)				- 		im sure i fixed this- but probably needs re-doing. fixes the black missing textures.
-//7. fast, slow, normal game speeds					- 		partial
-//8. sky toggle, models toggle,						- 		broken or not working or not done.
-// ^^ also LOD switch ... 							- 		broken or not working or not done.
-//12. pedestrians rage								- 		i had this code, but didnt realsie it had worked, may get lucy with iterations or may take forveer.
-//13. some stats stuff								- 		can be easily done with a 100% save vs 0%, not that useful unless used for simply obtaining offsets from versions.
-//14. free pay n spray, pay n spray anywhere.		- 							
-//15. pay n spray any vehicles
-//16. boats are cars, with wheels etc				- and cars with water_wheels
-/18. Infinite Air:									- this is not infionite health. it is air under water.
-//19. all white cars								- this should be possible.
-
-// ---- Master Codes ----
-//MASTER Enable Code:
-//patch=1,EE,901220EC,extended,0C041C64
-
-//MASTER Enable Code:
-//patch=1,EE,901220EC,extended,0C041C647
-
 //----------------------------- Demonstraton of Methods ----------------------------------------//
 // This demonstrates search: "1440000F" or "14400007"
 // starting with the weather code: swapping that address to whatever we find from our search results, and changing whatever value it has to 14400007 we get the TANK spawn command.
@@ -187,75 +297,13 @@ Step-ups with 4 Bytes.
 //patch=1,EE,D05C1702,extended,0000FFFF
 //patch=1,EE,20278560,extended,1440000F
 
-// ---------------- UNKNOWN: or OTHER: ..or Broken: 	--------------//
+//wtf:a according to this: https://forums.pcsx2.net/Thread-How-To-Convert-Cheat-Engine-Cheats-To-PNACH-Cheats
+//Value from 0 to 255(0-FF),the first digit of the address must be change to 0
+//Value from 255 to 65535(FF-FFFF),it must be set to 1
+//And value from 65535 to 4 million(FFFF-FFFFFFFF)or something to 2
+//^^ really? after 20 years learning this?
 
-//Water Wheels - From that image in my folder.
-//* These images might be very useful, i foget how i got to the address showing the read write access.
-//* the activate lance and water wheels is also interesting 
-//patch=1,EE,206BD848,extended,00000000
-//patch=1,EE,206BD850,extended,00000000
-//patch=1,EE,206BD858,extended,0000C843
-//patch=1,EE,20ABB000,extended,01DC9000
+//wtf: also wtf: there is a limit to number of lines? 2048?
 
-//  last address -4 = ... no effect or unknown
-//patch=1,EE,204B21BC,extended,00002457
-//patch=1,EE,204B2190,extended,00002457
-//patch=1,EE,204B218C,extended,00002457
-//patch=1,EE,204B2188,extended,00002457
-//patch=1,EE,204B2184,extended,00002457
-//patch=1,EE,204B2180,extended,00002457
-//patch=1,EE,204B217C,extended,00002457
-//patch=1,EE,204B2178,extended,00002457
-//patch=1,EE,204B216C,extended,00002457
-//patch=1,EE,204B215C,extended,00002457
-
-//--
-//patch=1,EE,307AD282,extended,0000005A
-//patch=1,EE,30C6E80A,extended,0000005A
-//patch=1,EE,30C6E80B,extended,0000005A
-//patch=1,EE,307AD282,extended,0000008B
-//patch=1,EE,307AD282,extended,00000001
-
-//?????????????????????????????????????
-//patch=1,EE,205C7DE4,extended,00000064
-
-//?????????????????????????????????????
-//patch=1,EE,204BAB60,extended,40800000
-
-//patch=1,EE,204B1428,extended,00000001
-//UNKNOWN: patch=1,EE,04B0F50,extended,00000000
-//STRING: GTA3_ = 2043C100
-
-//STRING: remap virgo name to cougar: virgo - 2065D634 || 208AE4F4   ..  cougar - 208B46A0 || 2109AF08
-//patch=1,EE,208B46A0,extended,2065D634
-//patch=1,EE,2109AF08,extended,208AE4F4
-
-//PCSX2 Disc Menu Jumper
-//patch=1,EE,0025E5E0,extended,0000006F
-//patch=1,EE,0025ED2C,extended,0000006F
-
-// CHANGE a PARTICLE EFFECT TO a different PE.
-//206BD8CC 4F4F4C42 = BLOOD || 206BD7C4 444E4153 = SAND
-
-//---------------- FAILS, UNKNOWN, ETC  		--------------//
-//FAIL: test No Wanted level -
-//patch=1,EE,202A594C,extended,8C060000
-//FAIL: Wanted Level
-//patch=1,EE,200C0DD0,extended,0C0A7918
-//patch=1,EE,200C0DD4,extended,24050002
-///Different to the other one. Doesn't really work. These are Floats maybe?
-//Both addresses are needed one effects the other, dunno why.
-//### Wanted Level Stars (Currently Active) [01-06]
-patch=1,EE,20EBC280,extended,00000001
-patch=1,EE,204B1E64,extended,00000001
-//patch=1,EE,8000057C,extended,0000000F
-//BRowse or scan memory region shows CHEAT1 , CHEAT 2 ETC
-//patch=1,EE,204AE070,extended,00000001
-//patch=1,EE,204AD000,extended,00000001
-//press any button for weather cheat notification pop up
-//patch=1,EE,D05C1702,extended,0000FFED
-//NOT TESTED
-//patch=1,EE,204AE000,extended,00000000
-//patch=1,EE,204AECD0,extended,00000000
-
-
+//Should probably learn this if upgrading this file to pcsx2 2.0+
+//https://slymods.info/wiki/Guide:Writing_pnach_files
