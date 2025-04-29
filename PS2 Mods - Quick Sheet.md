@@ -4,13 +4,13 @@ Date:			2025 - April
 Info: 			Quick List of Mods, Cheats, & info for further dev.
 Notes:			Based on Target Version PAL 2003 2.03, but can be applied to all regions & versions.
 
-
-The base game that should be used is PAL 2003
-* 2004 is generally regarded as too much change, dialogue etc
+The base game that should be used is PAL or NTSC 2003;-
+* 2004 is generally regarded as too much change, dialogue etc.
 * 2002 has too many bugs. 
-* 2003 is the happy medium which leaves only 1 issues on PS2 Hardware the Teargas, an easy fix for someone who can make cheats, sadly no-one has bothered.
+* 2003 is the happy medium which leaves only 1 issue on PS2 Hardware the Teargas, an easy fix for someone who can make cheats, sadly no-one has bothered.
+* NTSC 2003 is a few days behind PAL, with the only benefit being the Hz, which can be patched at loss of existing save game support for pal users.
 
-The following changes should be made to the PAL 2003 version to make it the best version available.
+The following changes should be made to the NTSC or PAL 2003 version to make it the 'best' version available.
 
 ---- Do this: ----
 [Contents]
@@ -20,27 +20,31 @@ The following changes should be made to the PAL 2003 version to make it the best
 		i) handling.dat - better vehicles
 		ii) object.dat	- make barriers destructible
 		ii) occlu.ipl	- set to all 0's
-		iii) add the 2004 peds.coll file to the 2003 version.
+		iii) peds.coll  - add 2004 file to 2003 version.
 		iV) modify PAL elf (SLES_510.61) file to run in NTSC Mode - 60hz/ fps in PCSX2
-2. Cheats for Garage Editor & Vehicles Editor	= ".pnach" | ".ct" tables
-3. Starter Save
-	i) using or modify existing ones, or create brand new using the cool stuff here.   
-	* I have provided a starter save for people that i feel is better than anything available online currently (PAL).
-	
+		v) Optional: Any textures or 3d models you want to swap.
+		
+2. Cheats & Garage Vehicles Editor = ".pnach" | ".ct" tables
+
+3. Starter Save: 
+* use or modify existing ones, or create brand new using the cool stuff here.   
+* I have provided a starter save for people that i feel is better than anything available online currently (PAL-2003).
 
 ---- Modding GTAVC PS2 - examples ----
-** After modifying files re-build .iso using imgburn default settings, or .pkg if on PS3.
+** After modifying files re-build .iso using imgburn default settings, then convert into .pkg if on PS3 | PS4.
 
 [60 hz/ NTSCV Mode for PAL]
 * Patch the PAL version to run in NTSC mode.
+* Note: This makes saves for the unmodified version incompatible and some loss of resolution.
 
 [Garage Editor]
-* see the .pnach file for codes to set any vehicle in a garage.
-* store your vehicles data in text files and use .pnach or cheat engine to add them when you need them.
-* make clones for your journey, keep the others safe outside of the game.
+* see the ".pnach" file for codes to set any vehicle in a garage.
+* store your special vehicles data in text files and use ".pnach" or "cheat engine" to add them when you need them.
 
-[Modify Game data files]
+[Examples: Modify Game data files]
+* See the MODS Folder for full info on each mod, these are just examples.
 
+// ----[Vehicles] ----- //
 [ORIGINAL]
 INFERNUS        1600.0 2.0 4.4 1.3 0.0 0.0 -0.3  70  2.00 0.55 0.50 5 260.0 35.0 4 P 19.0  0.52 0 30.0  1.8  0.19 0.37 1.00 95000 0.25 -0.17 0.5  0.4		2008484		1  1
 
@@ -110,7 +114,6 @@ b) Save a record of the BYTES/ hex and share them, prefereably contact me with t
 - they are pointless glitched color vairants with missing textures. The sea sparrow retains its color data but loses it on the door and canisters
 c) You can reverse the missing color id issues with taxi's and give them coloured or chrome skirts, sidings, bumpers and mirrors. (See images for examples)
 
-
 [New Unique Vehicles & Methods.]
 //* ones i have not seen before.
 * it is possible to get Lance's Vehcile at back alley brawl mission.
@@ -141,22 +144,9 @@ it took me about 5 attempts to get lance an dhis vehile into my agarge and the d
 - a PS3, PS2, and PC, USB and Ethernet.
 
 [Converting cheat codes]
-* i have added  information on converting ntsc to pal, and differences between pcsx2 versions.
+* i have added information on converting ntsc to pal, and differences between pcsx2 versions.
 * covers regional differences, software , code , and version diferences.
 * easier if you have both games many offsets are fine to apply, but then a few addresses are alot harder to find.
 * i am not great with cheat engine, but have included as much as i could in a ".ct" file everythign else is in the ".pnach"
 
----- PS2 Mods i would like to see: ----
-1. a fix for the tear gas on PS2 hardware. a code to replace or back port of 2004 grenade code.
-- i was able to swap th estring, model, hud image, change teh particel system using CE but i have no idea how i could make that for ps2.
-* this should be increedibly simple for someone who understands gta stuff. I just need a general area to look - there is will be only 1 line of code that sets the creation of the TEARGAS pickup at x,y,z coords. so it should be easy.
-2. a documented method on how users can reduce the iso size by removing duplicated .img files and having the game simply check for everything in the one file.
-	- beneficial for PS3 .pkg, Emulator users or using non-disc methods on PS2 Hardware, like ethernet, HDD, or USB.
-	- daniel made a patch for it but as usual that is for an unknown ntsc version and NO documentation with anything he did, nor the cyperpunk hack either.
-	- i have included data on this for PAL incase anybody wants to look at the memory regions. maybe a block dump would work.
-3. More Cheats like the in-game cheats, to spawn any choice using input - // although i think we are to close to everything we would want a few more are required..
-4. Some addresses i could not find And some addresses are just not as simple as adding 4 bytes and testing. I discovered many things on the way but lost alot years ago (this was a re-make).
-
-
 Enjoy!
-
