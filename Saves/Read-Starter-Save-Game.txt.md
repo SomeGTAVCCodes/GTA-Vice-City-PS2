@@ -1,37 +1,62 @@
-[Starter Save] [PAL 2003 2.03]
-* Whilst there are many NTSC 100% (or part complete) saves online, this is the only useful PAL Starter Save i have seen
+//* I added an updated Starter Save file that includes Jump Boost Taxis.
+//* The next release will have more customised stuff; a hunter on hyman condo roof, instead of maverick, and diaz mansion having a tank instead of the Stretch limo.
 
-* Save game 	- Start 1st save at hotel, admiral & faggio at ocean beach, both damage proof.
-* Save State 	- Start at normal starting spot, with admiral and faggi damage proof in ocean beach.
 
-* 0% complete, ...but with all the benefits of 100% completion
-* 1st save point (start position, hotel , or ocean beach)
+[Contents]
+SLES-51061 GTA ViceCity (36286326).psu		= Without Taxi Missions Complete
+SLES-51061 GTA ViceCity (989FEAB9).psu		= With Taxi Missions Complete
+
+Title:		GTA Vcie City Starter Save
+Game:		GTA Vcie City PS2
+Version:	PAL 2003: PS2/PS3/PS4/PCSX2 
+Info:		The best starter save for GTAVC PS2 :)
+
+[Contents]
+* The Save File = "FINAL Starter Save"
+* All other saves are examples of stuff, or for use with helping to make cheats and find addresses.
+
+[Starter Save]
+* Whilst there are many NTSC 100% or part complete saves online, this is the best [PAL] Starter Save.
+
+** 0% complete... with all the benefits of 100% completion & More!
+* 1st save point (start position), no progress made or lost.
 * Mega Cash
 * 150 Health & Armour
 * Weapons
-* Infinite Sprint
 * Infinite Ammo
-* Fireproof!!
-* better driving, more powerful etc
+* Infinite Sprint
+* Fireproof!
+* Jump Boost Taxi Vehicles
 * No "Cheater Status" present in save file. (No "Cheats Used" Save-Game Warning).
-* Special Vehicles in garage
-* admiral and faggio in ocean beach garage, both damage proof cutscene vehicles.
-* ocean beach purchased simply for the garage editor/ and cutscene vehicels.
-* No Storm Warning Barriers mod baked into save file - free roam like a pro.
+* Special Vehicles in garages: 	Both Starter Vehicles; admiral & faggio cutscene vehicles, damage proof!..at Ocean Beach
+* Special Vehicles on Helipads: Hunter instead of Maverick; damage proof!... at Hyman Condo
+* Special Vehicles at Boat Docks: docks, boat yard, mooring/ parking spots.
+* No Storm Warning Barriers; they are destrucctible allowing access other islands from the start.
 * GodFather Criminal Rating
-* DTS enabled by default for PS2 & PS3 users. 
-* stats at 0, which is actually less than a start save.
-
-designed for PS2/ PS3 users, good for PC emulator users too.
+* Wearing the "Lousy T-Shirt"
 
 
-[Starter Save States]
-* I have included a save state, but it is unlikely it will work..let me know on a random youtube video if it does.
-* i used to have saves from various points in the game (many years ago), that stuff helps alot when making codes.
+[How to Replicate Perfect Starter Save: If you want to speed run a start save game creation(?)]
+//* Creating the perfect Starter-Save-Game can be a long process
+1. Boot up your modified GTA-VC iso on PCSX2 
+* (See mods section)
+2. Use Cheat Engine (.ct) or PCSX2 cheats (.pnach) to
+	a) Set Hidden Packages Found to 100 (Gives 150 Health & Armour, but not 200)
+	b) Give Mega Cash - £10,000,000+
+	c) Set 100% Completion with NO "total liar" status
+	d) Set Criminal Rating to GodFather
+	e) spawn a custom vehicle in you garage for side quests (see Garage Editor section).
+	f) reset stats when complete.
+3. Manually Collect/ Purchase a Weapon Set, do not use cheats!
+	Note: 	Using cheats will give the cheater status - It may be possible to remove cheater status by modifying the save file with a hex editor, or using cheat engine (it works im sure). Some documented info is included in this pack.
+	a) i recommend activating Vigilante missions outside the hotel, this will access to upstairs without triggering 1st mission.
+4. purchase ocean beach to use the garage editor to have any vehicle.
+5. do ambulance, firetruck. Optional: police, taxi missions (use garage editor to spawn custom vehicels, damage proof etc).
+6. Save the game with infinite sprint, fireproof, mega cash, weapons purchased, damage proof vehicles & all cool stuff etc.
+7. Save again using a clean original dvd - not modded & reset stats etc.
+8. Put save file on PS2, PS3, PS4, PC and enjoy!
 
-Save files containing vehicles would be most useful for obtaining the vehicle hex data on weird glitched vehicles and colours.
-
-Apps Used: 
-	"mymcgui": used to export/ import saves
-	"pcsx2": emulator used for building the save game
-	"cheat engine": for the cheat table and code creations with the pnach
+** Optional: Accessing The other Islands -> get the fire truck -> get Fire Proof!, complete bloodring challenges, etc.
+	* Modify the Disc contents "object.dat" file and re-build iso with imgburn using default settings.
+	a) object.dat -> search for "nt | ntbarrrier" & replace values with e.g. the lamppost values.
+	b) travel to the barrier and drive straight through it, obtain the fire truck -> return to 1st island save point and do the fire missions there, it is the easiest point
