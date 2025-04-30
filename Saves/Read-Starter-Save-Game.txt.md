@@ -3,8 +3,8 @@
 
 
 [Contents]
-SLES-51061 GTA ViceCity (36286326).psu		= Without Taxi Missions Complete
-SLES-51061 GTA ViceCity (989FEAB9).psu		= With Taxi Missions Complete
+* SLES-51061 GTA ViceCity (36286326).psu		= Without Taxi Missions Complete
+* SLES-51061 GTA ViceCity (989FEAB9).psu		= With Taxi Missions Complete
 
 Title:		GTA Vcie City Starter Save
 Game:		GTA Vcie City PS2
