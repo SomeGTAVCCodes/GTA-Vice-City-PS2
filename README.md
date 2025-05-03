@@ -39,7 +39,21 @@ NTSC  - not required.
 ---- Cheats & Codes ----
 * the most comprehensive list available.
 * See Folder
-
+  
 ---- Save Files ----
 * the best starter save ever!
 * See Folder
+
+---- Changelog ----
+* Updated PAL 2003 Cheat Table (.ct file)
+* New Codes added to PAL 2003 (.pnach file)
+* Added Code to the Beta (.ct file). To set the number of the Debug Menu Item that you are on [1-21]
+* New Discoveries from Mission Glitching uploaded as video to youtube
+* More Vehicles added to the garage editor from Cut-scenes & Missions.
+* Save Game updated with Taxi Missions Complete = Jump Boost Taxi.
+* Some clean-up of files etc.
+
+---- TO DO LIST  ----
+* Codes missing or Unknown effects or the lost ones.
+* Many of the new discoveries could be advanced that would enhance the potential of making more cheats and codes. Example; if we knew the address of the currently owned vehicle, that could be edited, garages would not be needed, and unique features liek bullet proof tyres could be obtained in hex and used on other vehicles.
+
