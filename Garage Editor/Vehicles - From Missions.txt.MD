@@ -2,7 +2,7 @@
 [Instructions]
 * Use with PCSX2 ->  Cheats\ ".pnach"
 * or use Cheat Engine ".ct"
-** send me your save games, or HEX data of special vehicles**
+* Please send me your save games, or HEX data of special vehicles**
 //... so we can provide them to others from start and not have to do this dumb glitch shit.
 
 [How to Glitch Vehicles] // Completely Redundant now that i have recorded hex from every vehicle.
