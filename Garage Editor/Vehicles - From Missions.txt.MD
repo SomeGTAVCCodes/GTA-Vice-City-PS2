@@ -1,6 +1,3 @@
-VH ID		||		position	|| 
- ↓ ↓ ↓ ↓		 ↓ ↓ ↓ ↓		
-
 
 [Instructions]
 * Use with PCSX2 ->  Cheats\ ".pnach"
@@ -14,27 +11,32 @@ VH ID		||		position	||
 2. drive to RAMPAGE ICON -> pick it up -> get in cop car -> cancel vigilante
 Ocean Beach is easy to do this at, the rampage is seconds up the road.
 
+[Free-Parking]
+* Using the Cheat Table (.ct) or .pnach file 
+* UI have added Road Side Parking Locations, Boat Moorings, Heli-pads, Emergency Vehicle Locations etc.
+* ^^ modify them to spawn any VH's at those lcoations.
+
 ---- Cutscene Vehicles ----
 * HEX data for the cut-scene vehicles.
 * you only need the colour address, vehicle, and damage proof address.
-
 * positions (x,y) are not yet well defined, i included examples (useful to spawn vehicles just outside a garage etc).
-* explaining x,y pos and whether or not Wheel ID and temporary components can be changed is complicated.
+* explaining whether or not Wheel ID and temporary components can be changed is complicated.
 * a better write up of the position (axis, coords), colours, and properties (booleans) is required.
 
 //* Obtaining 'ALL' cutscene/ unique vehicles would require the PC version - and some re-coding then grab the hex from that - i do not own it on pc.
 //* Many Vehicles rumoured to be unobtainable are actually possible to get & listed below
-//* There are still many more vehicles to obtain, not yet done before.
+//* There are still vehicles to obtain, not yet done before.
 //* Many of the videos online are actually incorrect, despite getting VH's in garages, most of the time, the true properties (flags & booleans) have already been lost.
 
-...anyway, never been done before:
+...anyway, never been done before.
 
+---- All missing Vehicles (No Hex obtained)----
 The missing ones:
 	- yacht
-	- barracks and other vehicles with people in (must be a way to egenrate passengers)
+	- vehicles with people in (must be a way to geenrate passengers)
 	- vans from the red maverick Mission
-	- romero's hearse that can drop bombs (same as taxi, amb, police,firetruck, - there is a way to allow ALL verhicles to use these featues.)
-	
+	- romero's hearse with abilitiy to drop bombs (same as taxi, amb, police,firetruck, - there is a way to allow ALL vehicles to use these featues.)
+
 
 ---- All Mission & Cut-Scene Vehicles ----
 
@@ -148,6 +150,40 @@ VH ID		||		position	|| 							|| Damage ||COFFIN
 [barracks]
 000000A3 C453C7EE 44A4681D 413B96D2 BE967AD4 3F746700 BD3EF7C4 00000000 FF09002B 00000001 00000000 00000000
 
+[Sentinel from Save Lance] (yellow)
+   														*DP=1F|| colour
+00000087 C453A321 44A40574 4135074D BEB3CD17 3F6FB091 BBD3D1C8 00000000 FF020024 000000FF 00000000 41CCABF5
+
+[Sentinel from Save Lance] (Blue)
+00000087 C4538B6D 44A42F9F 4134AB58 BE85B388 3F771A48 3C2CA351 00000000 FF010002 000000FF 00000000 41CCABF5
+
+[comet]
+000000D2 C453D982 44A46DCD 41340642 BED555CF 3F68B791 BB6606D5 00000000 FF070101 000000FF 00000000 41CCABF5
+
+[Washington - Black] //from all hands on deck Mission 
+00000097 41C63A72 C4B9F908 4126005B 3E5CD143 3F79F9C0 BB547703 00000000 FF090000 000000FF 00000000 41B63B28
+
+[boat]
+000000B6 41C57257 C4B977B5 411F0CAB 3DA1EADE BF7EFE3D 3D23DB0A 00000000 FF091001 000000FF 00000000 41B63B28
+
+[Lance's Stallion] - [(From Mission: "Rub out")]
+000000A9 41BDFE70 C4BA03F8 41258F55 3D2530A1 3F7FCAA8 3A527129 00000000 0000152B 000000FF 00000000 41B63B28
+
+[BUS] - [(from Inside Shopping Mall During Mission: "Shakedown")]
+//* Note i Probably accidently changed the vehicle ID in the Mall at some point, that's why it is now a bus, not an infernus.
+000000A1 C453CA50 44A44767 413C23DA BEC2238C 3F6CDA34 BC73A598 00000000 FF005238 000000FF 00000000 41CCABF5
+
+[Securicar & Oceanic]
+//* This is a funny one, Whilst driving the Oceanic to Hyman condo, an NPC drove the securicar van into my garage
+[Securicar]
+0000009E C453B5B5 44A44311 413B1B3F BE83481E 3F777103 B93AAA38 00000000 FF014B04 000000FF 
+[Oceanic]
+//The Object from the trunk dissappears.
+000000C5 C452DB04 44A45E11 41332B63 BE682B8D 3F795548 3A871DBA 00000000 FF090116 000000FF
+
+[Ice-cream Missions]
+//* Get 2 or 3 wanted stars -> Purchase the property -> get in the ice cream van -> cancel immediately (get out) -> run to the police station, get a police car, it should have bullet proof tyres.
+//* Loses it when in a garage
 
 ---- Starter Vehicles: Garage: Ocean Beach ----
 
@@ -239,4 +275,9 @@ FF014F0B 000000FF 00000000 00000000
 [Colour] = Police Car Green and white
 ID | 		x,y? |	F-B	|   Up, Down|	
 00000092 41C91826 C4B94FB8 411FE397 3E55CC64 3F7A5BA4 BA5D4A98 0000001F FF09012E 000000FF
+
+---- Vehicle Other COLOURS ----
+[COLOURS]
+FF0103AC		-		Black - (Missing ID Black)
+FF090000		-		Black - (Missing ID Black)
 
