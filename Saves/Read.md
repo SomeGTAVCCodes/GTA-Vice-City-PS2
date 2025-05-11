@@ -1,12 +1,12 @@
-Title:		GTA Vcie City Starter Save
-Game:		GTA Vcie City PS2
-Version:	PAL 2003: PS2/PS3/PS4/PCSX2 
-Info:		Starter save for GTAVC PS2
+* Title:	GTA Vice City Starter Save
+* Game:		GTA Vice City PS2
+* Version:	PAL 2003: PS2/PS3/PS4/PCSX2 
+* Info:		Starter save for GTAVC PS2
 
 [Contents]
-.ps2 = memory card
-.psu = save file
-.p2s = save state
+* .ps2 = memory card
+* .psu = save file
+* .p2s = save state
 
 * The Save Folder = "FINAL Starter Save"
 * SLES-51061 GTA ViceCity (7CAEBE79).psu
