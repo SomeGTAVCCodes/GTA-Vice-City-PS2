@@ -9,11 +9,12 @@ Info:		Starter save for GTAVC PS2
 .p2s = save state
 
 * The Save Folder = "FINAL Starter Save"
-	SLES-51061 GTA ViceCity (7CAEBE79).psu
+* SLES-51061 GTA ViceCity (7CAEBE79).psu
+
 Old:
-	SLES-51061 GTA ViceCity (A285355D).psu		= FINAL (OLD)
-	SLES-51061 GTA ViceCity (36286326).psu		= Without Taxi Missions Complete, NO Vigilante & NO pizza-Boy.
-	SLES-51061 GTA ViceCity (989FEAB9).psu		= With Taxi Missions Complete, NO Vigilante & NO pizza-Boy.
+* SLES-51061 GTA ViceCity (A285355D).psu		= FINAL (OLD)
+* SLES-51061 GTA ViceCity (36286326).psu		= Without Taxi Missions Complete, NO Vigilante & NO pizza-Boy.
+* SLES-51061 GTA ViceCity (989FEAB9).psu		= With Taxi Missions Complete, NO Vigilante & NO pizza-Boy.
 * All other saves are from playing the game & testing mods, glitching vehicles. Intended for use with helping to make cheats and finding addresses.
 
 [Starter Save (FINAL)]
@@ -23,7 +24,6 @@ Old:
 * 1st save point (start position), no progress made or lost.
 * Mega Cash
 * Max Health & Armour 200 (Vigilante & Pizza-Boy missions)
-* 999 Health & Armour (temporary)
 * Weapons
 * Infinite Ammo
 * Infinite Sprint
@@ -33,6 +33,7 @@ Old:
 * No Storm Warning Barriers; the prawn island -> Downtown barrrier destructible allowing access to the other islands from the start.
 * GodFather Criminal Rating
 * Wearing the "Lousy T-Shirt"
+* Ocean Heights & Hyman Condo Purchased for Garages
 * Special Vehicles in garages: 	All Starter Vehicles; admiral & faggio cutscene vehicles, damage proof!..at Ocean Beach
 * Special Vehicles on Helipads: Hunter instead of Maverick; damage proof!... at Hyman Condo
 * Special Vehicles at Police Stations: Tank & Vice Cheetah instead of Regular Police cars... damage proof!
@@ -47,15 +48,16 @@ Old:
 * PS3, PS4+ users have native USB support or can use PS3Hen and ethernet.
 * Emulator users can use the memory card file, or import the save file into their own.
 
-[Known Issues]: None, but some minor stuff could be improved.
-Vigilante:	* I created a save game with Vigilante done using the explode vehicles cheats
-			^^ i fully intended to create a cheated and a non-cheated save, then compare them, foolishly i saved over the save file and cannot be bothered to do the pizza boy & vigilante missions again.
-			// vigilante can be easily completed near the hotel, with a modified handling.cfg
+[Known Issues]: 
+* None, but some minor stuff could be improved.
+* Vigilante:	* I created a save game with Vigilante done using the explode vehicles cheats
+* ^^ i fully intended to create a cheated and a non-cheated save, then compare them, foolishly i saved over the save file and cannot be bothered to do the pizza boy & vigilante missions again.
+* // vigilante can be easily completed near the hotel, with a modified handling.cfg
 
-Stats i Could not Reset to 0:
-		* I could not find the address for the number of "Pizza's Delivered". So this STAT is on 55. 
-			// this is most likely not a value of "55" but instead a hex value that denotes the 100% cvompleteion of the pizza-boy missions. (e.g. 45900001 - not 00000005)
-		* I could not find the Hours/ Minutes Played time address, so those stas are on just over 2 hours.
+[Stats i Could not Reset to 0:]
+* I could not find the address for the number of "Pizza's Delivered". So this STAT is on 55. 
+* // this is most likely not a value of "55" but instead a hex value that denotes the 100% cvompleteion of the pizza-boy missions. (e.g. 45900001 - not 00000005)
+* I could not find the Hours/ Minutes Played time address, so those stas are on just over 2 hours.
 		
 		
 [How to Replicate Perfect Starter Save: If you want to speed run a start save game creation(?)]
