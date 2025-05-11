@@ -1,8 +1,0 @@
-gametitle=Grand Theft Auto: Vice City.
-comment= (NTSC) (2003) (2.01).
-
-//tyres 
-//patch=1,EE,204B13A0,extended,05F5E0FF
-
-//GTA img Removal #2-6
-patch=0,EE,202EFA30,extended,24070001
