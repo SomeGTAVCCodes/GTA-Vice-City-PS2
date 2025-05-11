@@ -1,0 +1,55 @@
+---- Colour chart; ----
+* These colours are derived from In-Game Vehicles (Missions, Cutscenes, Glitches etc)
+
+-- Key: --
+Inherited	= 	Obtained from another vehicles color.
+Source		=	Native Vehicle colour, or method used for obtaining colour.
+Hex		= 	Colour IDs 1 & 2
+Missing ID	= 	No value or out of range, thus becomes 0. Real Black ID in-game is "5,5,5".
+Additional Features (Unique)
+* historically these are been incorrectly listed so this corrects those issues. 
+* There is only 1 Unique feature on 1 vehicle in the entire game - romeror's bomb dropping hears.
+- everything else is just colour variations, all of which can be applied to any vehicle.
+- the tank can be considered unique because it is the only vehicle that does not explode when hit by a tank, has no glass, and no tyres, making it the only real fully damage proof vehicle
+* any other features of significance are listed.
+
+------------------------------------------------------------------------
+Colour		||		Source		|| 	Hex
+------------------------------------------------------------------------
+Dark Green 	||	Barracks 		||	FF16002B	
+Dark Grey	||	Barracks 		||	00164C4C	
+Dark Grey	||	Glitched mr whoopee	||	00084C06
+Black 		-	(Missing ID)		-	FF0103AC	
+Black 		-	(Missing ID)		-	FF090000	
+Pink 		-	BobCat	(Inherited)	-	FF000805	
+Black 		-	Voodoo (Missing ID)	-	FF030000
+---- Starter Faggio Colours: ----
+[red]		FF014F0B
+[Pink]	 	FF014E44
+[yellow] 	FF012521
+[Green] 	FF014E2C
+[blue] 		FF014F38
+[Purple]	FF07083C
+
+---- Additional Features (Unique): ----
+[1st cutscene helicopter] 
+//* people say it is black, it is not! It is actually dark teal & trails is on by default when the game loads which makes it look striped black.
+FF052A01 
+
+[gang burrito van 1 - teddy bear on roof]
+01014A10
+[gang burrito van 2] // for comparison - no teddy
+00060A0A
+[gang burrito van 3] // for comparison - no teddy
+FF014A10
+
+[Romero's Hearse]
+00030147	With Coffin Wood Trim
+02010000	With Coffin Silver Trim	
+FF090501	Without Coffin
+01010000	With Coffin, Green coffin
+
+[hunter]
+02B3F2E1
+
+

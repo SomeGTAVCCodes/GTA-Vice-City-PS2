@@ -1,0 +1,2467 @@
+==============================================================================
+GRAND THEFT AUTO VICE CITY SPECIAL VEHICLE FAQ
+==============================================================================
+Author: John H. Hoffnagle IV (Lancet Jades)
+Version: 2.96 (completed March 25th, 2018)
+
+Sites with permission to post this FAQ:
+GameFAQs.com (will always host the most up-to-date version of this guide)
+Neoseeker.com
+
+
+Visit SpriteFan274's GTAVC guide on GTAforums.com for alternate strategies and 
+discussion about special vehicles in this game! His guides include thorough 
+and comprehensive coverage on all versions of the game for all platforms.
+
+Of particular note are PC exclusives and the "On Mission = 0", or OM0 trick, 
+which allows for several additional vehicles to be obtained that are otherwise 
+unobtainable entirely, including an AP Maverick!
+Link below:
+
+http://gtaforums.com/topic/849405-gta-vc-special-vehicle-guide/
+
+
+
+
+
+==============================================================================
+ABOUT
+==============================================================================
+This guide is to assist those players who enjoy collecting rare or unique 
+vehicles. This guide lists all known proofed, special property, unique, and 
+even rare vehicles (which often have to be unlocked). I'd say more, but I 
+pretty much just summed it up.
+
+This guide was written with the original version, NOT the Double Pack version, 
+the Haitian-friendly version, the Xbox version, or the PC and Mobile versions. 
+In these other versions, some vehicles may be different, and I will note any 
+instances where possible. PC and Mobile also have many new tricks and 
+strategies available due to features exclusive to those versions, however this 
+guide will exclude all such information.
+
+CAUTION! This guide may inadvertently contain spoilers! Although this guide 
+does not intend to spoil anything, due to the nature of the guide, it may 
+spoil names of people, places, or missions.
+
+
+
+
+
+==============================================================================
+TABLE OF CONTENTS
+==============================================================================
+1: Terms in the guide
+2: Garage information
+
+3: Proofed vehicles
+3.1 - AP SC[White] Admiral
+3.2 - AP SC[Silver] Admiral
+3.3 - BP/FP/EP Squalo
+3.4 - FP/EP Squalo
+3.5 - BP/FP/EP PCJ-600
+3.6 - BP/FP/EP Sabre Turbo
+3.7 - FP/EP Hotring Racer
+3.8 - FP Infernus
+3.9 - FP Cheetah
+3.10- FP Banshee
+
+4: Unique vehicles
+4.1 - Spand Express (1st of 2)
+4.2 - Spand Express (2nd of 2)
+4.3 - Love Fist (1st of 2)
+4.4 - Love Fist (2nd of 2)
+4.5 - Romero's Hearse
+4.6 - FP Romero's Hearse
+
+5: Specially Colored/Featured vehicles
+5.1 - SC[White] Admiral
+5.2 - SC[Black] Washington
+5.3 - SC[Silver] PCJ-600
+5.4 - SC[Black/Purple] Bobcat
+5.5 - SC[Bright blue] PCJ-600
+5.6 - SC[Black] Admiral (1st of 2)
+5.7 - SC[White] Walton
+5.8 - SC[Gold] Stretch
+5.9 - SC[Black] Sentinel
+5.10- SC[Black] Pony
+5.11- SC[Black] Admiral (2nd of 2)
+5.12- SC[Bright blue] Maverick
+5.13- SC[Black] Voodoo
+
+6: Unobtainable special vehicles
+6.1 - SC[Black] Maverick
+6.2 - Heavy Admiral
+6.3 - Heavy Sentinel
+6.4 - PPT Cuban Hermes
+6.5 - AP/PPT Voodoo
+6.6 - PPT Voodoo
+6.7 - AP/PPT SC[Silver] Admiral
+6.8 - SC[Black] Stretch (1st of 3)
+6.9 - SC[Black] Stretch (2nd of 3)
+6.10- SF[Briefcases in trunk] Oceanic
+6.11- Heavy Securicar
+6.12- SF[Open trunk] Taxi
+6.13- SC[Gold] Stretch
+6.14- Super Angel
+6.15- SC[Black Stretch] (3rd of 3)
+6.16- BP/FP/EP Sanchez
+
+7: Rare vehicles
+7.1 - SC[White] Infernus
+7.2 ï¿½ Sparrow
+7.3 - Deluxo
+7.4 - Sabre Turbo
+7.5 - Sandking
+7.6 - Hotring Racer
+7.7 - Cuban Jetmax
+7.8 - Zebra Taxi
+7.9 - Skimmer
+7.10- Sea Sparrow
+7.11- Rhino
+7.12- Hunter
+7.13- SC[Black] Sanchez
+7.14- SC[Black] Rancher
+7.15- Bloodring Banger
+7.16- Glitched vehicles
+
+8: Breakdown by special quality
+9: Mission list
+10: Frequently Asked Questions
+11: Contact info
+12: Credits
+13: Version history
+14: Boilerplate
+
+
+
+
+
+==============================================================================
+*1* TERMS IN THE GUIDE
+==============================================================================
+This is a listing of all the special terms used in this guide.
+
+BP - Bulletproof. Immune to all bullet damage. Bullet attacks include:  all 
+ four classes of gun, sniper rifles, minigun, M60, and the Hunter's minigun. 
+ NOTE: This proofing does NOT prevent the windshield from being shattered by 
+ gunfire, nor does it stop gunfire from popping the tires.
+
+FP - Fireproof. Immune to all incendiary weaponry, and to catching fire. 
+ Molotovs cannot hurt this vehicle, and neither they, nor the flamethrower, 
+ can set fire to it.
+
+EP - Explosionproof. Immune to explosive damage. This includes grenades, 
+ rocket launcher, exploding vehicles, Rhino shells, or Hunter missiles.
+
+DP - Damageproof. Immune to physical damage. This includes punching the 
+ vehicle, or using a melee weapon on it, as well as running into anything. 
+ This also prevents the car from taking cosmetic damage, however, bumps and 
+ scrapes CAN cause the doors to open (but they won't take damage). It is 
+ worth noting that although motorcycles, boats, and helicopters CAN have this 
+ property flagged on them, it will not produce any affect and they will 
+ accumulate damage and be destroyed just like normal, even despite being DP.
+
+AP - All-proof. This is BP/FP/EP/DP, all in one. The only ways to damage the 
+ vehicle are flipping it over, getting hit by a Rhino, dunking it in the 
+ water, or the Destroy All Cars cheat.
+
+PPT - Pop-proof Tires. This vehicle's tires are immune to being popped by 
+ spike strips. This is NOT included in the AP property, and also is not 
+ preserved when storing vehicles in a garage.
+
+Absolute limit (garages) - The maximum number of vehicles that can be stored 
+ in a single garage is four (4). Trying to fill a garage past this limit 
+ results in vehicles being deleted until only four are left.
+
+Clearance (garages) - How high the roof is. Necessary to consider for larger 
+ vehicles. Large clearance allows any vehicles, whereas medium clearance 
+ denies entry to large vehicles, such as trucks like the Yankee and Mule, and 
+ most notably, the Rhino.
+
+Common Knowledge (credit) - This is a well-known special vehicle from long 
+ before I wrote this guide, and as such, it is impossible to know to whom to 
+ attribute its discovery.
+
+Confirm - To "confirm" a car is to open and close the door of a garage 
+ where you stored a vehicle obtained during a mission. As garages only 
+ repair vehicles outside of missions, if you stick it in a garage mid-
+ mission, save, and then re-load, the car won't be there. Confirming is 
+ essential to keep vehicles obtained DURING missions, otherwise, expect 
+ to lose your spoils.
+
+Description - A description of unique color/feature vehicles and why they are 
+ unique. Usually involves a unique color scheme or features that do not 
+ normally occur on the vehicle.
+
+Formulated by - This is who informed me of the strategy to obtain the vehicle. 
+ Vehicles that were pointed out to me, but where I was given no strategy to 
+ obtain it often lead to me developing the strategy, although most will have 
+ the same entry for Discovered and Formulated by.
+
+ NOTE: Vehicles that are given to you or are made very obviously available are 
+ not given strategy credit, primarily because they are too simple to even call 
+ a strategy. "Get inside and drive to a parking spot" really isn't deserving 
+ of credit.
+
+Heavy - A heavy vehicle has exaggerated handling (it feels "heavier"), and 
+ also maintains the very unique property of being unstoppable and immovable, 
+ in that it will effortlessly push other vehicles around, and be resistant 
+ to the same from other vehicles. Doing that, however, rapidly destroys the 
+ car as heavy does NOT shield it from damage. This property will not be 
+ preserved by garages, and thus cannot be saved.
+
+Jack - Slang term for stealing a car. Given that the game's name does involve 
+ the crime of vehicle theft, it is a commonly used term in the guide. The vast 
+ majority of vehicles that will be used during the game will be stolen or used 
+ without explicit permission of the owner.
+
+Manual aim weapon - Any gun that can be manually aimed. This includes the 
+ AK-47, M4, both sniper rifles, and the M60 heavy machinegun.
+
+Palette - The normal selection of colors the vehicle has. Random spawns and 
+ Pay n' Sprays draw from a car's palette for colors when generated. Cars with 
+ a special color are special because the color is not normally found in that 
+ vehicle's palette.
+
+Physical limit (garages) - How many vehicles can actually be squeezed in. 
+ Motorcycles can almost always be squeezed in to hit the absolute limit of 4 
+ vehicles.
+
+Reliability (garages) - How reliable it is. Low reliability results in cars 
+ often getting eaten, or losing their property. This can be for a variety of 
+ reasons, but often is a result of being too close to a road, and thus prone 
+ to accidentally opening as you drive by.
+
+Super - A powered-up version of a vehicle. A super vehicle has higher 
+ acceleration, top speed, turning, and traction than the normal version. This 
+ property will not be preserved by garages, and thus cannot be saved.
+
+Technical limit (garages) - This is the number of vehicles that can be stored 
+ in a garage before the game refuses to open the door for new vehicles. This 
+ limit is four (4) vehicles for any garage.
+
+Unique - This vehicle has a unique name displayed and is found in story 
+ missions only, or other limited availability missions, and thus can be 
+ permanently missed on a playthrough if not obtained when the chance is 
+ available.
+
+Unlocked - Denotes a vehicle that is only infinitely available either 
+ through story missions and/or by unlocking it at some point through the 
+ story, whether by completing a mission, finishing a side mission, or even a 
+ vehicle that is only available during a side mission, but is repeatedly 
+ available by doing the mission over and over at your leisure. These vehicles 
+ cannot be missed permanently.
+
+Unobtainable - A vehicle that cannot be either obtained or permanently stored 
+ for various reasons. This may be a result of being unable to ever drive or 
+ even approach the vehicle (due to cutscenes or locked doors) or because it 
+ will lose its special property(ies) if stored in a garage.
+
+
+
+
+
+==============================================================================
+*2* GARAGES
+==============================================================================
+Knowing your garages is essential, as they store your vehicles. Learn them, 
+and it will serve you invaluably. The first number is the technical limit, 
+and the number in parenthesis is the physical limit. The physical limit is 
+assuming a small- to mid-sized car, such as the Blista Compact, or Admiral. 
+If you're looking to store motorcycles, the physical limit is likely double, 
+or even triple, the listed limit.
+
+The absolute limit of all garages is four (4). Do not attempt to fill a 
+garage past this number, or you WILL lose vehicles from the garage.
+
+OCEAN BEACH SAFEHOUSE: 
+~1 (1) space, high clearance, very reliable. (x1)
+
+LEAF LINKS CONDO:
+~1 (1) space, medium clearance, very reliable. (x1)
+
+CASA DE LOCO:
+~1 (1) space, medium clearance, very reliable. (x1)
+
+VERCETTI ESTATE:
+~2 (3) spaces, medium clearance, pretty reliable. (x1)
+
+HYMAN CONDOS:
+~2 (5) spaces, high clearance, incredibly unreliable. (x1)
+~2 (2) spaces, high clearance, reliable. (x2)
+NOTE: Putting more than one vehicle in the large garage can often cause them 
+to be eaten, and often affects the other two garages' contents. In the worst 
+cases, it can even affect ANY garage in the game, so don't use it unless 
+necessary! If you must, putting only one vehicle in usually doesn't cause 
+problems.
+
+SUNSHINE AUTOS:
+~2 (4) spaces, high clearance, very reliable. (x4)
+
+
+
+
+
+==============================================================================
+*3* PROOFED VEHICLES
+==============================================================================
+These vehicles all have a special proofing, granting them immunity from one or 
+more forms of damage.
+
+------------------------------------------------------------------------------
+3.1 - AP SC[White] Admiral
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: In the beginning (Start of the game)
+Difficulty: ***
+Mission failure? No
+Required: !!!CHEATS!!!
+Discovered by: 4emp2008
+
+------------------------------------------------------------------------------
+Description: A bright, white Admiral. This color is different from the normal 
+duller white in the regular palette. It is also AP, providing protection 
+against all hazards except rolling over, contact with the Rhino, stinger 
+strips, and water.
+
+------------------------------------------------------------------------------
+STRATEGY: At the end of the cutscene with Ken parking near his office, 
+activate the "Blow up all vehicles" cheat (R2, L2, R1, L1, L2, R2, Square, 
+Triangle, Circle, Triangle, L2, L1). If done correctly, the Admiral will blow 
+up, but Tommy will be unharmed. Now, the hard part: earning the money to buy a 
+safehouse with a garage!
+
+Spawn a Rhino (Circle, Circle, L1, Circle, Circle, Circle, L1, L2, R1, 
+Triangle, Circle, Triangle), get inside and activate Vigilante, then exit and 
+move away. Use the Blow up all cars cheat again to destroy the targets (and 
+the Rhino). Spawn a new Rhino, get inside to advance to the next Vigilante 
+level, and repeat. After level 7, you will have enough to afford the Links 
+View Condo.
+
+Spawn one last Rhino, then push the destroyed carcass of the Admiral towards 
+the Links View safehouse. Once there, push it up against the purchase icon. 
+Stand atop the wreckage and purchase the property. With luck, the car should 
+remain there through the purchase cutscene. Now, simply push it to the nearby 
+garage and inside. Once repaired, it should be AP and retain the unique white 
+color of Ken's Admiral!
+
+<<Formulated by: 4emp2008>>
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.2 - AP SC[Silver] Admiral
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Guardian Angels (Juan Garcia Cortez)
+Difficulty: *
+Mission failure? No (YES for Xbox version)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A silver Admiral. more gray than the normal silver random color. 
+It is also AP, providing protection against all hazards except rolling over, 
+contact with the Rhino, stinger strips, and water.
+
+------------------------------------------------------------------------------
+STRATEGY: Simply complete the mission. After it ends, head to the intersection 
+just south of where you end the mission, and then turn east. The Admiral 
+should be waiting there at the intersection, AP and with unlocked doors. Stick 
+it in a garage immediately, as this is without a doubt the BEST vehicle in the 
+game.
+
+------------------------------------------------------------------------------
+NOTE: I've heard reports that this car vanishes after the final cutscene on 
+the Xbox version, thus requiring you to fail the mission to obtain it on that 
+version. Supposedly parking a car in front of it beforehand allows you to 
+still obtain it without failure.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.3 - BP/FP/EP Squalo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Supply & Demand (Ricardo Diaz)
+Difficulty: ***
+Mission failure? YES
+Discovered by: GTA_Loco
+
+------------------------------------------------------------------------------
+STRATEGY: Kill Lance after the race starts to fail the mission, then beach the 
+boat and push it to a garage. Try for a spot near Hyman Condos, near the 
+Stadium, and push it into the big garage at the condo. The difficulty is 
+solely in the push from the beach to the garage, and that's not really 
+difficult, just tedious. Be careful using the big garage, though, as it can 
+sometimes lose vehicles (due to proximity to the street, and tendency to open 
+anytime you drive nearby), and in particularly bad cases, can even cause 
+vehicles in other garages to vanish.
+
+<<Formulated by: GTA_Loco>>
+
+------------------------------------------------------------------------------
+NOTE: This Squalo is also DP, but the DP property does not function for boats, 
+so it will accumulate collision damage as normal.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.4 - FP/EP Squalo
+------------------------------------------------------------------------------
+Mission: Supply & Demand (Ricardo Diaz)
+Difficulty: ***
+Mission failure? YES
+Discovered by: Grandtheftwiki.com
+
+------------------------------------------------------------------------------
+STRATEGY: To obtain this version of the Squalo, kill Lance after reaching the 
+deal, while he and Tommy are fighting their way back to Diaz's mansion. Beach 
+the boat near Hyman Condos (by the Stadium), and push it into the big garage 
+there. The difficulty is solely in the push from the beach to the garage, and 
+that's not really difficult, just tedious. Be careful using the big garage, 
+though, as it can sometimes lose vehicles (due to proximity to the street, and 
+tendency to open anytime you drive nearby), and in particularly bad cases, can 
+even cause vehicles in other garages to vanish.
+
+<<Formulated by: GTA_Loco>>
+
+------------------------------------------------------------------------------
+NOTE: This Squalo is also DP, but the DP property does not function for boats, 
+so it will accumulate collision damage as normal.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.5 - BP/FP/EP PCJ-600
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Bar Brawl (Tommy Vercetti)
+Difficulty: *****
+Mission failure? No
+Required: Rhino tank (save it at Vercetti Estate)
+Discovered by: Unknown
+
+------------------------------------------------------------------------------
+STRATEGY: Will write a strategy later, but in the meantime here is a video 
+showing the trick:
+https://www.youtube.com/watch?v=5pRLE81geSE
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.6 - BP/FP/EP Sabre Turbo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: The Driver (Malibu asset)
+Difficulty: ****
+Mission failure? YES
+Required: Adrenaline pill, sniper rifle; Rhino
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY 1 (only for the original PS2 release version):
+When the race begins, instead of racing, drive north until you reach the sharp 
+left turn. Take the turn and head down that road until you're in front of 
+the pizza shop. Get out, and at about 2:00 into the race, grab the adrenaline 
+pill behind the building to the south and ready your rifle. When Hilary comes 
+over the nearby bridge, snipe him out. You'll fail the mission for killing 
+Hilary. Now, push the car to your garage. Or better yet, just push it until 
+the door (normally locked) is open enough that you can get in, and then drive 
+it to the garage. When Hilary falls out he'll leave the door open partway, 
+but it is sometimes still too narrow to actually get inside.
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+STRATEGY 2 (for later versions of the game):
+Park a Rhino tank in the Vercetti Estate garage. After the race starts, head 
+there, collecting a police bribe on the way. Fetch the Rhino and drive to the 
+east side of the bridge mentioned in strategy 1 (near a Well Stacked Pizza), 
+and wait. It takes around 1 minute and 50 seconds to get this far. Hilary will 
+show up at around 2:10. When he does, make sure he doesn't drive around you. 
+Hit his car with the tank to blow it up and fail. Then proceed to push it to 
+a garage, taking care that it doesn't vanish.
+
+<<Formulated by: MC>>
+
+------------------------------------------------------------------------------
+NOTE: In the PC and Double Pack (Xbox) versions, this car apparently has no 
+special proofings, making it a basic Sabre Turbo, like the one available at 
+Sunshine Autos.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.7 - FP/EP Hotring Racer
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Hot Ring (Hyman Stadium)
+Difficulty: *****
+Required: Lots of luck and tenacity
+Discovered by: GTA_Loco (existence); Chester721 (how to obtain)
+
+------------------------------------------------------------------------------
+STRATEGY: This is the Hotring Racer provided for the race. Long thought to be 
+unobtainable, an esoteric method of keeping it has been found! Two videos are 
+provided below for your viewing pleasure, as it would be quite difficult to 
+describe what to do accurately.
+
+https://www.youtube.com/watch?v=HrlUAGIAgxA (done at the start of the game)
+https://www.youtube.com/watch?v=3gpIEncOYpE (done after achieving 100%)
+
+Attempting this after 100% completion has the perk of vehicles having double 
+their normal durability. As seen in the first video, the vehicle's health is 
+dangerously low by the time he finally succeeds. So that this is not entirely 
+reliant on the videos, I will provide a short write-up of the strategy used, 
+although keep in mind I have not successfully acquired one myself.
+
+When the race begins, begin driving and turn to the right, into the pitch 
+black area in the wall. Continue turning until you're facing roughly 180 
+degrees from how you started the race. Drive against the corner that your car 
+will lodge against and keep going, turning to the right. Over the course of a 
+couple of minutes, the car should begin turning on its side, with the wheels 
+against the wall to the left.
+
+Continue like this, accelerating and turning, and hopefully you will gradually 
+turn the car until its vertical and beginning to go through the floor. Proceed 
+and after a couple more minutes it will hopefully fall through the floor and 
+flop to the ground.
+
+When (and if) it falls through without being destroyed, hope that it lands on 
+its wheels, as it could easily land on its roof, or bounce around and take 
+enough damage to destroy it. Assuming it successfully lands, there is one last 
+challenge to overcome. The world is black, dark, and without form. All is as 
+it was when the world first coalesced into being. Cars and icons still spawn, 
+though, giving a small sense of direction.
+
+The goal now is to make it to the Downtown Ammu-Nation, to enter the rifle 
+range and return color and shape to the world. When starting out, you will be 
+behind the stadium, so begin feeling your way around the outside, using the 
+parked cars as landmarks to determine progress. Work your way to the east as 
+best as possible. The major landmark to look for is the police bribe in the 
+alleyway with the Hyman Condo safehouse. From there, you'll want to exit the 
+alley the way you entered (head west), then turn south once you feel you've 
+reached the road. Head in that direction until you can see the icons at the 
+hospital, then turn east once again. Feel around for the Ammu-Nation door, 
+and look for the pink glow indicating the counter. Head to the right of it to 
+enter the rifle range.
+
+Once inside, color has returned! Exit the rifle range and return (on foot!) to 
+the Hotring. It will be waiting behind the stadium. Carefully drive it to the 
+garage at Hyman Condo, park it inside, and get out. Pull out a weapon and 
+destroy the Hotring! The race will end due to your car being destroyed, and 
+you will be teleported to the stadium entrance. Run back to the garage and if 
+all went well, your shiny new FP/EP Hotring will be sitting inside, good as 
+new! If it isn't... well, you'll have to try again.
+
+<<Formulated by: Chester721, videos by 4emp2008, and rtyuijhggff>>
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.8 - FP Infernus
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Sunshine Autos Street Races
+Difficulty: ***
+Required: Manual aim gun is recommended
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Start a race and then rush to the finish line. Wait for the other 
+cars to finish. After the race is over, corner the car you desire. Take out an 
+assault or sniper rifle, and snipe the driver. Afterwards, get in and drive to 
+a garage. Just remember, the doors are locked, so don't get out until it's 
+safely in a garage!
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.9 - FP Cheetah
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Sunshine Autos Street Races
+Difficulty: ***
+Required: Manual aim gun is recommended
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Start a race and then rush to the finish line. Wait for the other 
+cars to finish. After the race is over, corner the car you desire. Take out an 
+assault or sniper rifle, and snipe the driver. Afterwards, get in and drive to 
+a garage. Just remember, the doors are locked, so don't get out until it's 
+safely in a garage!
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+3.10 - FP Banshee
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Sunshine Autos Street Races
+Difficulty: ***
+Required: Manual aim gun is recommended
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Start a race and then rush to the finish line. Wait for the other 
+cars to finish. After the race is over, corner the car you desire. Take out an 
+assault or sniper rifle, and snipe the driver. Afterwards, get in and drive to 
+a garage. Just remember, the doors are locked, so don't get out until it's 
+safely in a garage!
+------------------------------------------------------------------------------
+
+
+
+
+
+==============================================================================
+*4* UNIQUE VEHICLES
+==============================================================================
+These vehicles only appear during story missions, and once the game is 
+completed, cannot be acquired without cheating.
+
+Always remember to confirm vehicles stored during a mission, whether you 
+finished the mission successfully, or failed and need to retry it.
+
+------------------------------------------------------------------------------
+4.1 - Spand Express (1st of 2)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Jury Fury (Ken Rosenberg)
+Difficulty: *
+Mission failure? No
+Required: The Ocean Beach garage
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Attack the southern juror's car and he'll attempt to flee. Before 
+getting far, he'll be blindsided by this Spand Express truck. Stick it in the 
+Ocean Beach garage (the only one big enough), and confirm it after the 
+mission. Make sure to buy that garage before attempting the mission! Complete 
+R3 missions like Firefighter or Paramedic to easily earn the money needed.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+4.2 - Spand Express (2nd of 2)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Riot (Ken Rosenberg)
+Difficulty: **
+Mission failure? No
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Complete the mission up until you have to destroy the trucks. 
+Destroy two of them, then take the last one to your Ocean Beach garage (the 
+only one big enough). Once it is inside, destroy it and finish the mission. 
+Let the garage close and open, and there's your truck! Make sure to buy that 
+garage before attempting the mission! Complete R3 missions like Firefighter or 
+Paramedic to easily earn the money needed.
+
+<<Formulated by: Common knowledge>>
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+4.3 - Love Fist (1st of 2)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Psycho Killer (Love Fist)
+Difficulty: *
+Mission failure? No
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Finish the mission normally and you'll be left with the Love Fist 
+limo, assuming you used it and it survived the mission. Take it to a garage. 
+Alternatively, you can drive straight to a garage, park it, blow it up, then 
+let the garage close and open to repair it. This fails the mission, but is 
+even easier.
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+NOTE: In the PC and Double Pack (Xbox) versions, the Love Fist spawns outside 
+of the V-Rock station after completing their mission string, thus rendering it 
+merely rare (you unlock it) as opposed to unique.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+4.4 - Love Fist (2nd of 2)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Publicity Tour (Love Fist)
+Difficulty: **
+Mission failure? YES
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Complete the mission until the bomb is defused, then drive to a 
+garage, destroy it (or snipe Love Fist) to fail the mission, and let the 
+garage close then re-open.
+
+------------------------------------------------------------------------------
+NOTE: In the PC and Double Pack (Xbox) versions, the Love Fist spawns outside 
+of the V-Rock station after completing their mission string, thus rendering it 
+merely rare (you unlock it) as opposed to unique.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+4.5 - Romero's Hearse
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Two Bit Hit (Avery Carrington)
+Difficulty: **
+Mission failure? No
+Required: Sniper rifle and mission failure for strategy 2
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Strategy preamble: These specific Romero's Hearses are NOT parked alongside 
+the Well-Stacked Pizza. The one that is parked there is also FP. This hearse 
+actually has a unique secondary color (black), but the Romero's Hearse doesn't 
+use that secondary color in its model, so there's no way to see this in-game. 
+Both are still unique, however, so take your pick (or fail the mission and 
+obtain multiples).
+
+Also, there are four variants of the hearse, each with a different setup in 
+the back. There are three possible coffins (a blue coffin and two different 
+style brown coffins) and one with no coffin.
+
+------------------------------------------------------------------------------
+STRATEGY 1: To obtain both hearses and the black Voodoo, approach the funeral 
+from the south, run up to the Voodoo, and get in. Drive to a garage (Sunshine 
+Autos is a good location, but Hyman Condo works too), park the Voodoo inside, 
+then return to the funeral. Jack the Romero's Hearse along the side of the 
+road and take it to a garage as well. Return one last time and pursue the 
+final hearse that started out parked next to the pizza shop (that is the FP 
+hearse). It may have been driven off in the meantime, so chase it, corner it, 
+and jack it. Return to the garages you stored the first two vehicles in to 
+confirm them, then park the final hearse in a garage.
+
+<<Formulated by: Militia>>
+
+------------------------------------------------------------------------------
+STRATEGY 2: If the above strategy offers too much difficulty, or you want to 
+collect multiple colors of coffin in the rear of the hearse, you can fail the 
+mission by sniping the target from as far away as possible. The mission will 
+fail because Tommy didn't make it clear the Cubans were behind the kill. At 
+this point, run to the funeral and jack whichever vehicle you intend to keep. 
+A good sniping spot is the road south of the funeral, just slightly north of 
+the telephone pole on the west side of the street, south of the road to the 
+junkyard.
+
+This only allows obtaining one vehicle per attempt usually, as the game will 
+delete the vehicles if you move too far from them, even if you don't use any 
+other vehicles in-between. But this will allow an unlimited number of 
+attempts at vehicles in the mission.
+
+<<Formulated by: Lancet Jades and Christopher Fuentes>>
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+4.6 - FP Romero's Hearse
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Two Bit Hit (Avery Carrington)
+Difficulty: **
+Mission failure? No
+Required: Sniper rifle and mission failure for strategy 2
+Discovered by: Grandtheftwiki.com
+
+------------------------------------------------------------------------------
+Strategy preamble: This fireproof Romero's Hearse is the one that is parked 
+beside the Well Stacked Pizza store at the funeral. The other hearse has a 
+special (but invisible) secondary color, but is NOT fireproof.
+
+Also, there are four variants of the hearse, each with a different setup in 
+the back. There are three possible coffins (a blue coffin and two different 
+style brown coffins) and one with no coffin.
+
+------------------------------------------------------------------------------
+STRATEGY 1: To obtain both hearses and the black Voodoo, approach the funeral 
+from the south, run up to the Voodoo, and get in. Drive to a garage (Sunshine 
+Autos is a good location, but Hyman Condo works too), park the Voodoo inside, 
+then return to the funeral. Jack the Romero's Hearse along the side of the 
+road and take it to a garage as well. Return one last time and pursue the 
+final hearse that started out parked next to the pizza shop (that is the FP 
+hearse). It may have been driven off in the meantime, so chase it, corner it, 
+and jack it. Return to the garages you stored the first two vehicles in to 
+confirm them, then park the final hearse in a garage.
+
+<<Formulated by: Militia>>
+
+------------------------------------------------------------------------------
+STRATEGY 2: If the above strategy offers too much difficulty, or you want to 
+collect multiple colors of coffin in the rear of the hearse, you can fail the 
+mission by sniping the target from as far away as possible. The mission will 
+fail because Tommy didn't make it clear the Cubans were behind the kill. At 
+this point, run to the funeral and jack whichever vehicle you intend to keep. 
+A good sniping spot is the road south of the funeral, just slightly north of 
+the telephone pole on the west side of the street, south of the road to the 
+junkyard.
+
+This only allows obtaining one vehicle per attempt usually, as the game will 
+delete the vehicles if you move too far from them, even if you don't use any 
+other vehicles in-between. But this will allow an unlimited number of 
+attempts at vehicles in the mission.
+
+<<Formulated by: Lancet Jades and Christopher Fuentes>>
+------------------------------------------------------------------------------
+
+
+
+
+
+==============================================================================
+*5* SPECIALLY COLORED/FEATURED VEHICLES
+==============================================================================
+These vehicles all have some special color or feature that the vehicle does 
+not normally have. A detailed description of what makes them special will be 
+contained within each entry.
+
+------------------------------------------------------------------------------
+5.1 - SC[White] Admiral
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: In the beginning (Start of the game)
+Difficulty: *****
+Mission failure? No
+Required: Enough money to buy a safehouse with a garage
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A bright, white Admiral. This color is different from the normal 
+dull white found in the regular palette.
+
+------------------------------------------------------------------------------
+STRATEGY 1: This is the car Ken drives in the opening scenes. It is tricky to 
+keep, as you will have no garages, making storage a problem. A good idea is to 
+go do the Paramedic missions while leaving this stored near the hospital. Vice 
+City's engine keeps the last two vehicles you used in memory, so long as the 
+door remains open. So, get out of your Admiral, leaving the door open, and do 
+the Paramedic missions. If you lose the Ambulance though, be careful, as you 
+cannot take any other vehicle, lest your Admiral be deleted.
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+STRATEGY 2: Park the Admiral behind the Well Stacked Pizza north of the police 
+station in the middle of the island. Complete the pizza missions for extra 
+money (usually around $5500), and use it to buy the safehouse. The pizza 
+missions are quicker and easier than Paramedic, and the bike used has radio. 
+If it doesn't earn enough money, it should put you close to the needed amount. 
+Remember, if you lose your vehicle, start a new game, as it may be difficult 
+to amass the money needed without losing the Admiral.
+
+<<Formulated by: Christopher Fuentes>>
+
+------------------------------------------------------------------------------
+STRATEGY 3: If the above strategies don't pan out, do whatever else you can 
+for money; robbing stores can be a good alternative, so long as you mind the 
+wanted level. Messing this up can be bothersome, but unless you almost have 
+enough for the safehouse, another try is just a new game away.
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+NOTE: On the PC version, this Admiral apparently spawns outside of the 
+Vercetti Mansion after completing the mission "Keep Your Friends Close," thus 
+rendering it merely rare (you unlock it) as opposed to unique. This has also 
+been confirmed for the Xbox Double Pack version.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.2 - SC[Black] Washington
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: All Hands on Deck! (Juan Garcia Cortez)
+Difficulty: *****
+Mission failure? No
+Required: Mission failure for a MUCH easier method
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Washington. This color can be produced 
+via the Black Traffic cheat, too.
+
+------------------------------------------------------------------------------
+STRATEGY 1 (no failure): Upon starting the mission, jump down to the lowest 
+level of the boat (in the back). Various enemy boats should be nearby, 
+including a Speeder. Pull out a rifle (assault or sniper) and take out the 
+driver. Most of the time, the boat should turn towards you; if so, press the 
+vehicle enter button to get in. Once driving the Speeder, head back to the 
+docks with the black Washingtons. DO NOT get inside one, otherwise the mission 
+will fail.
+
+Begin pushing the Washington to the Ocean Beach garage using only Tommy's 
+body. This is a long, arduous push, and sometimes the Washingtons may become 
+too "heavy" to push. Taking too long also triggers a cutscene, so act with as 
+much haste as possible. Once the Washington is inside the garage, return to 
+your boat and complete the mission. Afterwards, return to the garage to 
+confirm the vehicle. Just be sure NOT to get inside any other vehicle on your 
+way back to the garage, or else the Washington will vanish!
+
+<<Formulated by: 4emp2008>>
+
+------------------------------------------------------------------------------
+STRATEGY 2 (with failure): Follow strategy 1, but instead of pushing to the 
+Ocean Beach garage, push a Washington close to where Cortez's mission marker 
+was (the southern-most marina gate). Get inside the Washington and the mission 
+will fail. The Washington should still be there after the cutscene, as it was 
+close enough to where Tommy ends up after the mission ends.
+
+<<Formulated by: MC>>
+
+------------------------------------------------------------------------------
+NOTE: Apparently, in the Xbox Double Pack version of his game, the Washingtons 
+in this mission are white, not black. The white is the same color as ones 
+found on the street, so they are no longer unique.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.3 - SC[Silver] PCJ-600
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Autocide (Assassination contract)
+Difficulty: *
+Mission failure? No
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A bright silver PCJ-600. This is a very unique color for the 
+bike.
+
+------------------------------------------------------------------------------
+STRATEGY: Simply start the mission and go to the weapon drop point. This 
+PCJ-600 is just sitting there for you. Complete the mission and store it. If 
+you're going for other vehicles in this mission, stick it in a garage and 
+proceed to get the other vehicles, confirming it afterwards.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.4 - SC[Black/Purple] Bobcat
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Autocide (Assassination contract)
+Difficulty: **
+Mission failure? No
+Required: Manual aim weapon (preferably a sniper rifle)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Bobcat with metallic purple-red panels 
+along the side. It is a nice looking combo that cannot be reproduced with the 
+Black Traffic cheat, due to the color of the sides.
+
+------------------------------------------------------------------------------
+STRATEGY: Complete the mission up until you get to the two people in the 
+Bobcat, then snipe the driver. The passenger will rush you with a shotgun, so 
+kill him off quickly. Get in the Bobcat, and store it in a garage. Be careful 
+not to get too close though, as the doors are locked. If they speed off, the 
+only option is to corner them and snipe the driver - not an easy task. Once 
+the mission is over, go confirm the truck, and gaze at its pretty purple side 
+panel.
+
+<<Formulated by: Common knowledge>>
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.5 - SC[Bright blue] PCJ-600
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Autocide (Assassination contract)
+Difficulty: *
+Mission failure? No
+Required: Nothing
+Discovered by: Grandtheftwiki.com
+
+------------------------------------------------------------------------------
+Description: Although PCJ-600s come in two different blue colors already, this 
+one is a third, unique shade of blue.
+
+------------------------------------------------------------------------------
+STRATEGY: The final target of this mission drives this motorcycle. After 
+killing him, simply claim his motorcycle as your trophy and drive it to a 
+garage.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.6 - SC[Black] Admiral (1st of 2)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Check Out at the Check In (Assassination contract)
+Difficulty: ***
+Mission failure? No
+Required: Flamethrower or molotovs
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Admiral. A sturdy, reliable vehicle for any 
+purpose except extreme speed.
+
+------------------------------------------------------------------------------
+STRATEGY: Complete the mission up until the point you must escape the airport 
+and drop the package off at Ammu-Nation. At this point, several black Admirals 
+will chase you, with gunners mounted on the roof. Get to a safe location, and 
+take out the gunner of the target vehicle, then set fire to the car. The 
+driver will get out and run off, leaving the normally locked door open. Get 
+in, drive to a garage (preferably the close Sunshine Auto garage, if you own 
+it), then grab another vehicle and complete the mission. Confirm the car, and 
+it's yours!
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+NOTE: This vehicle can also be produced via the "Black Traffic" cheat, leaving 
+a last resort for someone who absolutely needs this vehicle and has nothing 
+left to lose.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.7 - SC[White] Walton
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Gun Runner (Phil Cassidy)
+Difficulty: ***
+Mission failure? No
+Required: Manual aim weapon
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A plain white Walton. Looks quite simple (and it is), but special 
+nonetheless.
+
+------------------------------------------------------------------------------
+STRATEGY: Simply snipe the driver of one of the white Waltons, then store it 
+in a garage. After collecting all weapons, and destroying all other trucks, 
+destroy this in the garage, then let it close and open, and voila, your very 
+own white Walton! Be careful, because if you do too much damage to the gun 
+runners before taking a truck, they call in continual reinforcements with 
+SMGs on Faggios. This will make it very difficult to get into the Walton and 
+make it to a garage intact.
+
+<<Formulated by: Common knowledge>>
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.8 - SC[Gold] Stretch
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Martha's Mug Shot (Film Studio asset)
+Difficulty: *
+Mission failure? No
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A golden-colored Stretch limo. Very nice looking and classy.
+
+------------------------------------------------------------------------------
+STRATEGY 1: Follow the Stretch to its destination, then check the road south 
+of the Malibu. The Stretch should be sitting there, empty and waiting. Take it 
+to a garage, then finish the mission and confirm it afterwards. Alternatively, 
+
+park it somewhere safe, take the pictures, then get in a car and lose the 
+wanted level. Go back and get the Stretch afterwards. Be sure to only get in
+a single car after the Stretch, otherwise it will disappear!
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+STRATEGY 2: While still at the Film Studio, snipe the driver, waste all 12 
+shots of the camera to fail the mission, then drive it to a garage. This 
+avoids the hassle of dealing with a wanted level later on, or having to 
+confirm it.
+
+<<Formulated by: Lancet Jades>>
+
+------------------------------------------------------------------------------
+NOTE: thehambone93 reports that only method 2 seems to work for the "Haitian 
+Friendly" PS2 Greatest Hits release of the game.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.9 - SC[Black] Sentinel
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Hit the Courier (Print Works asset)
+Difficulty: ***
+Mission failure? No
+Required: Manual aim weapon
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Sentinel. A reasonable four-door sedan with 
+decent top speed and average handling.
+
+------------------------------------------------------------------------------
+STRATEGY: First, take a car to the Print Works before the mission. Then, 
+after starting the mission, quickly drive to the drop site and dispose of the 
+sentries. Don't worry if you get a star or two. Once everyone is dead, stand 
+in front of the black Sentinel (I stood on the loading ramp to the west) and 
+ready a sniper or assault rifle, aiming at the driver's seat. Once she gets 
+in, fire. Once she's dead, stay away, because the car accelerates anyways! 
+After a couple of seconds, it stops and she falls out dead, along with the 
+plates. Grab them, and get in. Be careful; the doors lock, so if you are not 
+going to stay inside the car (due to the wanted level), leave the door open!
+
+From there are two options. If you have just one star (or none), just drive 
+directly to the end of the mission. Get out (keeping the door open), finish, 
+then drive to a garage. If you have two or more stars, the alternative is to 
+get back out immediately, find another car, then use it to lose your wanted 
+level. Return to the Sentinel and finish the mission. Be sure to ONLY get 
+inside a single other car, or else the Sentinel will vanish!
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+NOTE: This vehicle can also be produced via the "Black Traffic" cheat, leaving 
+a last resort for someone who absolutely needs this vehicle and has nothing 
+left to lose.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.10 - SC[Black] Pony
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Loose Ends (Assassination Contract)
+Difficulty: *****
+Mission failure? No
+Required: Two (2) Packer trucks
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Pony. A traditional GTA van, the Pony's 
+performance is what one expects from a van: slow acceleration, mediocre top 
+speed, and average handling with a slight tendency to tip.
+
+------------------------------------------------------------------------------
+STRATEGY: This can be difficult. First, kill off everyone in the area, making 
+sure NOT to destroy (or even get into) the Admirals or Pony. Once everyone is 
+gone, drive to Viceport and grab the Packer parked there. To reach it, drive 
+straight south on the road that runs by Sunshine Autos until it reaches a 
+point where it turns left as the only route available. The Packer should be 
+waiting there in the dirt lot to the left (before the turn).
+
+Drive it back, and position it perpendicular to the gate. Run (do NOT drive) 
+back to Viceport and jack a second Packer, then drive it back to the first 
+one. Drive it up the first Packer, and over the gate. Then, position it 
+perpendicular to the gate, and simply drive the Pony up the Packer, over the 
+gate, and then to a nearby garage. Don't forget to confirm this after the 
+mission, as with the level of work required, it's both easy and incredibly 
+annoying to forget.
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+NOTE: This vehicle can also be produced via the "Black Traffic" cheat, leaving 
+a last resort for someone who absolutely needs this vehicle and has nothing 
+left to lose.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.11 - SC[Black Admiral] (2nd of 2)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Loose Ends (Assassination contract)
+Difficulty: *****
+Mission failure? No
+Required: Two (2) Packer trucks
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Admiral. A sturdy, reliable vehicle for any 
+purpose except extreme speed.
+
+------------------------------------------------------------------------------
+STRATEGY: See the Black Pony strategy (right above this entry). The same 
+strategy works for this Admiral, although it's easier to get one from the 
+previous assassination contract.
+
+<<Formulated by: Common knowledge>>
+
+------------------------------------------------------------------------------
+NOTE: This vehicle can also be produced via the "Black Traffic" cheat, leaving 
+a last resort for someone who absolutely needs this vehicle and has nothing 
+left to lose.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.12 - SC[Bright blue] Maverick
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Loose Ends (Assassination contract)
+Difficulty: *
+Mission failure? No
+Discovered by: Grandtheftwiki.com
+
+------------------------------------------------------------------------------
+Description: The blue color of this Maverick is different from others. It is 
+the same blue on the final target's PCJ-600 from the Autocide contract.
+
+------------------------------------------------------------------------------
+STRATEGY: This is found on top of the Cherry Poppers roof near the end of 
+the mission. To keep it, just get inside and finish the mission using it. 
+After the mission has ended, carefully navigate it inside the large garage at 
+the Hyman Condo safehouse, since that is the only place large enough to 
+effectively store this. Also, don't forget to confirm the black Pony and/or 
+Admiral, if either was also obtained during the mission!
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+5.13 - SC[Black] Voodoo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Two Bit Hit (Avery Carrington)
+Difficulty: **
+Mission failure? No
+Required: Sniper rifle and mission failure for strategy 2
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: This is a solid black Voodoo. The typical Haitian gang car has a 
+nice makeover, but its performance is otherwise identical to the red version 
+often seen.
+
+------------------------------------------------------------------------------
+STRATEGY 1: To obtain both hearses and the black Voodoo, approach the funeral 
+from the south, run up to the Voodoo, and get in. Drive to a garage (Sunshine 
+Autos is a good location, but Hyman Condo works too), park the Voodoo inside, 
+then return to the funeral. Jack the Romero's Hearse along the side of the 
+road and take it to a garage as well. Return one last time and pursue the 
+final hearse that started out parked next to the pizza shop (that is the FP 
+hearse). It may have been driven off in the meantime, so chase it, corner it, 
+and jack it. Return to the garages you stored the first two vehicles in to 
+confirm them, then park the final hearse in a garage.
+
+<<Formulated by: Militia>>
+
+------------------------------------------------------------------------------
+
+STRATEGY 2: If the above strategy offers too much difficulty, or you want to 
+collect multiple colors of coffin in the rear of the hearse, you can fail the 
+mission by sniping the target from as far away as possible. The mission will 
+fail because Tommy didn't make it clear the Cubans were behind the kill. At 
+this point, run to the funeral and jack whichever vehicle you intend to keep. 
+
+Two vehicles can be kept this way by getting inside one, then getting back out 
+and taking a different vehicle to a garage. Afterwards, run back to the site 
+on foot (don't get in any other vehicle!) and the original vehicle should 
+still be sitting there.
+
+<<Formulated by: Lancet Jades and Christopher Fuentes>>
+
+------------------------------------------------------------------------------
+NOTE: This vehicle can also be produced via the "Black Traffic" cheat, leaving 
+a last resort for someone who absolutely needs this vehicle and has nothing 
+left to lose.
+------------------------------------------------------------------------------
+
+
+
+
+
+==============================================================================
+*6* UNOBTAINABLE SPECIAL VEHICLES
+==============================================================================
+These vehicles cannot be obtained and kept for whatever reason is listed. This 
+can include any vehicle type from the previous three sections, but as they 
+cannot be acquired permanently, they do not belong in those sections.
+
+Keep in mind that the key attribute with unobtainable vehicles is retaining 
+them; some of these can be temporarily obtained and used, but they cannot be 
+permanently stored for some reason.
+
+------------------------------------------------------------------------------
+6.1 - SC[Black] Maverick
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: In the beginning (Start of the game)
+Discovered by: GTA_Loco
+
+------------------------------------------------------------------------------
+Description: A solid black Maverick helicopter, without the usual white/color 
+pattern they usually have. Apparently it uses a unique Maverick model as well, 
+but it matters little due to the fact that...
+
+------------------------------------------------------------------------------
+Unobtainable: ...it exists only in the opening cutscene.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.2 - Heavy Admiral
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Jury Fury (Ken Rosenberg)
+Discovered by: Andreaz1
+
+------------------------------------------------------------------------------
+STRATEGY: After starting the mission, proceed to the south juror's location. 
+Using a melee weapon, bang up his car, damaging it cosmetically as much as 
+possible. Once it starts smoking lightly, attack the juror and he will get 
+inside, then immediately get back out and run off. The car is now heavy. If 
+you get the cutscene where he hits the Spand Express truck, the car loses the 
+property though!
+
+<<Formulated by: Andreaz1>>
+
+------------------------------------------------------------------------------
+Unobtainable: The heavy property is removed by garages, so storage is not 
+possible. The property is also removed when the mission ends, pass or fail.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.3 - Heavy Sentinel
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Jury Fury (Ken Rosenberg)
+Discovered by: Andreaz1
+
+------------------------------------------------------------------------------
+Unobtainable: It is locked at the start of the mission, and loses the heavy 
+property after the cutscene with the north juror. It also loses the property 
+after the mission is over (pass or fail), or when stored in a garage.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.4 - PPT Cuban Hermes
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Guardian Angels (Juan Garcia Cortez)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Complete the mission up until you have to protect Diaz. Fail the 
+mission, then simply take the Cuban Hermes sitting there.
+
+------------------------------------------------------------------------------
+Unobtainable: Garages always remove the PPT property from vehicles.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.5 - AP/PPT Voodoo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Guardian Angels (Juan Garcia Cortez)
+Discovered by: Lancet Jades
+
+------------------------------------------------------------------------------
+Unobtainable: This is the Voodoo driven by the initial two gangs of Haitians. 
+It is only AP until it parks and the occupants get out. Failing the mission, 
+or letting it reach that point both cancel its proofing.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.6 - PPT Voodoo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Guardian Angels (Juan Garcia Cortez)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Complete the mission up until you have to protect Diaz. Fail the 
+mission, then simply take the Voodoo sitting there.
+
+------------------------------------------------------------------------------
+Unobtainable: Garages always remove the PPT property from vehicles.
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+6.7 - AP/PPT SC[Silver] Admiral
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Guardian Angels (Juan Garcia Cortez)
+Discovered by: SpriteFan274
+
+------------------------------------------------------------------------------
+Unobtainable: This is the famous silver AP Admiral that everyone knows and 
+loves, but as it turns out, it also has pop-proof tires! Such a shame that the 
+property is deleted by garages...
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.8 - SC[Black] Stretch (1st of 3)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Four Iron (Avery Carrington)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A solid black Stretch. This vehicle can also be acquired via the 
+Black Traffic cheat.
+
+------------------------------------------------------------------------------
+Unobtainable: It exists only in cutscenes.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.9 - SC[Black] Stretch (2nd of 3)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Demolition Man (Avery Carrington)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A solid black Stretch. This vehicle can also be acquired via the 
+Black Traffic cheat.
+
+------------------------------------------------------------------------------
+Unobtainable: It exists only in cutscenes.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.10 - Oceanic w/ briefcases in the back
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Bar Brawl (Tommy Vercetti)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: An Oceanic with some briefcases sitting in the trunk.
+
+------------------------------------------------------------------------------
+STRATEGY: It is just sitting there for the taking. Help yourself to it!
+
+------------------------------------------------------------------------------
+Unobtainable: The briefcases disappear after the mission is over, success or 
+failure. Even destroying the car beforehand doesn't prevent the briefcases 
+from vanishing.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.11 - Heavy Securicar
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Autocide (Assassination Contract)
+Discovered by: Andreaz1
+
+------------------------------------------------------------------------------
+STRATEGY: This Securicar houses the second target in this mission. Snipe him 
+out from the opposing roof (where you were stationed in Guardian Angels), then 
+get in and go for a joyride.
+
+<<Formulated by: Andreaz1>>
+
+------------------------------------------------------------------------------
+Unobtainable: The heavy property is removed by garages, so storage is not 
+possible. The property is also removed when the mission ends, pass or fail.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.12 - Taxi w/ open trunk
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: The Job (Malibu asset)
+Discovered by: Lancet Jades
+
+------------------------------------------------------------------------------
+Description: A Taxi in perfect condition with an open trunk. Usually, for the 
+trunk to be open, it must have taken some damage to knock it open.
+
+------------------------------------------------------------------------------
+STRATEGY: This is the Taxi used in the mission. Snipe Hilary to fail the 
+mission and obtain it yourself, but the doors are locked, so be careful.
+
+<<Formulated by: Lancet Jades>>
+
+------------------------------------------------------------------------------
+Unobtainable: Storing it in a garage or even using a Pay n' Spray "repairs" 
+the trunk, correcting the only thing that makes this Taxi special.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.13 - SC[Gold] Stretch
+------------------------------------------------------------------------------
+Mission: Recruitment Drive (Film Studio asset)
+Discovered by: GTA_Loco
+
+------------------------------------------------------------------------------
+Description: A golden-colored Stretch limo. Looks nice and classy, perfect for 
+porn stars and governors alike.
+
+------------------------------------------------------------------------------
+Unobtainable: It disappears after the cutscene. You can use the Destroy All 
+Cars cheat to blow it up, but the game stays in the cutscene forever if you 
+do. Just get the one from Martha's Mug Shot.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.14 - Super Angel
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Alloy Wheels of Steel (Mitch Baker)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+STRATEGY: Jack the bike of one of the opponent bikers (easiest if one falls 
+off), then end the race and store it in a garage.
+
+------------------------------------------------------------------------------
+Unobtainable: The super property is removed by garages, so all that will 
+remain is an unremarkable, non-special Angel bike.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.15 - SC[Black Stretch] (3rd of 3)
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Two Bit Hit (Avery Carrington)
+Discovered by: Common knowledge
+
+------------------------------------------------------------------------------
+Description: A solid black Stretch. This vehicle can also be acquired via the 
+Black Traffic cheat.
+
+------------------------------------------------------------------------------
+Unobtainable: It exists only in cutscenes.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+6.16 - BP/FP/EP Sanchez
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Mission: Dirt Ring (Hyman Stadium)
+Discovered by: GTA_Loco
+
+------------------------------------------------------------------------------
+STRATEGY: This is the Sanchez provided for the obstacle course. It can only be 
+used during the course. Interestingly, the bike is also flagged as DP, but 
+that property has no effect on motorcycles.
+
+------------------------------------------------------------------------------
+Unobtainable: You cannot get it out of the Dirt Ring arena. Apparently there 
+IS a way to get it on the PC version, however I do not have any idea how it is 
+done.
+------------------------------------------------------------------------------
+
+
+
+
+
+==============================================================================
+*7* RARE VEHICLES
+==============================================================================
+These vehicles aren't anything inherently special and limited to missions, but 
+nonetheless have some unique quality worth noting. These often require some 
+action to "unlock" them to be available, such as completion of a mission or 
+side mission to unlock. The defining trait of this class of special vehicle is 
+that they can all be obtained at the end of the game without any problem, but 
+NOT the beginning.
+
+Always remember to confirm vehicles stored during a mission, whether you 
+finished the mission successfully, or failed and need to retry it!
+
+------------------------------------------------------------------------------
+7.1 - SC[White] Infernus
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the mission "Rub Out."
+
+Found: Parked near the garage of the Vercetti Estate.
+
+------------------------------------------------------------------------------
+Missions the car may also be found in:
+Back Alley Brawl, Guardian Angels
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.2 - Sparrow
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the mission "Rub Out."
+
+Found: In various places around the city.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.3 - Deluxo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the first car list at Sunshine Autos.
+
+Found: Parked on the first floor of Sunshine Autos.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.4 - Sabre Turbo
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the second car list at Sunshine Autos.
+
+Found: Parked on the first floor of Sunshine Autos.
+
+------------------------------------------------------------------------------
+Missions the car may also be found in:
+The Driver
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.5 - Sandking
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the third car list at Sunshine Autos.
+
+Found: Parked on the second floor of Sunshine Autos.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.6 - Hotring Racer
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the fourth car list at Sunshine Autos.
+
+Found: Parked on the second floor of Sunshine Autos.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.7 - Cuban Jetmax
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Purchase the Boatyard asset.
+
+Found: At the docks in the Boatyard.
+
+------------------------------------------------------------------------------
+Missions the boat may also be found in:
+Bombs Away!
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.8 - Zebra Taxi
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the Kaufman Taxi asset string.
+
+Found: Parked in the Kaufman Taxi station.
+
+------------------------------------------------------------------------------
+Missions the car may also be found in:
+Cabmageddon
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.9 - Skimmer
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the mission "Dildo Dodo."
+
+Found: In the dock behind the Film Studio.
+
+------------------------------------------------------------------------------
+Missions the vehicle may also be found in:
+Dildo Dodo
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.10 - Sea Sparrow
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Collect 80 Hidden Packages.
+
+Found: In the dock area in the southern outdoor section of Diaz or Vercetti's 
+Estate.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.11 - Rhino
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked (1): Collect 90 Hidden Packages.
+Found (1): Spawns in the Air Force Base.
+
+Unlocked (2): Complete Sir, Yes Sir! to unlock 6-star wanted levels.
+Found (2): Jack a tank during a 6-star wanted level.
+
+------------------------------------------------------------------------------
+Missions the car may also be found in:
+Sir, Yes Sir!
+
+------------------------------------------------------------------------------
+NOTE: This vehicle is BP/EP by design. I have heard reports that enough 
+bullets or explosions may destroy it, however that should not be possible. It 
+is not FP or DP, so fire and just regular knocking around still damage it.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.12 - Hunter
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked (1): Collect all 100 Hidden Packages.
+Found (1): In the northern section of the Army Base.
+
+Unlocked (2): Achieve 100% game completion.
+Found (2): On a helipad in the southern part of Ocean Beach.
+
+------------------------------------------------------------------------------
+Missions the car may also be found in:
+All Hands On Deck!
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.13 - SC[Black] Sanchez
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the Trial by Dirt course in Downtown once.
+
+Found: On subsequent attempts, three Haitians wielding Machetes will attack 
+you. Their Sanchezs are a special black color.
+
+------------------------------------------------------------------------------
+NOTE: Later versions have a quirk for this. You MUST complete Test Track 
+before Trial by Dirt (Landstakler before Sanchez), otherwise the latter will 
+not register. Complete Test Track as slowly as possible, then Trial by Dirt 
+even slower. Apparently Trial by Dirt will never register as any better than 
+Test Track's score, so be careful. Eventually, besting your time repeatedly 
+(you get paid for beating the time, hence the long first tries) should yield 
+the events with these vehicles.
+Courtesy of MC
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.14 - SC[Black] Rancher
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Complete the Test Track course in Downtown three times (each attempt  
+requires a better time than the last to count).
+
+Found: On the fourth attempt and beyond, a PIG in a black Rancher will assail 
+you as you drive the course. Ram him until he gets out, then kill him, and 
+take the Rancher for yourself.
+
+------------------------------------------------------------------------------
+NOTE: Later versions have a quirk for this. You MUST complete Test Track 
+before Trial by Dirt (Landstakler before Sanchez), otherwise the latter will 
+not register. Complete Test Track as slowly as possible, then Trial by Dirt 
+even slower. Apparently Trial by Dirt will never register as any better than 
+Test Track's score, so be careful. Eventually, besting your time repeatedly 
+(you get paid for beating the time, hence the long first tries) should yield 
+the events with these vehicles.
+Courtesy of MC
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.15 - Bloodring Banger
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Acquire more than 1 minute remaining in the Bloodring at Hyman 
+Stadium.
+
+Found: Parked outside the stadium. There are two models: one based on the 
+Glendale, and one based on the Oceanic.
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+7.16 - Glitched vehicles
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Unlocked: Available any time in free roam, unless vehicle has a specific 
+unlock criteria.
+
+Found: These can be found randomly in the game whenever the vehicle in 
+question spawns. It is usually a result of too many other vehicles and 
+pedestrians in the immediate area, causing the game to "forget" to load the 
+missing feature. Once a vehicle loads with a feature missing, it will be 
+permanent, and thus these can be saved in a garage to keep the featureless 
+version.
+
+------------------------------------------------------------------------------
+LIST OF VEHICLES:
+-Bloodring Banger (no number on roof)
+-Cabbie (without light)
+-Coach (no sign on side)
+-Flatbed (no objects in bed)
+-Kaufman Cab (without light)
+-Taxi (without light)
+-Zebra Cab (without light)
+------------------------------------------------------------------------------
+
+
+
+
+
+==============================================================================
+*8* BREAKDOWN BY SPECIAL QUALITY
+==============================================================================
+This section gives a breakdown of all special vehicles by what quality they 
+have. Vehicles with multiple properties are listed in each section they 
+belong in. Inspired by GTA_Loco's similar section in his guides.
+
+Unique vehicles:
+ 4.1 - Spand Express (Jury Fury)
+ 4.2 - Spand Express (Riot)
+ 4.3 - Love Fist (Psycho Killer)**
+ 4.4 - Love Fist (Publicity Tour)**
+ 4.5 - Romero's Hearse (Two Bit Hit)
+ 4.6 - Romero's Hearse (Two Bit Hit)
+ (**Love Fist is only unique on PS2 versions)
+
+AP/PPT - All-proof/Pop-proof Tires:
+ 6.5 - Voodoo (UNOBTAINABLE - Guardian Angels)
+
+AP - All-proof (Bullet/Fire/Explosion/Damage):
+ 3.1 - Admiral (In the beginning)
+ 3.2 - Admiral (Guardian Angels)
+
+BP/FP/EP - Bullet/Fire/Explosionproof:
+ 3.3 - Squalo (Supply & Demand)
+ 3.5 - PCJ-600 (Bar Brawl)
+ 3.6 - Sabre Turbo (The Driver)
+ 6.16 - Sanchez (UNOBTAINABLE - Dirt Ring)
+
+BP/EP
+ 7.11 - Rhino (steal at 6 stars, or collect 90 packages)
+
+FP/EP - Fire/Explosionproof
+ 3.4 - Squalo (Supply & Demand)
+ 3.7 - Hotring Racer (Hot Ring)
+
+FP - Fireproof:
+ 3.8 - Infernus (Sunshine Auto Races)
+ 3.9 - Cheetah (Sunshine Auto Races)
+ 3.10 - Banshee (Sunshine Auto Races)
+ 4.6 - Romero's Hearse (Two Bit Hit)
+
+PPT - Pop-proof Tires:
+ 6.4 - Cuban Hermes (UNOBTAINABLE - Guardian Angels)
+ 6.6 - Voodoo (UNOBTAINABLE - Guardian Angels)
+
+Unique color:
+ 3.1 - Admiral (White - In the beginning)
+ 3.2 - Admiral (Silver - Guardian Angels)
+ 5.1 - Admiral (White - In the beginning)
+ 5.2 - Washington (Black - All Hands on Deck!)
+ 5.3 - PCJ-600 (Silver - Autocide)
+ 5.4 - Bobcat (Black/Purple- Autocide)
+ 5.5 - PCJ-600 (Bright blue - Autocide)
+ 5.6 - Admiral (Black - Check Out at the Check In)
+ 5.7 - Walton (White - Drug Runner)
+ 5.8 - Stretch (Gold - Martha's Mug Shot)
+ 5.9 - Sentinel (Black - Hit the Courier)
+ 5.10 - Pony (Black - Loose Ends)
+ 5.11 - Admiral (Black - Loose Ends)
+ 5.12 - Maverick (Bright blue - Loose Ends)
+ 5.13 - Voodoo (Black - Two Bit Hit)
+ 6.1 - Maverick (UNOBTAINABLE - Black - In the beginning)
+ 6.8 - Stretch (UNOBTAINABLE - Black - Four Iron)
+ 6.9 - Stretch (UNOBTAINABLE - Black - Demolition Man)
+ 6.13 - Stretch (UNOBTAINABLE - Gold - Recruitment Drive)
+ 6.15 - Stretch (UNOBTAINABLE - Black - Two Bit Hit)
+
+Unique features:
+ 6.2 - Admiral (UNOBTAINABLE - Heavy - Jury Fury)
+ 6.10 - Oceanic (UNOBTAINABLE - Bar Brawl)
+ 6.11 - Taxi (UNOBTAINABLE - The Job)
+ 6.12 - Securicar (UNOBTAINABLE - Heavy - Autocide)
+ 6.14 - Angel (UNOBTAINABLE - Super - Alloy Wheels of Steel)
+
+Unlockable / Rare:
+ 7.1 - SC[White] Infernus (after Rub Out)
+ 7.2 - Sparrow (after Rub Out)
+ 7.3 - Deluxo (after 1st list at Sunshine Auto)
+ 7.4 - Sabre Turbo (after 2nd list at Sunshine Auto)
+ 7.5 - Sandking (after 3rd list at Sunshine Auto)
+ 7.6 - Hotring Racer (after 4th list at Sunshine Auto)
+ 7.7 - Cuban Jetmax (purchase Boatyard Asset)
+ 7.8 - Zebra Taxi (complete Kaufman Can Asset)
+ 7.9 - Skimmer (after Dildo Dodo)
+ 7.10 - Sea Sparrow (collect 80 Hidden Packages)
+ 7.11 - Rhino (collect 90 Hidden Packages or get 6 star wanted level)
+ 7.12 - Hunter (after Keep Your Friends Close, and/or 100 Hidden Packages)
+ 7.13 - SC[Black] Sanchez (after completing Dirt Track Sanchez once)
+ 7.14 - SC[Black] Rancher (after completing Dirt Track Rancher three times)
+ 7.15 - Bloodring Banger (after Blood Ring)
+ 7.16 - Glitched vehicles (Free Roam glitch)
+
+
+
+
+
+==============================================================================
+*9* MISSION LIST
+==============================================================================
+Here is a breakdown of every mission in the game, and any special vehicles 
+within. This is also the mission order that the previous sections follow, in 
+terms of vehicle order. 
+
+The following order is based on acquiring a "perfect" game. The reason Two Bit 
+Hit is so late in the list is to prevent the Havana Clothes from glitching. 
+Missions that force clothes on you are what cause it to glitch, in particular, 
+Cop Land and The Job. I placed it so late just to ensure that there'd be 
+minimal trouble given by the remaining missions. Not to mention leaving the 
+Cuban/Haitian string of missions for so late in the game prevents the Haitians 
+from bothering you too much.
+
+STORY MISSIONS:
+1: In the beginning (Start of the game)
+  3.1 - AP SC[White] Admiral
+  5.1 - SC[White] Admiral
+  6.1 - Unobtainable SC[Black] Maverick
+2: An Old Friend (Tommy Vercetti)
+3: The Party (Ken Rosenberg)
+4: Back Alley Brawl (Ken Rosenberg)
+5: Jury Fury (Ken Rosenberg)
+  4.1 - Spand Express (1st of 2)
+  6.2 - Unobtainable Heavy Admiral
+  6.3 - Unobtainable Heavy Sentinel
+6: Riot (Ken Rosenberg)
+  4.2 - Spand Express (2nd of 2)
+7: Treacherous Swine (Juan Garcia Cortez)
+8: Mall Shootout (Juan Garcia Cortez)
+9: Guardian Angels (Juan Garcia Cortez)
+  3.2 - AP SC[Silver] Admiral
+  6.4 - Unobtainable PPT Cuban Hermes
+  6.5 - Unobtainable AP/PPT Voodoo
+  6.6 - Unobtainable PPT Voodoo
+  6.7 - Unobtainable AP/PPT SC[Silver] Admiral
+10: Road Kill (Assassination Contract)
+11: The Chase (Ricardo Diaz)
+12: Phnom Penh '86 (Ricardo Diaz)
+13: Sir, Yes Sir! (Juan Garcia Cortez)
+14: Waste the Wife (Assassination Contract)
+15: Four Iron (Avery Carrington)
+  6.8 - Unobtainable SC[Black] Stretch (1st of 3)
+16: Demolition Man (Avery Carrington)
+  6.9 - Unobtainable SC[Black] Stretch (2nd of 3)
+17: The Fastest Boat (Ricardo Diaz)
+18: Supply & Demand (Ricardo Diaz)
+  3.3 - BP/FP/EP Squalo
+  3.4 - FP/EP Squalo
+19: Death Row (Kent Paul)
+20: All Hands On Deck! (Juan Garcia Cortez)
+  5.2 - SC[Black] Washington
+21: Rub Out (Ricardo Diaz)
+22: Shakedown (Tommy Vercetti)
+23: Bar Brawl (Tommy Vercetti)
+  3.5 - BP/FP/EP PCJ-600
+  6.10 - Unobtainable Oceanic w/ briefcases in the back
+24: Cop Land (Tommy Vercetti)
+25: Autocide (Assassination Contract)
+  5.3 - SC[Silver] PCJ-600
+  5.4 - SC[Black/Purple] Bobcat
+  5.5 - SC[Bright blue] PCJ-600
+  6.11 - Unobtainable Heavy Securicar
+26: Check Out at the Check In (Assassination Contract)
+  5.6 - SC[Black Admiral] (1st of 2)
+27: Distribution (Cherry Popper Icecream asset)
+28: No Escape? (Malibu asset)
+29: The Shootist (Malibu asset)
+30: The Driver (Malibu asset)
+  3.6 - BP/EP/FP Sabre Turbo
+31: The Job (Malibu asset)
+  6.12 - Unobtainable Taxi w/ open trunk
+32: Gun Runner (Phil Cassidy)
+  5.7 -White Walton
+33: Boomshine Saigon (Phil Cassidy)
+34: V.I.P (Kaufman Cab asset)
+35: Friendly Rivalry (Kaufman Cab asset)
+36: Cabmageddon (Kaufman Cab asset)
+37: Recruitment Drive (Film Studio asset)
+  6.13 - Unobtainable Gold Stretch
+38: Dildo Dodo (Film Studio asset)
+39: Martha's Mug Shot (Film Studio asset)
+  5.8 - Gold Stretch
+40: G-spotlight (Film Studio asset)
+41: Checkpoint Charlie (Boatyard asset)
+42: Spilling the Beans (Print Works asset)
+43: Hit the Courier (Print Works asset)
+  5.9 - Black Sentinel
+44: Loose Ends (Assassination Contract)
+  5.10 - Black Pony
+  5.11 - Black Admiral (2nd of 2)
+  5.12 - Bright blue Maverick
+45: Love Juice (Love Fist)
+46: Psycho Killer (Love Fist)
+  4.3 - Love Fist (1st of 2)
+47: Alloy Wheels of Steel (Mitch Baker)
+  6.14 - Unobtainable Super Angel
+48: Messing with The Man (Mitch Baker)
+49: Hog Tied (Mitch Baker)
+50: Publicity tour (Love Fist)
+  4.4 - Love Fist (2nd of 2)
+51: Two Bit Hit (Avery Carrington)
+  4.5 - Romero's Hearse
+  4.6 - FP Romero's Hearse
+  5.13 - Black Voodoo
+  6.15 - Unobtainable Black Stretch (3rd of 3)
+52: Stunt Boat Challenge (Umberto Robino)
+53: Juju Scramble (Auntie Poulet)
+54: Bombs Away! (Auntie Poulet)
+55: Dirty Lickin's (Auntie Poulet)
+56: Cannon Fodder (Umberto Robino)
+57: Naval Engagement (Umberto Robino)
+58: Trojan Voodoo (Umberto Robino)
+59: Cap the Collector (Print Works)
+60: Keep Your Friends Close (Tommy Vercetti)
+
+
+SIDE MISSIONS:
+S1: Hot Ring
+  3.7 - FP/EP Hotring Racer
+S2: Dirt Ring
+  6.15 - Unobtainable BP/FP/EP Sanchez
+S3: Blood Ring
+S4: Trial by Dirt
+S5: Test Track
+S6: Cone Crazy
+S7: RC Bandit
+S8: RC Baron 
+S9: RC Raider Pickup
+
+
+
+
+
+==============================================================================
+*10* FREQUENTLY ASKED QUESTIONS
+==============================================================================
+Q: My car disappeared from the garage!
+A: Garages ARE known to eat vehicles. The safest way to avoid this is to save 
+frequently over multiple slots, and regularly check garages. In particular, 
+the Silver PCJ-600 seems to have a nasty tendency to vanish.
+
+Q: My vehicle lost its property!
+A: Occasionally, garages DO eat the special properties of vehicles, though it 
+is rare. When checking to see if the vehicle actually exists, also test its 
+proofing.
+
+Q: You missed [insert special vehicle]!
+A: Email me, and let me know. You will receive full credit for it.
+
+Q: [Insert special vehicle] doesn't possess a property you said it did!
+A: Most likely, you did not follow the precise strategy. If you did, and it 
+does not retain its property, contact me and say so, although I personally 
+check each and every vehicle.
+
+Q: One of the vehicles you listed is one I discovered first, and here's proof! 
+Thief!
+A: I attribute vehicles I knew about before writing this to "common 
+knowledge." If you discovered a vehicle, and/or developed a strategy, and you 
+have proof of it (a link to an old forum post somewhere, or possibly an FAQ 
+that credits you), tell me, and I'll give you full credit. Although I wish I 
+could give the proper credit for most vehicles, the need for a consolidated 
+special vehicle guide for VC takes priority over tracking down each and every 
+person beforehand.
+
+
+
+
+
+==============================================================================
+*11* CONTACT INFORMATION
+==============================================================================
+My screenname is LancetJades on GameFAQs.
+
+You can email me at:
+lancet at g mail dot com
+(remove the spaces, obviously, and replace the at with the proper sign)
+
+Alternatively, you can message me at Discord: lancetjades
+Send me a friend request and just tell me you're contacting me about a guide
+
+I'm a perfectionist, so if you have anything to contribute or correct, please 
+do so. You'll receive full credit (credit goes to the screenname you talk to 
+me from, so if you want another name, you have to specify it). Even if you're 
+just pointing out a spelling or grammatical mistake, please do so, no matter 
+how small. Keep in mind though that I live in the U.S., and as such, I use 
+American English spellings such as "color" and "criticize," as opposed to 
+"colour" and "criticise."
+
+If you wish to use this guide on your site, aside from asking my permission, 
+I require you in question to automatically fetch any updates I make from 
+GameFAQs.com yourselves. I only update to GameFAQs.com and if I discover other 
+sites carrying my guides have out-of-date versions, I will ask that it be 
+removed.
+
+
+
+
+
+==============================================================================
+*12* CREDITS
+==============================================================================
+4emp2008
+~Discovered and created the strategy for the CP white Admiral at the beginning 
+ of the game, and a cheatless fail-less strategy for the black Washington.
+
+Andreaz1
+~Discovered the heavy Admiral in Jury Fury and Securicar in Autocide! Also 
+ added a note about the white Admiral on PC version, and mentioned a heavy 
+ Sentinel in Jury Fury. Also found a silver Stretch in the final mission 
+ (very subtle difference from the normal color).
+
+Chester721
+~Discovered the method of obtaining the FP/EP Hotring Racer! Amazing work.
+
+Christopher Fuentes
+~Provided an easier strategy for the White Admiral and cars in Two Bit Hit.
+
+Common Knowledge
+~Findings labeled "common knowledge" are labeled so because they have been so 
+ widely known and distributed that it is impossible for me to obtain the true 
+ source that found it (I know for a fact that I have read the info on 
+ numerous sites, and little of it came from gamefaqs). I do not take or 
+ deserve any credit for these vehicles, as I am NOT the person who discovered 
+ them, nor the strategies (though I have improved/elaborated on/fixed some of 
+ them). If you are the person who found a vehicle and/or developed a strategy 
+ for obtaining it, email me with a link to a source that credits you for 
+ finding it (such as another FAQ), and I will gladly give you credit. Again, 
+ I neither accept nor deserve any credit for this information, and I apologize 
+ if you are the finder of a vehicle, or author of a strategy, to whom I have 
+ not given credit.
+
+Grandtheftwiki.com
+~A wiki for the GTA series that sometimes manages to have information that is 
+ never relayed to me.
+
+GTA_Loco
+~For giving me the inspiration to write this guide, and for providing 
+ information on the Black Maverick, EP Hotring, and CP Sanchez (as well as 
+ reminding me about the FP Sunshine Auto race cars).
+
+thehambone93
+~Reported difficulties in getting the gold Stretch on the mission Martha's 
+ Mug Shot.
+
+Jayson Blunt
+~Reminding me the black Stretch can be replicated via the black traffic cheat.
+
+JBear427
+~Alerted me to the trick that may allow Xbox players to obtain the CP Admiral 
+ without failing Guardian Angels.
+
+Mat
+~Confirmed the lightless Zebra Taxi.
+
+MC
+~Info on the black Rancher and Sanchez possibly not being present in later 
+ versions of the game. And now, info on how to get the black Rancher and 
+ Sanchez in later versions, as well as info on easier black Washingtons, and 
+ the later version Sabre Turbo.
+
+Militia
+~Wrote a special vehicle guide on gtaforums.com that helped collect a lot of 
+ the info (especially more recent findings) that I've missed.
+
+Professional Amateur
+~Mentioned some vehicles that aren't special in the Double Pack version. These 
+ include the proofed Sabre Turbo, black Washington, and Love Fist.
+
+Seth Gozen
+~Various corrections for stuff I misspelled or mistyped, and feedback on the 
+ BP/FP/EP Sabre Turbo.
+
+SpriteFan274 and others
+~Making the great special vehicle guide on GTAforums.com and doing a ton of 
+ research on special vehicles, both in finding new vehicles, new strategies, 
+ and other things. Plenty of others have helped him with these guides, too. 
+ Find his VC guide here:
+ http://gtaforums.com/topic/849405-gta-vc-special-vehicle-guide/
+ 
+
+
+
+
+
+==============================================================================
+*13* VERSION HISTORY
+==============================================================================
+1.00     Completed August 22nd, 2006.
+Original version, obviously.
+
+1.10     Completed August 23rd, 2006.
+Fixed an error with the Hotring, and added a couple of things I somehow 
+missed.
+
+2.00     Completed August 28th, 2006.
+Completed the mission-by-mission breakdown, and confirmed whether a lot 
+of vehicles were special or not.
+
+2.01     Completed August 28th, 2006.
+Fixed some minor spelling and spacing errors.
+
+2.10     Completed September 13th, 2006.
+Added unconfirmed vehicle section. Added Lightless Zebra Taxi to it.
+
+2.11     Completed September 14th, 2006.
+More minor corrections, and rephrased some things.
+
+2.15     Completed October 7th, 2006.
+
+Yet more minor stuff, along with rephrasing some things, and 
+elaborating on others.
+
+2.20     Completed October 11th, 2006.
+Added the absolute garage limit.
+
+2.21     Completed October 23rd, 2006.
+More minor corrections.
+
+2.25     Completed November 30th, 2006.
+Added notes about the colors of the white Admiral and CP Admiral.
+
+2.30     Completed December 1st, 2006.
+Added a note about the Love Fist limo.
+
+2.31     Completed December 27th, 2006.
+More minor changes.
+
+2.32     Completed August 7th, 2007.
+More minor changes.
+
+2.50     Completed September 27th, 2007.
+Added a "Breakdown by special quality" section, added numbers to Mission 
+Breakdown section.
+
+2.51     Completed April 18th, 2008.
+Added a note to the BP/FP/EP Sabre Turbo.
+
+2.52     Completed May 6th, 2008.
+More very minor changes.
+
+2.53     Completed May 7th, 2008.
+Adding info on sites requesting this guide and what is necessary, along 
+with a spoiler warning.
+
+2.54     Completed May 8th, 2008.
+Changed the formatting of some of the unobtainable vehicles, adding 
+missions they are available in.
+
+2.55     Completed May 9th, 2008.
+Minor changes.
+
+2.56     Completed May 15th, 2008.
+Minor changes.
+
+2.57     Completed May 16th, 2008.
+Added a note to the CP Admiral (about the Xbox version).
+
+2.58     Completed May 25th, 2008.
+Minor addition to the contact info.
+
+2.59     Completed August 18th, 2008.
+Minor revisions.
+
+2.60     Completed August 21st, 2008.
+More minor changes for enhanced readability.
+
+2.61     Completed January 31st, 2009.
+Some notes about the black Rancher/Sanchez.
+
+2.62     Completed March 2nd, 2009.
+Removed some sites' permission to host my guides.
+
+2.63     Completed May 22nd, 2009.
+Added a lot of info on a few vehicles, especially revolving around later 
+versions, courtesy of MC.
+
+2.64     Completed June 10th, 2009.
+Fixed various small errors.
+
+2.70     Completed July 11th, 2009.
+Added some info on the black Stretches. Corrected more instances of Check 
+Out at the Check In being reversed. Revised the mission list a bit. Also, 
+discovery of a heavy Admiral and Securicar!
+
+2.75     Completed April 15th, 2010.
+Moved version history to the back of the guide, and updated the guide's 
+general format to better match my later guides.
+
+2.76     Completed April 26th, 2010.
+Added the proofings to the Rhino listing. A minor oversight, but one I still 
+wanted to correct.
+
+2.77     Completed October 19th, 2010.
+Edited and fixed a couple of minor things.
+
+2.80     Completed January 2nd, 2011.
+Edited and fixed more minor things. Small typos and such. Oh, also moved the 
+lightless Taxi and friends to the Rare section, where they belong. Revised 
+the way multiple unlocked and found methods are organized in the Rare 
+section, to bring into line with a standardized format across all my guides. 
+Also reversed the order of the Mission List and Breakdown by Quality lists, 
+because having the missions first caused me more annoyance than you would 
+ever believe possible.
+
+2.85     Completed January 4th, 2011.
+Added a note on Ken's white Admiral, a heavy Sentinel to the unobtainable 
+list, and a note on the black Rancher. Also rewrote some strategies to better 
+describe how they work. Figured out a MUCH better strategy for the black 
+Voodoo and Romero's Hearse in Two Bit Hit (getting both without having to 
+die or get busted, or deal with a difficult strategy). And finally, Andreaz1 
+also found a unique silver Stretch in the final mission!
+
+2.86     Completed April 26th, 2011.
+Added a new strategy for the White Admiral and cars in Two Bit Hit, thanks to 
+Christopher Fuentes.
+
+2.87     Completed June 5th, 2011.
+Changed my contact information.
+
+2.88     Completed October 21st, 2011.
+Someone confirmed seeing a lightless Zebra Taxi. Enough for me to put it in 
+the normal vehicle sections, since it's pretty much a guarantee at this 
+point anyways. Completely removed the "suspected vehicles" section due to 
+this, as I doubt it will ever have a purpose again.
+
+2.89     Completed June 25th, 2012.
+Made a couple small spelling fixes, and updated the whitelist to mention the 
+latest version is always found on GameFAQs.com.
+
+2.90     Completed July 11th, 2012.
+Changed the spacing of the sections in the guide, and updated contact info.
+
+2.91     Completed August 13th, 2012.
+Added some notes about later-version vehicles, courtesy of Professional 
+Amateur. Also improved the formatting of the vehicle sections of the guide.
+
+2.92     Completed September 21st, 2012.
+Added a note that the white Admiral is also found in front of Vercetti 
+Mansion on the Xbox Double Pack version.
+
+2.93     Completed November 28th, 2014.
+Removed the CDP information regarding Cuban Hermes, since it is a standard 
+feature on that vehicle. Added the FP/EP Squalo from Supply and Demand, since 
+it is different from the BP/FP/EP version, and the CP white Admiral from the 
+beginning (unfortunately requiring cheats). Added a few other vehicles that 
+had been discovered as well.
+
+2.94     Completed June 24th, 2016.
+Nearly ten years, baby! thehambone93 reported to me (a couple of years ago, 
+actually) that the gold Stretch in Martha's Mug Shot apparently is tricky to 
+get on the Haitian Friendly PS2 greatest hits release. Clarified the method 
+that works on that release.
+
+2.95     Completed December 16th, 2016.
+Updated a lot of the guide's formatting. Made mention that the CP Admiral in 
+Guardian Angels is a unique color, updated Romero's Hearse strategy, added 
+note about DP not affecting bikes/boats/helis. Removed silver Stretch from 
+final mission as it is not special. A lot of these updates are thanks to 
+Militia's guide on gtaforums.com! Also consolidated all glitched vehicles 
+into one single entry in rare vehicles. Also info on a proofed PCJ in Bar 
+Brawl and a way to obtain the FP/EP Hotring Racer.
+
+2.96     Completed March 28th, 2018.
+Altered mention of the comprehensiveproof property (CP) to all-proof (AP), 
+updated the vehicle titles with new tags for special colors and properties, to 
+better illuminate why and how they are special. Added a plug for SpriteFan274's 
+guide for the game on GTAforums.com and also properly credited Chester721 for 
+the discovery of how to get the FP/EP Hotring Racer!
+
+
+
+
+
+==============================================================================
+*14* BOILERPLATE
+==============================================================================
+This document Copyright 2006-2024 John Hoffnagle IV.
+
+Do not reproduce this document for any purpose besides personal use 
+without asking me first. I'm not stingy; if you ask, you'll most likely 
+get permission to host it. Otherwise, it's a violation of copyright, 
+and I WILL pursue legal action, especially if you sell it for money.
+
+All trademarks and copyrights contained in this document are owned by 
+their respective trademark and copyright holders. None of which are me.

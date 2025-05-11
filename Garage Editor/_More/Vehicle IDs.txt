@@ -1,0 +1,103 @@
+//-------------------------------------------//
+		Vehicle IDs
+//-------------------------------------------//
+* See "default.ide"
+* This document is incomplete
+
+---- [Boats] ----
+// 88 - Patriot (Boat)
+
+---- [Planes & Helis] ----
+// 9B - Hunter (Chopper)
+// B1 - Sea Sparrow (Chopper)
+// BE - Sea Plane (Plane)
+// C7 - Sparrow (Chopper)
+// D9 - Maverick (Chopper)
+// DA - VCN Maverick (Chopper)
+// E3 - Police Maverick (Chopper)
+
+---- [Bikes] ----
+// A6 - Angel
+// B2 - Pizza Boy
+// BF - PCJ-600
+// C0 - Faggio
+// C1 - Freeway
+// C6 - Sanchez
+
+---- [Cars] ----
+// 82 - Landstalker
+// 83 - Idaho
+// 84 - Stinger
+// 85 - Linerunner
+// 86 - Perennial
+// 87 - Sentinel
+// 89 - Firetruck
+// 8A - Trashmaster
+// 8B - Stretch (Limo)
+// 8C - Manana
+// 8D - Infernus
+// 8E - Voodoo
+// 8F - Pony
+// 90 - Mule
+// 91 - Cheetah
+// 92 - Ambulance
+// 93 - FBI Washington
+// 94 - Moonbeam
+// 95 - Esperanto
+// 96 - Taxi
+// 97 - Washington
+// 98 - Bobcat
+// 99 - Mr. Whoopee
+// 9A - BF Injection
+// 9C - Police
+// 9D - Enforcer
+// 9E - Securica
+// 9F - Banshee
+// A1 - Bus
+// A2 - Rhino (Tank)
+// A3 - Barracks
+// A4 - Cuban Hermes
+// A7 - Coach
+// A8 - Cabbie
+// A9 - Stallion
+// AA - Rumpo
+// AC - Romero's Hearse
+// AE - Sentinel XS
+// AF - Admiral
+// B3 - Gang Burrito
+// B9 - Flatbed
+// BA - Yankee
+// BB - Caddy
+// BC - Zebra Cab
+// BD - Top Fun
+// C4 - Glendale
+// C5 - Oceanic
+// C8 - Patriot
+// C9 - Love Fist (Limo)
+// CC - Hermes
+// CD - Sabre
+// CE - Sabre Turbo
+// CF - Phoenix
+// D0 - Walton
+// D1 - Regina
+// D2 - Comet
+// D3 - Deluxo
+// D4 - Burrito
+// D5 - Spand Express
+// D7 - Baggage Handler
+// D8 - Kaufman Cab
+// DB - Rancher
+// DC - FBI Rancher
+// DD - Virgo
+// DE - Greenwood
+// E0 - Hotring Racer 1
+// E1 - Sandking
+// E2 - Blister Compact
+// E4 - Boxville
+// E5 - Benson
+// E6 - Mesa Grande
+// E8 - Hotring Racer 2
+// E9 - Hotring Racer 3
+// EA - Bloodring Banger 1
+// EB - Bloodring Banger 2
+// EC - Cheetah 2
