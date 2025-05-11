@@ -2,13 +2,13 @@ Title:			"PACC-GTAVC-PS2" 	= "Project All Cheat Codes, for GTA Vice City PS2"
 Author:			TKBS
 Date:			2025 - April
 Info: 			Quick List of Mods, Cheats, & info for further dev.
-Notes:			Based on Target Version PAL 2003 2.03, but can be applied to all regions & versions.
+Notes:			Based on Target Version PAL 2003 2.03 & can be applied to all regions & versions.
 
 The base game that should be used is PAL or NTSC 2003;-
 * 2004 is generally regarded as too much change, dialogue etc.
-* 2002 has too many bugs. 
-* 2003 is the happy medium which leaves only 1 issue on PS2 Hardware the Teargas, an easy fix for someone who can make cheats, sadly no-one has bothered.
-* NTSC 2003 is a few days behind PAL, with the only benefit being the Hz, which can be patched at loss of existing save game support for pal users.
+* 2002 has too many bugs (save game bug). 
+* 2003 is the happy medium which leaves only 1 issue on PS2 Hardware the Teargas, an easy fix for someone who can make cheats wtih asm knowledge, sadly no-one has bothered.
+* NTSC 2003 is a few days behind PAL, therefore it is assumed some beneficial minor updates may have occured to the PAL version, with the only benefit of NTSC being the Hz, which can be patched to PAL - at loss of existing save game support for pal users.
 
 The following changes should be made to the NTSC or PAL 2003 version to make it the 'best' version available.
 
@@ -21,20 +21,29 @@ The following changes should be made to the NTSC or PAL 2003 version to make it 
 		iv) occlu.ipl	- set to all 0's
 		V) peds.coll  - add 2004 file to 2003 version.
 		Vi) Optional: modify PAL elf (SLES_510.61) file to run in NTSC Mode - 60hz/ fps in PCSX2
-		vii) Optional: Any textures or 3d models you want to swap.
-		
+		vii) Optional: Any textures or 3d models you want to swap.	
+						- For PS2/ PS3 i like to change pointless logos, slogans and signs, with textures of the in-game cheats (coz im old and memory sucks)
+						- noone has ever released an accurate mini-map for PS2, that would be nice to have. 
 2. Cheats & Garage Vehicles Editor = ".pnach" | ".ct" tables
-
 3. Starter Save: 
-* use or modify existing ones, or create brand new using the cool stuff here.   
+* use or modify existing ones, or create a brand new starter save using the cool stuff here.   
 * I have provided a starter save for people that i feel is better than anything available online currently (PAL-2003).
+
+4. Fixing the crap in the game.
+* i have honestly never thought of VC as a good game, is it alot of fun to mess around in, but it a bad example of everything. Great you can fly, drive, shoot, etc But the shooting and aiming is terrible, the driving is awful, the AI is completely bollax
+and the story is just boys being boys with drug, guns and bitches references and absolutely drenched in stolen material, movie quotes, entire movie stories and you know what the is going to happen at the end right from the 1st cutscene or first mansion visit.
+..compared to games from 2000 it is still pretty sucky for the most part.
+- and let us not forget that rockstar are complete dick heads, unscrupulous thieves who have to this day, never released a single game that has not be fundamentally broken not just on day 1 release, but also numerous releases since.
+like you have 15 different versions of Vice City and not one of them is widely accepted as being ... acceptable ? there are games people mod to enhance, and then there is gta, where if you don't mod it, you have a shit product.
+* So the cheats, mods and codes are there to fix the crap, as much as can be done with such minor changes.
+
 
 ---- Modding GTAVC PS2 - examples ----
 ** After modifying files re-build .iso using imgburn default settings, then convert into .pkg if on PS3 | PS4.
 
 [60 hz/ NTSCV Mode for PAL]
-* Patch the PAL version to run in NTSC mode.
-* Note: This makes saves for the unmodified version incompatible and some loss of resolution.
+* Patch the PAL version to run in NTSC V-mode.
+* Note: This makes saves for the un-modified version incompatible and some loss of resolution.
 
 [Garage Editor]
 * see the ".pnach" file for codes to set any vehicle in a garage.
@@ -82,7 +91,8 @@ nt_roadblockGF		600.0,		4000.0	0.99,		0.05,		50.0,		240.0,	1.0,	1,	1,	0
 * modify the .dat file
 
 [Stronger Fists] //... [Adjust weapon values.] 	// optional,  not required if you got a starter save with weapons in properties and max cash.
-* modify the "fistfite.dat" file
+* modify the "fistfite.dat" file - probably best to not do this. 
+* weapons dat can be edited to make the damage values more logical.
 
 [Remove Storm Warning Barriers/ RoadBlocks: Access Islands Early colours]			// optional,  but pretty cool if you want to mess around at the start
 * modify the "object.dat" file, replace the "nt_xxx" roadblocks with values from e.g. the lamppost.
@@ -109,3 +119,4 @@ FIRETRUK        18000.0 2.0 4.4 1.3 0.0 0.0 -0.3  70  2.00 0.55 0.50 5 260.0 35.
 * i am not great with cheat engine, but have included as much as i could in a ".ct" file everythign else is in the ".pnach"
 
 Enjoy!
+
