@@ -1,0 +1,50 @@
+// I have been able to decompile the ps2 scm and find hex in it, then find that hex in cheat engine
+* but i have not been able to use that info to do anything.
+* maybe this can be used by someone to create something
+
+
+hex
+ A4 03 42 41 52 35 00 CC CC CC
+end
+wait $launch_shit_for_debug_build
+
+
+
+Weather.ForceNow(WeatherType.ExtraSunnySmogLa)
+hex
+ BC 00 57 45 41 54 48 45
+end
+  is_float_var_greater_or_equal_to_float_var 1000 >= 1
+wait 300
+
+:Noname_202673
+if 
+  $1618 == 5
+goto_if_false @Noname_202715
+Weather.ForceNow(WeatherType.SunnySmogLa)
+hex
+ BC 00 57 45 41 54 48 45
+end
+  is_float_lvar_greater_or_equal_to_float_lvar 1000 >= 1
+wait 300
+
+Car.ChangeColor($1587, $1578, $1579)
+ FD 02 43 4F 5F 4F 4E 45 00 CC 02 A8 18 02 AC 18
+ 05 F4 01 04 01 04 00 02 A0 18
+ 
+ 
+ 
+ create_clothes_pickup 
+  06 CD 4C BF C3 06 9A 79 12 C4 06 66 66 CA 41 04 0C 02 E0 14 E5 03 43 41 04 0C 02 E0 14 E5 03 43 55 4E 54 59 00 CC CC 5E
+  
+  
+  
+  Found in Cheat Engine:
+  06 CD 4C BF C3 06 9A 79 12 C4 06 66 66 CA 41 04 0C 02 E0 14 E5 03 43 55 4E 54 59 00 CC CC 5E 05
+  
+  
+    Re-ordered Addresses in Cheat Engine:
+  06 CD 4C BF   C3 06 9A 79 
+  12 C4 06 66   66 CA 41 04 
+  0C 02 E0 14   E5 03 43 55 
+  4E 54 59 00   CC CC 5E 05

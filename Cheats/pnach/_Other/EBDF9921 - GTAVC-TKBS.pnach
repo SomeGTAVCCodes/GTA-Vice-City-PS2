@@ -1,0 +1,52 @@
+gametitle=GTA Vice City.
+comment=PAL, 2003, Modded.
+
+//* This CRC [EBDF9921] is from Patching PAL 2003 with NTSC V-Mode, Hz, YPos. Using Adrenalin Patcher.
+//* Other modifications include removal of GTA2#-6.img, & Game Data files.
+//* All PAL 2003 Cheats are compatible, that does not get effected. 
+ 
+//---- Fun Stuff:----
+
+//GTA_#.IMG REMOVAL (#2-6) 							- by TKBS  - (Based on Daniel Santos NTSC 1.40 patch)
+patch=1,EE,202E8820,extended,24070001
+
+//Infinite Sprint
+//patch=1,EE,201CF504,extended,10000014
+
+//FUK DA POLICE
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000
+
+//Max Money (AR MAX CD) -      05F5E0FF
+//patch=1,EE,205C845C,extended,00001B58
+//patch=1,EE,205C8460,extended,00001B58
+
+//Tank - Select + Up
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,14400007
+
+//Infinite Health & Armour (100 - Not 200)
+//patch=1,EE,200FFF00,extended,3C0542C8
+//patch=1,EE,200FFF04,extended,AC450368
+//patch=1,EE,200FFF08,extended,AC45036C
+//patch=1,EE,200FFF0C,extended,03E00008
+//patch=1,EE,200FFF10,extended,46000024
+//patch=1,EE,202D2F14,extended,0C03FFC0
+
+//Explode Vehicles (1) with cheat notification 		-	Select + LEFT
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400028
+
+//Vehicles: New Damage Proof
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//Clean Streets: Both Traffic & Pedestrians removed
+//No Pedestrians
+//patch=1,EE,204AB578,extended,00000000
+//No Traffic
+//patch=1,EE,204AB610,extended,00000000
