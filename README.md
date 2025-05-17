@@ -4,4 +4,4 @@
 * Project All Comprehensive Cheats, Codes, Mods, New Information & Discoveries, Perfect Starter Save Game etc.
 
 I have also started;
-* [GTA SAN ANDREAS City PS2]: Project All Comprehensive Cheats, Codes, Mods etc.
+* [GTA SAN ANDREAS City PS2]: Project All Comprehensive Cheats, Codes etc.
