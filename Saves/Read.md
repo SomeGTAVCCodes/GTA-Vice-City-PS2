@@ -9,6 +9,7 @@
 * .p2s = save state
 
 * The Save Folder = "FINAL Starter Save"
+* SLES-51061 GTA ViceCity (6C90FE6C).psu	= FINAL. A Perfect Starter Save
 * SLES-51061 GTA ViceCity (7CAEBE79).psu
 
 Old:
