@@ -1,0 +1,27 @@
+gametitle=GTA SAN ANDREAS.
+comment=NTSC-Black.
+
+//MAX Health NTSC 1
+//patch=1,EE,208021C0,extended,44B00000
+
+//MAX Health NTSC 2: 20802D50 44B00000
+
+//Infinite Health NTSC 1:
+//Line 1 Default Value = C4600580
+//Line 2 Default Value = 44030000
+//Line 3 Default Value = 00000000
+
+//Infinite Health NTSC 1 NOTES:
+//patch=1,EE,202A9B30,extended,3C0142C8
+//patch=1,EE,202A9B38,extended,AC610580
+//patch=1,EE,202A9B3C,extended,24030064
+
+//Infinite Health NTSC 2:	20261824 E4400580
+
+//---- NOT TESTED (NTSC 2 ? )----
+//Sprint
+//patch=1,EE,00709748,extended,00000001
+//Health
+//patch=1,EE,20261824,extended,E4400580
+
+

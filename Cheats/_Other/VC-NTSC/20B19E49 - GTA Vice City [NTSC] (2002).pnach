@@ -1,0 +1,86 @@
+gametitle=Grand Theft Auto: Vice City.
+comment= (NTSC) (2002) (1.40) (SLUS_205.52) (CRC=20B19E49).
+
+//Notes:
+//author=Code Master, GameMasterZer0, GFCC, DA || author=Codejunkies
+
+// ---- TESTS ----
+
+// ---- Confirmed Working ----
+
+//Vehicles:  No Damage from Weapons (All Cars)
+//patch=1,EE,201864F0,extended,03E00008
+//patch=1,EE,201864F4,extended,00000000
+
+// ---- TODO: **Test these, then port to PAL 2003** ----
+
+//Player: No Fall Damage
+//patch=1,EE,201BA090,extended,00000000
+//patch=1,EE,201BA144,extended,00000000
+
+// ??? Space Shuttle Mode ???
+//patch=1,EE,2013EA54,extended,00000000
+
+//Peds Have weapons [Guns (Press R1+R2+Left To Activate)]
+//patch=1,EE,D05C0182,extended,0000F57F
+//patch=1,EE,20277F24,extended,14400000
+//patch=1,EE,D05C0182,extended,0000FFFF
+//patch=1,EE,20277F24,extended,14400015
+
+//Peds do not have weapons
+//patch=1,EE,20158CD0,extended,03E00008
+//patch=1,EE,20158CD4,extended,00000000
+
+//Vehicles: No Damage From Collisions (your car)
+//patch=1,EE,2016FAF8,extended,00000000
+//patch=1,EE,2016FB0C,extended,00000000
+
+//Vehicles: No Damage From Collisions (All Cars)
+//patch=1,EE,2016F690,extended,03E00008
+//patch=1,EE,2016F694,extended,00000000
+
+//Vehicles: Never Drown By Cars (Press R1+R2+Right To Activate)]
+//patch=1,EE,D05C0182,extended,0000F5DF
+//patch=1,EE,20278130,extended,14400000
+//patch=1,EE,D05C0182,extended,0000FFFF
+//patch=1,EE,20278130,extended,14400015
+
+// ---- No Clip Water, Convert NTSC -> PAL ----
+//Vehicles: Disable Water For Cars & Pedestrians (No Clip Water)
+//patch=1,EE,2016D8B0,extended,03E00008
+//patch=1,EE,2016D8B4,extended,00000000
+//patch=1,EE,201BFAD0,extended,03E00008
+//patch=1,EE,201BFAD4,extended,00000000
+
+// ntsc (2016D8B0) - pal (2016D6C0) = 1F0 || 1F0 + pal (2016D6C0) =  ntsc (2016D8B0)
+//201BFAD0 - 1F0 = 201BF8E0
+// from this result  "201BF8E0" - then search for value "27BDFE60" & follwed by value "FFBF0070"
+
+//PAL 2.30 - Converted from ntsc 2.01
+//patch=1,EE,2016D6C0,extended,03E00008
+//patch=1,EE,2016D6C4,extended,00000000
+//patch=1,EE,201BF930,extended,03E00008
+//patch=1,EE,FFBF0070,extended,00000000
+
+//No Clip: Water Notes
+//* I do not think that Line 4 is required, i accidently put the value in the address slot and the code still worked.
+//* ^^ Line 2 May not be needed either
+// Original - New
+//27BDFDE0 -> 03E00008
+//FFBF0090 -> 00000000
+//27BDFE60 -> 03E00008
+//FFBF0070 -> 00000000
+
+//Idiot AI
+
+//Vehicles: Boats & Planes Never Blow Up
+//patch=1,EE,20174740,extended,03E00008
+//patch=1,EE,20174744,extended,00000000
+
+//Vehicles: Disable Damage from ????
+//patch=1,EE,2016838C,extended,00000000
+
+//Enable Horn Sound (Default)
+//patch=1,EE,1022E54A,extended,0F8F0000
+//Disable Horn Sound
+//patch=1,EE,1022E54A,extended,00001000

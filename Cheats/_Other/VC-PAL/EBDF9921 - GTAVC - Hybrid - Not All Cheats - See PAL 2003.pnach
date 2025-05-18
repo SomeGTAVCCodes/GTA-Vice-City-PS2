@@ -1,0 +1,101 @@
+gametitle=GTA Vice City.
+comment=PAL 2003, Modded Hz & YPOS.
+
+// ---- NOTES ----
+//* CRC "EBDF9921" is from Patching PAL 2003 with NTSC V-Mode, Hz, YPos. Using Adrenalin Patcher.
+//* Other modifications include Game Data files & removal of GTA2#-6.img.
+//* All PAL 2003 [CRC "CFCB0D20"] Cheats & saves are compatible.
+//* A combination of these, the starter save game & in-game cheats should cover most requirements.
+
+//---- Codes --------------------------------------------------------------------------------------
+
+//GTA_#.IMG REMOVAL (#2-6) 							- by TKBS (Based on Daniel Santos NTSC 1.40 patch)
+patch=1,EE,202E8820,extended,24070001
+
+//Weapon Cheat: Cycle through.	   (Select+UP)		- by TKBS
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279374,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279374,extended,14E00003
+
+//FUK DA POLICE
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000
+
+//Max Money (AR MAX CD) -      05F5E0FF
+//patch=1,EE,205C845C,extended,00001B58
+//patch=1,EE,205C8460,extended,00001B58
+
+//Infinite Sprint
+//patch=1,EE,201CF504,extended,10000014
+
+//Infinite Health & Armour 200
+//patch=1,EE,20B50FF8,extended,43480000
+//patch=1,EE,20B50FFC,extended,43480000
+
+//Explode Vehicles -	Select + LEFT
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400028
+
+//Vehicles: New Damage Proof
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//Vehicles: No Tyre Damage (Cars) | TYRES Do Not Pop
+//* Part 1 - no impact movement
+//patch=1,EE,2017C4B4,extended,03E00008
+//patch=1,EE,2017C4B8,extended,00000000
+//patch=1,EE,2017C4C0,extended,00000000
+//* Part 2 - no damage
+//patch=1,EE,2017C4C4,extended,03E00008
+//patch=1,EE,2017C4C8,extended,00000000
+
+//Clean Streets: Both Traffic & Pedestrians removed
+//No Pedestrians
+//patch=1,EE,204AB578,extended,00000000
+//No Traffic
+//patch=1,EE,204AB610,extended,00000000
+
+// ---- Sniper Zoom for Minigun, Rocket Launcher, Sniper. ----
+//Sniper (Default)
+//patch=1,EE,20258530,extended,0C0941E0
+//Minigun with Sniper Zoom
+patch=1,EE,20258568,extended,0C0941E0
+//Rocket Launcher with Sniper Zoom
+//patch=1,EE,2025854C,extended,0C0941E0
+
+//Spawn Car: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//patch=1,EE,1027B63C,extended,0000001A
+//patch=1,EE,1027B64C,extended,00000042
+//patch=1,EE,20276970,extended,0C09E798
+//patch=1,EE,20276974,extended,240400EC
+//* Then put back to normal
+//patch=1,EE,20276970,extended,0C09E018
+//patch=1,EE,20276974,extended,24050054
+
+//Spawn Bike: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//patch=1,EE,20279F70,extended,0C0E60E8
+//patch=1,EE,1027B63C,extended,0000001A
+//patch=1,EE,1027B64C,extended,00000042
+//patch=1,EE,20276970,extended,0C09E798
+//patch=1,EE,20276974,extended,240400BF
+//* Then put back to normal
+//patch=1,EE,20279F70,extended,0C05CCB4
+//patch=1,EE,20276970,extended,0C09E018
+//patch=1,EE,20276974,extended,24050054
+
+//Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
+//VH ID
+//patch=1,EE,206B6070,extended,000000EC
+//colours
+//patch=1,EE,206B6090,extended,FF09012E
+//DAMAGE PROOF
+//patch=1,EE,206B608C,extended,0000001F
+
+//*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) ***
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027868C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027868C,extended,14400006

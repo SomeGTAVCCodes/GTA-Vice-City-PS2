@@ -1,0 +1,15 @@
+gametitle=GTA SAN ANDREAS.
+comment=NTSC.
+
+//Health - by TKBS
+//1
+patch=1,EE,202A9B38,extended,42CA0000
+//2
+patch=1,EE,202A9B30,extended,E8E86565
+//patch=1,EE,202A9B3C,extended,24030064
+
+// ---- NOT TESTED ----
+//Sprint
+//patch=1,EE,00709748,extended,00000001
+//Health
+//patch=1,EE,20261824,extended,E4400580
