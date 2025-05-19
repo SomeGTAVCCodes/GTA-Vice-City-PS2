@@ -1,0 +1,7 @@
+
+
+set occlusion to all 0's if using emulator
+
+modify handling for better vehicles, easier side quests (ambulance, firetruck, cop car etc)
+
+remove the road blocks and barriers to access islands from the start.
