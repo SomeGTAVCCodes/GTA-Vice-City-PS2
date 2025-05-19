@@ -1,0 +1,22 @@
+Added 
+1459, icedoor, lh_taxi, 1, 149.5, 128
+
+to ipl
+
+
+thne test swapping ice door with another  door
+
+---- Aim: ----
+* Make the unused garage at the ice cream factory useable, either;-
+a) as a real garage
+b) as a pay n spray
+c) a walk-through wall that, at least provides cover.
+
+the only possible one i know of if the 3rd (c)
+- i have swapped a pay n spray door with a wall before, and you can drive through it.
+
+so far my tests have failed.
+
+i am not googling what ipl and ide are - it is most likely completely shit info on it.
+
+some definition files from 3dsmax probably, dunno, i started 3ds in 2010

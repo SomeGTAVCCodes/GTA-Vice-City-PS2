@@ -1,0 +1,28 @@
+
+
+Close to the addresses for setting STATS i encountered an address that when modifed allows you to swap out static mesh.
+
+The exampel that occured is at ocean hieghts garage, when a wall appeared after modfifyign addrress.
+
+i basically went up the stack from trying to find the "pizza's delivered" address, to set that value
+and not far up this mesh swap happened when copy - pasting values.
+
+Unfortunately, as usual, i did not save the address, becuas ei did not notice the change until some time after.
+
+find that memeory region
+set to 4 bytes long so its all just 8 didgits on 1 line
+and samsh valeus in everythign up the stack until soemthign happens.
+
+documenting that would be an amazing discovery.
+
+
+AS FOR THE FILES IN THIS FODLER: 
+
+these are examples of doing a mesh swa using the gaame data files. but after discovvering that addres thing i did not look into much more.
+
+
+THE PURPOSE:
+
+WAs to sawp garage doors for walls you can drive through.
+Which woudl fix issue swith getting vehicles into garages when they get despawned, especially if your glithcign expldoing vehicles.
+

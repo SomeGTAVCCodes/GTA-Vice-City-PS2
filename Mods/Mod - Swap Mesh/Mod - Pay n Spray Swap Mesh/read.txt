@@ -1,0 +1,7 @@
+Just an example:
+* messy files from testing 
+* potential to make GARAGES easier to access by removing the DOOR that jams on height vehicles like vans/ ambulances etc.
+* Used for testing a method of placing a save garage in another place.
+
+Example:
+Pay n Spray Ghost Wall instead of garage door.
