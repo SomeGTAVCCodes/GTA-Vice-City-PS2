@@ -1,0 +1,15 @@
+
+
+Use adrenalin patcher to make PAL into NTSC framerate ypos
+
+https://www.ps2-home.com/forum/viewtopic.php?f=58&t=447
+
+Or just replace the hex manually.
+
+warning:
+
+save gaems built with original versions will nto work with the patched.
+
+the crc changes.
+
+
