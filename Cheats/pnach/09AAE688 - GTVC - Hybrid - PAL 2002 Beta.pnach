@@ -1,0 +1,610 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2002-Beta) (SLES-51061)
+comment=GTA:VC, PAL, 2002-Beta Codes.
+
+//Author 	= 	TKBS
+//CRC: 		=	09AAE688 (Debug Beta Upgraded)
+//Notes  	=	Use the accompanying ".ct" File.
+//Issues:	= 	Joker Command UNKNOWN: Codes must be enabled then disabled (back to default values)
+//TODO:		= 	Add Snipers ZOOM value to Mini-guns. (see PAL 2003 for example)
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- PS2 Beta .elf ----
+//--------------------------------------------------------------------------------------------------------------------
+//[In-Game] [HARDCODED]:
+//PAD 1 - Debug Menu: 			== L1+ R1 on the menu screen.
+//PAD 1 - Wanted Level + Up		== Left, Right, (repeated)		|| LRLRLR
+//PAD 1 - Wanted Level - Down	== Up, Down,  (repeated)		|| UDUDUD
+
+//GTA_#2-6.img Removal
+//patch=1,EE,202DAAF4,extended,24070001
+
+//60 FPS	||  Default Value: 28420002
+//patch=1,EE,2027475C,extended,28420001
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- MISC Cheats ----
+//--------------------------------------------------------------------------------------------------------------------
+//100% Completion - offset 73A4
+//patch=1,EE,204B94C0,extended,431A0000
+//patch=1,EE,204B94C4,extended,431A0000
+
+//Set Moon Size (0-7)
+//patch=1,EE,204B59D4,extended,00000003
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Menu Options ----
+//--------------------------------------------------------------------------------------------------------------------
+//Toggle Trails: 										00000000 || 00000001
+patch=1,EE,204B6EAC,extended,00000000
+
+//Toggle HUD: 											00000000 || 00000001
+//patch=1,EE,204B91C4,extended,00000001
+
+//Toggle WideScreen: 									00000000 || 00000001
+patch=1,EE,204B8AD0,extended,00000001
+
+//Toggle Subtitles: 									00000000 || 00000001
+patch=1,EE,204B8ACC,extended,00000001
+
+//RADAR MODE:		(0,1,2) - (Off, Blips only, Both)	00000000 || 00000001	|| 00000002
+//patch=1,EE,204B8AEC,extended,00000001
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Clock  & Timers ----
+//--------------------------------------------------------------------------------------------------------------------
+//Clock: Freeze Clock Time 	|| 000003E8 -> E3000008 || offset 2003 - 241544
+//patch=1,EE,204B8A84,extended,E3000008
+
+//Clock: Freeze Mission Timers (Side Quests etc) || DEFAULT: 00006AD0
+patch=1,EE,20690730,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- STATS ----
+//--------------------------------------------------------------------------------------------------------------------
+//### Number of Bullets Fired
+//patch=1,EE,204B94B8,extended,0000029A
+//patch=1,EE,204B94B8,extended,0000029A
+
+//### Planes & Helicopters Destroyed
+//patch=1,EE,204B94B9,extended,0000029A
+//patch=1,EE,204B94BA,extended,0000029A
+
+//[PAL][BETA 2002]### CRIMINAL RATING
+//patch=1,EE,204B95D8,extended,42200000
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Cars Cheats ----
+//--------------------------------------------------------------------------------------------------------------------
+//* Cars: Toggle; Bunny Hop || Float on Water || Fly || Invisible || Black || Purple.
+
+//* Cars: Bunny Hop
+//patch=1,EE,204B8340,extended,00000001
+
+//* Cars: Float on Water
+//patch=1,EE,204B8350,extended,00000001
+
+//* Cars: Fly
+//patch=1,EE,204B833C,extended,00000001
+
+//* Cars: Invisible
+//patch=1,EE,204B8338,extended,00000001
+
+//* Cars: Black
+//patch=1,EE,204B8F20,extended,00000001
+
+//* Cars: Purple
+//patch=1,EE,204B8F24,extended,00000001
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Vehicles ----
+//--------------------------------------------------------------------------------------------------------------------
+//Vehicles: Boats & Planes Never Explode || [Planes - cars = 179E0] || [PAL 2003: Planes - cars = 179E0]
+//patch=1,EE,201757C0,extended,03E00008
+//patch=1,EE,201757C4,extended,00000000
+
+//Vehicles:  Cars & Helis Never Explode
+//patch=1,EE,2017D6B0,extended,03E00008
+//patch=1,EE,2017D6B4,extended,00000000
+
+// Not Needed;- //?????Vehicles: Cars Damage Proof | Never Explode ???
+// ...			//patch=1,EE,2017C480,extended,03E00008
+// ...			//patch=1,EE,2017C484,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Player ----
+//--------------------------------------------------------------------------------------------------------------------
+//Infinite Health & Armour (200 = 43480000) Default = 42C80000		- By TKBS
+//patch=1,EE,20B6CE78,extended,43480000
+//patch=1,EE,20B6CE7C,extended,43480000
+
+//$$$ Set Money (Parts 1-3).
+//patch=1,EE,204B91F4,extended,00000001
+//patch=1,EE,205D505C,extended,00000001
+//patch=1,EE,205D5060,extended,00000001
+
+//Player: Speed is Faster (Maniac Runner) || Original = 3C023F80 || New = 3C024080 || PAL 2003 2012A790 + 1C0 = PAL 2002 BETA
+//patch=1,EE,2012A950,extended,3C024080
+
+// ---- Armour ----
+//Armour Cheat: 					- ON 						- (Any Non-D'Pad Button)
+//patch=1,EE,2027B2A8,extended,00000000
+
+//Armour Cheat: 					- OFF || Default Value		- (Any Non-D'Pad Button)
+//patch=1,EE,2027B2A8,extended,1440001C
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Weapons ----
+//--------------------------------------------------------------------------------------------------------------------
+//Weapons: Cycle Weapon Cheat: 		- ON 							- (Any Non-D'Pad Button)		|| Also "2027B260"
+//patch=1,EE,2027CAE4,extended,00000000
+
+//Weapons: Cycle Weapon Cheat: 		- OFF 	|| Default Value		- (Any Non-D'Pad Button)		|| Also "2027B260"
+//patch=1,EE,2027CAE4,extended,14E00003
+
+//Weapons: Sniper (Default)					|| Default = 0C094608
+//patch=1,EE,20259C60,extended,0C094608
+
+//Weapons: Minigun with Sniper Zoom			|| Default = 0C094BDC || New = 0C094608
+patch=1,EE,20259C98,extended,0C094608
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Cycle Character Models ----
+//--------------------------------------------------------------------------------------------------------------------
+//* NOTE: IMPORTANT: When using this cheat there is no RETURN BACK TO TOMMY - There has neever been one made
+//* Using Change Clothes PLAY12, PLAY10, PLAYER, PLAYER4 etc etc Will cause the Invisible CHarcter Mdoel Bug.
+
+//Cycle Character Cheat: 			- ON 						- (Any Non-D'Pad Button)
+//patch=1,EE,2027B7DC,extended,00000000
+
+//Cycle Character Cheat: 			- OFF || Default Value		- (Any Non-D'Pad Button)
+//patch=1,EE,2027B7DC,extended,14400006
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- AI & NPC ----
+//--------------------------------------------------------------------------------------------------------------------
+//AI: FUK DA POLICE (1) - Turn Off Cops. // No Wanted Level.
+//patch=1,EE,202A31E8,extended,24060000
+//patch=1,EE,202A31EC,extended,24060000
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Clean Streets: Both Traffic & Pedestrians removed ----
+//--------------------------------------------------------------------------------------------------------------------
+//Traffic OFF							|| Default = 3F800000
+//patch=1,EE,204B2920,extended,00000000
+
+//PEDS OFF (PEDESTRIANS)				|| Default = 3F800000
+//patch=1,EE,204B2888,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Render ----
+//--------------------------------------------------------------------------------------------------------------------
+//Rendering: Do Not Render Water - Converted from NTSC 1.40 --> PAL 2003 --> PAL 2002 BETA.
+//patch=1,EE,2018E280,extended,03E00008
+//patch=1,EE,2018E284,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Hidden Packages ----
+//--------------------------------------------------------------------------------------------------------------------
+//* Unlock all individually to receieve reward info (pop-up notifications).
+
+//00 Hidden Packages
+//patch=1,EE,205D5064,extended,00000000
+//10 Hidden Packages
+//patch=1,EE,205D5064,extended,0000000B
+//20 Hidden Packages
+//patch=1,EE,205D5064,extended,00000014
+//30 Hidden Packages
+//patch=1,EE,205D5064,extended,0000001E
+//40 Hidden Packages
+//patch=1,EE,205D5064,extended,00000028
+//50 Hidden Packages
+//patch=1,EE,205D5064,extended,00000032
+//60 Hidden Packages
+//patch=1,EE,205D5064,extended,0000003C
+//70 Hidden Packages
+//patch=1,EE,205D5064,extended,00000046
+//80 Hidden Packages
+//patch=1,EE,205D5064,extended,00000050
+//90 Hidden Packages
+//patch=1,EE,205D5064,extended,0000005A
+//100% Hidden Packages (100)
+//patch=1,EE,205D5064,extended,00000064
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Garage Editor ----
+//--------------------------------------------------------------------------------------------------------------------
+
+// || VH ID ---- X ---- Y ---- Z ---- H ---- ForceSpawn? ---- Immediate Spawn ---- DMG Proof ---- Colours ---- FF ----||
+
+//Each Line = +4 Bytes (except colours 1 -> 2 is +1byte.)
+//Line 1 	=	Vehicle ID
+//Line 2 	=	X -FLOAT-
+//Line 3 	=	Y -FLOAT-
+//Line 4 	=	Z -FLOAT-
+//Line 5 	=	H -FLOAT-
+//Line 6 	=		- Sometimes this is spawn time etc - depends on parked, heli-pad, garage.
+//Line 7 	=		- Sometimes this is spawn time etc - depends on parked, heli-pad, garage.
+//Line 8 	=	Damage Proof - 1F -
+//Line 9a 	=	Colours 1 (& 2)
+//Line 9b 	=	Colours 2 (Stripe)	- +1 Byte
+//Line 10 	=   000000FF
+
+//---- Slim Version ---- Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
+// Garage - Ocean Heights
+//VH ID
+//patch=1,EE,206CF810,extended,000000EC
+//DAMAGE PROOF
+//patch=1,EE,206CF82C,extended,0000001F
+//colours 1 & 2
+//patch=1,EE,206CF830,extended,FF09012E
+
+//---- Full Version ----
+// Garage - Ocean Heights
+//patch=1,EE,206CF810,extended,000000EC // VH ID
+//patch=1,EE,206CF814,extended,00000000 // X
+//patch=1,EE,206CF818,extended,00000000 // Y
+//patch=1,EE,206CF81C,extended,00000000 // Z
+//patch=1,EE,206CF820,extended,00000000 // H
+//patch=1,EE,206CF824,extended,00000000 // S
+//patch=1,EE,206CF828,extended,00000000 // S
+//patch=1,EE,206CF82C,extended,0000001F // DAMAGE PROOF
+//patch=1,EE,206CF830,extended,FF160301 // colours 1 - (main) & 2 || FF16||03||01
+//patch=1,EE,206CF831,extended,00000003 // colours 2 - (Stripe)
+//patch=1,EE,206CF834,extended,000000FF // FF
+
+// Garage - Vice Point 1 - Links View
+//patch=1,EE,206CF8B0,extended,00000064
+//patch=1,EE,206CF8B4,extended,00000000
+//patch=1,EE,206CF8B8,extended,00000000
+//patch=1,EE,206CF8BC,extended,00000000
+//patch=1,EE,206CF8C0,extended,00000000
+//patch=1,EE,206CF8C4,extended,00000000
+//patch=1,EE,206CF8C8,extended,00000000
+//patch=1,EE,206CF8CC,extended,00000000
+//patch=1,EE,206CF8D0,extended,00000000
+//patch=1,EE,206CF8D1,extended,00000000
+//patch=1,EE,206CF8D4,extended,00000000
+
+// Garage - Vice Point 2 - El Swanko
+//patch=1,EE,206CF590,extended,00000064
+//patch=1,EE,206CF594,extended,00000000
+//patch=1,EE,206CF598,extended,00000000
+//patch=1,EE,206CF59C,extended,00000000
+//patch=1,EE,206CF5A0,extended,00000000
+//patch=1,EE,206CF5A4,extended,00000000
+//patch=1,EE,206CF5A8,extended,00000000
+//patch=1,EE,206CF5AC,extended,0000001F
+//patch=1,EE,206CF5B0,extended,FF090201
+//patch=1,EE,206CF5B1,extended,00000000
+//patch=1,EE,206CF5B4,extended,000000FF
+
+// Garage - Hyman Condo [01]
+//patch=1,EE,206CF630,extended,00000000
+//patch=1,EE,206CF634,extended,00000000
+//patch=1,EE,206CF638,extended,00000000
+//patch=1,EE,206CF63C,extended,00000000
+//patch=1,EE,206CF640,extended,00000000
+//patch=1,EE,206CF644,extended,00000000
+//patch=1,EE,206CF648,extended,00000000
+//patch=1,EE,206CF64C,extended,0000001F
+//patch=1,EE,206CF650,extended,FF090201
+//patch=1,EE,206CF651,extended,00000002
+//patch=1,EE,206CF654,extended,000000FF
+
+// Garage - Hyman Condo [02]
+//patch=1,EE,206CF6D0,extended,00000000
+//patch=1,EE,206CF6D4,extended,00000000
+//patch=1,EE,206CF6D8,extended,00000000
+//patch=1,EE,206CF6DC,extended,00000000
+//patch=1,EE,206CF6E0,extended,00000000
+//patch=1,EE,206CF6E4,extended,00000000
+//patch=1,EE,206CF6E8,extended,00000000
+//patch=1,EE,206CF6EC,extended,0000001F
+//patch=1,EE,206CF6F0,extended,FF090201
+//patch=1,EE,206CF6F1,extended,00000002
+//patch=1,EE,206CF6F4,extended,000000FF
+
+// Garage - Hyman Condo [03]
+//patch=1,EE,206CF770,extended,00000000
+//patch=1,EE,206CF774,extended,00000000
+//patch=1,EE,206CF778,extended,00000000
+//patch=1,EE,206CF77C,extended,00000000
+//patch=1,EE,206CF780,extended,00000000
+//patch=1,EE,206CF784,extended,00000000
+//patch=1,EE,206CF788,extended,00000000
+//patch=1,EE,206CF78C,extended,0000001F
+//patch=1,EE,206CF790,extended,FF090201
+//patch=1,EE,206CF791,extended,00000002
+//patch=1,EE,206CF794,extended,000000FF
+
+// Garage - SunShine-Autos [01]
+//patch=1,EE,206CF950,extended,00000000
+//patch=1,EE,206CF954,extended,00000000
+//patch=1,EE,206CF958,extended,00000000
+//patch=1,EE,206CF95C,extended,00000000
+//patch=1,EE,206CF960,extended,00000000
+//patch=1,EE,206CF964,extended,00000000
+//patch=1,EE,206CF968,extended,00000000
+//patch=1,EE,206CF96C,extended,0000001F
+//patch=1,EE,206CF970,extended,FF090201
+//patch=1,EE,206CF971,extended,00000002
+//patch=1,EE,206CF974,extended,000000FF
+
+// Garage - SunShine-Autos [02]
+//patch=1,EE,206CF9F0,extended,00000000
+//patch=1,EE,206CF9F4,extended,00000000
+//patch=1,EE,206CF9F8,extended,00000000
+//patch=1,EE,206CF9FC,extended,00000000
+//patch=1,EE,206CFA00,extended,00000000
+//patch=1,EE,206CFA04,extended,00000000
+//patch=1,EE,206CFA08,extended,00000000
+//patch=1,EE,206CFA0C,extended,0000001F
+//patch=1,EE,206CFA10,extended,FF090201
+//patch=1,EE,206CFA11,extended,00000002
+//patch=1,EE,206CFA14,extended,000000FF
+
+// Garage - SunShine-Autos [03]
+//patch=1,EE,206CFA90,extended,00000000
+//patch=1,EE,206CFA94,extended,00000000
+//patch=1,EE,206CFA98,extended,00000000
+//patch=1,EE,206CFA9C,extended,00000000
+//patch=1,EE,206CFAA0,extended,00000000
+//patch=1,EE,206CFAA4,extended,00000000
+//patch=1,EE,206CFAA8,extended,00000000
+//patch=1,EE,206CFAAC,extended,0000001F
+//patch=1,EE,206CFAB0,extended,FF090201
+//patch=1,EE,206CFAB1,extended,00000002
+//patch=1,EE,206CFAB4,extended,000000FF
+
+// Garage - SunShine-Autos [04]
+//patch=1,EE,206CFB30,extended,00000000
+//patch=1,EE,206CFB34,extended,00000000
+//patch=1,EE,206CFB38,extended,00000000
+//patch=1,EE,206CFB3c,extended,00000000
+//patch=1,EE,206CFB40,extended,00000000
+//patch=1,EE,206CFB44,extended,00000000
+//patch=1,EE,206CFB48,extended,00000000
+//patch=1,EE,206CFB4C,extended,0000001F
+//patch=1,EE,206CFB50,extended,FF090201
+//patch=1,EE,206CFB51,extended,00000002
+//patch=1,EE,206CFB54,extended,000000FF
+
+// Garage - Diaz Mansion (& Mr. Vercetti Mansion) + Outside Parking.
+//
+//
+//...
+
+//--------------------------------------------------------------------------------------------------------------------
+//---------------------------------------- DEBUG MENU; ---------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+// * DEBUG MENU Stuff - from ".elf"
+// * SEE CHEAT ENGINE .ct File.
+
+//** TODO [21] IS TELEPORT - UPDATE COORDS, THIS ADDRESS NEEDS TO BE FOUND! - it occurs within 1 single frame making it hard to find.
+//... i dot think it will be a 00, 01 option probably some full 8 bytes instruction of stuff like 0c023423..
+
+//[0] Debug Menu - [0] SHOW / HIDE DEBUG MENU == 01000000 ||  00000000
+//patch=1,EE,206E37C1,extended,00000000
+//patch=1,EE,206E37C1,extended,01000000
+
+//[01] Debug Menu - [01] Display Timer Bars:B8: == 00009D00 || 00009D01
+//patch=1,EE,205BFBD4,extended,00009D00
+
+//[02] Debug Menu - [02] Played Before?:B8: == 00000000 || 00000001
+//patch=1,EE,204B8ADC,extended,00000000
+
+//[03] Debug Menu - [03] MARKETING BUILD ONxOFF:B8: == 00000000 || 00000001
+//patch=1,EE,204B8AE0,extended,00000000
+
+//[04] Debug Menu - [04] Show Collision Polys:B: True  == 00000000 || 00000001
+//patch=1,EE,204B8BA4,extended,00000000
+
+//[05] Debug Menu - [05] (Part 1/2) Show Reflection Objects:B : IGNORE THIS ?
+//patch=1,EE,205C00D4,extended,
+//[05] Debug Menu - [05] (Part 2/2) Show Reflection Objects:B : == 00000000 || 00000001
+//patch=1,EE,204B8B9C,extended,00000000
+
+//[06] Debug Menu - [06] Show No-Shadow Objects:B : == 00000000 || 00000001
+//patch=1,EE,204B8BA0,extended,00000000
+
+//[07] Debug Menu - [07] Draw HUD:B:    || == 00000000 || 00000001  (Use To fix .elf HUD toggle) - or just press start on controller 2
+//patch=1,EE,204B91C4,extended,00000000
+
+//[08] Debug Menu - [08] Display Memory Usage:B : == 00000000 || 00000001
+//patch=1,EE,204B8BB8,extended,00000000
+
+//[09] Debug Menu - [09] Display Number Of Atomics Rendered:B : "True | False" == 00000000 || 00000001
+//patch=1,EE,204B8BBC,extended,00000000
+
+//[10] Debug Menu - [10] Occlusion Debug:B: True  == 00000000 || 00000001
+//patch=1,EE,204B9A68,extended,00000000
+
+//[11] Debug Menu - [11] Display Occlusion In Memory:B: True  == 00000000 || 00000001
+//patch=1,EE,204B9A24,extended,00000000
+
+//[12] Debug Menu - [12] Show Set Pieces:B: True  == 00000000 || 00000001
+//patch=1,EE,204B9A5C,extended,00000000
+
+//[13] Debug Menu - [13] Count Polys In Shadow:B: True  == 00000000 || 00000001
+//patch=1,EE,204B8BA8,extended,00000000
+
+//[14] Debug Menu - [14] Time [Hour of Day]:U8: ### (0-255: for rendering system)
+//patch=1,EE,20554674,extended,00000000
+
+//[15] Debug Menu - [15] Print Nearest Objects:B: True == 00000000 || 00000001
+//patch=1,EE,204B969C,extended,00000000
+
+//[16] Debug Menu - [16] Debug Player Peds:B : == 00000000 || 00000001
+//patch=1,EE,204B8498,extended,00000000
+
+//[17] Debug Menu - [17] Tweak Vehicle Handling:B : 00000000 || 00000001
+//patch=1,EE,204B8368,extended,00000001
+
+//[18] Debug Menu - [18] [X] Player Coords: (STORED VALUES) [83]
+//patch=1,EE,205C0280,extended,42A60000
+
+//[19] Debug Menu - [19] [Y] Player Coords: (STORED VALUES) [-849.7999878]
+//patch=1,EE,205C0284,extended,C4547333
+
+//[20] Debug Menu - [20] [Z] Player Coords: (STORED VALUES) [10.30000019]
+//patch=1,EE,205C0288,extended,4124CCCD
+
+//[21] Debug Menu - [21] - Update Player Coords (Teleport) *** NOT FOUND - UNKNOWN ***
+//?????????????????????????????????????????????????????????????????????????????????????
+
+//[22] Debug Menu - [22] Streaming Debug:B : 	00000000 || 00000001
+//patch=1,EE,204B9390,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+// ----Cheats with Values;- ----
+// 		1440000F	- Weather
+// 		1440001F	- wanted up - Stays in RAM - no undo?
+// 		14400006	- Character Cycle
+// 		14E00003	- Weapons Cycle
+// 		14400017	- Suicide
+// 		1440001C	- Armour
+// 		14400007	- Character Models & Vehicles
+// 		14400018	- Speed
+// 		14400048	- peds riot
+// 		1440003C	-
+// 		14400015
+// 		14400027
+// 		14400010
+// 		14400004
+// 		14400012
+// 		14400028	- Explode Vehicles
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Cheats with Values: 144000## --> 00000000 ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//Bikini chicks With Guns (Your Vercetti Gang Members) at your mansion, printworks, etc.
+//Not tested but probably correct:		2027BCE0 00000000
+//patch=1,EE,2027BCE0,extended,00000000
+
+//AI NPC: Peds Riots:
+//patch=1,EE,2027B804,extended,00000000
+
+//Cheat Activated: Unknown								|| 14400048 --> 00000000
+//patch=1,EE,2027B904,extended,00000000
+
+//Increase Speed  - Press Any button toggles Increase	|| 14400018 --> 00000000
+//patch=1,EE,2027BA94,extended,00000000
+
+//Decrease Speed  - Press Any button toggles Decrease	|| 14400018 --> 00000000
+//patch=1,EE,2027BB00,extended,00000000
+
+//Wanted Level Cheat: Up								|| 1440001F --> 00000000
+//patch=1,EE,2027B450,extended,00000000
+
+//Wanted Level Cheat: Down								|| 14400012 --> 00000000
+//patch=1,EE,2027B4DC,extended,00000000
+
+//Cheat Activated: Unknown Vehicle handling possibly?
+//patch=1,EE,2027BC34,extended,00000000
+
+//Cheat Activated: Cars Fly			- Press Any button toggles on, off
+//patch=1,EE,2027BBD0,extended,00000000
+
+//Cheat Activated: Cars Invisible 	- Press Any button toggles on, off			|| 14400015 --> 00000000
+//patch=1,EE,2027BB6C,extended,00000000
+
+//AI NPC: Peds have weapons								|| 14400015 --> 00000000
+//patch=1,EE,2027BA34,extended,00000000
+
+//Cheat Activated: Suicide								|| 14400017 --> 00000000
+//patch=1,EE,2027BD8C,extended,14400017
+
+//Cheat Activated: Explode Vehicles						|| 14400028 --> 00000000
+//patch=1,EE,2027B72C,extended,14400028
+
+//Weather Cheat - Sun 1?								|| 1440000F --> 00000000
+//patch=1,EE,2027B534,extended,1440000F
+
+//Weather Cheat - Sun 2?
+//patch=1,EE,2027B580,extended,1440000F
+
+//Weather Cheat - Fog ?
+//patch=1,EE,2027B5CC,extended,1440000F
+
+//Weather Cheat - Rain ?
+//patch=1,EE,2027B618,extended,1440000F
+
+//Weather Cheat - Heavy Fog n Winds ? Hurricanes ?
+//patch=1,EE,2027B664,extended,1440000F
+
+//Weather Cheat - Heavy Fog No Winds ? No Hurricanes
+//patch=1,EE,2027B664,extended,1440000F
+
+//Cheat Activated - Pink Cars
+//patch=1,EE,2027BE88,extended,1440000F
+
+//Cheat Activated - Black Cars
+//patch=1,EE,2027BED4,extended,1440000F
+
+//Cheat Activated - Skater Chick Magnet 1
+//patch=1,EE,2027C418,extended,1440000F
+
+//Cheat Activated - Freeze Everyone In Position || This is Gravity 0, When Enabled again it slams everyone down insta-death.
+//patch=1,EE,2028B60C,extended,1440000F
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- UNKNOWN CHEATs & Effects ----
+//--------------------------------------------------------------------------------------------------------------------
+- These Could be things like traffic lights green, cars drive, peds something etc.
+
+// ---- 1440000F --> 00000000 ----
+// No effect?
+//patch=1,EE,2029E998,extended,1440000F
+// No effect?
+//patch=1,EE,202B2BFC,extended,1440000F
+// No effect?
+//patch=1,EE,202B6B40,extended,1440000F
+// No effect?
+//patch=1,EE,202E6250,extended,1440000F
+
+// ---- 1440000E --> 00000000 ----
+//UNKNOWN CHEAT
+//patch=1,EE,2027BC98,extended,00000000
+
+//UNKNOWN CHEAT
+//patch=1,EE,2027BDF8,extended,00000000
+
+//---------------------------------------- Broken - not working ; ----------------------------------------------------
+// ---- Known Issues: ----
+//--------------------------------------------------------------------------------------------------------------------
+//* joker commands unknown.
+//*** SEE IMAGE Fort he JOKER-COMMAND-BASE-ADDRESS maybe? ..This is pal 2003;
+//DFBF0050 ??
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- FOR REFERENCE ONLY (joker commands) FROM PAL 2003 ----
+//--------------------------------------------------------------------------------------------------------------------
+
+// ---- In My PAL 2003 ".pnach" This was the Joker Command For Weapon Cycle: ----
+//Weapon Cheat: Cycle through.	   (Select+UP) - by TKBS
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279374,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279374,extended,14E00003
+
+// ---- In My PAL 2003 ".pnach" This was the Joker Command For Character Cycle: ----
+//*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) ***
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027868C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027868C,extended,14400006
+
+//--------------------------------------------------------------------------------------------------------------------
+// --- Ignore ---- Unless you can solve it - "The .elf file cheats"
+//--------------------------------------------------------------------------------------------------------------------
+//* From .elf File: UDUDUD..T3T3T3..LRLRLR..ULULUL..242424..
+//004b5d18 69646769
+//004b53c0 4c554c55
+//patch=1,EE,004b5d18,extended,69646769
+//patch=1,EE,004b53c0,extended,4c554c55
+
+//T3T3T3 - unknown
+//242424 - unknown
+
+//Infinite Sprint  - did not work.

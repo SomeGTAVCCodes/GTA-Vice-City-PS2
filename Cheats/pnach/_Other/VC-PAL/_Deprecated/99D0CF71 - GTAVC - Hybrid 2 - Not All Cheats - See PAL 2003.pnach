@@ -1,0 +1,203 @@
+gametitle=GTA Vice City.
+comment=PAL 2003, Modded Hz & YPOS & GTA3_#.img removal Baked In .elf.
+
+// * All PAL 2003 Cheats work with this 'Hybrid' CRC
+// * These are just ones the author used regularly.
+
+//patch=1,EE,204B21A0,extended,00000000
+
+//patch=1,EE,204B2144,extended,FFFFFFFF
+
+//------------ Player; ------------
+
+//### Percentage Completion	100%:
+patch=1,EE,204B211C,extended,431A0000
+
+//No Clip: Walls - L3+L2 | L3+R2 To Stop
+//patch=1,EE,D05C1702,extended,0000FEFD
+//patch=1,EE,2013D568,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FDFD
+//patch=1,EE,2013D568,extended,0C0E1490
+
+//Money | Cash | $$$ | £££
+patch=1,EE,205C845C,extended,00001B58
+patch=1,EE,205C8460,extended,00001B58
+
+//Infinite Sprint
+//patch=1,EE,201CF504,extended,10000014
+
+//Infinite Health & Armour (200)
+//patch=1,EE,20B50FF8,extended,43480000
+//patch=1,EE,20B50FFC,extended,43480000
+
+//Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF40,extended,3C01005C
+//patch=1,EE,200FFF44,extended,80211703
+//patch=1,EE,200FFF48,extended,2403007F
+//patch=1,EE,200FFF4C,extended,1461000C
+//patch=1,EE,200FFF54,extended,3C013E00
+//patch=1,EE,200FFF58,extended,9384F108
+//patch=1,EE,200FFF5C,extended,2403016C
+//patch=1,EE,200FFF60,extended,3C02005D
+//patch=1,EE,200FFF64,extended,244283C0
+//patch=1,EE,200FFF68,extended,00831818
+//patch=1,EE,200FFF70,extended,00431021
+//patch=1,EE,200FFF74,extended,8C420000
+//patch=1,EE,200FFF7C,extended,AC410074
+//patch=1,EE,200FFF84,extended,24030070
+//patch=1,EE,200FFF80,extended,080487E4
+//patch=1,EE,20121F8C,extended,0803FFD0
+
+//------------ Clocks & Timers; ------------
+
+//Clock: Freeze Mission Timers (Side Quests)
+//patch=1,EE,20270238,extended,00000000
+
+//Clock: Set Time - Freeze Clock Time || 000003E8 -> E3000008
+//patch=1,EE,204B177C,extended,E3000008
+
+//Clock: Set Time - Hours (e.g: 8am) || 23 dec = 17 hex
+//patch=1,EE,204B1778,extended,00000008
+
+//Clock: Set Time - Minutes
+//patch=1,EE,204B177C,extended,00000000
+
+//------------------------------------------------------------------------------------------------------------------
+
+//------------ Vehicles - (Spawn); ------------
+
+//Spawn Car: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//patch=1,EE,20276970,extended,0C09E798
+//patch=1,EE,20276974,extended,240400B3
+//* Then put back to normal
+//patch=1,EE,20276970,extended,0C09E018
+//patch=1,EE,20276974,extended,24050054
+
+//Spawn Bike: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//patch=1,EE,20279F70,extended,0C0E60E8
+//patch=1,EE,20276970,extended,0C09E798
+//patch=1,EE,20276974,extended,240400BF
+//* Then put back to normal
+//patch=1,EE,20279F70,extended,0C05CCB4
+//patch=1,EE,20276970,extended,0C09E018
+//patch=1,EE,20276974,extended,24050054
+
+// ---- Garage Editor: ---- [Short Version]
+//* Spawn Vehicle in Garage "Ocean Beach" * - [Right VH 1]
+//* VH ID
+//patch=1,EE,206B6070,extended,000000EC
+//* colours 1 & 2
+//patch=1,EE,206B6090,extended,FF09012E
+//* DAMAGE PROOF
+//patch=1,EE,206B608C,extended,0000001F
+
+//------------ Vehicles - (Fixes); ------------
+
+//[Vehicle]:Fix - "Pizza Boy Reward Bike"	[Location]: Vercetti Mansion
+//* Fixes the Location under map Bug 		[Z- Axis must be 12.00+.]
+patch=1,EE,2067B5D0,extended,000000B2
+patch=1,EE,2067B5D4,extended,C3AF6666
+patch=1,EE,2067B5D8,extended,C405B99A
+patch=1,EE,2067B5DC,extended,41466666
+patch=1,EE,2067B5E0,extended,43960000
+patch=1,EE,2067B5E4,extended,00000010
+patch=1,EE,2067B5E8,extended,00000000
+patch=1,EE,2067B5EC,extended,27100000
+patch=1,EE,2067B5F0,extended,00B6CA0E
+patch=1,EE,2067B5F4,extended,00002E63
+patch=1,EE,2067B5F8,extended,0000FFFF
+
+//[Vehicle]: Fix - "Boxville Van" 			[Location]: Near Boatyard, just after, by the containers.
+//* Fixes the Location under map Bug 		[Z- Axis must be 12.00+.]
+patch=1,EE,2067B680,extended,000000E4
+patch=1,EE,2067B684,extended,C460BFD0
+patch=1,EE,2067B688,extended,C4B6C17C
+patch=1,EE,2067B68C,extended,415F0A3D
+patch=1,EE,2067B690,extended,412D205C
+patch=1,EE,2067B694,extended,FFFFFFFF
+patch=1,EE,2067B698,extended,00000000
+patch=1,EE,2067B69C,extended,27100000
+patch=1,EE,2067B6A0,extended,00D49FA8
+patch=1,EE,2067B6A4,extended,FFFFFFFF
+patch=1,EE,2067B6A8,extended,0000FFFF
+
+//[Vehicle]: Fix - "PCJ-600" 				[Location]: Prawn Island
+//* Fixes the Location under map Bug 		[Z- Axis must be 12.00+.]
+patch=1,EE,2067B368,extended,000000BF
+patch=1,EE,2067B36C,extended,C0CCCCCD
+patch=1,EE,2067B370,extended,446F4666
+patch=1,EE,2067B374,extended,41566666
+patch=1,EE,2067B378,extended,43B18CCD
+patch=1,EE,2067B37C,extended,FFFFFFFF
+patch=1,EE,2067B380,extended,00000010
+patch=1,EE,2067B384,extended,27100000
+patch=1,EE,2067B388,extended,00CCA026
+patch=1,EE,2067B38C,extended,00001302
+patch=1,EE,2067B390,extended,0000FFFF
+
+//------------ Vehicles; ------------
+
+//Explode Vehicles (1)	with cheat notification 	(Select + LEFT)
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,231944C8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,231944C8,extended,14400018
+
+//Vehicles never explode
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//Vehicles: Cars & Helis Never Explode
+//patch=1,EE,2015C9F0,extended,03E00008
+//patch=1,EE,2015C9F4,extended,00000000
+
+//Vehicles: New Damage Proof
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//Vehicles: No Tyre Damage (Cars) | TYRES Do Not Pop
+//* Part 1 - no impact movement
+//patch=1,EE,2017C4B4,extended,03E00008
+//patch=1,EE,2017C4B8,extended,00000000
+//patch=1,EE,2017C4C0,extended,00000000
+//* Part 2 - no damage
+//patch=1,EE,2017C4C4,extended,03E00008
+//patch=1,EE,2017C4C8,extended,00000000
+
+//------------ AI & NPC ; ------------
+
+//FUK DA POLICE
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000
+
+//Clean Streets: Both Traffic & Pedestrians removed
+//No Pedestrians
+//patch=1,EE,204AB578,extended,00000000
+//No Traffic
+//patch=1,EE,204AB610,extended,00000000
+
+//------------ Weapons; ------------
+
+//Weapon Cheat: Cycle through.	   (Select+UP)		- by TKBS
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279374,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279374,extended,14E00003
+
+//Weapons: Rocket Launcher Ammo 		- Addresses Change - you must use save game state.
+//patch=1,EE,20B51160,extended,0000029A
+//Super Fast (Firing Rockets): ALWAYS 4 bytes before.
+//patch=1,EE,20B5115C,extended,0E300008
+
+//Weapons: Minigun with Sniper Zoom
+//patch=1,EE,20258568,extended,0C0941E0
+//Rocket Launcher with Sniper Zoom
+//patch=1,EE,2025854C,extended,0C0941E0
+
+//------------ Misc; ------------
+
+//*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) ***
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027868C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027868C,extended,14400006

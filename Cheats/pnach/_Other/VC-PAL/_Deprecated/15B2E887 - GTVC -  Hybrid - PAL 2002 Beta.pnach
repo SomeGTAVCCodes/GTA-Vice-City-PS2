@@ -1,0 +1,53 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2002-Beta) (SLES-51061)
+comment=GTA:VC, PAL, 2002-Beta Codes.
+
+//Author = 	TKBS
+//Notes  =	Also use the PAL 2002-BETA ".ct" File.
+//			this release is not as comprehensive as my 1400 lines for PAL 2003 
+//			but users have the Cheats & Debug Upgrade
+//			& can Port Codes from my PAL 2003 version.
+//.. this is why documenting original values in a pnach is more important that the cheat itself
+//.... so you can find the damn thing in another version, region or modified .elf.
+//CRC: 15B2E887 (Debug Beta Upgraded)
+
+//---- PS2 Beta Only ----
+//In-Game: Debug Menu: (Press L1 + R1 on the start menu, or HOLD L1 + R1 on main screen.).
+//... or use the phach option.
+
+//---------------------------------------- Confirmed Working; ------------------------------------------------//
+
+//GTA_#2-6.img Removal
+//patch=1,EE,202DAAF4,extended,24070001
+
+//100% Completion- offset 73A4
+//patch=1,EE,204B94C0,extended,431A0000
+//patch=1,EE,204B94C4,extended,431A0000
+
+//100% Hidden Packages (100)
+//patch=1,EE,205D5064,extended,00000064
+
+//Toggle HUD: TODO: Add button Commands
+//On
+//patch=1,EE,204B91C4,extended,00000001
+//Off
+//patch=1,EE,204B91C4,extended,00000000
+
+// ---- STATS ----
+//### Number of Bullets Fired
+//patch=1,EE,204B94B8,extended,0000029A
+//patch=1,EE,204B94B8,extended,0000029A
+
+//### Planes & Helicopters Destroyed
+//patch=1,EE,204B94B9,extended,0000029A
+//patch=1,EE,204B94BA,extended,0000029A
+
+//[PAL][BETA 2002]### CRIMINAL RATING
+//patch=1,EE,204B95D8,extended,42200000
+
+// ---- New Cheats ----
+//Set Moon Size (0-7)
+//patch=1,EE,204B59D4,extended,00000003
+
+//Vehicles: Boats & Planes Never Explode 
+patch=1,EE,201757C0,extended,03E00008
+patch=1,EE,201757C4,extended,00000000

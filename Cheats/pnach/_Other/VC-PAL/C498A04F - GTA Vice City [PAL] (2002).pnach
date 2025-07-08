@@ -1,0 +1,84 @@
+gametitle=Grand Theft Auto - Vice City (PAL-M5) (Europe) (SLES-51061)
+comment=2002 DVD (version 1.05. Not 2003, or 2004).
+
+// ---- Disc Info ----
+//Game CRC = 0xC498A04F, EntryPoint = 0x00100008
+//SLES_510.61;1
+//PAL 2002	version = 1.50
+
+// ---- Notes  ----
+//* Some Codes Can be converted from the 2003 Version using:	PAL 2003 + Hex 110, or 1B0 = 2002 version.
+//* Codes to Be converted for this version://http://uk.codejunkies.com/search/codes/grand-theft-auto--vice-city-(uk-version)_action-replay-max_13631658-13___.aspx
+
+//-------------------- Confirmed Working CODES	--------------------------------------------------//
+
+//Weather 4 					-	Press L1+L2+Left to activate.
+//patch=1,EE,D05C1002,extended,0000FA7F
+//patch=1,EE,20278678,extended,00000000
+//patch=1,EE,D05C1002,extended,0000FFFF
+//patch=1,EE,20278678,extended,1440000F
+
+//Play as Lance (White Suit)	-	Press L2+L1+Down - White Suit
+//patch=1,EE,D05C1002,extended,0000FABF
+//patch=1,EE,20279094,extended,00000000
+//patch=1,EE,D05C1002,extended,0000FFFF
+//patch=1,EE,20279094,extended,14400007
+
+//Never Lose Weapons:
+//patch=1,EE,201B2AD0,extended,03E00008
+//patch=1,EE,201B2AD4,extended,00000000
+
+//miles on foot
+//patch=1,EE,204B228C,extended,55C80000
+
+//Hypermode 					- Press L2+R2+Up to activate. press x run super fast.
+//patch=1,EE,D05C1002,extended,0000FCEF
+//patch=1,EE,204B1C58,extended,41000000
+
+
+//-------------------- NOT TESTED BELOW HERE -------------------- //
+
+
+//-------------------	STATS CODES 	------------------------------//
+//From codejunkie site UK version 2002	converted			ntsc unknown GH 		PAL 2.03 											Diference
+//Passengers Dropped Off				
+//45XY-C2UK-Z17WM						204B2280 05F5E0FF	204BB180 05F5E0FF		//patch=1,EE,204B2170,extended,00000064				NTSC - PAL = 9010 |   PAL + 9010 = NTSC  || 110 from converted
+//7WUV-FVQ0-VQK7K
+
+//Mission Attempts
+//1387-5AZH-8J65K														
+//KJA8-ZGFA-ET647						204B2278 05F5E0FF	204BB178 05F5E0FF		204B2168											9010	|| 110 from converted
+
+//### Passengers Dropped Off
+patch=1,EE,204B2280,extended,0000029A
+
+//### Total Fires Extinguished ##						- TEST Converted with 110 - succes.
+patch=1,EE,204B22AC,extended,0000029A
+
+//test me infinite air:
+//patch=1,EE,201F315C,extended,00000000
+
+//freeze mission timer
+//patch=1,EE,202703E8,extended,00000000
+
+//Widescreen fix by nemesis2000 (converted to PAL by Riiaz)
+//widescreen fix					110			1B0			1F0
+//patch=1,EE,001325BC,word,3C013F9D	001324AC		13240C		1323CC
+//patch=1,EE,001325C0,word,44810000	001324B0		+4
+//patch=1,EE,001325C4,word,46006302	001324B4		...
+//patch=1,EE,001325C8,word,03E00008	001324B8		...
+//patch=1,EE,001325CC,word,E78C87F8	001324BC		...
+//
+//patch=1,EE,002434EC,word,0C04C96F	002433DC		0024333C		002432FC
+//patch=1,EE,0027088C,word,0C04C972	0027077C		002706DC		0027069C
+//patch=1,EE,00270E64,word,0C04C972	00270D54		00270CB4		00270C74
+
+//widescreen fix
+//patch=1,EE,001323CC,word,3C013F9D
+//patch=1,EE,001323D0,word,44810000
+//patch=1,EE,001323D4,word,46006302
+//patch=1,EE,001323D8,word,03E00008
+//patch=1,EE,001323DC,word,E78C87F8
+//patch=1,EE,002432FC,word,0C04C96F
+//patch=1,EE,0027069C,word,0C04C972
+//patch=1,EE,00270C74,word,0C04C972
