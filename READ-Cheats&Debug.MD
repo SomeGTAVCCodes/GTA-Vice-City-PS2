@@ -2,17 +2,37 @@ TITLE: 	ReadMe for GTAVC Cheats & Debug/ Hybrid Creation.
 Author:	TKBS
 DATE:	2025
 INFO:	Provides info on upgrading the beta and creating the best PS2 version.
-Notes:	* See the "Help\Input List" File for the Cheats & Debug Options:
-		"GTAVC [PS2] - Cheats & Debug - Input List.md"
-** Customise your GTA:VC PS2,3,4 or Emulator Experience with;-
-* Fixes and improvements
-* New information & discoveries.
-* The best of all versions & more.
-* 2003 PAL Base Game + Debug + New cheats + Fixes and improvements..
-* PAL 2002 Beta .elf, port debug code from 2002 to the 2003 main.scm file.
-	
+Notes:	
 
----- Cheats & Debug ---- Port beta to other versions (yourself)
+* See the "Help\Input List" File for the Cheats & Debug Options (Button Combo's):
+
+//----------------------------------------------------------------------------------------------------------------
+		Welcome to VICE CITY [PS2]: "Hybrid"
+//----------------------------------------------------------------------------------------------------------------
+** Customise your GTA:VC PS2, 3, 4 or Emulator Experience with the best of all versions & more;-
+
+* Fixes & improvements
+* New information & discoveries.
+* 2003 PAL Base Game
+* Port PAL 2002 Beta .elf debug code to the 2003 main.scm file.
+
+* The following is a list of stuff that was completely new for me after owning, but not playing the PS2 game, for 20+ years
+// This stuff is also completely new for everyone else as it has never been done before.
+
+These were my discoveries;-
+	
+	1. Bullet Proof Tyres Glitch at the ice cream factory 
+	2. The Entire .pnach created for PAL 2003 has never existed before
+	3. Upgrading and porting the debug beta stuff
+	4. all the fixes and improvements for PS2
+	5. modding the Game
+	6. unlocking the unsued secret Garage
+	7. more stuff like visual improvements and fixes.
+	8. map fixes, vehicle location fixes, discovering there was a reward pizza bike etc.
+
+//----------------------------------------------------------------------------------------------------------------
+		---- Cheats & Debug ---- Port beta to other versions (yourself)
+//----------------------------------------------------------------------------------------------------------------
 ** To create a basic Cheats & Debug Upgrade;
 
 ** You need VICE CITY PS2 Beta version for this to work.
@@ -37,45 +57,36 @@ Notes:	* See the "Help\Input List" File for the Cheats & Debug Options:
 That's it... But following the Hybrid Instructions will be better!
 
 
------------------------------------------------------------------------------------
-----					----  [Hybrid];- ---- 								   ----
------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------
+		----					----  [Hybrid];- ---- 								   ----
+//----------------------------------------------------------------------------------------------------------------
 ** To create the "Hybrid" (with Cheats & Debug Upgrade);
-* 2003 PAL Base Game + Debug + New cheats + Fixes and improvements..
-* PAL 2002 Beta .elf, port debug code from 2002 to the 2003 main.scm file.
-
-
-** You need a VICE CITY PS2 version for this to work. 
 
 [Base Game]
+** You need a VICE CITY PS2 version for this to work. 
 	- The Beta is Not required.
 	- Any version can be used but 2003 is recommended.
-	* 2004 scm file is too big with little to no benefit, & is generally regarded as too much change with original dialogue/ story. etc.
+	* 2004 scm file is too big with little to no benefit & is generally regarded as too much change with original dialogue/ story. etc.
 	* 2002 has too many bugs (save game bug).
-
+	* Modifications to various files.
 
 * The Code included has Modified dependencies referenced in the ".scm" code. 
 	"TKBS.scm"		- Modified Code Base for Cheats & Debug.
-	"american.gxt"	- New Debug Messages.
-	"gta3.img" 		- New Clothes referenced in the code, need to be added to the "gta3.img" file.
+	"american.gxt"	- New Debug Messages referenced in the code.
+	"gta3.img" 		- New Clothes, referenced in the code, need to be added to the "gta3.img" file.
 	"gta3.dir" 		- lists the New ".img" contents.
 
 Step 1. 
 	PAL/ NTSC 2003 Users:
 		* Use the Patch Files provided to convert your original files to the New Hybrid Cheats & Debug Files	
 Step 2. 
-	a) Import the "PLAY13.txd" & "PLAY13.dff" into your "gta3.img" using "imgtool.exe"
-	b_ Duplicate this image file and re-name it accordingly; E.G: "gta3_1.img"
+	a) Import New Clothes: "PLAY13.txd" & "PLAY13.dff" into your "gta3.img" using "imgtool.exe"
+	b) Duplicate this "gta3.img" file and re-name it accordingly; E.G: "gta3_1.img"
 	** this is important because the code references the new clothes for the change clothes cheat.
-	** Use the "gta3.dir" provided (to manually create a correct .dir See Note#1).
-	
+	* When using "IMGTool" to Edit the "gta3.img" Users should do the following:
+	* hex edit the "gta3.dir" file created by "IMGTool" to re-order the contents, for proper laoding (fix problem with imgtool order).
+
 Step 3. Add the additional Files & Extras to make the best posssible Vice City [PS2] Hybrid Version.
-
-Note#1: 
-* When using "IMGTool" to Edit the "gta3.img" Users should do the following:
-* hex edit the "gta3.dir" file to re-order the contents, for proper laoding (fix problem with imgtool order).
-* OR.. Use the "gta3.dir" provided.
-
 -  The results should look like the following;
 
 [Hybrid Overview]
@@ -84,17 +95,20 @@ audio\Music
 	wild.vb			- [recommended ]	- 2002 Audio [Not Included] 
 	
 data
-	maps			- [recommended]		- Fix Map Issues
+	Maps			- [recommended]		- Fix Map Issues. Misplaced/ Objects Under Maps, Nuisance Objects etc.
 	TKBS.scm		- *REQUIRED* 		- [Provided as patch file]  - Cheats & Debug upgrade.
 	particle.cfg	- optional			- color edits e.g. teargas.
-	occlu.ipl		- [recommended]		- Set to All 0's
-	object.dat		- optional			- fix glitchy object snags.
-	default.ide		- optional			- Add 2 New Vehicles: Cougar & Toyz Van.
-
+	occlu.ipl		- [recommended]		- Set to All 0's - (Only for Emulator, Not for Real PS2 Hardware, although it may still be ok).
+	object.dat		- optional			- fix glitchy object snags. Make Destructible Storm Warning Barriers.
+	default.ide		- optional			- Add 2 New Vehicles: Cougar & Toyz Van. 
+	default.ide		- optional			- Set Weapon Values). 
+	timecyc.dat		- [recommended]		- Increase Far Clips from 2,000 to 10,000. - (Only for Emulator, Not for Real PS2 Hardware, although it may still be ok on PS3).
+	handling.cfg	- optional			- Adjust vehicle values
+	
 Models\coll
-	peds.col		- [recommended]		- 2004 peds.col
+	peds.col		- [recommended]		- Use 2004 peds.col
 
-movies				- [recommended]		- ntsc mpeg videos when patching PAL .elf to 60hz
+movies				- [recommended]		- Use the NTSC mpeg videos when patching PAL .elf to 60hz
 
 system
 	sampman2.irx	- *REQUIRED*		- [Provided as patch file] 
@@ -106,12 +120,15 @@ txd
 	LOADSC7.TXD		- [recommended]		- Texture Upgrade. Fixes load screen issue.
 
 gta3.img			- *REQUIRED*  		- [USERS MUST DO THIS MANUALLY] - This Dependancy could be removed, by removing the references in the code.
-gta3.dir			- *REQUIRED* 		- [Provided] - Or Do this Manually with hex edit.
+										* Import New Clothes "PLAY13", Referenced in the new code in the main.scm
+gta3.dir			- *REQUIRED* 		- [USERS MUST DO THIS MANUALLY] - This Dependancy could be removed, by removing the references in the code.
+										* Hex edit to fix order, after adding new clothes to .img
 SLES_510.61			- *REQUIRED*		- [Provided as patch file]-  Contains our Cheats & Debug Hardcoded stuff.
-										* Includes  gta3_2-6.img removal
+										* Includes:  gta3_2-6.img removal
+										* Includes:	 60hz patch
 system.cnf			- recommended		- [Provided] - Modify to differentiate between the original and our Hybrid version.
 
-
+[See "Extras: \New Textures"]
 MISC.TXD			- optional			- Texture Upgrade
 GENERIC.TXD			- optional			- Texture Upgrade
 fronten2.txd		- optional			- Texture Upgrade
@@ -120,62 +137,43 @@ fonts.txd			- optional			- Texture Upgrade
 
 ---- Result: ----
 * You should now have a 2003 base game with a 2002 beta modifed .elf
-* The code is updated with new cheats and functions
+* The .scm code is updated with new cheats and functions
 * game is fixed and working as it always should have been.
-* you have the best of every version with 1 exception...
+* All extras, fixes, improvements added.
 
-[PAL 2003 (Clean .elf) vs Our Hybrid (Beta 2002. elf)]
-- The ".pnach" for this beta ".elf" is not as comprehensive as my PAL 2003 ".pnach"
-* This is because i do not know how to get the joker commands working - OR - because the .elf modification/ debug version prevents joker commands from working - I am not sure which.
-- the addresses are easy to find - but wrapping them in a joker command is not working.
-
-**Techincally this means that we can achieve more (in terms of mods and cheats) using the PAL 2003 Clean .elf and .pnach. This is a non-destructive and on-the-fly modfication of the game, which is good.
-HOWEVER, i have not coded a teleport function/ cheat for PAL 2003, which is the one advantage the 2002 debug .elf has.
-
-SO there it is 
-
-2 of the best Versions of VICE CITY available for PS2 
-
-1. our upgraded Hyrbid with 2002 debug .elf
-2. Clean PAL 2003 .elf with the most comprehensive .pnach available - just no teleport
-
-[End notes]
-* If someone did make a teleport fucntion for PAL 2003 they could (& would have to) remove the majority of the cheat/ code stuff from the main.scm because, as aforementioned, we can do more with ASM & .pnach than modifying the main.scm - due to limits.
-* The ideal version would be the rest of my pal 2003 pnach ported to the 2002 elf used in the hybrid
-- OR... Add telelport code to tha main.scm for pal 2003.
-
-  [Known Issues]
-  * a complete 100% playthrough has not been made 
-  * the audio for the pop-up notifications is different due to the sampling.
-  * The Secret Garage Unlock needs a cheak and balance - so that it only executes once. (add a variable, - 0,1, if unlocked already do not execute again etc.)
-		^^ otherwise the door may mess up running the code multiple times, especially if your using the garage. 
-		i.e only excecute that cheat once to avoid issues.
-		
-  * There are issues with the game in its' original state that ui have not addressed;-
-  - by default the in-game menu map has a pixel offset issue - note: this is not the only math problem left in the source code.
-  - there are numerous instances of the same math problem occuring, objects misplaced, vehicles under map ...etc.
-  - it is unclear what happens when content is loaded with MapEditor, the software has NO included documentation or src and is decades old, there is a discernable difference in the rounding of values between PC & PS2 - 
-  ... i have no idea why - this may be an old, intentional, known auto-fix 'feature' of the app, implmented as a generally accepted required feature, or the PS2 could simply have whack values..
-  
- * it is possible to adjust the map image to account for the pixel offset issue, i have included an example but it is incomplete - notice how i adjusted the first island mini-bridge so the nasty pixel offset/ seam is not visible but still visible in other areas.
- * All instances of incorrect object or vehicle positions, that i am aware of, have been fixed.
- 
- * Users can fix things in real-time for PAL 2003 using ".pnach" and bake them into their save game (if using original files)
- ... OR they can just use the hybrid files with fixed maps and code etc (recommended).
+[Known Issues] - Hybrid
+* a complete 100% playthrough has not been made 
+* the audio for the pop-up notifications is different due to the sampling.
+* When Adding the 2 Unused Veehcles (Cougar & Toyz) the horn audio sounds weird when they drive passed.
+* The Secret Garage Unlock needs a check and balance - so that it only executes once. (add a variable, - 0,1, if unlocked already do not execute again etc.)
+	^^ otherwise the door may mess up running the code multiple times, especially if your using the garage. 
+	i.e only excecute that cheat once to avoid issues.
+	
+[Known Issues] - Default Game
+* There are issues with the game in its' original state that i have not addressed;-
+* All instances of incorrect object or vehicle positions, that i am aware of, have been fixed.
+- by default the in-game menu map has a pixel offset issue - note: this is not the only math problem left in the source code.
+- there are numerous instances of the same math problem occuring, objects misplaced, vehicles under map ...etc.
+- it is unclear what happens when content is loaded with MapEditor, the software has NO included documentation or src and is decades old, there is a discernable difference in the rounding of values between PC & PS2 - 
+... - i have no idea why - this may be an old, intentional, known auto-fix 'feature' of the app, implmented as a generally accepted required feature, or the PS2 could simply have whack values..
+* it is possible to adjust the map image to account for the pixel offset issue, i have included an example but it is incomplete becuase it is very time consuming to do 
+... - notice how i adjusted the first island mini-bridge so the nasty pixel offset/ seam is not visible but still visible in other areas.
 
 ---- NOTES ----
 
 [BETA Upgrade]
-* Porting the PS2 Beta Debug code takes about 38minutes or less.
+* Porting the PS2 Beta Debug code & other mods takes about 38minutes to an hour, maybe less.
 * By comparison creating the ".pnach" for every version took a long time, spread over 1 month.
-- HOWEVER, More can be done with ".pnach" than modifying the main.scm due to limits. 
-... explanations why included.
+- More can be done with ".pnach" than modifying the main.scm due to limits.
+
+---- Overview ----
 
 [Textures]
-* New Textures & fixes/ old minor changes: e.g. remove unwanted abnnoxious vegetation.
+* New Textures & fixes/ old minor changes: e.g;- 
+* remove annoying unwanted abnnoxious in your face plants & vegetation.
 * New Sand
 * New Menu map Background, seamless.
-	- the 9 images do not get aligned correctly, soemthing wrong in the code.
+	- the 9 images do not get aligned correctly, this is issue is native to the original game..
 * add 2004 "fronten2.txd" for better quality, which i think also fixes a resolution bug switchy thing.
 * Fix loading screen issues:
 	Replace "txd\loadsc7.txd" that has incorrect alignment with the image from "loadsc13" which normally never loads
@@ -185,10 +183,9 @@ SO there it is
 * Fix incorrect black colours
 	vice city uses 2,2,2 - it should be 0,0,0
 	alpha channels have issues - see example: vegetation.
-* remove annoying in your face plants and vegetation.
 * controller image: updated to PS3 Controller version (image)
 * Replace unused/ rubbish textures like slogans, logos, and road signs, with something good.
-	e.g. See example: Replcae teh no parking sign at the hospital with the health cheat.
+	e.g. See example: Replcae the no parking sign at the wash hospital with the health cheat.
 
 [Code]
 * port beta debug to pal 2003 & add New cheats
@@ -197,36 +194,29 @@ SO there it is
 * All Hidden Packages 1 place.
 * swap, move, or add pickups to re-balance the game.
 * Unlock secret Garage
-
+* fixes
+* cheats & codes
++ remove junk code like australian game check and other stuff if LIMIT reached.
+	
 [Cheats & Codes]
 * the most comprehensive list available. Use Cheats, Codes & Hex Edits to modify the game
 * mod VC on-the-fly with Cheats as accompanying ".pnach" for pcsx2 ".ct" for cheat Engine & ".exe"
-* directly modify the "main.scm" with the elf debug and New Cheats in-game with PADs: See "Inputs List"
+* directly modify the "main.scm" 
+* elf debug and New Cheats in-game with PADs: See "Inputs List"
 * Garage Vehicle Editor:
 	* + any vehicle, any colour, any garage, heli-pad, boat mooring (dock), street parking etc.
 * Info on porting & converting cheats, codes, game data files - between versions & regions.
-* hopefully someone will port all my 2003 .pnach cheats to this new hybrid 2002 beta elf /2003 updated version.
-* i have included a few .pnach cheats users can use the files files i released to port the cheats over.
-... so yeh obviously noone will ?? so i guess another update will come eventually ffs.
+* port debug from beta and update it to other versions.
+* back port 2004 code and unique japan code.
 
 [Fixes]
+* Fix Garage Door - Ocean heights (Beach)
 * Fix Vehicle Location; Pizza Boy, PCJ600 & Boxville
 * Fix Various Textures fixed; alpha channels and clean vegetation.
 * Fix teargas - for ps2 users.
-* Fix Havanna Clothes Glitch
-* Fix Sniper Rifle at golf club
-* port debug from beta and update it to other versions.
-* back port 2004 code and unique japan code.
-* vehicle Location Fixes
 * Fix Havanna Clothes
-* Sniper Rifle Fix
-* Garage Door fix - ocean beach
-
-[Map Fixes]
-* Fix Ocean heights (Beach) Garage Door
-* Fix under map, in wall & other object placement issues.
-* add upgraded maps stuff - like the PC version (without pushing too much extra memory or data)
-* e.g. golf course with 2 extra flags.
+* Fix Sniper Rifle at golf club
+* Fix Map: objects under maps, in walls & other placement issues.
 
 [docs]
 * research, notes, etc
@@ -237,14 +227,14 @@ SO there it is
 * All the mods & stuff used for others to replicate the process.
 
 [ Glitches]
-* Bullet proof Tyres: Vigilante + Ice cream factory save file Glitch
+* Bullet proof Tyres: Vigilante + Ice cream factory save file Glitch == Bullet Proof Tyres.
 
 [Saves - Starter Save]
-* I have provided a starter save for (PAL-2003). Not the Hybrid Cheats & Debug Version
-* A perfect Starter Save (PAL 2003) for a hassle free, fun start experience, or create your own starter save game as a speed run project with stuff provided.
+* I have provided a starter save for "PAL-2003" Original Version. Not the Hybrid Cheats & Debug Version
+* hassle free, fun start experience.
 
-[Garage Editor] Cheats & Garage Vehicles Editor = ".pnach" | ".ct" tables
-* see the ".pnach" file for codes to set any vehicle in a garage.
+[Garage Editor] 
+* set any vehicle in a garage, parking spot, heli-pad, bnoat mooring etc.
 * store your special vehicles data in text files and use ".pnach" or "cheat engine .ct" to add them when you need them.
 
 ---- [How To Use:] ----
@@ -254,12 +244,10 @@ SO there it is
 * If using PS2, PS3, PS4+ hardware to play:
 	* Users should edit the code to remove the tear gas and replace it with another weapon of choice.
 	* where possible concenate the debug code with existing script references, variables etc.
-	1. Duplicate the "gta3.img" & re-name to "gta3_2.img" (#1-6)
-		** Do this for "gta3_#.img" (#1-6)
-	2. Use ORIGINAL values for the the "DATA\occlu.ipl" File, setting to All 0's may cause performance issues (untested on original hardware).
-	* swap or the tear gas for grenade
-	* duplicate and re-name the gta3.img file to gta3_#.img (#="1-6"), (if you don't have a cheat CD that can use the removal patch).
-	* Or... Bake the Removal Patch into the .elf file with "PS2-Injector"
+	* It is probably best to use the original laoding system not the "remove duplciate .img" patch.
+		i.e: Duplicate the "gta3.img" & re-name to "gta3_2.img" (#1-6) 	** Do this for "gta3_#.img" (#1-6)
+	* Use ORIGINAL values for the the "DATA\occlu.ipl" File, setting to All 0's may cause performance issues (untested on original hardware).
+	* Use ORIGINAL values for the the "DATA\Timecyc.dat" File: do not increase the far clips (draw distances)	
 
 [if using ps3+ hardware to play]
 	* Create a .pkg from the .iso when done.
@@ -268,60 +256,46 @@ SO there it is
 	b) then use the Starter Save Game Provided.
 	
 [Emulator users] 
-	* Expose these new debug cheat options to .pnach cheat patches or .ct cheat tables. 
+	* use ".pnach" cheat patches or ".ct" cheat tables. 
 	* ... This will allow easier editing of cheats and additional cool stuff!
-	* I have started a basic .pnach for this version, my PAL 2003 .pnach can be used for porting to this new Hybrid Debug Version.
 
 [All users should]
-	* add the vehicle locations fixes
-		* Increase the float values on the Z-Axis of the broken Vehicle Spawn locations (Pizza boy, pcj600 & boxville)
-		* make other changes if they want to ; like changing parked vehicles etc...
-	* add the unique japanese code for fireproof stretch on pron missions.
-	+ remove junk code like australian game check and other stuff to save code space.
+	* Include all other contents
 
 [All User Can Also: (Optional Examples)]
 	* add new cheats and functions 
-		+ such as FLY mode for player by hooking the camer position to player pos and updating it. 
+		+ such as FLY mode for player by hooking the camera position to player pos and updating it. 
 		+ add pre stored .pnach map location data (x, y, z: floats as hex data for easy teleport system)
-		+ add new pickups.
-		+ make vehicles damage proof
+				... + create a huge list of places you can teleport to.
+		+ add new pickups to re-balance the empty sucky game.
 		+ modify parked vehicle locations easy, car parks, road parking, heli-pads etc.
 	* add new button combo cheats	
 		+ use code to make new cheats like change clothes, give health, cash, save vehicle location etc etc
-		+  save location of player x,y,z coordinates from float values as .pnach 
-		... + create a huge list of places you can teleport to.
 
 ** After modifying files re-build .iso or .pkg, with imgburn (default settings), then convert into .pkg if on PS3 | PS4.
 
 [Converting Save games]
-* [pretty simple bewteen systems just involves software/ hardware
-* i do not know if ntsc - pal converts can be done here,  the only need for such a thing would be hz/fps support and potential cheat code finding.
-- App: "my mcgui" to convert
-- a PS3, PS2, and PC, USB and Ethernet.
+* App: "my mcgui" to convert
+* a PS3, PS2, and PC, USB and Ethernet.
 
 [Converting cheat codes]
 * i have added information on converting ntsc to pal, and differences between pcsx2 versions.
 * covers regional differences, software , code , and version diferences.
-* easier if you have both games many offsets are fine to apply, but then a few addresses are alot harder to find.
-* i am not great with cheat engine, but have included as much as i could in a ".ct" file everythign else is in the ".pnach"
 
-[Saving Space]
+[Saving Code Space] [Stripped intro & other code changes]
 * i used the PAL 2003 version as my base, which is significantly smaller than the final japanese release version 
-* the debug code stuff & new textures increases file size about 2-3MB.
-
-[Stripped intro & other code changes]
-* 1. Users can replace the intro or other code they do not need with a stripped intro. 
-* 2. Users can remove the "australian" region check code. 
+* remove the "australian" region check code if file limit reached. 
 .. there are a few functions that do stuff like remove wepaons or give you a machete if using australian game etc that are not required coz they never occur.
 
 ---- Differences ----
 * All versions & Regions differences content + pal 2003 dvd = 4.4GB when ".7z".
-* This includes every version & region, reduced from 40GB, to less than 4GB with no loss of data.
-* differences are just a means of data preservation, with minimal file size & no loss of data allowing 1 version to be turned into a ny other version.
+* This includes every version & region, reduced from 40GB, to less than 4GB with no loss of data - no duplicate data.
+* differences are just a means of data preservation, with minimal file size & no loss of data allowing 1 version to be turned into any other version.
 
 ---- Apps ----
-* "PCSX2 1.6"				- PS2 emulator: for playing the game & this version is required for making cheats.
-* "PCSX2 2.0"				- PS2 emulator: for playing the game.
+* "PCSX2 1.2.1"				- PS2 emulator: ONLY for making cheats wtih PS2DIS.
+* "PCSX2 1.6"				- PS2 emulator: **for playing the game** & this version is required for making cheats.
+* "PCSX2 2.0"				- PS2 emulator: for playing the game. - this version is required for texture dump/ replacements.
 * "RCPS3"					- PS3 emulator: for playing the game.
 * "Cheat Engine" 			- make cheats, modify the game.
 * "mymcgui" 				- for Memory Card & Save file import/ export
@@ -350,17 +324,11 @@ Helpers  - Skiller for the +9000 water code many years ago
 * Mods; i.e. Files are distributed as bianry difference patches. I.E. not complete files, and thus will only work if you own a copy of vice city (PAL 2003 PS2).
 
 ---- TODO: ----
-- TO keep a clean untouched PAL 2003 but with fixes, some fixes applied to the hybrid code need to made as pnach 
-- ideally they should be made for both versions.
-- It is  asimple but time consuming process of fixing the object placements in maps, make a note of the float values, find the addresses of the floats for the original misplaced objects and update them using pnach. 
-* The hybrid needs a workign joker command and the codes ported from ym pal 2003 pnach
+* The hybrid needs a workign joker command and the codes ported from pal 2003 pnach
 * Pal 2003 needs its own Debug/ cheat scripts for teleport and a few other thigns, but the weather, character select and mos tother stuff is not needed.
-* Re-do these to up-to-date 2003 versions.
+* Re-do these subs to up-to-date 2003 versions.
 	DEBUG_19356
 	DEBUG_20607
-* Remove or replace mission select.	- you could keep increment 0-62 and use the decrement 0-62 options for 62 other cheats like change player model.
-* remove decrement 62 missions stuff and add the others to increment? - all the mission stuf fneeds fixing anyway , liek you need vercetti mansion door optn to skip to those.. etc.
-
 
 ---- GTA Vice City PS2 Versions:  ----
 
@@ -384,8 +352,7 @@ SLPM_654.88.GTA-VC(2004) = version 1.02 [JAPAN]		...	The Japanese version has th
 													
 ---- Links ----
 *** THESE ARE ALL DEPRECATED! ***
-The diffs files may be useful fro pal 2003 owners to convert their version to any other, but this is no longer required as PAL 2003  or the hybrid surpass the others.
-
+The diffs files may be useful for pal 2003 owners to convert their version to any other, but this is no longer required as PAL 2003 or the hybrid surpass the others.
 
 [Diffs:]
 https://mega.nz/file/1pJCgaQI#eTRYEGSaUxGMB0V0EzOhwdenNcmqGtH9hwSW1tcrdsc
@@ -462,5 +429,18 @@ ONLY use code for what is needed and beneficial. Do as much as you can with ".pn
 
 if you have you .pnach already done or in cheat table form then its just a case of adding a few lines of code - finding it - adding it to pnach ancd table and updating the template .exe UDF form stuff.
 See why i wanted to not do this alone?	
+
+** Techincally: we can achieve more (in terms of mods and cheats) using the PAL 2003 Clean .elf and .pnach. This is a non-destructive and on-the-fly modfication of the game, which is good.
+HOWEVER, i have not coded a teleport function/ cheat for PAL 2003, which is the one advantage the 2002 debug .elf has.
+
+SO there it is. 2 of the best Versions of VICE CITY available for PS2 
+
+1. our upgraded Hyrbid with 2002 debug .elf
+2. Clean PAL 2003 .elf with the most comprehensive .pnach available - just no teleport code.
+
+[End notes]
+* If someone did make a teleport fucntion for PAL 2003 they could (& would have to) remove the majority of the cheat/ code stuff from the main.scm  - due to limits & the pnach has these cheats. functions so they are not needed in the .scm.
+* The ideal version would be the rest of my pal 2003 pnach ported to the 2002 elf used in the hybrid with joker commands.
+- OR... Add teleport code to main.scm PAL 2003 and thus the debug elf is not needed.
 
 Enjoy!
