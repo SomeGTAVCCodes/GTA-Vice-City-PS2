@@ -1,0 +1,24 @@
+sniper zoom 		|| 0C0941E0 27A50090 100000FC 00000000 C62D00D4
++ 33 - 4 byte address
+E6210174 C6210154 E6210178 C6210158 E621017C C6210158 46010000
+
+74 01 21 E6 54 01 21 C6 78 01 21 E6 58 01 21 C6 7C 01 21 E6 58 01 21 C6
+
+
+
+
+
+ PAL 2003 
+//Weapons: * Sniper (Default)
+//patch=1,EE,20258530,extended,0C0941E0
+
+//Weapons: * Minigun with Sniper Zoom			|| Default = 0C0946D8 || New = 0C0941E0
+//patch=1,EE,20258568,extended,0C0941E0
+
+
+BETA TEST 
+//Weapons: * Sniper (Default)
+//patch=1,EE,20259C60,extended,0C094608
+
+//Weapons: * Minigun with Sniper Zoom			|| Default = 0C094BDC || New = 0C094608
+//patch=1,EE,20259C98,extended,0C094608
