@@ -1,0 +1,38 @@
+
+
+
+Example of using my 2010 Photoshop scripts to auto  upgrade all 3000+ textures
+
+
+The script is 
+a) old 
+b) slightly modifed to test for vice city -  lighting adjustments
+
+Due to differences in e.g:
+your monitor coloration spec
+your monito color profile
+your GPU profile
+Your pcsx2 settings
+etc etc
+
+there is pretty much no point  me sharing all 3000+ textures 
+and no point sharing my script either...
+
+This is just an EXAMPLE of the RESULT becuase for some reason there are no good textures for VICE CITY - any version, be it community made or R*'s shitty releeases and re-rleases.
+THta i based on google - you knwo that shit dump peopel tel lothers to use coz they cant provide th eanswer themselves.
+
+apprantly accoridn g oto it and thus th epopel who use it and post oin it - the pc version is shit,  the psps version is downgrade, blah blah blah
+
+and eventualyl  its liek fuck it - jus tdo it yourself - and if your a dumbass who usesAI -- rmemebe your a dumbass - 
+
+make your own fuckjing scripts  and use a good app - ita takes less tiem to read my rants than it does to do this shit
+
+
+also 
+
+pretty sure rockstar never had a license to use rolex in their images or any of the iohtetr shit they use, but id rather not dump 3000+ of their textures and have to argue that shit in court 
+
+
+SO yeh
+make a script your like that suits your needs. 
+
