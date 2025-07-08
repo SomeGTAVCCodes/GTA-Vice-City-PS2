@@ -1,0 +1,28 @@
+
+
+* PCSX2 Changes how it handles .pnach files.
+//...I prefer the 1.6 layout 
+* to use .pnach with PCSX2 2.0+ see the example provided. 
+
+
+above 1.6 pcsx2 is pretty horrible user experince.
+the UI is actually worse.
+ ridiculous options 
+
+alot of crappy results compared to 1.6 with viosuals.
+
+and the cheat management system is fuckign awfult
+
+the whoel game properties game settigns, top left m,enu doesnt do fucck all
+have to use right options for game, but not settings, which is duplciate of the left menu
+
+fuckign awful
+
+finally find the enable cheatsd button
+WHAT THE FUCK IS THE POINT?
+you already just sent through 5 tiems the shit you haed to do in 1.6 and it loosk worse.. ridiculous.
+
+
+
+clearly pcsx2 is no longer the same app or people. jus thte name carrie dover .. abosulteyl shit experience compared to 1.6
+
