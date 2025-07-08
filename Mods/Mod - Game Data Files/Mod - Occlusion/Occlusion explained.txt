@@ -1,0 +1,20 @@
+[occlusion information]:
+* If using an emulator, occlusion values can be set to all 0's with no effect to the bytes/ file size.
+* I have no idea how to modify and remove the LODs, i tried a basic swap with the washington hospital and it crashed the game, no boot.
+
+[occlusion: Explained]
+mid x, mid y, bottom height z, width x, width y, height from bottom height to top, rotation
+
+Identifier 	|| Description
+
+mid x, mid y:						The middle of the occlusion box in X and Y coordinates.
+
+bottom height z:					The bottom Z coordinate of the occlusion box.
+
+width x, width y:					The width of the occlusion box in units.
+
+height from bottom height to top:	The difference in height from the top of the occlusion box to the bottom.
+
+rotation:							The rotation of the occlusion box in angles.
+	
+-----
