@@ -1,42 +1,28 @@
 gametitle=Grand Theft Auto: Vice City (PAL) (SLES-51061) (2003)
-comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
+comment=2003 DVD (version 2.03. Not 2002, or 2004).
 
-//CRC's:
-//CFCB0D20 - Original
-//&& EBDF9921 - Hybrid 1 - Pal 2003 with Patched: 60hz, YPOS
-//&& 99D0CF71 - Hybrid 2 - Hybrid 1 with Patched: .elf - GTA3_#2-6.img removal
-
-//** Use this ".pnach" with PCSX2
-//** Use the ".ct" file with Cheat Engine
-//** Read the accompanying "Read-Notes.md" file for more codes, information and discoveries.
+//CRC: CFCB0D20
+//* Use this ".pnach" with PCSX2
+//* Use the ".ct" file with Cheat Engine
+//* Read the accompanying "Read-Notes.md" file for more codes, information and discoveries.
+//* Note: if Using OLD PCSX2 this File is over 1024 Lines but can easily be trimmed down to just the essentials.
 
 //-----------------		Codes that require Enabled at Boot, Patched .iso, or patch=2. -----------------------------------------//
 
 // ---- GTA_#.IMG REMOVAL ----
 //** Remove Requirement for Duplicate "GTA3_#.IMG Files." (# = 2-6)
 
-//GTA_#.IMG REMOVAL (#2-6) [PAL-2003]					- by TKBS  - (Based on Daniel Santos NTSC 1.40 Patch)
+//GTA_#2-6.IMG REMOVAL										- by TKBS  - (Based on Daniel Santos NTSC 1.40 Patch)
 //patch=1,EE,202E8820,extended,24070001
 
-// ---- GTA_#.IMG REMOVAL ---- [METHOD 2]				- by TKBS
+// ---- GTA_#2-6.IMG REMOVAL ---- [METHOD 2]				- by TKBS
 //* Hex Edit the ".elf" File: (SLES_510.61)
+//[new]: 		[01E88A0] -- 01 00 07 24
+//[ORIGINAL]:	[01E88A0] -- 2D 38 00 02
 
-//[new]
-//[01E88A0] -- 01 00 07 24
-
-//[ORIGINAL]
-//[01E88A0] -- 2D 38 00 02
-
-// ---- Set Criminal Rating ----
-//* Hex Edit the ".elf" File: (SLES_510.61)
-//** Set Criminal Rating Changed to "NAME" (string), instead of numbers "%d". This example uses "TKBS"
-//[new]
-//[003ADE70] -- ...........2E 2E
-//[003ADE80] -- 54 4B 42 53
-
-//[ORIGINAL]
-//[003ADE70] -- ...........00 00
-//[003ADE80] -- 28 25 64 29
+//NOTE: Will be 50 FPS Locked if PAL .elf file is not patched to 60hz ntsc v-mode
+//60 FPS	||  Default Value: 28420002						- by TKBS
+//patch=1,EE,20272AD4,extended,28420001
 
 //-----------------			 Rendering System Codes & debug -----------------------------------		------//
 
@@ -93,10 +79,9 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 
 //-----------------			  Hidden Packages Codes		--------------------------------//
 //** I recommend editing the hidden packages coordinates in the main.scm to move all packages to 1 location.
-//* Ths will allow all th epop-up info & notrifications scripts to run.
+//* Ths will allow all pop-up info (notifications) scripts to run.
 
 //100% Hidden Packages; Enable 1 at a time to get all pop up notifications. - "105C8464" Also works.
-
 //00 Hidden Packages
 //patch=1,EE,205C8464,extended,00000000
 //10 Hidden Packages
@@ -241,7 +226,7 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 //patch=1,EE,201B2AD4,extended,00000000
 
 //-----------------			  AI  & NPC 		--------------------------------//
-//Unknown - At the same meory regions as the other cheats.
+//Unknown - At the same memory regions as the other cheats.
 //patch=1,EE,20278748,extended,14400048
 
 //AI NPC: Peds Attack You 	- (L3+UP)
@@ -321,7 +306,7 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 //patch=1,EE,D05C1702,extended,0000FFFF
 //patch=1,EE,2027858C,extended,14400010
 
-//Clock: Freeze Mission Timers (Side Quests)
+//Clock: Freeze Mission Timers (Side Quests) || Default Value: 0C0AEA2C
 //patch=1,EE,20270238,extended,00000000
 
 //Clock: Set Time Bonuses Ambulance Missions. 			- (string only?)
@@ -376,8 +361,21 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 //patch=1,EE,D05C1702,extended,0000FFFF
 //patch=1,EE,205C845C,extended,0000FFFF
 
-//-----------------		###	     STATS 	£££	$$$		--------------------------------//
+//----------------------------------------------------------------------------------//
+//-----------------	STATS .elf edit, for fun.	    --------------------------------//
+//----------------------------------------------------------------------------------//
+//* Set Criminal Rating to "NAME" (string) instead of numbers "%d". 
+//* Using Hex Edit the ".elf" File: (SLES_510.61)
+//* This example uses "TKBS"
+//[new]
+//[003ADE70] -- ...........2E 2E
+//[003ADE80] -- 54 4B 42 53
 
+//[ORIGINAL]
+//[003ADE70] -- ...........00 00
+//[003ADE80] -- 28 25 64 29
+
+//-----------------		###	     STATS 	£££	$$$		--------------------------------//
 // Criminal Rating - Set to "TKBS"
 //patch=1,EE,204ADDF8,extended,4D495243
 //patch=1,EE,204ADDFC,extended,2E2E4152
@@ -456,10 +454,10 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 //### $$$ Property Destroyed
 //patch=1,EE,204B2220,extended,00000000
 
-//### "Toal Number of Wanted Stars attained" (Obtained)
+//### "Total Number of Wanted Stars attained" (Obtained)
 //patch=1,EE,204B2130,extended,00000000
 
-//### "Toal Number of Wanted Stars Evaded"  	+4 from stars obtained
+//### "Total Number of Wanted Stars Evaded"  	+4 from stars obtained
 //patch=1,EE,204B2134,extended,00000000
 
 //### "People You've Wasted"
@@ -470,9 +468,6 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 
 //### Road Vehicles Destroyed
 //patch=1,EE,204B2108,extended,00000000
-
-//### Pedestrians OFF
-//patch=1,EE,204AB578,extended,00000000
 
 //### Tyres popped (tires - incorrect spelling in game) 	- ntsc (204BB120) diff = 9010
 //patch=1,EE,204B2110,extended,00000000
@@ -666,6 +661,8 @@ comment=This is for the 2003 DVD (version 2.03. Not 2002, or 2004).
 //2029E5F4 00000000
 
 //-----------  ---- Character Modifier Codes ----					------------------//
+//KNOWN ISSUE: There is no way to turn back to Tommy!
+
 //*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) ***
 patch=1,EE,D05C1702,extended,0000FFED
 patch=1,EE,2027868C,extended,00000000
@@ -976,17 +973,13 @@ patch=1,EE,2027868C,extended,14400006
 //*** Cars Float On Water (1) ***						-	[(by skiller + TKBS) NTSC -> PAL (-9000)].
 //patch=1,EE,004B1050,extended,00000001
 
-//Cars Change Tyre Size (Not All Vehicles): 204B1058
-
-//Cars Bunny Hop (also requires Perfect Handling): 204B1040
-
 //Invisible Cars
 //patch=1,EE,204B1038,extended,00000001
 
 //Cars can fly
 //patch=1,EE,204B103C,extended,00000001
 
-//Change Tyre Size
+//Change Tyre Size (Not All Vehicles)
 //patch=1,EE,204B1058,extended,00000001
 
 //Cars can drive / float on water
@@ -1077,17 +1070,17 @@ patch=1,EE,2027868C,extended,14400006
 //patch=1,EE,2067B390,extended,0000FFFF
 
 //---- Full Version ---- Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
-//patch=1,EE,206B6070,extended,000000EC		|| Vehicle ID
-//patch=1,EE,206B6074,extended,-FLOAT- 		|| X
-//patch=1,EE,206B6078,extended,-FLOAT- 		|| Y
-//patch=1,EE,206B607C,extended,-FLOAT- 		|| Z
-//patch=1,EE,206B6080,extended,-FLOAT- 		|| H
-//patch=1,EE,206B6084,extended,3DE93BB1		|| //Vehicle Position (x,y): (values set it to whatever it was when i parked it nice, facing out)
-//patch=1,EE,206B6088,extended,3F7E55A2		|| //Vehicle Position (x,y): (values set it to whatever it was when i parked it nice, facing out)
-//patch=1,EE,206B608C,extended,0000001F 	|| Damage Proof = "1F"
-//patch=1,EE,206B6090,extended,FF014E44		|| Vehicle Colours 1 ... & 2
-//patch=1,EE,206B6091,extended,FFFF014E		|| Vehicle Colours 2
-//patch=1,EE,206B6094,extended,000000FF		|| Unknown parameter: car_generator 101 | Locked  % ? | Force Spawn ?
+//patch=1,EE,206B6070,extended,000000EC 	//|| Vehicle ID
+//patch=1,EE,206B6074,extended,-FLOAT- 		//|| X
+//patch=1,EE,206B6078,extended,-FLOAT- 		//|| Y
+//patch=1,EE,206B607C,extended,-FLOAT- 		//|| Z
+//patch=1,EE,206B6080,extended,-FLOAT- 		//|| H
+//patch=1,EE,206B6084,extended,3DE93BB1 	//|| 
+//patch=1,EE,206B6088,extended,3F7E55A2 	//|| 
+//patch=1,EE,206B608C,extended,0000001F 	//|| Damage Proof = "1F"
+//patch=1,EE,206B6090,extended,FF014E44 	//|| Vehicle Colours 1 ... & 2 	== FF00|#1|#2|
+//patch=1,EE,206B6091,extended,FFFF014E 	//|| Vehicle Colours 2			== FFFF00|#2
+//patch=1,EE,206B6094,extended,000000FF 	//||
 
 //---- Slim Version ---- Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
 //VH ID
@@ -1128,26 +1121,7 @@ patch=1,EE,2027868C,extended,14400006
 //Spawn Vehicle in Garage "Hyman Condo [Right VH 1]"
 //patch=1,EE,206B5FD0,extended,000000EC
 
-//---------------------------------------------- *** GARAGE EDITOR "OLD" *** --------------------------------------------------------------------------
-
-// ---- [Garage Editor Explained]; ----
-//* Damage Properties	||	1F = Damage proof. || 0000006D = No mirrors	| 6F = no right mirror & Bullet pass through || //0000006F + hex 20 [or (dec 32) (8 x 4 bytes)] = 05F5E0FF 	= Explode when you sit in.
-//	Line 1 = Garage Location + Vehicle ID		//patch=1,EE,206B6070,extended,00000089
-//	Line 2 = Colour 1	(byte 1)				//patch=1,EE,206B6090,extended,000000AF		|| 006B6090
-//	Line 3 = Colour 2	(byte 2)				//patch=1,EE,206B6091,extended,0000004F		|| 006B6091
-//	Line 4 = Position (x,y) 1					//patch=1,EE,206B6080,extended,3DE93BB1
-//	Line 5 = Position (x,y) 2					//patch=1,EE,206B6084,extended,3F7E55A2
-//	Line 6 = damage proof						//patch=1,EE,206B608C,extended,0000006F		|| 006B608C || 000000FF || 0000001F is what you get from a cutscene special vehicle.
-//	Line 7 = Unknown							//patch=1,EE,206B6094,extended,000000FF
-//	Line 0 = Vehicle ID SLOT 2,3 ,4 etc			//the other slots are listed below for each garage that can hold multiple vehicles.
-//  Unknown = Wheel ID & temp components & special weapons properties: dorp bombs, etc.
-// * 2 bytes effect 1 address: Combine Line 2 & 3 bytes to make colour changes easier in 1 line, last 4 bytes.
-//patch=1,EE,206B6090,extended,0000AF4F
-//206B6090	FF00324E			= FF00|#1|#2|
-//206B6091  FFFF0032			= FFFF00|#2
-
 //----------------  Audio: For starter save; ------------------------------------------------
-//----------------		 Audio: For starter save: 			  		--------------//
 //*** Force DTS Audio "FEA_DTS" Enabled ***				- See Notes: GTA Vice City PS2 using DTS (for Starter Save SP2 & PS3 Users)
 //patch=1,EE,D05C1702,extended,0000FFED
 //patch=1,EE,204ADB84,extended,204ADE30
