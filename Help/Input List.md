@@ -61,10 +61,21 @@ PAD 2 - L1 || L2 			== Toggle: set_everyone_ignore_player | set_police_ignore_pl
 PAD 2 - SELECT + X 	 		== Clothes 1-12 (CYCLE) + bonus PLAY13 custom.
 PAD 2 - SELECT 				== CleanStreets ON|| OFF - Toggle cars and peds
 
-[Freeze (Toggle)]				== Freeze Player...
-// PAD 1 - L1
-// PAD 1 - L2
-// PAD 2 - X				== ... then + R3 for extra cheats.
+
+
+** This next Cheat has Multi-Functions;-
+1. Freeze/unfreeze player
+2. show msg writing coords to ind  executed
+3. give player cash
+4. unlock secret garage (executes once only)
+5. weapon accuracy 100
+6. Unlock the Rifle Range Missions early
+
+[Freeze (Toggle)]			== Toggle Freeze Player...
+// PAD 1 - L1...
+// PAD 1 - L2...
+// PAD 2 - X...				...
+//...						== ... then + R3 for extra cheats.
 
 [extra cheats]
 // When Frozen				== // Writing coordinates to file...
