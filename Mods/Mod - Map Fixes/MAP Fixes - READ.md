@@ -1,6 +1,6 @@
 
 
-[nbeach.ipl]  this works. you can se ethe Fixed HUT with a RIPC CURRENTS unhappy face yellow poster on it.
+[nbeach.ipl]  this works. you can see the Fixed HUT on the beach
 Issue 		- objects Under Map:
 OBJECT:		565, od_pat_hutb, od_beachstuff, 1, 100, 0
 
@@ -19,7 +19,7 @@ Issue 		- PC has more objects:
 2181, gf_flagstees42, 0, 66.18927002, -128.3310242, 13.33351135, 1, 1, 1, 0, 0, 0, 1
 2183, gf_flagstees43, 0, 61.65939713, 152.2718201, 20.06766891, 1, 1, 1, 0, 0, 0, 1
 
-Issue 		- objects Under Map:
+Issue 		- objects Under Map: Metal Walkway
 * Not sure how to fix. Objects only show on PS2, maybe the map editor has auto fixes and that's why the issue does not show? 
 * can find floats from ipl in cheat engine and move on-the-fly. then bake into a save game.
 ^^ i prefer these methods ad they keep original content intact and still fix issues, but they are much harder to do.
@@ -42,4 +42,4 @@ Issue 		- objects Under Map:
 * fix barrels misplaced.
 
 [washints.ipl]
-* fix ocean heights garage door.
+* fix ocean heights garage door. - flip 180
