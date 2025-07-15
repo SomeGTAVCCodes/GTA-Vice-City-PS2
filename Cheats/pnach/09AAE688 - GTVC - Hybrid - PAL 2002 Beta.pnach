@@ -10,33 +10,18 @@ comment=GTA:VC, PAL, 2002-Beta Codes.
 //---- PS2 Beta .elf ----
 //--------------------------------------------------------------------------------------------------------------------
 //[In-Game] [HARDCODED]:
-//PAD 1 - Debug Menu: 			== L1+ R1 on the menu screen.
+//PAD 1 - Debug Menu: 			== L1+ R1 on the menu screen, or in-game.
 //PAD 1 - Wanted Level + Up		== Left, Right, (repeated)		|| LRLRLR
 //PAD 1 - Wanted Level - Down	== Up, Down,  (repeated)		|| UDUDUD
 
 //GTA_#2-6.img Removal
 //patch=1,EE,202DAAF4,extended,24070001
 
-//60 FPS	||  Default Value: 28420002
-//NOTE: Will be 50 FPS Locked if PAL .elf file is not patched to 60hz ntsc v-mode
+//Notes: 60 FPS
+//Notes: - Not needed for "PCSX 1.6" which runs at 50-60FPS by Default
+//Notes: - Will be 50 FPS Locked if PAL .elf file is not patched to 60hz ntsc v-mode
+//60 FPS	||  Default Value: 28420002 ||
 //patch=1,EE,2027475C,extended,28420001
-
-// Unlock FAST RELOAD
-//Mission: Rifle Range Score || After Mission: "The Shootist" the script opens the rifle range, Shooting Range, Targets.
-//Round 1
-//patch=1,EE,20557FA8,extended,0000029A
-//Round Total
-//patch=1,EE,20558440,extended,0000029A
-
-//--------------------------------------------------------------------------------------------------------------------
-// ---- MISC Cheats ----
-//--------------------------------------------------------------------------------------------------------------------
-//100% Completion - offset 73A4
-//patch=1,EE,204B94C0,extended,431A0000
-//patch=1,EE,204B94C4,extended,431A0000
-
-//Set Moon Size (0-7)
-//patch=1,EE,204B59D4,extended,00000003
 
 //--------------------------------------------------------------------------------------------------------------------
 // ---- Menu Options ----
@@ -48,7 +33,7 @@ patch=1,EE,204B6EAC,extended,00000000
 //patch=1,EE,204B91C4,extended,00000001
 
 //Toggle WideScreen: 									00000000 || 00000001
-patch=1,EE,204B8AD0,extended,00000001
+//patch=1,EE,204B8AD0,extended,00000001
 
 //Toggle Subtitles: 									00000000 || 00000001
 patch=1,EE,204B8ACC,extended,00000001
@@ -57,13 +42,36 @@ patch=1,EE,204B8ACC,extended,00000001
 //patch=1,EE,204B8AEC,extended,00000001
 
 //--------------------------------------------------------------------------------------------------------------------
+// ---- MISC Cheats ----
+//--------------------------------------------------------------------------------------------------------------------
+//100% Completion - offset 73A4
+//patch=1,EE,204B94C0,extended,431A0000
+//patch=1,EE,204B94C4,extended,431A0000
+
+//Set Moon Size (0-7)
+//patch=1,EE,204B59D4,extended,00000003
+
+//Toggle Blood (00 off,  01 on)
+//patch=1,EE,204B5264,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Mission Cheats ----
+//--------------------------------------------------------------------------------------------------------------------
+// Unlock FAST RELOAD
+//Mission: Rifle Range Score || After Mission: "The Shootist" the script opens the rifle range, Shooting Range, Targets.
+//Round 1
+//patch=1,EE,20557FA8,extended,0000029A
+//Round Total
+//patch=1,EE,20558440,extended,0000029A
+
+//--------------------------------------------------------------------------------------------------------------------
 // ---- Clock  & Timers ----
 //--------------------------------------------------------------------------------------------------------------------
 //Clock: Freeze Clock Time 	|| 000003E8 -> E3000008 || offset 2003 - 241544
 //patch=1,EE,204B8A84,extended,E3000008
 
 //Clock: Freeze Mission Timers (Side Quests etc) || DEFAULT: 00006AD0
-patch=1,EE,20690730,extended,00000000
+//patch=1,EE,20690730,extended,00000000
 
 //--------------------------------------------------------------------------------------------------------------------
 // ---- STATS ----
@@ -124,47 +132,69 @@ patch=1,EE,20690730,extended,00000000
 //patch=1,EE,20B6CE78,extended,43480000
 //patch=1,EE,20B6CE7C,extended,43480000
 
-//$$$ Set Money (Parts 1-3).
+//Armour Cheat: (Any Non-D'Pad Button)		|| 1440001C -->  00000000
+//patch=1,EE,2027B2A8,extended,00000000
+
+//$$$ £££ Set Money, Cash  (Parts 1-3).
 //patch=1,EE,204B91F4,extended,00000001
 //patch=1,EE,205D505C,extended,00000001
 //patch=1,EE,205D5060,extended,00000001
 
+//Never Lose Weapons
+//patch=1,EE,201B3BC0,extended,03E00008
+//patch=1,EE,201B3BC4,extended,00000000
+
 //Player: Speed is Faster (Maniac Runner) || Original = 3C023F80 || New = 3C024080 || PAL 2003 2012A790 + 1C0 = PAL 2002 BETA
 //patch=1,EE,2012A950,extended,3C024080
 
-// ---- Armour ----
-//Armour Cheat: 					- ON 						- (Any Non-D'Pad Button)
-//patch=1,EE,2027B2A8,extended,00000000
+// ---- No Clip ----
+//No Clip: Walls	|| Default Value = 0C0E26C8 || [PAL 2003: 2013D568] + 580 == 2013DAE8
+//patch=1,EE,2013DAE8,extended,00000000
 
-//Armour Cheat: 					- OFF || Default Value		- (Any Non-D'Pad Button)
-//patch=1,EE,2027B2A8,extended,1440001C
+//No Clip: Water
+//patch=1,EE,2016E970,extended,03E00008
+//patch=1,EE,2016E974,extended,00000000
+//patch=1,EE,201C0910,extended,03E00008
+//patch=1,EE,201C0914,extended,00000000
+
+// ---- Render ----
+//Tommy Is Invisible: (Not Weapons)			|| Default Value = 000001C2 (dec 450) || Change to 666 and Tommy is Invisible. - Discovered when looking for firing rate-speeds.
+//patch=1,EE,2045DE3E,extended,0000029A
 
 //--------------------------------------------------------------------------------------------------------------------
 // ---- Weapons ----
 //--------------------------------------------------------------------------------------------------------------------
-//Weapons: Cycle Weapon Cheat: 		- ON 							- (Any Non-D'Pad Button)		|| Also "2027B260"
-//patch=1,EE,2027CAE4,extended,00000000
-
-//Weapons: Cycle Weapon Cheat: 		- OFF 	|| Default Value		- (Any Non-D'Pad Button)		|| Also "2027B260"
-//patch=1,EE,2027CAE4,extended,14E00003
-
-//Weapons: Sniper (Default)					|| Default = 0C094608
+// ---- Weapon Cheats: Zoom Function ----
+//Weapons: Sniper (Default Zoom Function)	|| Default = 0C094608
 //patch=1,EE,20259C60,extended,0C094608
 
 //Weapons: Minigun with Sniper Zoom			|| Default = 0C094BDC || New = 0C094608
-patch=1,EE,20259C98,extended,0C094608
+//patch=1,EE,20259C98,extended,0C094608
+
+//Weapons: Rocket Launcher with Sniper Zoom || Default = 0C094920 || New = 0C094608
+//patch=1,EE,20259C7C,extended,0C094608
+
+// ---- Weapon Cheats: "14#0000# --> 00000000" ----
+//Weapon: Cycle - 1, 2, 3.							|| 14E00003 --> 00000000
+//patch=1,EE,2027CAE4,extended,00000000
+
+//Weapons: (Set 1 - FT)								|| 14400004 --> 00000000
+//patch=1,EE,2027B218,extended,00000000
+
+//Weapons: (Set 2 - RL)								|| 14400004 --> 00000000
+//patch=1,EE,2027B23C,extended,00000000
+
+//Weapons: (Set 3 - Cnon)							|| 14400006 --> 00000000
+//patch=1,EE,2027B260,extended,00000000
 
 //--------------------------------------------------------------------------------------------------------------------
 // ---- Cycle Character Models ----
 //--------------------------------------------------------------------------------------------------------------------
 //* NOTE: IMPORTANT: When using this cheat there is no RETURN BACK TO TOMMY - There has neever been one made
-//* Using Change Clothes PLAY12, PLAY10, PLAYER, PLAYER4 etc etc Will cause the Invisible CHarcter Mdoel Bug.
+//* NOTE: Using Change Clothes after this cheat (PLAY12, PLAY10, PLAYER, PLAYER4 etc) Will cause the Invisible Character Model Bug & crash.
 
-//Cycle Character Cheat: 			- ON 						- (Any Non-D'Pad Button)
+//Cycle Character Cheat:  (Any Non-D'Pad Button)		|| 14400006 -->  00000000
 //patch=1,EE,2027B7DC,extended,00000000
-
-//Cycle Character Cheat: 			- OFF || Default Value		- (Any Non-D'Pad Button)
-//patch=1,EE,2027B7DC,extended,14400006
 
 //--------------------------------------------------------------------------------------------------------------------
 //---- AI & NPC ----
@@ -466,7 +496,7 @@ patch=1,EE,20259C98,extended,0C094608
 // ----Cheats with Values;- ----
 // 		1440000F	- Weather
 // 		1440001F	- wanted up - Stays in RAM - no undo?
-// 		14400006	- Character Cycle
+// 		14400006	- Character Cycle, weapons
 // 		14E00003	- Weapons Cycle
 // 		14400017	- Suicide
 // 		1440001C	- Armour
@@ -477,14 +507,46 @@ patch=1,EE,20259C98,extended,0C094608
 // 		14400015
 // 		14400027
 // 		14400010
-// 		14400004
+// 		14400004	- weapons
 // 		14400012
+// 		14400018
 // 		14400028	- Explode Vehicles
 
 //--------------------------------------------------------------------------------------------------------------------
-// ---- Cheats with Values: 144000## --> 00000000 ----
+// ---- Cheats with Values: 14#000## --> 00000000 ----
 //--------------------------------------------------------------------------------------------------------------------
 
+// ---- Spawn Vehicle Cheats: "14400007 --> 00000000" ----
+
+//Spawn Any Vehicle: (Using the Spawn ("xxx"-e.g.Tank) Lines).
+//Line 1: Spawn == 14400007 --> 00000000
+//Line 2: Last 2 Bytes == Vehicle.							||	A2 = Tank || EC = Cheetah.
+//patch=1,EE,2027B6B0,extended,14400007
+//patch=1,EE,2027B6BC,extended,240400EC
+
+// ---- Spawn Vehicle Cheats: DEPRECATED - NOT REQUIRED ----
+//										//Spawn Tank
+//										//patch=1,EE,2027B6B0,extended,14400007
+
+//										//Spawn BloodRing Banger
+//										//patch=1,EE,2027BF20,extended,14400007
+
+//										//Spawn Romeros Hearse
+//										//patch=1,EE,2027BF4C,extended,14400007
+
+//										//Spawn Love Fist
+//										//patch=1,EE,2027BF78,extended,14400007
+
+//										//Spawn TrashMaster
+//										//patch=1,EE,2027BFA4,extended,14400007
+
+//										//Spawn Sabre
+//										//patch=1,EE,2027BFD0,extended,14400007
+
+//										//Spawn Caddy
+//										//patch=1,EE,2027BFFC,extended,14400007
+
+// ---- Cheats: "144000## --> 00000000" ----
 //Bikini chicks With Guns (Your Vercetti Gang Members) at your mansion, printworks, etc.
 //Not tested but probably correct:		2027BCE0 00000000
 //patch=1,EE,2027BCE0,extended,00000000
@@ -525,6 +587,7 @@ patch=1,EE,20259C98,extended,0C094608
 //Cheat Activated: Explode Vehicles						|| 14400028 --> 00000000
 //patch=1,EE,2027B72C,extended,14400028
 
+// ---- Weather Cheats ----
 //Weather Cheat - Sun 1?								|| 1440000F --> 00000000
 //patch=1,EE,2027B534,extended,1440000F
 
@@ -614,4 +677,4 @@ patch=1,EE,20259C98,extended,0C094608
 //T3T3T3 - unknown
 //242424 - unknown
 
-//Infinite Sprint  - did not work.
+//--------------------------------------------------------------------------------------------------------------------
