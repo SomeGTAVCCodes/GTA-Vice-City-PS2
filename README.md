@@ -6,6 +6,3 @@
 
 [GTA VICE CITY PS2]: "Hybrid Version";
 * Instructions, Patches & Modifications to make the Best GTA VC [PS2] Version.
-
-[GTA SAN ANDREAS PS2]:Project All Comprehensive Cheats, Codes etc.
-* WiP.
