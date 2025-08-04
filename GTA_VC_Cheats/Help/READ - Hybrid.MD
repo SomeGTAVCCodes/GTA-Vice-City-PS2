@@ -1,13 +1,13 @@
-* TITLE: 		ReadMe for GTAVC Cheats & Debug/ Hybrid Creation.
-* Author:		TKBS
+* TITLE: 	ReadMe for GTAVC Cheats & Debug/ Hybrid Creation.
+* Author:	TKBS
 * DATE:		2025
 * INFO:	Provides info on creating the best PS2 version.
-	* 	Extensive Cheats & Documentation
-* Notes:	See the "Help\Input List" File for the Cheats & Debug Input Options (Button Combo's):
+* Extensive Cheats & Documentation
+* Notes: See the "Help\Input List" File for the Cheats & Debug Input Options (Button Combo's):
 * Note:	Some Modifications are performed using multiple methods. These provide options depending on the hardware used.
 
 //----------------------------------------------------------------------------------------------------------------
-		Welcome to VICE CITY [PS2]: "Hybrid"
+Welcome to VICE CITY [PS2]: "Hybrid"
 //----------------------------------------------------------------------------------------------------------------
 ** Customise your GTA:VC PS2, 3, 4 or Emulator Experience with the best of all versions & more;-
 
@@ -18,34 +18,34 @@
 Recent Updates: 
 * cheats added to pnach & .ct files;-
 * music manager: listen to music outside vehicle, adjust volume, change icons. notes.
-		* Infinite Sprint & Fast Reload & Fireproof now all in one patch line.
-		* Infinite Sprint Old version for reference.
-		* infinite ammo fix. 
-		* Boats can Fly
-		* See through walls, translucent world and other render, visual type stuff
-		* modify messages, e.g vehicle names in real time.
-		* modify particle.cfg values in real time. e.g. teargas smoke.
-		* Tyres Invulnerable
-		* some file clean ups
-		* removed the "PLAY13" Custom Clothes dependency from the main.scm mods.
-		* Also updated the PAL 2003 pnach & cheat table.
+* Infinite Sprint & Fast Reload & Fireproof now all in one patch line.
+* Infinite Sprint Old version for reference.
+* infinite ammo fix. 
+* Boats can Fly
+* See through walls, translucent world and other render, visual type stuff
+* modify messages, e.g vehicle names in real time.
+* modify particle.cfg values in real time. e.g. teargas smoke.
+* Tyres Invulnerable
+* some file clean ups
+* removed the "PLAY13" Custom Clothes dependency from the main.scm mods.
+* Also updated the PAL 2003 pnach & cheat table.
 		
-Previous Updates: 		
-	* remove widescreen black borders from cutscenes and some other stuff.
-	* some map tweaks: extra bridge & new jump near golf course.
-	* Sparrow fix for Helicopter Odd Job mission (downtown)
-	* removed the "CUT/Missing messages" from the debug stuff.
-	* added more cycle character model variants.
-	* some code concanated to save space
-	* some pcsx2 settings tweaks for both pcsx2 1.6.0 & 2.4.0.
-	* using d pad down (pad 2) to spawn weapons now gives infinite ammo instead of 2000.
-	* Mission: Sir YES Sir Garage Unlocked/ Available after mission complete.
-	* AUS, German & French (censorship) Code checks removed - to save .scm space
-	* using the multi cheat function to change car colors (...etc) will make a rocket explosion  in front of it and a fire (molotov) explosion below it with a radius.
-	* (molotov) your vehicle can shoot fire below it in a radius, can be used to force eject peds from vehicles etc.
+Previous Updates: 	
+* remove widescreen black borders from cutscenes and some other stuff.
+* some map tweaks: extra bridge & new jump near golf course.
+* Sparrow fix for Helicopter Odd Job mission (downtown)
+* removed the "CUT/Missing messages" from the debug stuff.
+* added more cycle character model variants.
+* some code concanated to save space
+* some pcsx2 settings tweaks for both pcsx2 1.6.0 & 2.4.0.
+* using d pad down (pad 2) to spawn weapons now gives infinite ammo instead of 2000.
+* Mission: Sir YES Sir Garage Unlocked/ Available after mission complete.
+* AUS, German & French (censorship) Code checks removed - to save .scm space
+* using the multi cheat function to change car colors (...etc) will make a rocket explosion  in front of it and a fire (molotov) explosion below it with a radius.
+* (molotov) your vehicle can shoot fire below it in a radius, can be used to force eject peds from vehicles etc.
 
 //----------------------------------------------------------------------------------------------------------------
-		---- Cheats & Debug ---- Port beta to other versions (yourself)
+---- Cheats & Debug ---- Port beta to other versions (yourself)
 //----------------------------------------------------------------------------------------------------------------
 ** To Port beta to other versions (yourself) & create a basic Cheats & Debug Upgrade;
 
@@ -70,7 +70,7 @@ Previous Updates:
 That's it... But following the Hybrid Instructions will be better!
 
 //----------------------------------------------------------------------------------------------------------------
-		----					----  [Hybrid];- ---- 								   ----
+----  [Hybrid];- ----
 //----------------------------------------------------------------------------------------------------------------
 ** To create the best "Hybrid" version (with Cheats & Debug Upgrade);
 
@@ -523,4 +523,5 @@ PS2 - GTA 6
 	
 
 Enjoy!
+
 
