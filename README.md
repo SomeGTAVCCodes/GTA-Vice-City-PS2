@@ -12,7 +12,7 @@ GTA VICE CITY PS2 "Hybrid Vesion";
 * Fixes, Mods, New Information & Discoveries.
 * Instructions with Patches & Modifications
 * download the latest hybrid patches and mod files from MODDB:
-  https://www.moddb.com/mods/gta-vice-city-mods
+*  https://www.moddb.com/mods/gta-vice-city-mods
 
 TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
 
