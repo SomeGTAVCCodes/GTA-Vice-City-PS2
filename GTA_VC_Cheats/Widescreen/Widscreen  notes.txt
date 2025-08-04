@@ -1,12 +1,27 @@
-//-------------------------------------------------------------
-//	---- Test 2 Info ----
-//-------------------------------------------------------------
-* this fixes the upside screen from test 1 but the FOV is not as wide as test 1.
-* i then fucked stuff a bit when testing so archived this test 2 here.
-* just in case i make a test 3 to try to widen the FOV and lose addresses.
-* seems hard to find the last 3 lines.
+//---------------------------------------
+// ---- WideScreen Test 3 ---- 
+//---------------------------------------
+//CRC: 		=	09AAE688 && 31A67C86 (Debug Beta Upgraded - Hybrid)
+patch=1,EE,2013267C,word,3C013F9D
+patch=1,EE,20132680,word,44810000
+patch=1,EE,20132684,word,46006300 //46006302 = upside down and massive widescreen FOV.
+patch=1,EE,20132688,word,E78C8888
+patch=1,EE,2013268C,word,3C010069
+patch=1,EE,20132690,word,E42CEAF4 
+patch=1,EE,20132694,word,3C010069
+patch=1,EE,20132698,word,03E00008 
+patch=1,EE,2013269C,word,E42DEAF8
+//Trap exception at 0x00259394
 
-// ----  Widescreen ---- 
+
+
+
+
+
+
+//---------------------------------------
+// ---- WideScreen Test 2
+//---------------------------------------
 // Issue - screen flipped.
 // || E78C8888 E78C87F8 0C0CC7EC 0C04C8EE | E78C86F8  0C04C96F 0C04C972 0C04BDDC
 // i think line 6 "jmp" should go to - 2024420E || 000BDDE9
@@ -23,20 +38,17 @@ patch=1,EE,2013268C,extended,E78C8888 //|| ...or...	 E78C87F8
 //patch=1,EE,202706DC,extended,0C04C8EE
 //patch=1,EE,20270CB4,extended,0C04C8EE
 //patch=1,EE,20270FE0,extended,0C04C8EE
-
 //patch=1,EE,2024335C,word,0C04C8EB
 //patch=1,EE,202706DC,word,0C0CC7EC
 //patch=1,EE,20270CB4,word,0C0CC7EC
-
 //6- 2024362C
 //7- 20270A00
 //8-
 
-//-------------------------------------------------------------
-//	---- Test 1 Info ----
-//-------------------------------------------------------------
-* Keep this info 
-* this has been a difficult one to port and so far i have no success.
+//---------------------------------------
+// ---- WideScreen Test 1
+//---------------------------------------
+* Keep this info - this has been a difficult one to port and so far i have no success.
 * 1st switch the pal 2003 lines from 0x0 address to 2x0 to expose default values
 * these values will change in 2003 even if instructions with it should be the same.
 0C04C8EC is "in al,dx" in 2003
@@ -115,3 +127,4 @@ patch=1,EE,201323BC,word,E78C87F8 | 11 0FA0
 patch=1,EE,2024335C,word,0C04C8EB | + 2 D380
 patch=1,EE,202706DC,word,0C04C8EE | + 5D8
 patch=1,EE,20270CB4,word,0C04C8EE
+
