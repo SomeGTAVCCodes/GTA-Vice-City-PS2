@@ -1,10 +1,10 @@
-TITLE: 		ReadMe for GTAVC Cheats & Debug/ Hybrid Creation.
-Author:		TKBS
-DATE:		2025
-INFO:	Provides info on creating the best PS2 version.
-		Extensive Cheats & Documentation
-Notes:	See the "Help\Input List" File for the Cheats & Debug Input Options (Button Combo's):
-Note:	Some Modifications are performed using multiple methods. These provide options depending on the hardware used.
+* TITLE: 		ReadMe for GTAVC Cheats & Debug/ Hybrid Creation.
+* Author:		TKBS
+* DATE:		2025
+* INFO:	Provides info on creating the best PS2 version.
+	* 	Extensive Cheats & Documentation
+* Notes:	See the "Help\Input List" File for the Cheats & Debug Input Options (Button Combo's):
+* Note:	Some Modifications are performed using multiple methods. These provide options depending on the hardware used.
 
 //----------------------------------------------------------------------------------------------------------------
 		Welcome to VICE CITY [PS2]: "Hybrid"
@@ -521,4 +521,5 @@ PS2 - GTA 6
 
 ** as there are only a few codes or cheats left to add to each version, soem exist in ones but not others etc, a trainer (i hate that term) would be useful at thus point. Sadly ther eis no template or good src for these and they are incredibly time consuming and diffcult to maek.
 	
+
 Enjoy!
