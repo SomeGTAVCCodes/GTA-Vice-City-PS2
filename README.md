@@ -1,19 +1,20 @@
+Updates: 04.08.2025
+* Re-organised GitHub... & Added the most up-to-date content i have. 
 
 GTA VICE CITY PS2 Cheats;
 * Comprehensive Cheats & Codes - All Versions & Regions
 * Vehicle Editor: Garage, heli-pad, parking, boatmoaring
 * Music Manager: Listen to Music outside of vehicles.
+* Modify game in real time.
 
-GTA VICE CITY PS2 "Hybrid Vesion"; 
-** Make the Best GTA VC [PS2] Version. **
-* Fixes, Mods, New Information & Discoveries etc.
-* Instructions, Patches & Modification
+GTA VICE CITY PS2 "Hybrid Vesion";
+* The Best GTA Vice City you can make 
+* Fixes, Mods, New Information & Discoveries.
+* Instructions with Patches & Modifications
 * download the latest hybrid patches and mod files from MODDB:
-https://www.moddb.com/mods/gta-vice-city-mods
+  https://www.moddb.com/mods/gta-vice-city-mods
 
-
- TO DO LIST;- (Please Contribute)
-* 2002/2003 Hybrid Needs the following:
+TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
 
 1. Widescreen & Super Widescreen fix
    - Snakes Widescreen did not
