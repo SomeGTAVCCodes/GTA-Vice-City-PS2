@@ -1,5 +1,5 @@
 //---------------------------------------
-// ---- WideScreen Test 3 ---- 
+// ---- WideScreen Test 3 ---- (PAL 2002 Beta & Hybrid)
 //---------------------------------------
 //CRC: 		=	09AAE688 && 31A67C86 (Debug Beta Upgraded - Hybrid)
 patch=1,EE,2013267C,word,3C013F9D
