@@ -1,3 +1,5 @@
+---- GTA Vice City Cheats & Debug Hybrid ----
+
 Updates: 04.08.2025
    * Re-organised GitHub... & Added the most up-to-date content i have. 
 
@@ -12,8 +14,6 @@ New .pnach Cheats Include;-
    * Modify Messages, e.g vehicle names etc in real time
    * Modify "particle.cfg" values in real time e.g. teargas smoke.
 
----- GTA Vice City Cheats & Debug Hybrid ----
-
 GTA VICE CITY PS2 Cheats;
    * Comprehensive Cheats & Codes - All Versions & Regions
    * Vehicle Editor: Garage, heli-pad, parking, boatmoaring
@@ -25,7 +25,7 @@ GTA VICE CITY PS2 "Hybrid Vesion";
    * Fixes, Mods, New Information & Discoveries.
    * Instructions with Patches & Modifications
    * download the latest hybrid patches and mod files from MODDB:
-   *  https://www.moddb.com/mods/gta-vice-city-mods
+   * https://www.moddb.com/mods/gta-vice-city-mods
 
 TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
    1. Widescreen & Super Widescreen fix
@@ -33,7 +33,8 @@ TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
       - The snake fix Widescreen version worked a bit but is weird and cannot be ported
       - addresses used some of them make no sense.
       - Super Widescreen by TKBS inverts the image, flips it upside.. No idea why -- that was my attempt to port.
-      - PeterD's Replied regarding Widescreen with some info.
+      - PeterD's Replied regarding Widescreen with some info but i am not able to port 40 lines of stuff to this version.
+
    2. Joker Commands
       - Even though i made them for 2003, i cannot port them to 2002/2003 Hybrid Version.. - Which makes activatign and de-activating patches a bit annoying.
       - 
