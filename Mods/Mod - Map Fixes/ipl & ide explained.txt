@@ -1,7 +1,0 @@
-
-[.ipl]
-ID, ModelName, Interior, PosX, PosY, PosZ, ScaleX, ScaleY, ScaleZ, RotX, RotY, RotZ, RotW
-
-
-[.ide]
-ID, ModelName, TextureName, ObjectCount, DrawDist, [DrawDist2, ...], Flags
