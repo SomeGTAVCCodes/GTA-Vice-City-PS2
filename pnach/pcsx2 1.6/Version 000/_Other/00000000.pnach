@@ -1,0 +1,91 @@
+gametitle=Generic PCSX2 00000000.
+comment=GTA:VC, PAL, 2002-Beta Codes.
+
+
+
+//----------------------------------------------------------------------------------------------------------
+//---------------------------------------- Notes: ----------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+//Infinite Ammo	[Game Cheat version]			|| Ported from my PAL 2003 version. 	|| SAME ISSUES AS 100% COMPLETE - the infinite ammo does not actually work ????
+//Lines 1-4 blank mem space ?
+//Line 5 - Default value 0C0C28D0 --> 0C03FFC0	|| Instruction: "sar bh,03"
+//error in the log for this: //ERROR: ==  (EE pc:000FFF00) TLB Miss, addr=0x2a77 [store]
+//patch=1,EE,200FFF00,extended,3C0542C8
+//patch=1,EE,200FFF04,extended,AC450368
+//patch=1,EE,200FFF08,extended,03E00008
+//patch=1,EE,200FFF0C,extended,46000024
+//patch=1,EE,202D6DF4,extended,0C03FFC0
+
+//----------------------------------------------------------------------------------------------------------
+//-------------------------------- Work-around Issues: prevent start-up crash & hangs ----------------------
+//----------------------------------------------------------------------------------------------------------
+
+// -- (prevent start-up crash & hangs) -- 		
+// * Attempt to fix Skip Intro (crash & hangs) mpeg movies - beta does not have l1,l2,r1,r2 skip function.
+//patch=1,EE,80001040,extended,0C0013B0
+//patch=1,EE,8000EBE0,extended,0C0013B0
+
+
+//----------------------------------------------------------------------------------------------------------
+//---------------------------------------- Work-around Issues: ---------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+
+//todo: (workaround) issue: 0x00000000 || pcsx2 Invalid macroblock_address_increment code(0x00000000)
+//patch=1,EE,00000000,extended,00000000
+
+//todo: 002DBA90 - some issue - hit store breakpoint here to check it- unsolved.
+//EE/iR5900-32 Recompiler Reset
+//iR3000A Recompiler reset.
+//7E020000
+
+//----------------------------------------Known Issues: ----------------------------------------------------
+//----------------------------------------------------------------------------------------------------------
+//* joker commands unknown, * SEE IMAGE For JOKER-COMMAND-BASE-ADDRESS maybe?
+//joker maybe DFB00000 ?
+
+//* Ignore ---- Unless you can solve it - "The .elf file cheats"
+
+//* From .elf File: UDUDUD..T3T3T3..LRLRLR..ULULUL..242424..
+//004b5d18 69646769
+//004b53c0 4c554c55
+//patch=1,EE,004b5d18,extended,69646769
+//patch=1,EE,004b53c0,extended,4c554c55
+
+//T3T3T3 - unknown
+//242424 - unknown
+
+//URDLURDL........DLDLURDL........DDDLURDL........ULDRULDR........XDXUXRXL........22442244........33113311........11331133
+//----------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Blood-,Dirt-,Hot-Ring Arena Races ---- THis worked. then as usual i tried to record an example of it and it failed.
+//--------------------------------------------------------------------------------------------------------------------
+// * Remove other vehicles to race around easy in 1st postiion.
+
+// * "NOP" These to remove other vehicles from the hotring, bloodring arena races.
+// [address] - [bytes] 				- OPCODE
+// 300F78CA - 89 11                 - mov [ecx],edx		|| 300F78CA - 90                    - nop
+// 300F78CC - 31 C0                 - xor eax,eax		|| 300F78CC - 90                    - nop
+// * then set position number with these
+//patch=1,EE,2055BA80,extended,00000001
+//patch=1,EE,20B9C308,extended,00000001
+
+// * Result: BloodRing Always 1st Position  ||Default Values == C0311189 || A3C03111
+//patch=1,EE,300F78CA,extended,90909090
+//patch=1,EE,300F78CB,extended,A3909090
+
+//* Then reset back to default and continue racing with no other other vehicles.
+//patch=1,EE,300F78CA,extended,C0311189
+//patch=1,EE,300F78CB,extended,A3C03111
+
+//HOTRING - test 2 vehicles are slow, always 1st - but laps stuck on 1
+//300F3530 - 90                    - nop  			|| C0319090
+//300F14A2 - 90                    - nop  			|| C0319090
+//300F3530 - 90                    - nop  			|| C0311189
+//300EDD68 - 89 11                 - mov [ecx],edx 	|| C0311189
+
+//HOTRING
+//patch=1,EE,300F3530,extended,C0319090
+//patch=1,EE,300F14A2,extended,C0319090
+//patch=1,EE,300EDD68,extended,C0319090
