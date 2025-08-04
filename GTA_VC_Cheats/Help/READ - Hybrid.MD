@@ -6,9 +6,9 @@
 * Notes: See the "Help\Input List" File for the Cheats & Debug Input Options (Button Combo's):
 * Note:	Some Modifications are performed using multiple methods. These provide options depending on the hardware used.
 
-//----------------------------------------------------------------------------------------------------------------
+
 Welcome to VICE CITY [PS2]: "Hybrid"
-//----------------------------------------------------------------------------------------------------------------
+
 ** Customise your GTA:VC PS2, 3, 4 or Emulator Experience with the best of all versions & more;-
 
 * Fixes & improvements
@@ -44,9 +44,9 @@ Previous Updates:
 * using the multi cheat function to change car colors (...etc) will make a rocket explosion  in front of it and a fire (molotov) explosion below it with a radius.
 * (molotov) your vehicle can shoot fire below it in a radius, can be used to force eject peds from vehicles etc.
 
-//----------------------------------------------------------------------------------------------------------------
+
 ---- Cheats & Debug ---- Port beta to other versions (yourself)
-//----------------------------------------------------------------------------------------------------------------
+
 ** To Port beta to other versions (yourself) & create a basic Cheats & Debug Upgrade;
 
 ** You need VICE CITY PS2 Beta version for this to work.
@@ -69,9 +69,9 @@ Previous Updates:
 
 That's it... But following the Hybrid Instructions will be better!
 
-//----------------------------------------------------------------------------------------------------------------
+
 ----  [Hybrid];- ----
-//----------------------------------------------------------------------------------------------------------------
+
 ** To create the best "Hybrid" version (with Cheats & Debug Upgrade);
 
 [Base Game]
@@ -114,56 +114,56 @@ These are made as binary difference patches;
 
 [Hybrid Overview]
 audio\Music
-	flash.vb		- [recommended ]	- 2002 Audio [Not Included]
-	wild.vb			- [recommended ]	- 2002 Audio [Not Included]
+	flash.vb - [recommended ]	- 2002 Audio [Not Included]
+	wild.vb	 - [recommended ]	- 2002 Audio [Not Included]
 
 audio\Cutscene
-	Bank3A			- optional			- 2002 Audio [Not Included] (May not work with the beta elf)
+	Bank3A - optional		- 2002 Audio [Not Included] (May not work with the beta elf)
 
 data
-	Maps			- [recommended]		- Fix Map Issues: 			Misplaced/ Objects Under Maps, Nuisance Objects etc.
-										- Visual Enhancements: 		Adjust .ide & .ipl values (draw dist, visuals).
-	TKBS.scm		- *REQUIRED* 		- [Provided as patch file]
-										- Cheats & Debug upgrade.
-										- bug fixes & imprvements
-										- code clean-up & removal of junk
-										- new cheats & functions
-	particle.cfg	- optional			- color edits e.g. teargas smoke.
-	occlu.ipl		- [recommended]		- Set to All 0's - (Only for Emulator, Not for Real PS2 Hardware, although it may still be ok).
-	object.dat		- optional			- fix glitchy object snags. Make Destructible Storm Warning Barriers.
-	default.ide		- optional			- Set Values etc.
-	timecyc.dat		- [recommended]		- Increase Far Clips from 2,000 to 10,000. - (Only for Emulator, Not for Real PS2 Hardware, although it may still be ok on PS3).
+	Maps - [recommended]		- Fix Map Issues: Misplaced/ Objects Under Maps, Nuisance Objects etc.
+							- Visual Enhancements: 	Adjust .ide & .ipl values (draw dist, visuals).
+	TKBS.scm - *REQUIRED* 		- [Provided as patch file]
+					- Cheats & Debug upgrade.
+					- bug fixes & imprvements
+					- code clean-up & removal of junk
+					- new cheats & functions
+	particle.cfg	- optional	- color edits e.g. teargas smoke.
+	occlu.ipl	- [recommended]		- Set to All 0's - (Only for Emulator, Not for Real PS2 Hardware, although it may still be ok).
+	object.dat	- optional		- fix glitchy object snags. Make Destructible Storm Warning Barriers.
+	default.ide	- optional		- Set Values etc.
+	timecyc.dat	- [recommended]		- Increase Far Clips from 2,000 to 10,000. - (Only for Emulator, Not for Real PS2 Hardware, although it may still be ok on PS3).
 	handling.cfg	- optional			- Adjust vehicle values; fire-truck, ambulance, tank.
 
 Models\coll
-	peds.col		- [recommended]		- Use 2004 peds.col - makes a significant difference.
+	peds.col - [recommended]		- Use 2004 peds.col - makes a significant difference.
 
-movies				- [recommended]		- Use NTSC mpeg videos if you have patched PAL .elf to 60hz
+movies	- [recommended]		- Use NTSC mpeg videos if you have patched PAL .elf to 60hz
 
 system
-	sampman2.irx	- *REQUIRED*		- [Provided as patch file] - this is the Beta 2002 version
-	ioprp241.img	- *REQUIRED*		- [Provided as patch file] - We are using A modified 2003 version, not the Beta 2002.
+	sampman2.irx	- *REQUIRED*	- [Provided as patch file] - this is the Beta 2002 version
+	ioprp241.img	- *REQUIRED*	- [Provided as patch file] - We are using A modified 2003 version, not the Beta 2002.
 
 text
-	american.gxt	- *REQUIRED*  		- [Provided as patch file] - This Dependency could be removed, by removing the references in the code. 
-										- messages can be modified using .pnach.
+	american.gxt	- *REQUIRED*  	- [Provided as patch file] - This Dependency could be removed, by removing the references in the code. 
+					- messages can be modified using .pnach.
 txd
-	LOADSC7.TXD		- [recommended]		- Texture Upgrade. Fixes load screen issue. 
-										- this file is already included in users games, every version, it just requires some re-naming.
+	LOADSC7.TXD - [recommended]	- Texture Upgrade. Fixes load screen issue. 
+					- already included in users games, every version, it just requires some re-naming.
 
-SLES_510.61			- *REQUIRED*		- [Provided as patch file]-  Contains our Cheats & Debug Hardcoded stuff.
+SLES_510.61	- *REQUIRED*		- [Provided as patch file]-  Contains our Cheats & Debug Hardcoded stuff.
 										* Includes (baked in):  gta3_2-6.img removal.
 										* Includes (baked in):	60hz patch
-system.cnf			- [recommended]		- [Provided] - Modify to differentiate between the original and our Hybrid version.
+system.cnf	- [recommended]		- [Provided] - Modify to differentiate between the original and our Hybrid version.
 
 [See "Extras: \New Textures"]
 * Some custom textures are provided.
-MISC.TXD			- [recommended]			- Texture Upgrade
-GENERIC.TXD			- [recommended]			- Texture Upgrade
-fronten2.txd		- [recommended]			- Texture Upgrade
-fronten1.txd		- [recommended]			- Texture Upgrade
-fonts.txd			- [recommended]			- Modified to use caligraphy, japanese font
-PLAY13.txd & .dff   - optional				- Custom Player Outfit
+MISC.TXD	- [recommended]	- Texture Upgrade
+GENERIC.TXD	- [recommended]	- Texture Upgrade
+fronten2.txd	- [recommended]	- Texture Upgrade
+fronten1.txd	- [recommended]	- Texture Upgrade
+fonts.txd	- [recommended]	- Modified to use caligraphy, japanese font
+PLAY13.txd & .dff   - optional	- Custom Player Outfit
 
 [Result]
 * You should now have a 2003 base game with a 2002 beta modifed .elf
@@ -523,5 +523,6 @@ PS2 - GTA 6
 	
 
 Enjoy!
+
 
 
