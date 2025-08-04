@@ -327,14 +327,14 @@ PLAY13.txd & .dff   - optional	- Custom Player Outfit
 	* for texture dump & replace use 2.4.0 - but it is VERY buggy and renders incorrectly - it cuts off the screen at the bottom & has lots of other issues.
 
 [All Users Can : (Optional Examples)]
-	* add new cheats and functions
-		+ such as FLY mode for player by hooking the camera position to player pos and updating it.
-		+ add pre stored .pnach map location data (x, y, z: floats as hex data for easy teleport system)
-				... + create a huge list of places you can teleport to.
-		+ add new pickups to re-balance the empty sucky game.
-		+ modify parked vehicle locations easy, car parks, road parking, heli-pads etc.
-	* add new button combo cheats
-		+ use code to make new cheats like change clothes, give health, cash, save vehicle location etc etc
+* add new cheats and functions
++ such as FLY mode for player by hooking the camera position to player pos and updating it.
++ add pre stored .pnach map location data (x, y, z: floats as hex data for easy teleport system)
+... + create a huge list of places you can teleport to.
++ add new pickups to re-balance the empty sucky game.
++ modify parked vehicle locations easy, car parks, road parking, heli-pads etc.
+* add new button combo cheats
++ use code to make new cheats like change clothes, give health, cash, save vehicle location etc etc
 
 ** After modifying files re-build .iso or .pkg, with imgburn (default settings), then convert into .pkg if on PS3 | PS4.
 
@@ -358,14 +358,14 @@ PLAY13.txd & .dff   - optional	- Custom Player Outfit
 ---- Apps ----
 * "PCSX2 1.2.1"				- PS2 emulator: ONLY for debugging & making cheats wtih PS2DIS.
 * "PCSX2 1.6"				- PS2 emulator: **for playing the game** & this version is required for making cheats.
-* "PCSX2 2.4.0"				- DOES NOT WORK - All versions above 1.6.0 have rendering issues, cut off screen bottom etc provide no advantage.
-* "RCPS3"					- PS3 emulator: for playing the game.
+* "PCSX2 2.4.0"				- DOES NOT WORK - above 1.6.0 have rendering issues, cut off screen bottom no advantage.
+* "RCPS3"				- PS3 emulator: for playing the game.
 * "Cheat Engine" 			- make cheats, modify the game.
 * "mymcgui" 				- for Memory Card & Save file import/ export
 * "Adrenalin_patcher_0.5"	- Patch PAL YPOS/ Framerate to NTSC V-Mode
 * "magictxd" 				- texture swaps, work with .img stuff
 * "PS2TXDViewer"			- if "magictxd" fails, export using "PS2TXDViewer"
-* "MFAudiov11"				- Use this to Listen to .vb audio/music, or convert: much better than relying on the in-game radio.
+* "MFAudiov11"				- Listen to .vb audio/music, or convert: much better than relying on the in-game radio.
 * "omniconvert"				- cheat conversions
 * "SannyBuilder"			- for modding the main.scm.
 * "NotePad++"				- every PC user should have this.
@@ -379,46 +379,41 @@ creators - apps used
 creators - any ntsc codes used to help port to pal.
 Helpers  - Skiller for the +9000 water code many years ago
 		 - Orion for being the only other person to respond with something that wasn't shit talk & hate.
-
 ---- Disclaimers + rants ----
 * Neither the 2002 or 2003 release are available for purchase.
 * The PSN version uses NTSC 2004, which means that PAL & JAPAN users have no dedicated means of even re-purchasing content that they shouldn't have to pay for again anyway.
 * No infringement intended, the contents merely aims to fix the PS2 in as minimal as possible way in the way it should have been.
 * Mods; i.e. Files - are distributed as binary difference patches or text based instructions for users to replciate the process. I.E. not complete files, and thus will only work if you own a copy of vice city (PAL or NTSC 2003 PS2).
 * The Hybrid you create will depend on the versions you own but the end results should all be similar.
-	Example: if user owns PAL 2002, and PAL 2003 but not 2004 they can purchase the psn version but the only differences required to create the Hybrid is the "peds.col" which can be distributed as a binary difference patch only allowing users to downgrade or upgrade that peds file, or they can just use the version they have.
-	Example: It does not matter which .img file you have in your version, users can import the new clothes texture shown in this example, which is custom, or create there own with the same name and that will be identical to the hybrid. This texture cna infact be distributed not as a texture but e.g. as  a photoshop script, like color grading.
+Example: if user owns PAL 2002, and PAL 2003 but not 2004 they can purchase the psn version but the only differences required to create the Hybrid is the "peds.col" which can be distributed as a binary difference patch only allowing users to downgrade or upgrade that peds file, or they can just use the version they have.
+Example: It does not matter which .img file you have in your version, users can import the new clothes texture shown in this example, which is custom, or create there own with the same name and that will be identical to the hybrid. This texture cna infact be distributed not as a texture but e.g. as  a photoshop script, like color grading.
 * The majority of content i see online is distributed in some weird ways, there is no reason to do this, nor is there any reason to distribute Full .iso files, distributing a full iso when you only modified 50mb that could have been explaine din a2kb text file the end user could replicate is just plain stupid.
 * The end user should be able to pick and choose their end result whilst retaining the core game files in their vanilla, original state.
 * laws should be passed to either allowing modding PERIOD - or to force developers to to have more responsibility for the content they create. Vice city is a prime example. An 18+ game the majority of users purchased at below that age & that found out was broken on day 1, including myself and here i am at 40+ the only person to fix it after R*'s *15th release, remake or re-break.  
 - the double standards in this world are disgusting. If you ship a broken game - that's on you when people fix it. If you buy food you expect it a certain way, like buy an apple and find out it is hollow and incomplete or broken... that's a gta game, that's why people have to mod like this..   	
 
-
 ---- GTA Vice City PS2 Versions:  ----
 
 [PAL]
-SLES_510.61.GTA-VC(2002) = Beta    1.50 [PAL]		... 
-SLES_510.61.GTA-VC(2002) = version 1.50 [PAL]		...	used for audio/ music to create a hybrid version.
-SLES_510.61.GTA-VC(2003) = version 2.03 [PAL]		...	**Base/ Target Version** - What the guide was based on
-SLES_510.61.GTA-VC(2004) = version 3.00 [PAL]		...	use some of these files used to create a hybrid version.
+SLES_510.61.GTA-VC(2002) = Beta    1.50 [PAL]	... 
+SLES_510.61.GTA-VC(2002) = version 1.50 [PAL]	...	used for audio/ music to create a hybrid version.
+SLES_510.61.GTA-VC(2003) = version 2.03 [PAL]	...	**Base/ Target Version** - What the guide was based on
+SLES_510.61.GTA-VC(2004) = version 3.00 [PAL]	...	use some of these files used to create a hybrid version.
 
 [NTSC]
-SLUS_205.52.GTA-VC(2002) = version 1.40 [NTSC]		...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
-SLUS_205.52.GTA-VC(2003) = version 2.01 [NTSC]		...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
-SLUS_205.52.GTA-VC(2002) = version 3.00 [NTSC]		...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
+SLUS_205.52.GTA-VC(2002) = version 1.40 [NTSC]	...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
+SLUS_205.52.GTA-VC(2003) = version 2.01 [NTSC]	...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
+SLUS_205.52.GTA-VC(2002) = version 3.00 [NTSC]	...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
 
 [JAPAN]
-SLPM_654.88.GTA-VC(2004) = version 1.02 [JAPAN]		...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
-													...	The Japanese version has the most up-to-date release files.
-													...	use some of these files used to create a hybrid version.
+SLPM_654.88.GTA-VC(2004) = version 1.02 [JAPAN]	...	Deprecated: Only required for porting cheats to PAL 2003/ Hybrid
+						...	The Japanese version has the most up-to-date release files.
+						...	use some of these files used to create a hybrid version.
 [Hybrid]
-"GTA:Vice City Hybrid Version": CRC "--------" 		...	**END GOAL/ Target Version**
+"GTA:Vice City Hybrid Version": CRC "--------" 	...	**END GOAL/ Target Version**
 
-//------------------------------------------------
-				---- Links ----
-//------------------------------------------------
 
----- Downloads ----
+---- Links -------- Downloads ----
 [Hybrid Patch Kit:]
 //... deprecated
 [Modkit:]
@@ -523,6 +518,7 @@ PS2 - GTA 6
 	
 
 Enjoy!
+
 
 
 
