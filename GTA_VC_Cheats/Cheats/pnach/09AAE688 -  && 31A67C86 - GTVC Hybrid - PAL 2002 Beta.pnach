@@ -170,7 +170,7 @@ patch=1,EE,204B8ACC,extended,00000001
 //...													Note: Will Display HUD icons, thus Requires toggle Hud or press start on pad 2.
 patch=1,EE,205BE6F5,extended,00000000
 
-// ---- WideScreen ---- //produces log errors and does fuck all, onyl slightly increase it..
+// ---- WideScreen Test 1 ---- //produces log errors and does fuck all, onyl slightly increase it..
 //patch=1,EE,2013267C,word,3C013F9D
 //patch=1,EE,20132680,word,44810000
 //patch=1,EE,20132684,word,46006300 	//46006302 = upside down and massive widescreen FOV.
@@ -181,6 +181,17 @@ patch=1,EE,205BE6F5,extended,00000000
 //									//patch=1,EE,202435AC,word,0C04C96F //0C0CDE20???
 //									//patch=1,EE,2027094C,word,0C04C972
 //									//patch=1,EE,20270F24,word,0C04C972
+
+// ---- WideScreen Test 2 ---- // "Trap exception at 0x00259394" - or maybe i had the same lien elsewhere in the pnach?
+patch=1,EE,2013267C,word,3C013F9D
+patch=1,EE,20132680,word,44810000
+patch=1,EE,20132684,word,46006300 //46006302 = upside down and massive widescreen FOV.
+patch=1,EE,20132688,word,E78C8888
+patch=1,EE,2013268C,word,3C010069
+patch=1,EE,20132690,word,E42CEAF4 
+patch=1,EE,20132694,word,3C010069
+patch=1,EE,20132698,word,03E00008 
+patch=1,EE,2013269C,word,E42DEAF8
 
 //--------------------------------------------------------------------------------------------------------------------
 //---- HUD ----
@@ -1250,3 +1261,4 @@ patch=1,EE,20B6CFB0,extended,00000001
 //...or...^^^^ todo: change "Cheats On,Off" to Debug On/Off
 //TODO: The file "input list" shuld be identical to the cheats listend at the start of this file.
 //TODO: Cinematic Camera System
+
