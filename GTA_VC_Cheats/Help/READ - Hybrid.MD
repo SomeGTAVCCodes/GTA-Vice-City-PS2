@@ -16,8 +16,8 @@
 * New cheats & debug code.
 
 Recent Updates: 
-	* cheats added to pnach & .ct files;-
-		* music manager: listen to music outside vehicle, adjust volume, change icons. notes.
+* cheats added to pnach & .ct files;-
+* music manager: listen to music outside vehicle, adjust volume, change icons. notes.
 		* Infinite Sprint & Fast Reload & Fireproof now all in one patch line.
 		* Infinite Sprint Old version for reference.
 		* infinite ammo fix. 
@@ -523,3 +523,4 @@ PS2 - GTA 6
 	
 
 Enjoy!
+
