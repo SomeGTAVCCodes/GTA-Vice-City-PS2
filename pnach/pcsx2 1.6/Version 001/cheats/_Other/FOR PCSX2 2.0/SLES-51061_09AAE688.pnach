@@ -1,6 +1,0 @@
-gametitle=Grand Theft Auto: Vice City.
-
-[60FPS]
-author=TKBS
-description=Force 60FPS	|| Default Value: 28420002
-patch=1,EE,2027475C,extended,28420001
