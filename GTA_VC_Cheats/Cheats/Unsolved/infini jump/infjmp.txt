@@ -1,0 +1,64 @@
+//TODO - Infinitejmp - crashes game. || "sar bh,1" ? ||  0803FFD0
+// approx address can be made using maniac runner - inf jump for pal 2003- apply offset to 2002 maniac runner, scroll down a bit.
+
+// TOTLA FUCKING FAIL as usual.
+//27BD0010 0080382D 0803FFD0 2404001C 70E31818 00A42018 27BDFFD0 3C02004C
+
+patch=1,EE,200FFF40,extended,3C01005C
+patch=1,EE,200FFF44,extended,80211703
+patch=1,EE,200FFF48,extended,2403007F
+patch=1,EE,200FFF4C,extended,1461000C
+patch=1,EE,200FFF54,extended,3C013E00
+patch=1,EE,200FFF58,extended,9384F108
+patch=1,EE,200FFF5C,extended,2402E1CB
+patch=1,EE,200FFF60,extended,3C02005D
+patch=1,EE,200FFF64,extended,244283C0
+patch=1,EE,200FFF68,extended,00831818
+patch=1,EE,200FFF70,extended,00431021
+patch=1,EE,200FFF74,extended,8C420000
+patch=1,EE,200FFF7C,extended,AC410074
+patch=1,EE,200FFF80,extended,080487E4
+patch=1,EE,200FFF84,extended,24030070
+//patch=1,EE,20121F8C,extended,0080382D
+patch=1,EE,201221B8,extended,0080382D
+//patch=1,EE,201221B8,extended,0080382D
+//patch=1,EE,201221BC,extended,0803FFD0
+//patch=1,EE,201221C0,extended,2404001C
+//patch=1,EE,201221C4,extended,70E31818
+//patch=1,EE,201221C8,extended,00A42018
+
+//from X.B TO B ..[201221A8]-->[20122200]
+//8C420058 DFBF0000 03E00008 27BD0010 0080382D 0803FFD0 2404001C 70E31818 00A42018 27BDFFD0 3C02004C FFB10010 FFBF0020 2442FED0 FFB00000 00832021 00441021 8C430010 14600003 00C0882D 10000009 0000102D 0C048842 00E0202D
+
+
+
+patch=1,EE,200FFF40,extended,3C01005C // pop esp
+patch=1,EE,200FFF44,extended,80211703 // add [ecx],al
+patch=1,EE,200FFF48,extended,240300D5 // cmp al,03
+patch=1,EE,200FFF4C,extended,1461000C // pop ss
+patch=1,EE,200FFF54,extended,3C013E00 // and [eax+240300D5],eax || 2403007F,00000000 || LOADSC14.TXD;1 -then- 00000000
+patch=1,EE,200FFF58,extended,9384F108 // or al,00
+patch=1,EE,200FFF5C,extended,2403017C // popad 
+patch=1,EE,200FFF60,extended,3C02005D // adc al,00
+patch=1,EE,200FFF64,extended,244283C0 // add [eax],al
+patch=1,EE,200FFF68,extended,00831818 // add [eax],al
+patch=1,EE,200FFF70,extended,00431021 // add [eax+ecx],edi
+patch=1,EE,200FFF74,extended,2403017C // test [ebx+2403017C],dl   ||    2403016C,31435344 || DSC18.TXD;1   == 31435344
+patch=1,EE,200FFF7C,extended,AC410074 // pop ebp
+patch=1,EE,200FFF80,extended,080487E4 // add [edx],al
+patch=1,EE,200FFF84,extended,24030070 // cmp al,-40
+//patch=1,EE,201221BC,extended,0080382D // add dword ptr [edx+24],18
+//sbb [ebx+00000000],al
+//add [ecx],ah
+//adc [ebx+00],al
+//add [eax],al
+//inc edx
+//mov [eax],es
+//add [eax],al
+//add [eax+eax+41],dh
+//lodsb 
+//in al,-79
+//add al,08
+//jo 200FFF86
+//add esp,[eax+eax]
+//add [eax],al

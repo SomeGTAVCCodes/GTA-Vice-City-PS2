@@ -1,0 +1,14 @@
+gametitle=GTA SAN ANDREAS.
+comment=NTSC Platinum.
+
+//Health - by TKBS
+//1
+//patch=1,EE,202A9B38,extended,42CA0000
+//2
+//patch=1,EE,202A9B30,extended,E8E86565
+//patch=1,EE,202A9B3C,extended,24030064
+
+// ---- NOT TESTED ----
+
+//Forgot what this was, if anything ...
+//patch=1,EE,CCFDCA91,extended,1CDE2FEB
