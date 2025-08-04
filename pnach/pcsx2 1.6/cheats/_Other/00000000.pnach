@@ -1,0 +1,21 @@
+gametitle=Generic PCSX2 00000000.
+comment=GTA:VC, PAL, 2002-Beta Codes.
+
+//----------------------------------------------------------------------------------------------------------
+//-------------------------------- Work-around Issues: prevent start-up crash & hangs ----------------------
+//----------------------------------------------------------------------------------------------------------
+
+// -- (prevent start-up crash & hangs) -- 		
+// * Attempt to fix Skip Intro (crash & hangs) mpeg movies - beta does not have l1,l2,r1,r2 skip function.
+// * || can be ignored. Attempt to fix crash & hangs when trying to Skip Intro mpeg movies - beta does not have l1,l2,r1,r2 skip function.
+//patch=1,EE,80001040,extended,0C0013B0
+//patch=1,EE,8000EBE0,extended,0C0013B0
+
+//todo: (workaround) issue: 0x00000000 || pcsx2 Invalid macroblock_address_increment code(0x00000000)
+//patch=1,EE,00000000,extended,00000000
+
+//todo: 002DBA90 - some issue - hit store breakpoint here to check it- unsolved.
+//EE/iR5900-32 Recompiler Reset
+//iR3000A Recompiler reset.
+//7E020000
+
