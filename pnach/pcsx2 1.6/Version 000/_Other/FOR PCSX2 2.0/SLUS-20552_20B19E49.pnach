@@ -1,6 +1,0 @@
-gametitle=Grand Theft Auto: Vice City.
-comment= (NTSC) (2002) (1.40) (SLUS_205.52) (CRC=20B19E49).
-
-//Force 60FPS	|| Default Value: 28420002
-[60FPS]
-patch=1,EE,20272204,extended,28420001
