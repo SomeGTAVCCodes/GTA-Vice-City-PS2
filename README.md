@@ -33,12 +33,9 @@ GTA VICE CITY PS2 "Hybrid Vesion";
 
 TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
 
-   1. Widescreen & Super Widescreen fix
-      - Snakes Widescreen did not work correctly, is weird and cannot be ported
+   1. Widescreen & Super Widescreen fix Still has flickering issues - infrequently but can be seen.
+      - Snakes Widescreen did not work correctly, is weird and coudl only port 3/8 lines, which seems to work.
       - some addresses used make no sense.
-      - Super Widescreen by TKBS for PAL 2002 Beta/ Hybrid inverts the image, flips it upside.. No idea why -- that was my attempt to port.
-      - PeterD's Replied regarding Widescreen with some info but i am not able to port 40 lines of stuff to this version so i just did the documentation for it and super widescreen and camera adjustment for PAL 2003.
-      - 
    2. Joker Commands
       - Even though i made them for 2003, i cannot port them to 2002/2003 Hybrid Version.. - Which makes activatign and de-activating patches a bit annoying.
         
@@ -46,7 +43,7 @@ TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
      - SO that cars are tanks Cheat can be used on all vehicles.
       
    5. Moon Jump, Inifinite Jump Jump Height variants.
-      - another difficult one to port
+      - another difficult one to port, tried several times,  some weid jump over instruction.
    6. An example of adding a new vehicle, or character model is needed for PS2. No one has provided a step by step guide on how this works.
 
 
