@@ -6,53 +6,103 @@ comment=GTA:VC, PAL, 2002-Beta Codes.
 //--------------------------------------------------------------------------------------------------------------------
 //Author 	= 	TKBS
 //CRC: 		=	09AAE688 (Debug Beta Upgraded)
-//Notes  	=	Use the accompanying ".ct" File for Music Manager
-				+ extensive cheats, mods, scripts, garage & vehicle editor etc.
+//Credits	=	...
+//Notes;-
+//* Use this ".pnach" with PCSX2 1.6.0.
+//* Use the ".ct" file with Cheat Engine.
+//* Read the accompanying "Read-Notes.md" & "Input-List" files for more cheats, codes, information and discoveries.
+// + extensive cheats, mods, scripts, garage & vehicle editor, music manager, render mods etc.
 
 // ---- Format of cheat, patch Lines. ----
 // Cheat Patch title 			|| default values -> new values 	|| Notes, Instructions etc.
 // ...							|| Indented: Cheat Patch Notes ...
-// Cheat Patch.
+// Cheat Patch. Address, value.
+// * information & Cheats No longer required are indented 
 
 // ---- Known Issues: ----
 //* Joker Command UNKNOWN: Codes must be enabled then disabled (set back to default values)
+//* infinite jump (moon jump) not working - difficult to port.
+//		- should only be one line required the rest are all blank mem space. No idea why i can;t port the last line.
 //* 100% Completion should give infinite ammo & Double Vehicle Health, but it does not work
+//		- Only need to find Double vehicle health register to compenasate.
 //* Some weird quirky behaviour occurs with the beta elf, like Fireproof or inf ammo, health etc not firing true.
+//		- all have workarounds or other cheats.
 //* Modifying the .gxt may cause cheats issues? offset cheats?
-//* inf jump (moon jump) not working - difficult to port.
-//* none of the 10###### address cheats can be ported from 2002 - they make no sense.
+//		- can be ignored, can edit gxt stuff in real time with pnach.
 
 // ---- TO DO LIST ----
-// ** See EOF ** & Notes throughout.
+// * Some info (original to new values) needs to be added and codes from the PAL 2003 version need to be added to this.
+// * Infinite Jump Needs to be ported here
+// * All Versions need to STOP the LOD on vehicles, using either of the mthods proposed that are not implmented
+//	a) replace LOD models in files with duplciates of high poly and reimport
+//	b) find LOD address and stop it or jump to correct model.
+//	c) find distance value for LOD kick in and increase it so it does not occur
+
+// ---- PCSX 2 1.6.0 Settings ----
+// Display
+// * 2160 x 1536 on a 1080p+ monitor is fine, above that, irreleavnt of hardware, softwar ebottlenecks will occur, maybe some visual artifacts from scaling.
+// * GTA Games have a tendency to appear slighlty duplicated, offset and opaque at higher res.
+// * for 4k x 2k monitors @ 3840 x 2160: 640x512 x 6 = 3840 x 3072
 
 //--------------------------------------------------------------------------------------------------------------------
 //---- Cheats Author uses by default ----
 //--------------------------------------------------------------------------------------------------------------------
 
-// --- The Cheats i use by default: ----
-//patch 1,EE,2027475C,extended,28420001 // 60 FPS
-//patch 1,EE,20112B24,extended,00000000 // Interlacing ?		NONE?
-//patch 1,EE,204B6EAC,extended,00000000 // Toggle Trails 		OFF
-//patch 1,EE,204B8AD0,extended,00000001 // Toggle Widescreen 	ON
-//patch 1,EE,204B8ACC,extended,00000001 // Toggle Subtitles 	ON
-//patch=1,EE,205BE6F5,extended,00000000	// Toggle WideScreen 	CUT-SCENES (BLACK BORDER) 	OFF
-//patch 1,EE,20B6CE78,extended,43480000 // Infinite Health
-//patch 1,EE,20B6CE7C,extended,43480000 // Infinite Armour
-//patch 1,EE,204B5C08,extended,00642524 // No 0's preceeding $Money values
-//patch 1,EE,204B5C0C,extended,00000000 // No 0's preceeding $Money values
-//patch 1,EE,204B5C20,extended,00006425 // No 0's preceeding Health values
-// ---- OPTIONAL ----
+// ---- (Permanently enabled) ----
+patch=1,EE,2027475C,extended,28420001 	// 60FPS
+patch=1,EE,20112B24,extended,00000000 	// interlacing NONE
+patch=1,EE,20132680,word,44810000 		// widescreen 01: 1/3
+patch=1,EE,20132684,word,46006300 		// widescreen 01: 2/3
+patch=1,EE,2013268C,word,E78C8888 		// widescreen 01: 3/3
+patch=1,EE,20253FB0,extended,3C0242AC 	// widescreen 02 
+patch=1,EE,20B6CE78,extended,43480000 	// Infinite Health
+patch=1,EE,20B6CE7C,extended,43480000 	// Infinite Armour
+patch=1,EE,204B6EAC,extended,00000000 	// Toggle Trails 		OFF || can be kept ON with correctly modded timecyc.dat
+patch=1,EE,204B8AD0,extended,00000001 	// Toggle Widescreen (Menu option)	ON  || can be kept OFF with correct super widescreen implementation.
+patch=1,EE,204B8ACC,extended,00000001 	// Toggle Subtitles 	ON
+patch=1,EE,205BE6F5,extended,00000000	// Toggle WideScreen CUT-SCENES (BLACK BORDER) 	OFF
+//Text Displayed on Line 1 "Vice City Hybrid Version"  		(Previously "Compile Date: Oct 01 2002")
+patch=1,EE,2043DC20,extended,20202020
+patch=1,EE,2043DC24,extended,63695620
+patch=1,EE,2043DC28,extended,69432065
+patch=1,EE,2043DC2C,extended,48207974
+patch=1,EE,2043DC30,extended,69726279
+patch=1,EE,2043DC34,extended,65562064
+patch=1,EE,2043DC38,extended,6F697372
+patch=1,EE,2043DC3C,extended,0000006E
+//Text Displayed on Line 2 "By TKBS June 2025 06:06:06" 	(Previously "Compile Time: 22:34:23")
+patch=1,EE,2043DC60,extended,54207942
+patch=1,EE,2043DC64,extended,2053424B
+patch=1,EE,2043DC68,extended,656E754A
+patch=1,EE,2043DC6C,extended,32303220
+patch=1,EE,2043DC70,extended,36302035
+patch=1,EE,2043DC74,extended,3A36303A
+patch=1,EE,2043DC78,extended,20203630
+patch=1,EE,2043DC7C,extended,00000000
+patch=1,EE,20674B96,extended,45434956 // Vehicles: Change VH ID 236 Cheetah to Display "Vice-Cop" 1/2
+patch=1,EE,20674B9A,extended,504F432D // Vehicles: Change VH ID 236 Cheetah to Display "Vice-Cop" 2/2
+patch=1,EE,2043A5C3,extended,00000000 // HUD: remove Displayed "MISSING" text from .gxt entry 1/2
+patch=1,EE,2043A5C7,extended,00000000 // HUD: remove Displayed "MISSING" text from .gxt entry 2/2
+patch=1,EE,204B5C08,extended,00642524 // No 0's preceeding $Money values
+patch=1,EE,204B5C0C,extended,00000000 // No 0's preceeding $Money values
+patch=1,EE,204B5C20,extended,00006425 // No 0's preceeding Health values
+patch=1,EE,204B8350,extended,00000001 // Cars: Float on Water
+patch=1,EE,204B8368,extended,00000001 // Tweak Vehicle Handling - Also - Vehicles: [17] Debug Menu - [17] Tweak Vehicle Handling:B : 00000000 || 00000001
+patch=1,EE,20159AA4,extended,00000000 // Infinite Ammo on foot 1/2
+patch=1,EE,20159AD0,extended,00000000 // Infinite Ammo on foot 2/2
+patch=1,EE,205D50FA,extended,01010000 // Infinite sprint & Fast Reload
+patch=1,EE,205D50FE,extended,00646401 // FireProof
+patch=1,EE,201B3BC0,extended,03E00008 // Never Lose Weapons 1/2
+patch=1,EE,201B3BC4,extended,00000000 // Never Lose Weapons 2/2
+patch=1,EE,20B6CFAC,extended,00000001 // Infinite Ammo: Weapon Slots: uzi Ammo slot 1/2 
+patch=1,EE,20B6CFB0,extended,00000001 // Infinite Ammo: Weapon Slots: uzi Ammo slot 2/2
+patch=1,EE,2017D6F8,extended,00000000 // Tyres Invulnerable
+
+// ---- (Occassionally enabled) ----
 //patch=1,EE,20690730,extended,00000000 // Freeze Timers
-//patch=1,EE,204B8368,extended,00000001 // Tweak Vehicle Handling - Also - Vehicles: [17] Debug Menu - [17] Tweak Vehicle Handling:B : 00000000 || 00000001
-//patch 1,EE,204B833C,extended,00000001 // Cars: Fly
-//patch 1,EE,204B8350,extended,00000001 // Cars: Float on Water
-//patch 1,EE,201B3BC0,extended,03E00008 // Never Lose Weapons
-//patch 1,EE,201B3BC4,extended,00000000 // Never Lose Weapons
-//patch 1,EE,########,extended,00000000 // Infinite Ammo outside vehicle
-//patch 1,EE,########,extended,00000000 // Infinite Ammo uzi slot (drive-by ammo)
-//patch 1,EE,########,extended,00000000 // Infinite Sprint
-//patch 1,EE,########,extended,00000000 // Modify vicechee Dsiplay Name
-//patch 1,EE,########,extended,00000000 // Music Manager
+//patch=1,EE,204B833C,extended,00000001 // Cars: Fly
+//patch=1,EE,206C6EC5,extended,00000001 // Music Manager: Music Outside Vehicle (0-9, 10 = off)
+//patch=1,EE,204B7ED8,extended,DFDFDFDF	// See Through Walls
 
 //--------------------------------------------------------------------------------------------------------------------
 //---- PS2 Beta .elf ----
@@ -152,13 +202,13 @@ patch=1,EE,20112B24,extended,00000000
 //--------------------------------------------------------------------------------------------------------------------
 
 //Toggle Trails: 										00000000 || 00000001
-patch=1,EE,204B6EAC,extended,00000000
+//patch=1,EE,204B6EAC,extended,00000000
 
 //Toggle HUD: 											00000000 || 00000001
 //patch=1,EE,204B91C4,extended,00000001
 
-//Toggle WideScreen: Game looks better without			00000000 || 00000001
-//patch=1,EE,204B8AD0,extended,00000001
+//Toggle WideScreen (Menu Option): Note: Game looks better without			00000000 || 00000001
+patch=1,EE,204B8AD0,extended,00000001
 
 //Toggle Subtitles: 									00000000 || 00000001
 patch=1,EE,204B8ACC,extended,00000001
@@ -170,28 +220,50 @@ patch=1,EE,204B8ACC,extended,00000001
 //...													Note: Will Display HUD icons, thus Requires toggle Hud or press start on pad 2.
 patch=1,EE,205BE6F5,extended,00000000
 
-// ---- WideScreen Test 1 ---- //produces log errors and does fuck all, onyl slightly increase it..
-//patch=1,EE,2013267C,word,3C013F9D
-//patch=1,EE,20132680,word,44810000
-//patch=1,EE,20132684,word,46006300 	//46006302 = upside down and massive widescreen FOV.
-//									//patch=1,EE,20132688,word,03E00008 || not required, does not change to values
-//patch=1,EE,2013268C,word,E78C8888
+//--------------------------------------------------------------------------------------------------------------------
+//---- Visuals: Super Widescreen  ----
+//--------------------------------------------------------------------------------------------------------------------
+// * A combination of the following widescreen patches
+// 1. snakefix: old ws that fixed an unknown creators.
+// 2. DanielS & PeterD's ws patches
+// 3. TKBS's Super Widescreen & Camera Adjust
+//
+// Edit: Done --- todo: port that 1 line from PeterD's pal 2003
+//
+// ----  Widescreeen Options ----
+//1. //Toggle WideScreen CUT-SCENES (BLACK BORDER):
+//2. //Toggle WideScreen: Note: Game looks better without
+//3. //Widescreen - 20+yr old snakefix, ported to PAL 2003 by TKBS.
+//4. //Super Widescreen - a combination of PeterD's and TKBS widescreen + camera adjust updates.
 
-// These jump overflows i could not find, not sure they are needed anyway.
-//									//patch=1,EE,202435AC,word,0C04C96F //0C0CDE20???
-//									//patch=1,EE,2027094C,word,0C04C972
-//									//patch=1,EE,20270F24,word,0C04C972
+//Widescreen 1:	(Camera Adjust curvature)					- by TKBS || Camera Adjust curvature FOV
+// * Edit Last 2 Bytes
+// * Last Byte camera back and up,
+// * 2nd to last byte cam back.
 
-// ---- WideScreen Test 2 ---- // "Trap exception at 0x00259394" - or maybe i had the same lien elsewhere in the pnach?
-patch=1,EE,2013267C,word,3C013F9D
+//Super Widescreen = Enable both "Widescreen 1" && "Widescreen 2" && camera adjust
+
+//--------------------------------------------------------------------------------------------------------------------
+// ----  Widescreeen 2 ---- (snakefix --> TKBS)
+//...not required?						//patch=1,EE,2013267C,word,3C013F9D 	|| //* produces log errors and does fuck all, only slightly increases it FOV.. 3C013F9D
 patch=1,EE,20132680,word,44810000
-patch=1,EE,20132684,word,46006300 //46006302 = upside down and massive widescreen FOV.
-patch=1,EE,20132688,word,E78C8888
-patch=1,EE,2013268C,word,3C010069
-patch=1,EE,20132690,word,E42CEAF4 
-patch=1,EE,20132694,word,3C010069
-patch=1,EE,20132698,word,03E00008 
-patch=1,EE,2013269C,word,E42DEAF8
+patch=1,EE,20132684,word,46006300 		//46006302 = upside down and massive widescreen FOV.
+//...not required?						//patch=1,EE,20132688,word,03E00008 		//does not change values?
+patch=1,EE,2013268C,word,E78C8888 		// E78C87F8 | E78C8888
+
+// ----  Widescreeen 1 ---- (PeterD's pal 2003 --> TKBS)
+//20132684 + 12 07EC = 20252E70 C7A20034 --> (approximate memory region)
+
+//Widescreen 1a: from PeterD's pal 2003 --> TKBS		|| 20253FB0 - 8C 42 02              - mov [edx+02],es --> lodsb
+patch=1,EE,20253FB0,extended,3C0242AC
+//Widescreen 1b:
+//patch=1,EE,20253FB0,extended,3C0242CD
+//Widescreen 1c:
+//patch=1,EE,20253FB0,extended,3C0242DE
+//Widescreen 1d:
+//patch=1,EE,20253FB0,extended,3C0242EF
+//Widescreen 1e: LIMIT
+//patch=1,EE,20253FB0,extended,3C0242FF
 
 //--------------------------------------------------------------------------------------------------------------------
 //---- HUD ----
@@ -498,8 +570,8 @@ patch=1,EE,205D50FE,extended,00646401 					//FireProof
 //... //patch=1,EE,205D5106,extended,00000001 			// not required
 
 //Infinite Health & Armour (200)				- By TKBS
-//patch=1,EE,20B6CE78,extended,43480000
-//patch=1,EE,20B6CE7C,extended,43480000
+patch=1,EE,20B6CE78,extended,43480000
+patch=1,EE,20B6CE7C,extended,43480000
 
 //Health & Armour Values (32bits different)
 //		//42C80000 = 100 (Default)
@@ -589,13 +661,13 @@ patch=1,EE,204B7ED8,extended,DFDFDFDF
 //--------------------------------------------------------------------------------------------------------------------
 
 // ---- Weapon Cheats: Zoom Function ----
-//Weapons: Sniper (Default Zoom Function)	|| Default = 0C094608
+//Weapons: Sniper (Default Zoom Function)			|| Default = 0C094608
 //patch=1,EE,20259C60,extended,0C094608
 
-//Weapons: Minigun with Sniper Zoom			|| Default = 0C094BDC || New = 0C094608		|| Keep Disabled when doing Rifle-Range Missions.
+//Weapons: Minigun with Sniper Zoom					|| Default = 0C094BDC || New = 0C094608		|| Keep Disabled when doing Rifle-Range Missions.
 //patch=1,EE,20259C98,extended,0C094608
 
-//Weapons: Rocket Launcher with Sniper Zoom || Default = 0C094920 || New = 0C094608		|| Keep Disabled when doing Rifle-Range Missions.
+//Weapons: Rocket Launcher with Sniper Zoom 		|| Default = 0C094920 || New = 0C094608		|| Keep Disabled when doing Rifle-Range Missions.
 //patch=1,EE,20259C7C,extended,0C094608
 
 // ---- Weapon Cheats:
@@ -611,7 +683,7 @@ patch=1,EE,204B7ED8,extended,DFDFDFDF
 //Weapons: (Set 3 - Cnon)							|| 14400006 --> 00000000
 //patch=1,EE,2027B260,extended,00000000
 
-//Weapon Slots: uzi Ammo slot (Used for infinite Ammo in Vehicles, drive-by's)
+//Weapon Slots: uzi Ammo slot 						|| Note: Used for infinite Ammo in Vehicles, drive-by's.
 patch=1,EE,20B6CFAC,extended,00000001
 patch=1,EE,20B6CFB0,extended,00000001
 
@@ -1151,7 +1223,7 @@ patch=1,EE,20B6CFB0,extended,00000001
 //204B8398
 
 //--------------------------------------------------------------------------------------------------------------------
-// ---- Music Manager  ---- [Listen to Music, Audio, anywhere.]
+// ---- Audio: Music Manager  ---- [Listen to Music, Audio, anywhere.]
 //--------------------------------------------------------------------------------------------------------------------
 
 //Music Manager - Set Music, Radio Station, Custcene Audio etc.			|| 206C6EC3 010166FF || 206C6EC3 - FF 66 01 - jmp dword ptr [esi+01]
@@ -1262,3 +1334,6 @@ patch=1,EE,20B6CFB0,extended,00000001
 //TODO: The file "input list" shuld be identical to the cheats listend at the start of this file.
 //TODO: Cinematic Camera System
 
+//---junk 100% sure this cna be deleted, was used when trying to find mem region of super ws
+//204B8AD0 - 25 EC18 = 20259EB8
+//patch=1,EE,20259EB8,extended,3C0242AC
