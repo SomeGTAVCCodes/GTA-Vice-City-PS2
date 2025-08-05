@@ -1,14 +1,17 @@
 ---- GTA Vice City Cheats & Debug Hybrid ----
 
-Updates: 04.08.2025
-   * Re-organised GitHub... & Added the most up-to-date content i have. 
+Updates: 06.08.2025
+   * Added Super Widescreen 
+   * Completely re-organised .pnach files 
+   * Re-organised GitHub with the most up-to-date content i have. 
 
 New .pnach Cheats Include;-
+   * Super Widescreen & Camera stuff
    * Music Manager: Listen to Audio, Music, sfx, anywhere (outside of vehicles etc).
    * See Through Walls - Set Translucency levels On world (Glass_Effect).
    * Set R, G, B levels On World
    * Infinite Sprint, Fire-proof & Fast Reload Now all done in 1 line.
-   * Tyres Invulnerable (version 1 - still does impact efects & sounds), Version 2 currently only exists in my pal 2003 version.
+   * Tyres Invulnerable (version 1 - impact effects & sounds remain), Version 2 only exists in my pal 2003 version.
    * Boats: Fly
    * Infinite Ammo 1 & 2 
    * Modify Messages, e.g vehicle names etc in real time
