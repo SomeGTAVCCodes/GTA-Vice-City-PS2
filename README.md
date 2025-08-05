@@ -13,6 +13,7 @@ New .pnach Cheats Include;-
    * Infinite Ammo 1 & 2 
    * Modify Messages, e.g vehicle names etc in real time
    * Modify "particle.cfg" values in real time e.g. teargas smoke.
+   * PAL 2003 Super Widescreen & Documentation Added but not ported to 2002 beta/ hybrid version.
 
 GTA VICE CITY PS2 Cheats;
    * Comprehensive Cheats & Codes - All Versions & Regions
