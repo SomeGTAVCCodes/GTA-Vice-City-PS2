@@ -44,3 +44,6 @@ TO DO LIST (Please Contribute): 2002/2003 Hybrid Needs the following;-
       
    5. Moon Jump, Inifinite Jump Jump Height variants.
       - another difficult one to port
+   6. An example of adding a new vehicle, or character model is needed for PS2. No one has provided a step by step guide on how this works.
+
+
