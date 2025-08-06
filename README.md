@@ -6,7 +6,7 @@ Updates: 06.08.2025
    * Re-organised GitHub with the most up-to-date content i have. 
 
 New .pnach Cheats Include;-
-   * Super Widescreen & Camera stuff
+   * Super Widescreen & Camera stuff + documentation for PAL 2003 & PAL 2002 beta, Hybrid.
    * Music Manager: Listen to Audio, Music, sfx, anywhere (outside of vehicles etc).
    * See Through Walls - Set Translucency levels On world (Glass_Effect).
    * Set R, G, B levels On World
@@ -16,7 +16,6 @@ New .pnach Cheats Include;-
    * Infinite Ammo 1 & 2 
    * Modify Messages, e.g vehicle names etc in real time
    * Modify "particle.cfg" values in real time e.g. teargas smoke.
-   * PAL 2003 Super Widescreen & Documentation Added but not ported to 2002 beta/ hybrid version.
 
 GTA VICE CITY PS2 Cheats;
    * Comprehensive Cheats & Codes - All Versions & Regions
