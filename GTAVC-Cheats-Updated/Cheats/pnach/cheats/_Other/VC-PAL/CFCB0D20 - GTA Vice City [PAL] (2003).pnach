@@ -130,7 +130,7 @@ comment=2003 DVD (version 2.03. Not 2002, or 2004).
 //...														-  Note: Will be 50 FPS Locked if PAL .elf file is not patched to 60hz ntsc v-mode
 //patch=1,EE,20272AD4,extended,28420001
 
-//NOT TESTED: interlacing none								- || Default Value = 64420008 || Not Working , pointless, or needs PS2 hardware to benefit.
+//interlacing none								- || Default Value = 64420008 || Not Working , pointless, or needs PS2 hardware to benefit.
 //patch=1,EE,201123C4,extended,00000000
 
 //--------------------------------------------------------------------------------------------------------------------
@@ -1971,4 +1971,5 @@ patch=1,EE,204ADB88,extended,00000100
 //patch=1,EE,202431EC,extended,0c04c8cf
 //patch=1,EE,202703CC,extended,0c04c8d2
 //patch=1,EE,20270930,extended,0c04c8d2
+
 
