@@ -1,0 +1,45 @@
+
+
+
+This "force_random_ped " has been a bitch to find after fidnign it motnhs ago but nto knowing it actualyl happens thus nto having the address saved.
+
+
+the function
+
+force_random_ped - only called on ramaapges SHOULD theortetically be able to be used anywhere
+thus allowing choose peds.
+
+
+So  to test and find it 
+
+start game - go to rampage - save state 
+- see what rampage message it gives you - find that in the scm for the script
+e.g.
+print_with_number_big 'PAGE_02' number $1518 time 6000 style 6 // Destroy ~1~ Vehicles in 2 Minutes!
+
+From here hopefully we can 
+1. set numebr of kils required
+2. set peds 
+3. use "force_random_ped_type $1508" outsdie of ramapges.
+by using hte last entry "force_random_ped_type -1" which i bgelieve woudl be there to make sure peds arre back to normal for the rest of the game, not on rampages.
+
+
+RAMPAGE near start in washington .
+
+:RAMPAGE_6666
+
+
+
+
+
+7 8 12  9 
+
+[Resutls]
+1. set spawn postiion coords - i.e. modify existing 
+
+2. set number of kills required - 1st new cheat result:
+ 
+//Set ramapge kill numer to 1			|| Find Line 1 --> check writes --> ESI=00203650 , change to "2x0" -- then NOP so we can set number as const instead of var.
+patch=1,EE,2054E038,2054E038,00000001 // set number 
+patch=1,EE,20203650,2054E038,8E039090 // stop writes to the number ^^ 8E030010 --> 8E039090
+

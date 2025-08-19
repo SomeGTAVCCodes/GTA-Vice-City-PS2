@@ -1,0 +1,17 @@
+//NOTE: Will be 50 FPS Locked if PAL .elf file is not patched to 60hz ntsc v-mode
+
+
+//60 fps || SLES_510.61 / Ver 1.50 0xC498A04F
+patch=1,EE,20272C84,extended,28420001
+
+//60 fps || SLES_510.61 / Ver 3.00 0x26954C46
+patch=1,EE,202788AC,extended,28420001
+
+//60 FPS || Default Value: 28420002		|| PAL 2002 Beta & Hybrid Version - by TKBS
+patch=1,EE,2027475C,extended,28420001
+
+//60 FPS ||  Default Value: 28420002		|| PAL 2003 - by TKBS || SLES_510.61 / Ver 2.03 0xCFCB0D20
+//patch=1,EE,20272AD4,extended,28420001
+
+//NTSC UNKNOWN probably v1
+//60 fps: 20272204 28420001

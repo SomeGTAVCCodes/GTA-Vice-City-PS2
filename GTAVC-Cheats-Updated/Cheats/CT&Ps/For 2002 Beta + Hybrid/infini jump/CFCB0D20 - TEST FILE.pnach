@@ -1,0 +1,77 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2003) (SLES-51061)
+comment=PAL 2003 Modified 60Hz & YPOS & GTA3 removal.
+
+//Infinite Jump - Hold Square to ascend (Moon Jump)
+//* Default Values (All 0's):  00000000
+//* The Last Line is Default Value: 24030070  -> 0803FFD0
+patch=1,EE,200FFF40,extended,3C01005C // 00000000 ->  3C01005C|| 
+patch=1,EE,200FFF44,extended,80211703 // 00000000 ->  80211703||  
+patch=1,EE,200FFF48,extended,2403007F // 00000000 ->  2403007F|| 
+patch=1,EE,200FFF4C,extended,1461000C // 00000000 ->  || 
+patch=1,EE,200FFF54,extended,3C013E00 // 00000000 || 
+patch=1,EE,200FFF58,extended,9384F108 // 00000000 || 
+patch=1,EE,200FFF5C,extended,2403016C // 00000000 || 
+patch=1,EE,200FFF60,extended,3C02005D // 00000000 || 
+patch=1,EE,200FFF64,extended,244283C0 // 00000000 || 
+patch=1,EE,200FFF68,extended,00831818 // 00000000 || 
+patch=1,EE,200FFF70,extended,00431021 // 00000000 || 
+patch=1,EE,200FFF74,extended,8C420000 // 00000000 || 
+patch=1,EE,200FFF7C,extended,AC410074 // 00000000 || 
+patch=1,EE,200FFF80,extended,080487E4 // 00000000 || 
+patch=1,EE,200FFF84,extended,24030070 // 00000000 || 
+patch=1,EE,20121F8C,extended,0803FFD0 //24030070 || jo 20121F8E -->  0803FFD0 || sar bh,1
+
+
+------ Instructions -------
+pop esp
+add [ecx],al
+cmp al,03
+pop ss
+and [eax+2403007F],eax						|| 2403007F == 00000000 || add [eax],al || 12 blocks up from "LOADSC15.TXD", 3 blocks up from value 3E000000 || try and [eax+240300A3],eax
+or al,00
+popad 
+adc al,00
+add [eax],al
+add [eax],al
+add [eax+ecx],edi
+db F1
+test [ebx+2403016C],dl						|| 2403016C == 31435344 || inc esp || "DSC18.TXD;1"    ||     try    test [ebx+2403017C],dl	 
+pop ebp
+add [edx],al
+cmp al,-40
+add dword ptr [edx+24],18
+sbb [ebx+00000000],al
+add [ecx],ah
+adc [ebx+00],al
+add [eax],al
+inc edx
+mov [eax],es
+add [eax],al
+add [eax+eax+41],dh
+lodsb 
+in al,-79
+add al,08
+jo 200FFF86					|| This is our "200FFF84"
+------------------------------
+add esp,[eax+eax]			|| This is our "200FFF86"
+add [eax],al
+
+
+
+//[pal 2002 beta] Infinite Jump Tests
+patch=1,EE,200FFF40,extended,3C01005C
+patch=1,EE,200FFF44,extended,80211703
+patch=1,EE,200FFF48,extended,240300A3 //2403007F -- 240300A3
+patch=1,EE,200FFF4C,extended,1461000C
+patch=1,EE,200FFF54,extended,3C013E00
+patch=1,EE,200FFF58,extended,9384F108
+patch=1,EE,200FFF5C,extended,2403017C //2403016C --  2403017C
+patch=1,EE,200FFF60,extended,3C02005D
+patch=1,EE,200FFF64,extended,244283C0
+patch=1,EE,200FFF68,extended,00831818
+patch=1,EE,200FFF70,extended,00431021
+patch=1,EE,200FFF74,extended,8C420000
+patch=1,EE,200FFF7C,extended,AC410074
+patch=1,EE,200FFF80,extended,080487E4
+patch=1,EE,200FFF84,extended,24030070
+patch=1,EE,201221BC,extended,2403FFD0 //0803FFD0 --  2403FFD0  - This should be correct

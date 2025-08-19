@@ -1,0 +1,59 @@
+
+
+
+[pal 2003]
+//Infinite Jump - Hold Square to ascend (Moon Jump)
+//* Default Values (All 0's):  00000000
+//* The Last Line is Default Value: 24030070  -> 0803FFD0
+//patch=1,EE,200FFF40,extended,3C01005C
+//patch=1,EE,200FFF44,extended,80211703
+//patch=1,EE,200FFF48,extended,2403007F
+//patch=1,EE,200FFF4C,extended,1461000C
+//patch=1,EE,200FFF54,extended,3C013E00
+//patch=1,EE,200FFF58,extended,9384F108
+//patch=1,EE,200FFF5C,extended,2403016C
+//patch=1,EE,200FFF60,extended,3C02005D
+//patch=1,EE,200FFF64,extended,244283C0
+//patch=1,EE,200FFF68,extended,00831818
+//patch=1,EE,200FFF70,extended,00431021
+//patch=1,EE,200FFF74,extended,8C420000
+//patch=1,EE,200FFF7C,extended,AC410074
+//patch=1,EE,200FFF80,extended,080487E4
+//patch=1,EE,200FFF84,extended,24030070
+//patch=1,EE,20121F8C,extended,0803FFD0 //24030070 || jo 20121F8E -->  0803FFD0 || sar bh,1
+
+
+[pal 2002 beta]
+//patch=1,EE,200FFF40,extended,3C01005C
+//patch=1,EE,200FFF44,extended,80211703
+//patch=1,EE,200FFF48,extended,2403007F
+//patch=1,EE,200FFF4C,extended,1461000C
+//patch=1,EE,200FFF54,extended,3C013E00
+//patch=1,EE,200FFF58,extended,9384F108
+//patch=1,EE,200FFF5C,extended,2403016C
+//patch=1,EE,200FFF60,extended,3C02005D
+//patch=1,EE,200FFF64,extended,244283C0
+//patch=1,EE,200FFF68,extended,00831818
+//patch=1,EE,200FFF70,extended,00431021
+//patch=1,EE,200FFF74,extended,8C420000
+//patch=1,EE,200FFF7C,extended,AC410074
+//patch=1,EE,200FFF80,extended,080487E4
+//patch=1,EE,200FFF84,extended,24030070
+//patch=1,EE,2012216C,extended,0803FFD0 
+
+
+
+
+
+
+
+
+2012216C
+2012216C - 70 00                 - jo 2012216E
+
+ 
+201221BC - 70 00                 - jo 201221BE
+
+
+
+

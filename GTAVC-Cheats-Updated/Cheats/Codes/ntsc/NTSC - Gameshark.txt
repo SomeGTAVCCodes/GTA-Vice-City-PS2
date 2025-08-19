@@ -1,0 +1,135 @@
+Grand Theft Auto: Vice City  (NTSC-U)
+Gameshark Codes
+from: https://www.almarsguides.com/retro/walkthroughs/ps2/games/GrandTheftAutoViceCity/Gameshark/
+
+Unlimited Cash: 24949F78 57795BB8
+Gameshark v3-4 or Xploder v4
+
+Unlimited Mission Time: 24903328 3434D758
+Gameshark v3-4 or Xploder v4
+
+Unlimited Run Ability: 04109568 16F053B8
+Gameshark v3-4 or Xploder v4
+
+Have All Packages: DE428F5A BCA99BE7
+Gameshark v1 or Action Replay v1
+
+Have All Weapons At Hideout: 24809568 9E705328
+Gameshark v3-4 or Xploder v4
+
+Have All Weapons At Ocean View: 24809568 9E705328
+Gameshark v3-4 or Xploder v4
+
+Half Game Speed: 249867A8 34F2D799
+Gameshark v3-4 or Xploder v4
+
+
+Unlimited Health
+Gameshark v3-4 or Xploder v4
+
+44503428 1624C138
+3942D6E1 9BABB1E0
+24C12CB8 9636C0BB
+24C1379A 1E168109
+
+Unlimited Health
+Gameshark v1 or Action Replay v1
+
+DE8FFFFE F8AEDD4B
+DE8FFFFA 68EE9EEB
+DE8FFF86 BF899B8B
+DE8FFF82 02A99BA7
+DE91DEAA C8AC9A43
+
+Unlimited Ammo
+Gameshark v3-4 or Xploder v4
+
+244029A8 9F7C1D14
+244031A8 1A74558F
+244033A8 1AF4551F
+
+Unlimited Ammo
+Gameshark v1 or Action Replay v1
+
+DE89766E E0EB9B83
+DE8976C6 E0EB9B83
+DE897EF2 E0EB9B83
+DE897D5E E0EB9B83
+
+Unlimited Armor
+Gameshark v3-4 or Xploder v4
+
+24C10EB8 9636C08B
+24C1169A 9E1681A9
+
+Unlimited Armor
+Gameshark v1 or Action Replay v1
+
+DE8FFFFE F8AEDD4B
+DE8FFFFA 68EE9EEF
+DE8FFF86 BF899B8B
+DE8FFF82 02A99BA7
+DE91DEAA C8AC9A43
+
+Wanted Level Always 0
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+24D1B5A8 1664C529
+
+Wanted Level Always 1
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+2451B5A8 1664C529
+
+Wanted Level Always 2
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+24D1B5A8 1664C52B
+
+Wanted Level Always 3
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+2451B5A8 1664C52B
+
+Wanted Level Always 4
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+24D1B5A8 9664C529
+
+Wanted Level Always 5
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+2451B5A8 9664C529
+
+Wanted Level Always 6
+Gameshark v3-4 or Xploder v4
+
+24D4B5A6 127E8400
+24D1B5A8 9664C52B
+
+Clipping Mode
+Gameshark v1 or Action Replay v1
+
+0E42FCF8 BCA99681
+DE8B121A BCA99B83
+0E42FCF8 BCA99981
+DE8B121A D0E99A67
+
+Max Money
+Gameshark v1 or Action Replay v1
+
+DE428F52 C19E7B82
+DE428F5E C19E7B82
+
+Overcast Weather
+Gameshark v3-4 or Xploder v4
+
+24103428 34F0C5F8
+24103728 34F0C548
+24103728 34F0C568

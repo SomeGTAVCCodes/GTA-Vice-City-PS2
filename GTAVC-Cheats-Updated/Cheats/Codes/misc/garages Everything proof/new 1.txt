@@ -1,0 +1,460 @@
+// The following codes were taken from a post online.
+// we all have our own ways of doing things, but this post is a bit of a mess, whys someone would choose to mess with the codes ordering in such a way is unneccessarily confusing.
+// within the first 2 lines the post states these codes are both AR2 and ARMax codes. <- inaccurate dribble like this really does not help anyone.
+
+// So here is that post, hopefully easier to understand.
+
+* https://gtaforums.com/topic/504747-everything-proof-ps2-cheat-device-codes/
+
+* vice city 1.0 game ID: 0276
+* vice city 1.1 game ID: 0498 (bundle pack)
+* vice city 1.2 game ID: 0575 (double pack 1.2), greatest hits, and trilogy.
+
+
+---- vice city 1.0	----	
+
+[AR MAX]					RAW						
+Master code				F0122214 00122217
+24UN-3M4D-GZY4E
+4JVG-J8E4-NFCPE
+AAPH-Z35M-BMNP4
+
+cars in all garages are damage proof 
+Line 1 Options = [H4RN-PA3M-7385Z | 1GT7-FM1N-HZRTY  | 4CN6-KUCP-TQHG2  | CPAK-HFW1-0Q85W]
+H4RN-PA3M-7385Z
+YP31-KYR0-M281R
+BPJJ-FWZC-Y0TAT
+TDGY-8KRC-J6PQC
+QGNF-24CF-1JRRZ
+PN0Y-E7ZU-49MY4
+1WZB-H24T-0W20U
+XB7E-GVYH-39R8N
+BATG-M2FD-45K7F
+D7AF-9DDA-N63CN
+8FK6-N5NC-KA51F
+0D1A-Q61V-70GXD
+
+cars in all garages are damage proof 
+006B490C 0000000F
+006B49AC 0000000F
+006B4A4C 0000000F
+006B4AEC 0000000F
+006B4B8C 0000000F
+006B4C2C 0000000F
+006B4CCC 0000000F
+006B4D6C 0000000F
+006B4E0C 0000000F
+006B4EAC 0000000F
+006B4F4C 0000000F
+
+---- vice city 1.1 ----
+
+Master code	
+N7WB-JP4W-8UMMP			F0121F64 00121F67
+E1HK-CR84-U9XUP
+
+Line 1 Options = [N8UT-HM54-3AW5A | DQ45-QZM0-1RRVY | 5WNY-98C5-WHP79 | W97X-N2C0-ABNX0]
+N8UT-HM54-3AW5A
+YC74-2Y2Y-7M8AH
+R332-MUPR-P0MTD
+PTRV-3YFV-MHHEG
+UMP5-FC7P-Y374V
+AAYN-B16U-AUB6C
+EQ56-DT66-3AUFC
+C185-4PWY-EXA8D
+FGYU-8P69-GF00P
+9HBM-4ZXQ-HB2ZA
+D3Z8-QEJ9-UCK2B
+GUF0-32DY-2B4C4
+
+006B578C 0000000F
+006B582C 0000000F
+006B58CC 0000000F
+006B596C 0000000F
+006B5A0C 0000000F
+006B5AAC 0000000F
+006B5B4C 0000000F
+006B5BEC 0000000F
+006B5C8C 0000000F
+006B5D2C 0000000F
+006B5DCC 0000000F
+
+---- vice city 1.2 ----
+
+HFKM-UAF3-RXWD0			F01220EC 001220EF	
+QURE-F9RR-UVM4X
+
+Line 1 Options = [ 47DW-X7YP-VX5RH | ZA5T-N0B0-4HA40 | 2P4M-P846-1JP1E | 1HXV-2ZA1-XM4MB]
+47DW-X7YP-VX5RH
+2NKW-CA2K-AP1AX
+CB0Z-ZXDE-HFJ2M
+HQGF-7QAF-8QZTW
+FN10-NNB1-YZ51Q
+7MHA-X5UB-8X9V9
+QPQB-91KJ-F47DB
+8JY1-77MJ-KA68F
+VNKP-HDA3-TY6HE
+8NNG-YND4-R853Y
+AGJ5-8YEA-UGQK9
+MCRP-377W-JXJKN
+
+006BEE0C 0000000F
+006BEEAC 0000000F
+006BEF4C 0000000F
+006BEFEC 0000000F
+006BF08C 0000000F
+006BF12C 0000000F
+006BF1CC 0000000F
+006BF26C 0000000F
+006BF30C 0000000F
+006BF3AC 0000000F
+006BF44C 0000000F
+
+---- ----- vice city 1.2 -------- vice city 1.2 -------- vice city 1.2 -------- vice city 1.2 ----------------- ----
+//vice city 1.2  ONLY
+[ocean heights color 1]
+1D92-RJUZ-7XJEU
+
+black
+1TRT-39U9-K1XC3
+4H8K-90YA-TD8FY
+white
+9K5B-TD7R-G7APQ
+HVHB-P32V-RWVQR
+red
+HQKB-TNVG-YFFH1
+PU5E-488N-4KPMH
+pink
+A351-D5Q1-P7M6D
+69KP-FHQY-6F32D
+white #2
+3JWY-XAX7-UJHMT
+22XR-2NR4-YVMFW
+mid grey
+ZW0C-78GW-8GB0D
+GYY5-4R3Y-F9864
+lightest grey
+QPZ9-2537-EDM9V
+DJAW-FMQB-2J4NR
+orange
+CVBX-9GUG-GPYET
+3K7G-B2V2-FUF6N
+deep yellow
+CQ48-97W5-E7G1C
+T2CK-6P7C-VBGEC
+light red
+UFYR-WB4P-9DM6X
+9G3M-PQZG-VD13Y
+mid red
+2YPG-KF1W-RG7KZ
+4AVE-U7A6-BHYDA
+
+[ocean heights color 2]
+GHQH-AQ9Y-5XG5X
+
+black
+9DZQ-7FZM-F6YTB
+64NH-58YF-EKGHY
+deep grey
+23YB-BXB2-54Q7Z
+YJ47-3MGK-2X38R
+lime.
+1V4T-4EMM-TW03N
+NHZ7-7FXJ-AMPMT
+pink
+VE58-JDCR-GU122
+1AZB-Y97V-B8ADD
+dark brown
+T8QZ-PXHP-RTEC1
+JX37-9QKJ-UG49G
+darkest green
+AV4C-XT6N-CK6E2
+2TWU-PBU0-3MZ8B
+darkest yellow
+Y6GU-QPG8-Q587D
+DZYU-5J6K-2YRE5
+
+[ocean heights color 1]
+color 1 black
+006BF090 00000000
+color 1 white
+006BF090 00000001
+color 1 red
+006BF090 00000003
+color 1 pink
+006BF090 00000005
+color 1 white #2
+006BF090 00000008
+color 1 mid grey
+006BF090 0000004A
+color 1 lightest grey
+006BF090 00000053
+color 1 orange
+006BF090 00000017
+color 1 deep yellow
+006BF090 00000022
+color 1 light red
+006BF090 00000043
+color 1 mid red
+006BF090 0000000B
+
+[ocean heights color 2]
+color 2 black
+006BF091 00000000
+color 2 deep grey
+006BF091 00000009
+color 2 lime.
+006BF091 00000021
+color 2 pink
+006BF091 00000005
+color 2 dark brown
+006BF091 00000041
+color 2 darkest yellow
+006BF091 0000001F
+color 2 darkest green
+006BF091 00000028
+
+
+[Link view heights color 1]
+19QP-FDQJ-BK90T
+color 1 light purple
+7XMT-9GNE-TKUWZ
+XNYT-G8YP-D1KBB
+color 1 deep grey one
+MZ7C-PW0F-W6QJ1
+75MZ-KMQR-8MD0W
+color 1 light yellow
+EY5F-DU2T-Z7HEC
+KFAM-DBUK-G551K
+color 1 light grey
+WRPW-XRTH-9M13P
+R8GU-RXF8-M96J3
+color 1 lightest blue
+E36M-YFEU-14P17
+R8C7-QF3W-7G4P7
+color 1 light blue
+X1NU-5EW9-2C234
+TRPH-UTPP-Z83V5
+color 1 faded green
+MYEU-NKD2-EFGPP
+BPHA-4FPK-0FG28
+color 1 silver
+U8CJ-CX5B-32FU2
+N0ND-4M5X-X9HHJ
+color 1 mid yellow
+MX49-MCP6-PD1GX
+653B-2XTZ-W222Y
+color 1 bright orange
+7R46-XV4Y-ETDJ5
+3KCB-TDBV-69BAV
+color 1 dark yellow
+AWDM-GG7H-RD79D
+C0G2-UK5U-Y3YGA
+color 1 bright blue
+WTW0-N7K6-EPTMB
+GK68-823Q-M5BGE
+color 1 dark blue one
+KJNX-WE8C-4F96Y
+FA8V-WZ72-X78ZX
+color 1 darkest green
+6PZW-76DA-HG6EK
+QX06-Q5Z8-YVP61
+color 1 darkest blue
+BZHY-AZ6A-VFZ6R
+73DM-UQH5-EPTMJ
+color 1 grey
+U9QW-1KV1-H51A9
+4JWY-TNEU-EQ244
+color 1 darkest brown
+QH00-N8KM-3B65C
+J4T4-R09Q-V12ZX
+
+[Link view heights color 2]
+N1HQ-MC40-P3D01
+color 2 light green
+5VAH-A7QQ-3HXGA
+3YV4-CVBE-QWR44
+color 2 dark yellow
+4M4A-74EW-0VGK5
+P7P0-KXXU-UTG21
+
+El swanko garage color 1
+1T0P-R0CA-8BBV9
+color 1 dark red one
+X28Q-G8EF-1XVKZ
+
+TN2G-PBYJ-H0HBN
+
+color 1 mid brown
+
+JTPE-UZ6P-E3DWG
+
+6YWG-RYJ7-RXWMR
+
+color 1 dark silver
+
+RPAE-WFD5-407AH
+
+0PJ4-VQ09-0UV5P
+
+color 1 shadow green
+
+V80P-U4K0-0VXA8
+
+D9KJ-TUKZ-6C37K
+
+color 1 mid green
+
+HDEA-RRT2-8UC1P
+
+ZA4Q-6T4E-3T2WH
+
+color 1 blue
+
+AR7G-VGAA-Q780E
+
+H170-50TR-8FC1E
+
+color 1 blue two
+
+C354-230K-FMGDB
+
+Z57M-C6UK-JXC78
+
+color 1 dark purple
+
+7ZUW-5Q6K-9JWG4
+
+09FM-5RG5-ZTCEC
+
+color 1 darkest yellow
+
+EEBQ-37NA-734NC
+
+9JTC-T5FC-XTY3E
+
+color 1 green
+
+E7HC-QBRE-P80QF
+
+C45Y-F441-H95ZD
+
+[El swanko color 2]
+BJEZ-32JR-1X4M9
+
+color 2 light yellow
+
+9TFQ-8BY1-280HQ
+
+ZTAH-41R7-ATFGB
+
+color 2 dark blue one
+
+VCBZ-R18D-EF9E2
+
+RZBM-3WVV-776JP
+
+color 2 light blue
+
+KR7F-BB77-ZD7U5
+
+HFQD-W6YF-DVZKE
+
+color 2 mid brown
+
+K15R-764Y-Q9CAF
+
+K8D9-YXPB-DMTZF
+
+color 2 darkest grey
+
+HPQJ-MZZU-FE8T1
+
+JXXV-CKDM-5CHJ6
+
+color 2 Dark blue
+
+6RWP-U1KM-51JCA
+
+RACJ-DKUH-FZ8ER
+
+vercetti mansion garage
+
+9CKW-UC4P-YP5GB
+
+color 1 lightest green
+
+QA6U-6V9V-KTVT0
+
+GFYQ-86FP-X7E37
+
+color 1 lime
+
+UP43-AGRV-HTFHW
+
+PFKA-TYJ7-NQGRH
+
+color 1 mid blue 1
+
+H7GZ-46KA-DV3HF
+
+QPG0-HP3J-KKCHN
+
+color 1 white #3
+
+9BFP-561N-WKU40
+
+QP14-3BKH-8RPQ8
+
+color 1 Dark grey
+
+P8TF-EKM4-TU27R
+
+462K-ZY2Y-YXH45
+
+color 1 peach
+
+AF0R-V9KG-NG1UV
+
+F1UG-FZ69-JDFAU
+
+
+
+
+
+
+
+
+
+
+color 2 light purple
+
+V4Q8-WP4K-UUDFW
+
+RU5R-HZJ2-J3P9J
+
+color 2 shadow green
+
+BF2A-ZZUX-ZC7JT
+
+PX9V-MA8X-Q9T43
+
+color 2 lightest blue
+
+J0NG-7ZB1-1BEZQ
+
+J08T-YDP8-7P47W
+
+color 2 white
+
+TV02-ABFR-EEQJP
+
+1MMB-UA3K-E5VXZ
+
+color 2 lightest green
+
+GDG8-U9UA-ZW2AB
+
+ADZ4-TNU0-63KRW
+
+

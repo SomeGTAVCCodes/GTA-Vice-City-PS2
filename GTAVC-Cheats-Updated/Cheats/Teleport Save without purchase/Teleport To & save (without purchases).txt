@@ -1,0 +1,119 @@
+
+To Teleport to a Save point - and save without purchasing property
+1. set to All 0's to Auto-purchase, the value will then update
+2. then set to all 0's again to telport to that save point with the save menu open.
+ 
+---- TODO  ----
+* Find remove locked property. - or leave it there- which might be better, becuas ethen the player cna save anywhere at the start at teleport to these locations
+^^ and then if they want to bu  the properties they still can
+I have no idea if this will effect register progression or counts towards 100%.
+* add default values
+* test to see if we can skip purchase entirely and set to he valeu it changes to after purchase.
+* see whatever writes and access happens and ifnd the STAS relevant stuff.
+----------------------------------------------
+
+
+----------------------------------------------
+New Codes Player
+----------------------------------------------
+
+//Player Jump: 20B50EE8 || 00000001 to 00000029 when jumping 
+
+
+//Player is in Vehicle - Toggle 0,1. i.e Teleport to your Vehicle 
+//patch=1,EE,20B51050,extended,00000000
+
+[20B51018]
+[20B5101C]
+3D02E4C1 41700000 0000000F 00000000 00000000 00000000 00000000 00BAC5D0 42CC5D90 C44A7476 412720CA 00B75760 00B75760 00000001 3F000000 3DCCCCCD
+
+20B5101C = player rotation e.g. face north BC3013B9 || face south 404878E9
+
+----------------------------------------------
+New Codes Properties
+----------------------------------------------
+//$$$ 1102 Washington Street $0	(Cost)						-
+//patch=1,EE,206AE57C,extended,00000000
+
+//$$$ 1102 Washington Street $0	(Display Message) || 00000BB8 ($3,000) --> 01 ($1)						-
+//patch=1,EE,2054D2A8,extended,00000000
+
+//$$$ 1102 Washington Street 		|| 0002001D --> 00000000 --> 0003001D
+//patch=1,EE,2054D2AC,extended,00000000
+
+//$$$1102 Washington Street - After Purchase 
+//patch=1,EE,2054D2A4,extended,0025000C // 00160000 --> 0025000C
+//patch=1,EE,2054D2AC,extended,0003001D
+
+----------------------------------------------
+the addresses.
+----------------------------------------------
+//Teleport to Skumhole shack - save available without purchase
+2054D294 00000000 || 0002010D --> 00000000
+//Skumhole: 	2054D28C //or 2054D294
+
+//Skumhole shack after purchases these update ||0000D225 --> 00011D5A
+2054BB48 00011D5A
+
+[2054BB30]
+01000000 00000000 0054AAC0 00000000 65766173 00000037 00011D5A 00000000
+
+//washington: 	2054D2AC || 0002001D --> 00000000 //save near kens - washington -- set to all 0's -- then do it again to load save menu  || 0002010F -->00000000
+[2054BBB0] washington after purchases these update
+01000000 00000000 0054AB48 00000000 65766173 00000034 000119C4
+
+[2054BBC0]
+0054AAC0 00000000 65766173 00000034 000119C4 00000000
+
+[2054BBD0] 0000D169 --> 000119C4 || then it turns into 00012E9F
+
+//vice point: 	2054D2A0
+//Links View: 	2054D2B8
+//oceahH:	2054D2C8
+//ElSwanko:	2054D2D8
+//Hyman Condo:	2054D2E8 00000000 //|| Default "" - set to All 0's and it purcvhases then changes to "0002010E"
+
+//when wasted message:	2054D2F8
+//when busted message:	2054D300
+
+----------------------------------------------
+This was me just wittling down the addresses.
+----------------------------------------------
+[2054D25C]
+00007530 00020018 00000000 00000FA0 00000000 00000000 00009C40 00001388
+[2054D27C] Somewhere here will allow puchase skumhole shack
+00000000 00000000 00000000 0000C350 000005DC 00000000 00000000 00000000 
+
+0000EA60 00001B58 00000000 00000000 00000000 00011170 00001F40 00000000 
+00000000 0001D4C0 00002710 00000000 00000000 00180000 000003E8 0002001F 
+00170000 000009C4 0002001E 00160000 00000BB8 0002001D 00130000 00001770 
+0002001A 0000000A 001B000B 00001B58 000F001C 0000000E 00120000 00001F40 
+00020019 0000000F 00140000 000036B0 0002001B 0000000B 0000000C 0000000D 
+0002000D 0002000E 0002000F 00020010 00020011 00020012 00020013 00020014 00020015 00020016 00020017 00000000 00000001 00000002 00000003 00000004 00000014 00000007 00000005 00000006 00000008 00000009 00000010 00000011 00000012 00000013
+
+----------------------------------------------
+How i found them
+basically a random removal of stuuf led to the loading screen and property purchase
+all values are similar at the property addresses (000200##)
+removing them to find the other properties.
+-----------------------------------------------
+[2054DFF8]
+90000000 90000000 90000000 90000000 90000000 00000000 00000000 90000000 90000000 90000000 90000000 9000062D 90000000 90000000 90000000 90000000 90000000 90000000 90000000 90000000 90000000 90909090 90000000 90000000 90000000 00000000
+
+
+
+
+
+
+
+
+
+
+[2054BBB0] washington after purchases these update
+01000000 00000000 0054AB48 00000000 65766173 00000034 000119C4
+
+
+[2054BBC0]
+0054AAC0 00000000 65766173 00000034 000119C4 00000000
+
+[2054BBD0] 0000D169 --> 000119C4 || then it turns into 00012E9F
