@@ -1,20 +1,18 @@
 ---- GTA Vice City Cheats & Debug Hybrid ----
 * The readme provided within the "GTA-Vice_City-Hybrid-ModKit" will guide you through the changes required to make the best version possible.
 * In short you can create 2 versions;
-
-[Hybrid 1 - Pal 2002 Beta Cheats & Debug Upgrade]
-[1] the cheats & debug hybrid based on pal 2002 beta .elf
-* Creating an updated version of PAL 2002 beta
-* Cheats & debug functions upgraded with new cheats added.
-* Using binary difference patch files the beta is not required to create this only whatever version you own
-* Creating Hybrid [1] will be done using patch files and is less than 4MB :)
-
-[Hybrid 1 - Pal 2002 Beta Cheats & Debug Upgrade] 
-[2] Update any version to the be the best it can be using the version you have.
+  
+[Hybrid 1 - Any Version Upgrade] 
+[1] Update any version to the be the best it can be using the version you have.
 * create the best possible PS2 version
 * Fixes, updates & improvements
 * comprehensive cheats and documentation
-* * Creating Hybrid [2] requires about 7MB
+  
+[Hybrid 2 - Pal 2002 Beta Cheats & Debug Upgrade]
+[2] the cheats & debug hybrid based on pal 2002 beta .elf
+* Creating an updated version of PAL 2002 beta
+* Cheats & debug functions upgraded with new cheats added.
+* Using binary difference patch files the beta is not required to create this only whatever version you own
 
 [Instructions]
 * Download the "GTA-Vice_City-Hybrid-ModKit" from MODDB
@@ -26,8 +24,12 @@
 * ModDB contains the modkit and additional files
 * The download for the initial Modkit will be 300MB or more becuase it includes scans of the game documents & all the additional notes & documentation, images, video examples etc.
 
-  
-Updates: 08.08.2025
+[Updates] 18.08.2025
+* i would est 90%+ of memory addresses are documented, at least the ones we care about
+* pal 2003 has had some cool new patches and cheats added
+* Dynaic brightness and teleport to save point are cool new features
+
+[Updates] 08.08.2025
    * Hybrid 1 & Hybrid 2 Instructions clarified
    * more cheats added to PAL 2003 & 2002 Beta & Hybrids. 
 Previous Updates:
