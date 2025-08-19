@@ -33,12 +33,11 @@ comment=2003 DVD (version 2.03. Not 2002, or 2004).
 //TODO: Port these to cheat engine,
 //TODO: Port the ones from cheat engine to here
 //TODO: Add all original (default) values --> new values + notes.
+//TODO: toggle Rain on screen, rain on player(world).
+//TODO: toggle "switch_rubbish" for perf increase.
 //TODO: TearGas Fix
 //...			//Weapons: TearGas Fix (Test) - see .ct file for full fix, workaround.
 //...			//patch=1,EE,206BE1E5,extended,2C3F8000
-//TODO: not sure how to auto-complete taxi missions.
-//TODO: toggle Rain on screen, rain on player(world).
-//TODO: toggle "switch_rubbish" for perf increase.
 
 // ---- Errors from log files: PCSX2 1.6.0: ----
 //...
@@ -1972,3 +1971,4 @@ patch=1,EE,204ADB88,extended,00000100
 //patch=1,EE,202431EC,extended,0c04c8cf
 //patch=1,EE,202703CC,extended,0c04c8d2
 //patch=1,EE,20270930,extended,0c04c8d2
+
