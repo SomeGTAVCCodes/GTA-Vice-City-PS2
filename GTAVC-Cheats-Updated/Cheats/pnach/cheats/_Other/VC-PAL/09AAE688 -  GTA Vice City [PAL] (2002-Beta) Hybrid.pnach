@@ -1,0 +1,131 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2002-Beta) (SLES-51061)
+comment=GTA:VC, PAL, 2002-Beta Codes.
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Information ----
+//--------------------------------------------------------------------------------------------------------------------
+//Author 	= 	TKBS
+//Compatible CRC's; 
+//CRC: 		=	09AAE688 (Debug Beta Upgraded)
+//CRC: 		=	31A67C86 (PAL, 2002-Beta)
+//Credits 		see notes and the full pnach 31A67C86 for beta 2002.
+
+//			//3C024416 --> 3C034406
+//			//patch=1,EE,202D54BC,extended,3C024416 // this fucks up stuff. spawn a VH with pad 2 and the message font is borked.
+
+//------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
+//[Widescreen 16:9]
+//gsaspectratio=16:9
+//author=PeterDelta
+//description=Widescreen fix
+//...									//patch=1,EE,004B8AD0,extended,00000000 // Widescreen Menu Option - More viewing area when Disabled
+patch=1,EE,0024450C,extended,3C0242AC // 3C02428C --> 3C0242AC || ?????????
+//...									//patch=1,EE,00253FB0,extended,3C0242AC // 3C02428C --> 3C0242AC 	|| Widescreen (20253FB0)
+patch=1,EE,00255EEC,extended,3C0242AC // 3C02428C --> 3C0242AC || ?????????
+patch=1,EE,00256CD0,extended,3C0242AC // 3C02428C --> 3C0242AC || ?????????
+patch=1,EE,00330D60,extended,3C044040 // 3C044080 --> 3C044040 || ?????????
+patch=1,EE,00330DB4,extended,3C0240D0 // 3C044080 --> 3C0240D0 || ?????????
+//Not required;-
+//patch=1,EE,20232A1C,extended,3C023FC0 //scenes, not tested // 46000D03 --> 3C023FC0
+//patch=1,EE,003A9D34,extended,3C013F80 // 3C013F80 --> 3C013F80
+//patch=1,EE,E0010001,extended,004B9748 // ?????????
+//patch=1,EE,003A9D34,extended,3C013F40 // 3C013F80 --> 3C013F40
+
+// Does nothing			//[480p Mode]							// Does nothing
+//			//gsinterlacemode=1
+//			//author=PeterDelta
+//			//description=SDTV 480p mode at start.
+//			//patch=1,EE,E0040001,extended,00444DC0 // ???
+//			//patch=1,EE,20113120,extended,34050050 // ??? 64420008 --> 34050050
+//			//patch=1,EE,20113124,extended,24030002 // ??? 0000000c --> 24030002
+//			//patch=1,EE,20113128,extended,0000000C // ??? 03E00008 --> 0000000C
+//			//patch=1,EE,2011312C,extended,03E00008 // ??? 00000000 --> 03E00008
+//			//patch=1,EE,00112B24,extended,00000000 // ??? 64420008 --> 00000000
+
+//		// ----  Widescreeen 01 ---- (snakefix --> TKBS)
+//		//TODO: See pal 2003 port it to here.
+//		//patch=1,EE,2013267C,word,3C013F9D 	//* produces log errors, only slightly increases it FOV.. 3C013F9D - fixed when adding peterD's 1 line
+//		//patch=1,EE,20132680,word,44810000
+//		//patch=1,EE,20132684,word,46006300	//46006302 = upside down and massive widescreen FOV. - fixed when uysing E78C87F8. see last line.
+//		//patch=1,EE,20132688,word,03E00008 	//does not change values? i.e. is already and always 03E00008
+//		//patch=1,EE,2013268C,word,E78C8888 	// E78C8888 || E78C87F8 :; very werid, it should be  ####87F8 in 2002 beta to generate the same instruction as 2003, which it does , but it didn't work.
+//		//TODO: Lines 6,7,8 SetFOV.
+
+// ----  Widescreeen 02 ---- (PeterD's --> TKBS)
+patch=1,EE,20253FB0,extended,3C0242AC 	// widescreen 02: 1/1
+
+// ----  Widescreeen 01 ---- (snakefix --> TKBS)
+//TODO: Port 8 lines from PAL 2003, or ntsc 2002 to here.
+
+// ---- (Permanently enabled) ----
+patch=1,EE,2027475C,extended,28420001 	// 60FPS
+patch=1,EE,20112B24,extended,00000000 	// interlacing NONE
+
+// ----  Widescreeen 00 ---- (Menu options)
+patch=1,EE,204B8AD0,extended,00000000 // Toggle Widescreen 	(Menu option) OFF || for larger viewing area || with correct super widescreen implementation.
+patch=1,EE,204B6EAC,extended,00000001 // Toggle Trails 		(Menu option) OFF || can be ON with correctly modded "timecyc.dat"
+patch=1,EE,204B8ACC,extended,00000001 // Toggle Subtitles	(Menu option) ON  || 
+
+//------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------
+
+//Text Displayed on Menu Line 1 "Vice City Hybrid Version"  		(Previously "Compile Date: Oct 01 2002")
+patch=1,EE,2043DC20,extended,20202020
+patch=1,EE,2043DC24,extended,63695620
+patch=1,EE,2043DC28,extended,69432065
+patch=1,EE,2043DC2C,extended,48207974
+patch=1,EE,2043DC30,extended,69726279
+patch=1,EE,2043DC34,extended,65562064
+patch=1,EE,2043DC38,extended,6F697372
+patch=1,EE,2043DC3C,extended,0000006E
+
+//Text Displayed on Menu Line 2 "By TKBS June 2025 06:06:06" 	(Previously "Compile Time: 22:34:23")
+patch=1,EE,2043DC60,extended,54207942
+patch=1,EE,2043DC64,extended,2053424B
+patch=1,EE,2043DC68,extended,656E754A
+patch=1,EE,2043DC6C,extended,32303220
+patch=1,EE,2043DC70,extended,36302035
+patch=1,EE,2043DC74,extended,3A36303A
+patch=1,EE,2043DC78,extended,20203630
+patch=1,EE,2043DC7C,extended,00000000
+
+patch=1,EE,20674B96,extended,45434956 // Vehicles: Change VH ID 236 Cheetah to Display "Vice-Cop" 1/2
+patch=1,EE,20674B9A,extended,504F432D // Vehicles: Change VH ID 236 Cheetah to Display "Vice-Cop" 2/2
+
+patch=1,EE,2043A5C3,extended,00000000 // HUD: remove Displayed "MISSING" text from .gxt entry 1/2
+patch=1,EE,2043A5C7,extended,00000000 // HUD: remove Displayed "MISSING" text from .gxt entry 2/2
+
+patch=1,EE,204B5C08,extended,00642524 // No 0's preceeding $Money values
+patch=1,EE,204B5C0C,extended,00000000 // No 0's preceeding $Money values
+patch=1,EE,204B5C20,extended,00006425 // No 0's preceeding Health values
+
+patch=1,EE,204B8350,extended,00000001 // Cars: Float on Water
+patch=1,EE,204B8368,extended,00000001 // Tweak Vehicle Handling - Also - Vehicles: [17] Debug Menu - [17] Tweak Vehicle Handling:B : 00000000 || 00000001
+patch=1,EE,20159AA4,extended,00000000 // Infinite Ammo on foot 1/2
+patch=1,EE,20159AD0,extended,00000000 // Infinite Ammo on foot 2/2
+patch=1,EE,20B6CFAC,extended,00000001 // Infinite Ammo: Weapon Slots: uzi Ammo slot 1/2 
+patch=1,EE,20B6CFB0,extended,00000001 // Infinite Ammo: Weapon Slots: uzi Ammo slot 2/2
+//patch=1,EE,20B6CE78,extended,43480000 // Infinite Health
+//patch=1,EE,20B6CE7C,extended,43480000 // Infinite Armour
+//patch=1,EE,205D50FA,extended,01010000 // Infinite sprint & Fast Reload
+//patch=1,EE,205D50FE,extended,00646401 // FireProof
+//patch=1,EE,201B3BC0,extended,03E00008 // Never Lose Weapons 1/2
+//patch=1,EE,201B3BC4,extended,00000000 // Never Lose Weapons 2/2
+
+// ---- (Occassionally enabled) ----
+//patch=1,EE,20690730,extended,00000000 // Freeze Timers
+//patch=1,EE,204B833C,extended,00000001 // Cars: Fly
+patch=1,EE,204B7ED8,extended,DFDFDFDF	// See Through Walls
+
+//Music Manager 						|| 0-8, 9 = off || Note: Modify these 2 lines when you want to change audio, then put the "//" back. If it fails to work edit Line 1 Only.
+//patch=1,EE,206C6EC5,extended,00000004 
+//patch=1,EE,206C6EC9,extended,00030000
+
+//Vehicles: Tyres Invulnerable: Remove Impact Effect, Sound and damage.
+patch=1,EE,2017D6E4,extended,03E00008 //03E00008 --> 03E00008
+patch=1,EE,2017D6E8,extended,00000000 //90420005 --> 00000000
+patch=1,EE,2017D6F0,extended,00000000 //00A41821 --> 00000000
+patch=1,EE,2017D6F4,extended,03E00008 //03E00008 --> 03E00008
+patch=1,EE,2017D6F8,extended,00000000 //A0660005 --> 00000000
+patch=1,EE,2017D700,extended,00000000 //00051080 --> 00000000 // Probably Not needed.

@@ -1,0 +1,156 @@
+gametitle=GTA SAN ANDREAS.
+comment=NTSC-Black.
+
+// ---- Player ----
+
+//MAX Health NTSC 1
+//patch=1,EE,208021C0,extended,44B00000
+
+//MAX Health NTSC 2: 20802D50 44B00000
+
+//Infinite Health NTSC 1: 					- Default Values = C4600580 | 44030000 | 00000000
+//patch=1,EE,202A9B30,extended,3C0142C8
+//patch=1,EE,202A9B38,extended,AC610580
+//patch=1,EE,202A9B3C,extended,24030064
+
+//Infinite Health NTSC 2: 
+//patch=1,EE,20261824,extended,E4400580
+
+//Instant Skydive Everyone	- Press L3+R1 NTSC v1		|| Default Values = 46010000 , ?? 
+//patch=1,EE,2024D9E4,extended,46010000
+//patch=1,EE,D0700942,extended,0000F7FD
+//patch=1,EE,2024D9E4,extended,C7809AC0
+
+
+// ---- MISC ----
+
+//Rendering: Remove radiosity			-	Default Value = 00C70BB8
+//patch=1,EE,20667964,extended,00000000
+
+//More Car Colors (In Particular Cop Cars):  		- Not sure if this works.
+//patch=1,EE,2014165C,extended,00000000
+
+//Shadow Vehicles: 
+//patch=1,EE,10392016,extended,00000000
+
+//No Pedestrians: 							-	Default Value = 3F800000
+//patch=1,EE,206650AC,extended,00000000
+
+//More Pedestrians: 
+//patch=1,EE,206650AC,extended,42800000
+
+//No Traffic: 								-	Default Value = 3F800000 
+//patch=1,EE,20665134,extended,00000000
+
+//More Traffic: 
+//patch=1,EE,20665134,extended,42800000
+
+//---- NOT TESTED (NTSC 2 ? )---------------------------------------------------
+
+//Infinite Sprint
+//patch=1,EE,00709748,extended,00000001
+
+//taxi fares
+//patch=1,EE,20802328,extended,3B9AC9FF
+//patch=1,EE,206BA004,extended,3B9AC9FF
+
+//All Tags Sprayed
+//patch=1,EE,2066C540,extended,00000064
+
+//All Tags Sprayed
+//patch=1,EE,2080249C,extended,00000032
+
+//All Photos Taken
+//patch=1,EE,2080246C,extended,00000032
+
+//Infinite Ammo
+//patch=1,EE,20134340,extended,24420000
+
+//Extra Ammo
+//patch=1,EE,20134340,extended,24420001
+
+//Infinite Clip Ammo
+//patch=1,EE,201343A4,extended,24420000
+
+//Extra Clip Ammo
+//patch=1,EE,201343A4,extended,24420001
+
+//Never Lose Weapons When Busted/Wasted
+//patch=1,EE,201997F0,extended,03E00008
+//patch=1,EE,201997F4,extended,00000000
+
+//Infinite Health (Cars blowing up will kill you)
+//patch=1,EE,202A9B38,extended,AC610580
+//patch=1,EE,202A9B30,extended,3C0142C8
+//patch=1,EE,202A9B3C,extended,24030064
+
+//Infinite Cash
+//patch=1,EE,207096B4,extended,05F5E0FF
+//patch=1,EE,207096B8,extended,05F5E0FF
+
+//Disable Car Damage
+//patch=1,EE,20146610,extended,03E00008
+//patch=1,EE,20146614,extended,00000000
+
+//Disable Cop AI (This Code Doesnt disable Army AI)
+//patch=1,EE,2027C118,extended,00000000
+
+// ----  STATS ----
+
+//STATS: godfather
+//patch=1,EE,20802160,extended,48000000
+
+// ----  Set Weather ----
+
+//Weather is Always xxx 				Hot = 00 | Nice = 01 | Overcast = 04 | Foggy = 09 | Stormy = 10 | Hazy (Grey) = 20 | Hazy (Orange) = 30 
+//patch=1,EE,2066BD24,extended,00000000
+//patch=1,EE,2066BD28,extended,00000000
+//patch=1,EE,2066BD2C,extended,00000000
+
+// ----  Set Time Of Day ---- (.pnach RAW)
+//Midnight = 00 | 1am = 01 .... | 10 PM: 00000016 ||  9 PM: 00000015 ...
+
+//11 PM
+//patch=1,EE,2066B7AC,extended,00000017
+
+//Select+L1 for Midnight
+//patch=1,EE,D1700942,extended,0000FBFE
+//patch=1,EE,2066B7AC,extended,00000000
+
+//Select+L2 for 6 AM
+//patch=1,EE,D1700942,extended,0000FEFE
+//patch=1,EE,2066B7AC,extended,00000006
+
+//Select+R1 for Noon
+//patch=1,EE,D1700942,extended,0000F7FE
+//patch=1,EE,2066B7AC,extended,0000000C
+
+//Select+R2 for 6 PM
+//patch=1,EE,D1700942,extended,0000FDFE
+//patch=1,EE,2066B7AC,extended,00000012
+
+// ----  Set Time Of Day ---- (Action Replay Max)
+
+//Select+L1 for Midnight
+//F8X3-9961-G3W82
+//YK0W-RQ4N-7UG08
+//ADK6-XPJM-D027X
+
+//Select+L2 for 6 AM
+//2P48-CXBA-B9M4N
+//TY2A-H33T-ZY0DG
+//DCMA-022H-1BMBX
+
+//Select+R1 for Noon
+//9TNU-DEGA-MYY0F
+//VX7A-QDP0-HBA2U
+//QJ2N-GXM4-RX4AZ
+
+//Select+R2 for 6 PM
+//E7QE-FWRW-D2BM3
+//M96E-FNUR-2AX84
+//9XHT-NRDP-RDWV9
+
+//---- Links: ----
+//Grand Theft Auto: San Andreas (PS2) - Action Replay MAX Codes
+//https://etherealgames.com/ps2/g/grand-theft-auto-san-andreas/action-r

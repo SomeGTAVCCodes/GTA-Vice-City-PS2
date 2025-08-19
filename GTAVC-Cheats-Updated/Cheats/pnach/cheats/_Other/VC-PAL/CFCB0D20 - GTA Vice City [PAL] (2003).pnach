@@ -1,0 +1,1974 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2003) (SLES-51061)
+comment=2003 DVD (version 2.03. Not 2002, or 2004).
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Information ----
+//--------------------------------------------------------------------------------------------------------------------
+//Author 	= 	TKBS
+//Compatible CRC's;-
+//CRC	=	"CFCB0D20" is PAL 2003:
+//CRC	=	"EBDF9921" is from Patching PAL 2003 with NTSC V-Mode, 60hz, YPos. Using hex edit or Adrenalin Patcher.
+//CRC	=	"CDD8A10D" is from Patching 60hz & gta3#2-6.img removal.
+
+//Notes;-
+//* Use this ".pnach" with PCSX2 1.6.0.
+//* Use the ".ct" file with Cheat Engine.
+//* Read the accompanying "Read-Notes.md" & "Input-List" files for more cheats, codes, information and discoveries.
+//* Provides extensive cheats, mods, scripts, garage & vehicle editor, music manager, render mods etc.
+
+// ---- Important Notes ----
+// Some cheats can be permanently enabled 				(PEC)
+// Some must be one-time enabled only 					(OTO)
+// Some must be enabled then returned to Default 		(RTD)
+// ...one-time, Start of game only   					(SOG)
+// ...can be patched into .elf 							(elf)
+// ...Adjusted on the Fly, real time.					(OTF)
+// ...Some only work in cheat engine.					(CEO)
+
+// ---- Known Issues: ----
+// * NONE But i have not parsed every cheat through the console log or debug.
+
+// ---- TO DO LIST ----
+//* there is a dedicated "TODO" file with a list , read it , contribute. below is just a few from that list
+//TODO: Port these to cheat engine,
+//TODO: Port the ones from cheat engine to here
+//TODO: Add all original (default) values --> new values + notes.
+//TODO: TearGas Fix
+//...			//Weapons: TearGas Fix (Test) - see .ct file for full fix, workaround.
+//...			//patch=1,EE,206BE1E5,extended,2C3F8000
+//TODO: not sure how to auto-complete taxi missions.
+//TODO: toggle Rain on screen, rain on player(world).
+//TODO: toggle "switch_rubbish" for perf increase.
+
+// ---- Errors from log files: PCSX2 1.6.0: ----
+//...
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Quick List: Cheats Author Enables ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//* Enable all 3 "vehicle location fixes" one time and save game, or use a modified .scm.
+//* Patch .elf to run 60hz: PAL --> NTSC 60hz YPOS Patch:  [00010A00] 	-- 02 00 12 24 || Note: This will change the CRC.
+
+//patch=1,EE,202E8820,extended,24070001 //GTA_#2-6.IMG REMOVAL
+//patch=1,EE,20272AD4,extended,28420001 //60 FPS
+//patch=1,EE,201123C4,extended,00000000 //interlacing none
+//patch=1,EE,204B17B8,extended,00000001 //Toggle Widescreen (Menu Option)
+//patch=1,EE,204ADB8C,extended,00000001 //Toggle Subtitles (Menu Option)
+//patch=1,EE,204AFB8C,extended,00000001 //Toggle Trails (Menu Option)
+//patch=1,EE,204B0C00,extended,DFDFDFDF //See Through Walls
+//patch=1,EE,20252BA0,extended,3C0242AC //Widescreen 1:
+//patch=1,EE,201323AC,word,3C013F9D //Widescreen 2:
+//patch=1,EE,201323B0,word,44810000 //Widescreen 2:
+//patch=1,EE,201323B4,word,46006302 //Widescreen 2:
+//patch=1,EE,201323B8,word,03E00008 //Widescreen 2:
+//patch=1,EE,201323BC,word,E78C87F8 //Widescreen 2:
+//patch=1,EE,2024335C,word,0C04C8EB //Widescreen 2:
+//patch=1,EE,202706DC,word,0C04C8EE //Widescreen 2:
+//patch=1,EE,20270CB4,word,0C04C8EE //Widescreen 2:
+//patch=1,EE,206AD725,extended,01010101 //Music Manager || 00000001
+//patch=1,EE,205C84FA,extended,01010000 //Infinite Sprint 02 & Fast Reload @ Game progress address
+//patch=1,EE,205C84FE,extended,00646401 //Fireproof (use once At start of game only)
+//patch=1,EE,20B50FF8,extended,43480000 //Infinite Health & Armour Show value as (200)
+//patch=1,EE,20B50FFC,extended,43480000 //Infinite Health & Armour Show Value as (200)
+//patch==1,EE,200FFF40,extended,3C01005C //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF44,extended,80211703 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF48,extended,2403007F //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF4C,extended,1461000C //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF54,extended,3C013E00 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF58,extended,9384F108 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF5C,extended,2403016C //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF60,extended,3C02005D //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF64,extended,244283C0 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF68,extended,00831818 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF70,extended,00431021 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF74,extended,8C420000 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF7C,extended,AC410074 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF80,extended,080487E4 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,200FFF84,extended,24030070 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch==1,EE,20121F8C,extended,0803FFD0 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,201B2930,extended,03E00008 //PAL 2003: Never Lose Weapons
+//patch=1,EE,201B2934,extended,00000000 //PAL 2003: Never Lose Weapons
+//patch=1,EE,205C845C,extended,3B9AC9FF //$$$ Set Money (2)
+//patch=1,EE,205C8460,extended,3B9AC9FF //$$$ Set Money (2)
+//patch=1,EE,204B1E54,extended,3B9AC9FF //optional: $$$ Set Money (2) & No Reduction:
+//patch=1,EE,20199580,extended,03E00008 //AI: FUK DA POLICE (2) - Turn Off Cops. (Cops No AI, Ignore you (unless provoked)) || 27BDFED0 --> 03E00008 || 3C02005D --> 00000000
+//patch=1,EE,20199584,extended,00000000 //AI: FUK DA POLICE (2) - Turn Off Cops. (Cops No AI, Ignore you (unless provoked)) || 27BDFED0 --> 03E00008 || 3C02005D --> 00000000
+//patch=1,EE,20270238,extended,00000000 //Clock: Freeze Mission Timers (Side Quests) || Default Value: 0C0AEA2C
+//patch=1,EE,204AB578,extended,00000000 //No Pedestrians
+//patch=1,EE,204AB610,extended,00000000 //No Traffic
+//patch=1,EE,20278560,extended,00000000 //Spawn Any Vehicle:
+//patch=1,EE,2027856C,extended,240400A2	//Spawn Any Vehicle: Edit Last 2 Bytes || e.g:	A2 = Tank || EC = Cheetah.
+//patch=1,EE,2017C4B4,extended,03E00008 //Vehicles: Tyres Invulnerable   no impact movement
+//patch=1,EE,2017C4B8,extended,00000000 //Vehicles: Tyres Invulnerable   no impact movement
+//patch=1,EE,2017C4C0,extended,00000000 //Vehicles: Tyres Invulnerable   no impact movement
+//patch=1,EE,2017C4C4,extended,03E00008 //Vehicles: Tyres Invulnerable   no damage
+//patch=1,EE,2017C4C8,extended,00000000 //Vehicles: Tyres Invulnerable   no damage
+//patch=1,EE,2017C4D0,extended,00000000 //Vehicles: Tyres Invulnerable   can be deleted?
+//patch=1,EE,204B103C,extended,00000001 //Cars can fly
+//patch=1,EE,204B1050,extended,00000001 //Cars can Float On Water
+//patch=1,EE,204B1040,extended,00000001 //Cars bunny hop hydraulics
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Start-Up Codes (Enabled at Boot) ----
+//--------------------------------------------------------------------------------------------------------------------
+
+// PAL --> NTSC 60hz YPOS Patch						   		- notes by TKBS	|| "SLES_510.61.elf" :: 03 94 06 00 --> 02 00 12 24 @ [00010A00]
+// * Hex Edit the ".elf" File (SLES_510.61)
+//[Original]	[00010A00]	-- 03 94 06 00
+//[New]: 		[00010A00] 	-- 02 00 12 24
+
+// ---- GTA_#2-6.IMG REMOVAL ----							- notes by TKBS	|| "SLES_510.61.elf" :: 2D 38 00 02 --> 01 00 07 24 @ [001E88AO]
+// * Hex Edit the ".elf" File (SLES_510.61)
+//[ORIGINAL]:	[01E88A0] 	-- 2D 38 00 02
+//[new]: 		[01E88A0] 	-- 01 00 07 24
+
+//GTA_#2-6.IMG REMOVAL										- by TKBS  - (Based on Daniel Santos NTSC 1.40 Patch)
+//...														- Note: Remove Requirement for Duplicate "GTA3_#2-6.IMG" Files. || 0200382D --> 24070001
+//patch=1,EE,202E8820,extended,24070001
+
+//60 FPS	||  Default Value: 28420002						- by TKBS
+//...														-  Note: Will be 50 FPS Locked if PAL .elf file is not patched to 60hz ntsc v-mode
+//patch=1,EE,20272AD4,extended,28420001
+
+//NOT TESTED: interlacing none								- || Default Value = 64420008 || Not Working , pointless, or needs PS2 hardware to benefit.
+//patch=1,EE,201123C4,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//------------------ Game: Menu options ---------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+//Toggle HUD: Display vehicle names, above this and below aswel, effects time it is displayed.
+//patch=1,EE,204B1E3C,extended,00000000
+
+// Load Splash Screen
+//patch=1,EE,204B1828,extended,00000001
+
+// Open Menu  (Toggle 0,1)
+//patch=1,EE,204B17D8,extended,00000001
+
+// Disable D-Pad When Menu is Open Menu  (Toggle 0,1) || no idea why this exists, it is next to the open menu option.
+//patch=1,EE,204B17E4,extended,00000001
+
+//Toggle Widescreen (Menu Option)							- || 00000000 --> 00000001
+//patch=1,EE,204B17B8,extended,00000001
+
+//Toggle Subtitles (Menu Option)							- || 00000000 --> 00000001
+//patch=1,EE,204ADB8C,extended,00000001
+
+//Toggle Hud (Menu Option) - Health, Armour, Time, Stars	- || 00000000 --> 00000001
+//patch=1,EE,204ADBA4,extended,00000001
+
+//Toggle Trails (Menu Option)								- || 00000000 --> 00000001
+//patch=1,EE,204AFB8C,extended,00000001
+
+//Adjust Brightness (Menu Option)
+//patch=1,EE,204ADB88,extended,0000011C
+
+//HUD: Toggle HUD: 00 disable icons & radar
+//patch=1,EE,204B1E24,extended,00000000
+
+//HUD: Toggle HUD: Health Icons || Default Value = 00000005
+//patch=1,EE,204B1E50,extended,00000000
+
+//HUD: Toggle HUD: Money Icons || Default Value = 00000005
+//patch=1,EE,204B1E60,extended,00000000
+
+//HUD: Toggle HUD: Stars Icons || Default Value = 00000005
+//patch=1,EE,204B1E70,extended,00000000
+
+//HUD: Toggle HUD: Weapon Icons || Default Value = 00000005
+//patch=1,EE,204B1E80,extended,00000000
+
+//HUD: Toggle HUD: Time Icons || Default Value = 00000001
+//patch=1,EE,204B1E84,extended,00000000
+
+//Brightness Max: 00000180
+//Brightness Decrease MAX-0 =  00000167 || 14E || 135 || 11C ||103 ||EA ||D1 ||B8 ||9F ||86 ||6D ||54 ||3B ||22 ||09
+//Brightness increase 0-MAX =  00000018 || 30 ||48 ||60 ||78 ||90 ||A8 ||C0 ||D8 ||FO ||108 ||120 ||138 ||150 ||168 ||180
+
+//Screen Pos up down
+//204ADB70
+//Screen Pos left right
+//204ADB6C
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Cheats For our Hybrid - New "Main.scm" Code ONLY  (New Button input Cheats) ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Dynamic Brightness Cheat  ----
+//--------------------------------------------------------------------------------------------------------------------
+// * Change Brightness based on weather.
+
+// ---- Adjust Brightness (Menu Option) ----
+//Adjust Brightness (Menu Option)
+//patch=1,EE,204ADB88,extended,0000011C
+//Brightness Max: 					00000180 	|| game default == 00000100
+//Brightness Decrease MAX->0 =  	00000167 	|| 14E || 135 || 11C ||103 ||EA ||D1 ||B8 ||9F ||86 ||6D ||54 ||3B ||22 ||09
+//Brightness increase 0->MAX =  	00000018 	|| 30 ||48 ||60 ||78 ||90 ||A8 ||C0 ||D8 ||FO ||108 ||120 ||138 ||150 ||168 ||180
+
+//Change weather 							|| This is our "Main.scm" Custom Change Weather Cheat (1-7)
+//Input: Press Select + L1 	=	Change weather (1-7)
+//patch=1,EE,20555060,extended,00000001 // Actual Weather Number
+//patch=1,EE,204E3670,extended,00000001 // Number DISPLAYED
+
+//Dynamic Brightness Cheat == Comparative of weather num with Menu Option "Brightness".
+//...	If aaaaaaaa(WeatherNum Address) == vv01(sunny) --> Set aaaaaaaa(brightness Address)  == vvMAX-2 (0000014E) || also set bars displayed in menu.
+
+// * Try to increment & decrement values as they would occur on the menu - in order to retain the correct instructions, this isntruction and value differs depending on direction.
+// if you re-order or modify the weather cheats in the scm then the values at these addresses will haev to change accordingly
+// See example but in short it (the cheat below) goes: start game default, Increase, Increase, decrease, decrease, decrease, increase back to default.  
+// so if you change the 1st sunny to e.g. rainy, that would be a decrease of -3 from default for the brightness in the example below BUT decreasing default by -3 is not the same as what we had previously which was -2 from the already -6, which was taken from the Max
+// maybe it is better explained above -  Notice max -1 = 167 when decreasing, but when increase from 1 below max the value is 168
+// ^^ so the valeus depend on the direction and therefore the order or your weather cheats.
+// * when tested on a clean game, start game, cycle through all 7 options, wait on 7 which is what the gaem would be at the start anyway, enable the cheats below, then switch to weather to 1. Best done in the daytime.
+// * once your in the daytime and set back to 1 you can then cyce back to 7 to keep the in-game system normal with the benefit of the brightness patches.
+ 
+//--------------------------------------------------------------------------------------------------------------------
+
+//Dynamic Brightness Cheat 			|| IF value @ 20555060 == 0x01 --> Write 0x0180 TO 204ADB88
+//... 			If weather Sunny set brightness Max -2.
+patch=1,EE,E1010001,extended,00555060
+patch=1,EE,204ADB88,extended,0000014E
+//... 			If weather Extra Sunny set brightness Max.
+patch=1,EE,E1010002,extended,00555060
+patch=1,EE,204ADB88,extended,00000180
+//... 			If weather Cloudy set brightness Max -6.
+patch=1,EE,E1010003,extended,00555060
+patch=1,EE,204ADB88,extended,000000EA
+//... 			If weather Rainy set brightness Max -8.
+patch=1,EE,E1010004,extended,00555060
+patch=1,EE,204ADB88,extended,000000B8
+//... 			If weather Foggy set brightness -4.
+patch=1,EE,E1010005,extended,00555060
+patch=1,EE,204ADB88,extended,000000D1
+//... 			If weather normal 1 (hurricanes off) set brightness Default (max -5).
+patch=1,EE,E1010006,extended,00555060
+patch=1,EE,204ADB88,extended,00000100
+//... 			If weather normal 2  (hurricanes on) set brightness Default (max -5).
+patch=1,EE,E1010007,extended,00555060
+patch=1,EE,204ADB88,extended,00000100
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Visuals: World Render ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//See Through Walls: Translucency World (Cars and skybox is lit, buildings translucent) Opacity.	|| Default Value: FFFFFFFF
+//patch=1,EE,204B0C00,extended,DFDFDFDF
+
+//[Render Values]
+//...								//FF000000 == Unlit World Cars and skybox is lit
+//...								//F0000000 == Unlit (Cars and skybox is lit)
+//...								//0F000000 == Opacity - Translucency Shaded lit (Cars and skybox is lit) - Increasing the First Byte will Darken the sahding.
+//...								//00F00000 == Blue Light	- R,G,B Levels.
+//...								//0000F000 == Green Light	- R,G,B Levels.
+//...								//F00000F0 == Red Light		- R,G,B Levels.
+//...								//BFBFBFBF == Opacity 		- Translucency Effect
+//...								//DFDFDFDF == Opacity 		- Nice partial Translucency Effect - Good for seeing where you are, see through walls,  buildings etc.
+
+//Toggle Blood (00 off,  01 on)
+//patch=1,EE,204ADF54,extended,00000001
+
+//Set Moon Size (0-7)									- Use values (0-7) || Change Last BYTE || [(PAL 2002 BETA 204B59D4)] - [(PAL 2003 204AE66C)] =	7368
+//patch=1,EE,204AE66C,extended,00000000
+
+//Rendering System & Weather System Jump 				- Use values (0-255) || Change Last 2 BYTES
+//patch=1,EE,204B1F30,extended,00000000
+
+//In BETA PS2: [20554674] "Debug Menu - [14] Time [Hour of Day]:U8: ### (0-255)" || Change Last 2 BYTES
+//patch=1,EE,204B1F2C,extended,00000000
+
+//Rendering: Do Not Render Water - Converted from NTSC 1.40
+//patch=1,EE,2018D190,extended,03E00008 //27BDFE90 -> 03E00008
+//patch=1,EE,2018D194,extended,00000000 //FFBF00C0 -> 00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Visuals: HUD Text Displayed ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//Text Displayed on Enter Vehicle ID 236 - NOT WORKING - But works in beta????
+//patch=1,EE,2065EC2C,extended,45434956 // Vehicles: Change VH ID 236 CHEETAH to Display "Vice-Cop" 1/2
+//patch=1,EE,2065EC30,extended,504F432D // Vehicles: Change VH ID 236 CHEETAH to Display "Vice-Cop" 2/2
+//patch=1,EE,2065EC34,extended,504F432D // Vehicles: Change VH ID 236 CHEETAH to Display "Vice-Cop" 3/2
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Visuals: HUD ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//HUD: Chase Meter & Media Attention Level (select + up)		|| 1440000E --> 00000000
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278B54,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278B54,extended,1440000E
+
+//HUD: Flashing Armour Icon 						- Disable??? ICON so that Armour or Health Values will show.
+//patch=1,EE,205C849C,extended,CFE44B00
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Visuals: Camera ----
+//--------------------------------------------------------------------------------------------------------------------
+// * These values need to be checked at various intervals to grab the correct values for each camera angle.
+
+//Cinematic Cameras - Switch Camera Angle.			|| 3FAAAAAB -->
+//Cinematic Camera	 (1)							- found by converting xploder 100x gamespeed 2AE30A12 42C80000 = 204B0DD8 42C80000 then add 100 for the v1 - v2 0ffset
+//patch=1,EE,204B0ED8,extended,42C80000
+//Cinematic Camera	 (2)
+//patch=1,EE,204B0ED8,extended,40800000
+//Cinematic Camera	 (3)
+//patch=1,EE,204B0ED8,extended,40000000
+//Cinematic Camera	 (4) - not sure.
+//patch=1,EE,204B0ED8,extended,3F000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Visuals: Super Widescreen  ----
+//--------------------------------------------------------------------------------------------------------------------
+
+// ----  Super Widescreeen (TKBS): Info ----
+// * Super Widescreen = A combination of the following widescreen patches "Widescreen 1" && "Widescreen 2" && camera adjust
+
+// 1. Snake356_fix: old ws that fixed an unknown creators, ported tto PAL 2003 by TKBS.
+// 2. DanielS & PeterD's ws patches: only 1 line needed, documented & camera adjust added by TKBS.
+// 3. TKBS's Super Widescreen & Camera Adjust
+// 4. Toggle WideScreen CUT-SCENES (BLACK BORDER):
+// 5. Toggle WideScreen: Menu Option 		Note: Game may scale better without this.
+// 6. camera adjust updates.
+// 7. see the cinematic camera stuff added by TKBS which can aid the process.
+
+//Widescreen 1:							- by TKBS || Camera Adjust curvature FOV = Edit Last 2 Bytes
+// * Edit Last 2 Bytes
+// * Last Byte camera back and up,
+// * 2nd to last byte cam back.
+// Examples: AC | CD | DE | EF | FF
+
+//Widescreen 1:							- || 00000000 --> 3C0242AC	|| mov [edx+02],es --> lodsb ||
+//patch=1,EE,20252BA0,extended,3C0242AC
+
+//Widescreen 1 Examples;-
+//					//Widescreen 1a
+//					//patch=1,EE,20252BA0,extended,3C0242AC
+//					//Widescreen 1b:
+//					//patch=1,EE,20252BA0,extended,3C0242CD
+//					//Widescreen 1c:
+//					//patch=1,EE,20252BA0,extended,3C0242DE
+//					//Widescreen 1d:
+//					//patch=1,EE,20252BA0,extended,3C0242EF
+//					//Widescreen 1e: LIMIT
+//					//patch=1,EE,20252BA0,extended,3C0242FF
+
+//Widescreen 2:								- || TKBS: port and fix from 20+year old "Snake356_fix" thing.
+//patch=1,EE,201323AC,word,3C013F9D
+//patch=1,EE,201323B0,word,44810000
+//patch=1,EE,201323B4,word,46006302 			//46006300 or 46006302
+//patch=1,EE,201323B8,word,03E00008
+//patch=1,EE,201323BC,word,E78C87F8
+//+ 11 0FA0
+//patch=1,EE,2024335C,word,0C04C8EB
+//+ 2 D380
+//patch=1,EE,202706DC,word,0C04C8EE
+//+ 5D8
+//patch=1,EE,20270CB4,word,0C04C8EE
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Widescreen (Snake356_fix): Info ----
+//--------------------------------------------------------------------------------------------------------------------
+// * Widescreen (fix by Snake356), author before fix unknown (gamesmaster site?).
+// * Converting from NTSC to PAL by TKBS.
+
+// Values;-					||  Instructions;-
+//00000000 --> 3C013F9D 	||  add [eax],al 	--> popfd
+//03E00008 --> 44810000 	|| 	or [eax],al 	--> add [eax],al
+//E78C87F8 --> 46006302 	|| 	clc  			--> add ah,[ebx+00]
+//00000000 --> 03E00008 	|| 	add [eax],al 	--> or [eax],al
+//00000000 --> E78C87F8 	|| 	add [eax],al 	--> clc
+//0C04C8EC --> 0C04C8EB 	|| 	in al,dx 		--> jmp 20243326 	|| 20243326 == add [esi-5C],al
+//0C04C8EC --> 0C04C8EE 	|| 	in al,dx 		--> out dx,al
+//0C04C8EC --> 0C04C8EE 	|| 	in al,dx 		--> out dx,al
+
+//-- Widescreen (fix by Snake356, ported by TKBS) --
+//								//patch=1,EE,001323AC,word,3C013F9D
+//								//patch=1,EE,001323B0,word,44810000
+//								//patch=1,EE,001323B4,word,46006302
+//								//patch=1,EE,001323B8,word,03E00008
+//								//patch=1,EE,001323BC,word,E78C87F8
+//								//--
+//								//patch=1,EE,0024335C,word,0C04C8EB	|| "20243326" address default value = 10A44600 (add [esi-5C],al)
+//								//
+//								//patch=1,EE,002706DC,word,0C04C8EE
+//								//
+//								//patch=1,EE,00270CB4,word,0C04C8EE
+
+//--------------------------------------------------------------------------------------------------------------------
+//---- Widescreen (by PeterDelta) (Notes by TKBS): ----
+//--------------------------------------------------------------------------------------------------------------------
+// TKBS: Expose "2x0" addresses for values, to port to other versions..
+// TKBS: Document Default Values, Instructions & New Instructions.
+// TKBS: See Cheat Engine File for info on old, new values & instructions.
+
+// PeterD: "These lines can be eliminated, they correspond to the scenes, they do not affect the game."
+//"[Quote]...
+//8 || 3C024000 --> 3C023FC0 || add [eax+02],al --> sar byte ptr [edi],02
+//9 || 3C013F80 --> 3C013F80 || cmp byte ptr [edi],01 --> cmp byte ptr [edi],01
+//10 [E0010001] || ?? --> ??
+//11 || 3C013F80 --> 3C013F80 || cmp byte ptr [edi],01 --> cmp byte ptr [edi],01
+//...[End Quote]"
+
+//-- Widescreen (by PeterDelta) (Notes by TKBS): --
+//Toggle Widescreen
+//patch=1,EE,204B17B8,extended,00000001 // 00000000 --> 00000001 ||
+//Unknown:
+//patch=1,EE,2024343C,extended,3C0242AC // 00000000 --> 3C0242AC ||
+//Widescreen:
+//patch=1,EE,20252BA0,extended,3C0242AC // 00000000 --> 3C0242AC || mov [edx+02],es --> lodsb
+//Unknown:
+//patch=1,EE,20254B94,extended,3C0242AC // 00000000 --> 3C0242AC ||
+//patch=1,EE,20255230,extended,3C0242AC // 00000000 --> 3C0242AC ||
+//patch=1,EE,2032C1A0,extended,3C044040 // 00000000 --> 3C044040 ||
+//patch=1,EE,2032C1F4,extended,3C0240D0 // 00000000 --> 3C0240D0 ||
+//patch=1,EE,202418CC,extended,3C023FC0 // 00000000 --> 3C023FC0 ||
+//Unknown:
+//patch=1,EE,203A5814,extended,3C013F80 //scenes zoom
+//patch=1,EE,E0010001,extended,004B23A0 //??????????? 	- "Ex0" Addresses never explained ???
+//patch=1,EE,203A5814,extended,3C013F40 // same line duplicated ?
+//patch=1,EE,202918A4,word,3C044270 //Radar stuff: rectangle only, cut off
+//patch=1,EE,20291478,word,3C024270 //Radar stuff: square
+//patch=1,EE,202915A8,word,3C024270 //Radar stuff: Width
+//patch=1,EE,202940A0,word,3C024270 //Radar stuff
+//patch=1,EE,202942DC,word,3C024270 //Radar stuff
+//patch=1,EE,2029434C,word,3C024270 //Radar stuff
+//patch=1,EE,20294AD4,word,3C024270 //Radar stuff
+//patch=1,EE,20294B44,word,3C024270 //Radar stuff
+//patch=1,EE,202957F0,word,3C034270 //Radar stuff
+//patch=1,EE,20295E88,word,3C034270 //Radar stuff: Blip Disc Width (- I think)
+//patch=1,EE,202D48D4,word,3C03424C //Radar stuff: Ring left
+//patch=1,EE,202D4984,word,3C03424C //Radar stuff: Ring left
+//patch=1,EE,202D48E4,word,3C0242F6 //Radar Ring right
+//patch=1,EE,202D4994,word,3C0242F6 //Radar Ring right
+//patch=1,EE,202927F0,word,3C023F40 // Weapons icon ?
+//patch=1,EE,202D2B90,word,3C034409 // Weapons icon ?
+//patch=1,EE,202D2BA0,word,3C024415 // Weapons icon ?
+//patch=1,EE,202D2BA4,word,34428000 // Weapons icon ?
+//patch=1,EE,202D2B30,word,3C0341C7 // Weapon Icon width
+//patch=1,EE,202D3060,word,3C0343F9 // Heart icon Indent ->
+//patch=1,EE,202D3188,word,3C0343F2 // Armor icon Indent ->
+//patch=1,EE,202D320C,word,3C0343DE
+//patch=1,EE,202D3438,word,3C03418B // stars Indent ->
+//patch=1,EE,202D2878,word,3C034406 // Money Indent ->
+//patch=1,EE,202D2FD4,word,3C034406 // Health Num Ident ->
+//patch=1,EE,202D32C8,word,3C034406 // stars Indent ->
+//patch=1,EE,202D40DC,word,3C034406 // Time Indent ->  || add [eax+63],al -- > push ss
+//CFont::SetScale (Skinny Hud Icons)
+//patch=1,EE,202CE650,word,3C013F40 //Skinny Hud Icons - In NTSC they wrote: "CFont::SetScale hook"
+//patch=1,EE,202CE654,word,44810000 //Skinny Hud Icons
+//patch=1,EE,202CE658,word,46006302
+//patch=1,EE,202CE65C,word,3C010069
+//patch=1,EE,202CE660,word,E42CEAF4
+//patch=1,EE,202CE664,word,3C010069
+//patch=1,EE,202CE668,word,03E00008
+//patch=1,EE,202CE66C,word,E42DEAF8
+// -- "CFont::SetScale hook" --
+//void CFont::SetScale(float w, float h)
+//{
+//	globalWidth = w*0.75;
+//	globalHeight = h;
+//}
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Audio: Music Manager  ---- [Listen to Music, Audio, anywhere.]
+//--------------------------------------------------------------------------------------------------------------------
+//radio station logo memory regions : references their icons and images and used variants: 204ADBB0
+
+//[Radio Station ID's]
+//...							//	WildStyle		== 0
+//...							//	Flash 		 	== 1
+//...							//	kchat		 	== 2
+//...							//	fever		 	== 3
+//...							//	rock		 	== 4
+//..							//	vcpr		 	== 5
+//...							//	espantoso	 	== 6
+//...							//	emotion			== 7
+//...							//	wave103	 		== 8
+//...							//	off				== 9
+
+//Music Manager - Set Music, Radio Station, Custcene Audio etc.			|| 206C6EC3 010166FF || 206C6EC3 - FF 66 01 - jmp dword ptr [esi+01]
+//patch=1,EE,206AD725,extended,01010101 			// || 00000001
+//patch=1,EE,206AD729,extended,00010000
+//patch=1,EE,206AD72D,extended,FF010100
+
+//Music Manager - Set Music, Radio Station (0-9), Custcene Audio etc
+//patch=1,EE,206AD725,extended,00000002
+
+// **TODO** - See PAL 2002 Beta Hybrid Version .pnach to port the following codes;
+//	//Music Manager: Set SFX Volume
+//	//Music Manager: Set Music Volume
+//	//Music Manager: Set Radio Station Logo Images & add new textures to the game  .txd files.  - See notes
+
+//[Mission Audio ID's]
+//01011801 hurricane warning
+//00180000
+//	13130000		== Hotring, dirt ring, music
+//	14140000		== Mission Audio riots hardware place.
+//	17170000 		== police chatter
+//	23 		== your taxi cab chick chatter
+//	24 		== weather warning closed bridges
+//	25 		== weather warning open bridges
+//	26 		== "cannons in the trunk"
+//	29 		== "shooter cassidy"
+//	37 		== "we gotta re-decorate"
+
+//[sfx Audio ID's]
+//...
+
+//*** Force DTS Audio "FEA_DTS" Enabled						- Can be ignored. See Notes: For Starter Save GTAVC PS2 & PS3 using DTS Users.
+//...				//patch=1,EE,D05C1702,extended,0000FFED
+//...				//patch=1,EE,204ADB84,extended,204ADE30
+//...				//patch=1,EE,D05C1702,extended,0000FFFF
+//...				//patch=1,EE,204ADE30,extended,5F414546
+//...				//patch=1,EE,204ADB84,extended,00000000
+
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------			 		 Visuals: Weather Codes		-----------------------------------		------//
+//--------------------------------------------------------------------------------------------------------------------
+//TODO: Tornado's, toggle rain world, toggle rain screen.
+
+// -- To activate Weather: Press L3+UP same time --
+//Weather 1 - Press L3+UP same time				- ntcs u 20277A70 + 9C0 = 20278430
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278430,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278430,extended,1440000F
+
+//Weather 2 - Press L3+UP same time				- ntcs u 20277A24 + 9CO = 202783E4 || 202783E4 - 9CO = 20277A24
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,202783E4,extended,00000000				- ntcs u 20277A24 + 9CO = 202783E4 || 202783E4 - 9CO = 20277A24
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202783E4,extended,1440000F
+
+//Weather 3 - Press L3+UP same time
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027847C,extended,00000000				- ntcs u 20277ABC + 9CO = 2027847C
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027847C,extended,1440000F
+
+//Weather 4 - Rain Storm - Press L3+UP				- calculated using - "ntsc weapons" + 400 = "weather"
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,202784C8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF				- ntcs u 20277B08 + 9C0 = 202784C8
+//patch=1,EE,202784C8,extended,1440000F
+
+//Weather 5 - Fog - Press L3+UP
+//patch=1,EE,D05C1702,extended,0000FFED				- calculated using - "ntsc weapons" + 44C = "weather"
+//patch=1,EE,20278514,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF				- 20277B54 + 9C0 = 20278514
+//patch=1,EE,20278514,extended,1440000F
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Hidden Packages ----
+//--------------------------------------------------------------------------------------------------------------------
+//* Unlock all individually to receive reward info ( allow all pop-up info (notifications) scripts to run.).
+//** I recommend editing the hidden packages coordinates in the main.scm to move all packages to 1 location.
+//--------------------------------------------------------------------------------------------------------------------
+
+//100% Hidden Packages; Enable 1 at a time to get all pop up notifications. - "105C8464" Also works.
+//00 Hidden Packages
+//patch=1,EE,205C8464,extended,00000000
+//10 Hidden Packages
+//patch=1,EE,205C8464,extended,0000000B
+//20 Hidden Packages
+//patch=1,EE,205C8464,extended,00000014
+//30 Hidden Packages
+//patch=1,EE,205C8464,extended,0000001E
+//40 Hidden Packages
+//patch=1,EE,205C8464,extended,00000028
+//50 Hidden Packages
+//patch=1,EE,205C8464,extended,00000032
+//60 Hidden Packages
+//patch=1,EE,205C8464,extended,0000003C
+//70 Hidden Packages
+//patch=1,EE,205C8464,extended,00000046
+//80 Hidden Packages
+//patch=1,EE,205C8464,extended,00000050
+//90 Hidden Packages
+//patch=1,EE,205C8464,extended,0000005A
+//100 (100%) Hidden Packages						-	"NTSC 100% Packages Version Unknown" (205D1464) - "PAL" (205C8464) = 9000
+//patch=1,EE,205C8464,extended,00000064
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------			  Player Codes		--------------------------------//
+//--------------------------------------------------------------------------------------------------------------------
+
+//Player: No Fall Damage 0C0D2EE4  --> 00000000		|| Converted from NTSC 2002 to PAL 2003 by TKBS
+//patch=1,EE,201B9EF0,extended,00000000 // No Fall DMG 1/2 || 201B9EF0  | | 0C0D2EE4 --> 00000000
+//patch=1,EE,201B9FA4,extended,00000000 // No Fall DMG 1/2 || 201B9EF0 + B4 == 201B9FA4  | | 0C0D2EE4 --> 00000000
+
+//Infinite Sprint 01							|| Default Value = 45010014				- 	"NTSC Version Unknown Infinite Sprint" (201D1254) - (1D50) = "PAL Infinite Sprint" || (201CF504) + (1D50) = (201D1254)
+//patch=1,EE,201CF504,extended,10000014
+
+//Infinite Sprint 02 & Fast Reload @ Game progress address
+//...Note: Infinite Sprint 02 	@ Game progress address 205C84FA = 00|01|0000
+//...Note: Fast Reload 			@ Game progress address	205C84FA = 01|00|0000
+//patch=1,EE,205C84FA,extended,01010000
+
+//Fireproof (New) @ Game progress address	|| 00646400 --> 00646401  || Note: FireProof & game progress address. || TODO: Play through game and watch this address, check the value son unlocks.
+// * Only use this at clean start of game.
+//patch=1,EE,205C84FE,extended,00646401
+//... 						//205C8502 00000100
+//... 						//205C8506 00000001
+
+// @ Game progress address :: After loading my starter save this is the value: 00C8C801
+//patch=1,EE,205C84FA,extended,00010000
+//patch=1,EE,205C84FE,extended,00C8C801
+
+//Suicide: Correct version. - (Select + UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278C48,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278C48,extended,14400017
+
+//Suicide Alt Fix: Set Health to 0 instead of using "suicide cheat code" coz that requires shutdown.
+//Health  	?								- 42C80000 = 100 | 43480000 = 200  | 44268000 = 666 | 4479C000  = 999|
+//patch=1,EE,20B50FF8,extended,4479C000
+//Armour 	?
+//patch=1,EE,20B5101C,extended,4479C000
+
+//					//Suicide - any button 			- Requires SHUTDOWN to disable. Do not use this, Instead Use set health 0
+//					//patch=1,EE,20278BA0,extended,14400007
+
+//Armour Cheat: 		- (Select + UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278158,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278158,extended,1440001C
+
+//Infinite Health 100						- Ported from PAL 2002
+//patch=1,EE,200C0220,extended,3C0142C8
+//patch=1,EE,200C0224,extended,AC410368
+//patch=1,EE,200C0228,extended,03E00008
+//patch=1,EE,200C022C,extended,44020000
+//patch=1,EE,202D2F14,extended,0C030088 //[NTSC 2002] //patch=1,EE,202D2034,extended,0C030088 || 202D2034 + EE0 = 202D2F14
+
+//Infinite Armor 100						- Ported from PAL 2002
+//patch=1,EE,200C0230,extended,3C0142C8
+//patch=1,EE,200C0234,extended,AC41036C
+//patch=1,EE,200C0238,extended,03E00008
+//patch=1,EE,200C023C,extended,46000836
+//patch=1,EE,202D30EC,extended,0C03008C //[NTSC 2002] //patch=1,EE,202D220C,extended,0C03008C //  || 202D220C + EE0 = 202D30EC
+
+//Infinite Health & Armour Set value to show (200 = 43480000) || Default = 42C80000
+//patch=1,EE,20B50FF8,extended,43480000
+//patch=1,EE,20B50FFC,extended,43480000
+
+//					//Infinite Health & Armour 100
+//					//Line 1-5 = 	00000000 -> As Listed
+//					//Line 6: 		44020000 -> 0C03FFC0
+//					//patch=1,EE,200FFF00,extended,3C0542C8
+//					//patch=1,EE,200FFF04,extended,AC450368
+//					//patch=1,EE,200FFF08,extended,AC45036C
+//					//patch=1,EE,200FFF0C,extended,03E00008
+//					//patch=1,EE,200FFF10,extended,46000024
+//					//patch=1,EE,202D2F14,extended,0C03FFC0
+
+//					//Infinite Health				- Not required, but maybe useful for other converts.
+//					//200FFF00 3C0542C8
+//					//200FFF04 AC450368
+//					//200FFF08 03E00008
+//					//200FFF0C 46000024
+//					//202D2F14 0C03FFC0
+//
+//					//Infinite Armour				- Not required, but maybe useful for other converts.
+//					//200FFF00 3C0542C8
+//					//200FFF04 AC45036C
+//					//200FFF08 03E00008
+//					//200FFF0C 46000836
+//					//202D2F14 0C03FFC0
+
+//Infinite Ammo	On foot					- by TKBS	|| TODO - infinite uzi slot for drive-by's in vehicles. See pal 2002 beta hyrbid.
+//patch=1,EE,20158674,extended,00000000 //AE220008 --> 00000000 ||
+//...			//patch=1,EE,20158678,extended,00000000 //8E22000C --> 00000000 ||
+//patch=1,EE,201586DC,extended,00000000 //AE22000C --> 00000000 || CLIP Ammo - left side.
+
+//Infinite Ammo	Drive by's - uzi slot (clip adds to magazine etc) 	- by TKBS
+//patch=1,EE,20B50A10,extended,00000001
+
+//			//Infinite Ammo	1 - [Game Cheat version]			- Not required, To avoid "Cheater Status": use 100% completion ammo replenish instead. (Clip refills as bullets as fire).
+//			//Lines 1-4 blank mem space ?
+//			//Line 5 - Default value 0C0C28D0 --> 0C03FFC0
+//			// not sure this works - shows error in emulator log file.
+//			//patch=1,EE,200FFF00,extended,3C0542C8
+//			//patch=1,EE,200FFF04,extended,AC450368
+//			//patch=1,EE,200FFF08,extended,03E00008
+//			//patch=1,EE,200FFF0C,extended,46000024
+//			//patch=1,EE,202D2CA4,extended,0C03FFC0
+
+//TODO: TEST THIS FROM UNDER THE Infinite ammo (display) address area. -->	|| 14400035 --> 00000000
+//patch=1,EE,202D2CAC,extended,14400035
+
+//Infinite Jump - Hold Square to ascend (Moon Jump)
+//* Default Values (All 0's):  00000000
+//* The Last Line is Default Value: 24030070  -> 0803FFD0
+//patch=1,EE,200FFF40,extended,3C01005C
+//patch=1,EE,200FFF44,extended,80211703
+//patch=1,EE,200FFF48,extended,2403007F
+//patch=1,EE,200FFF4C,extended,1461000C
+//patch=1,EE,200FFF54,extended,3C013E00
+//patch=1,EE,200FFF58,extended,9384F108
+//patch=1,EE,200FFF5C,extended,2403016C
+//patch=1,EE,200FFF60,extended,3C02005D
+//patch=1,EE,200FFF64,extended,244283C0
+//patch=1,EE,200FFF68,extended,00831818
+//patch=1,EE,200FFF70,extended,00431021
+//patch=1,EE,200FFF74,extended,8C420000
+//patch=1,EE,200FFF7C,extended,AC410074
+//patch=1,EE,200FFF80,extended,080487E4
+//patch=1,EE,200FFF84,extended,24030070
+//patch=1,EE,20121F8C,extended,0803FFD0 //24030070 || jo 20121F8E -->  0803FFD0 || sar bh,1
+
+//Decrease Speed (TODO: Game Speed Normal )			-	(Select + LEFT)
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202789B8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202789B8,extended,14400018
+
+//Increase Speed 									- L1 +L2 +DOWN
+//patch=1,EE,D05C1702,extended,0000FABF
+//patch=1,EE,20278948,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278948,extended,14400018
+
+//Player: Speed is Faster (Maniac Runner) || Original = 3C023F80 || New = 3C024080
+//patch=1,EE,2012A790,extended,3C024080
+
+// World Game World Speed: || Default == 3F800000 (1.0) || 40000000 (2.0) || 40400000 (3.0) || 41200000 (10.0) ||Slow (0.5) 3F000000 ||
+//patch=1,EE,204B1B58,extended,00000000
+
+//No Clip: Walls - L3+L2 | L3+R2 To Stop
+//patch=1,EE,D05C1702,extended,0000FEFD
+//patch=1,EE,2013D568,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FDFD
+//patch=1,EE,2013D568,extended,0C0E1490
+
+//No Clip: Water
+//Values: Original - New
+//27BDFDE0 -> 03E00008
+//FFBF0090 -> 00000000
+//27BDFE60 -> 03E00008
+//FFBF0070 -> 00000000
+//patch=1,EE,2016D6C0,extended,03E00008
+//patch=1,EE,2016D6C4,extended,00000000
+//patch=1,EE,201BF930,extended,03E00008
+//patch=1,EE,201BF934,extended,00000000
+
+//PAL 2003: Never Lose Weapons			||Default Values - 27BDFFC0 | 2405FFFF		|| - (PAL 2002) - (PAL 2003) = 1A0
+//patch=1,EE,201B2930,extended,03E00008
+//patch=1,EE,201B2934,extended,00000000
+
+//PAL 2002: Never Lose Weapons
+//patch=1,EE,201B2AD0,extended,03E00008
+//patch=1,EE,201B2AD4,extended,00000000
+
+//PAL 2002 Beta, Marketting Build : Never Lose Weapons						|| Default Value = 27BDFFC0 --> 03E00008 | 2405FFFF --> 00000000 || 201B3BC0 - 1290 = 201B2930 (PAL 2003)  || 201B3BC0 (pal 2002 beta hybrid)- 10F0 = 201B2AD0 (pal 2002)
+//patch=1,EE,201B3BC0,extended,03E00008
+//patch=1,EE,201B3BC4,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------		£££	     MONEY-Cash		$$$		--------------------------------//
+//--------------------------------------------------------------------------------------------------------------------
+//* Note: Having greater than x cash will trigger gang members hostility.
+
+//$$$ Max Money (1)(AR MAX CD)
+//patch=1,EE,205C845C,extended,05F5E0FF
+//patch=1,EE,205C8460,extended,05F5E0FF
+
+//$$$ Max Money (2) & No Reduction:
+//patch=1,EE,205C845C,extended,3B9AC9FF
+//patch=1,EE,205C8460,extended,3B9AC9FF
+//OPTIONAL:	patch=1,EE,204B1E54,extended,3B9AC9FF
+
+//[NTSC] $$$ Max Cash 1.1 ?						||			[NTSC] $$$ Max Cash 1.2 ?
+//2A6F7812										||			2A6F7FE9 - pal = A12FB8D
+//2A6B7812										||			2A6B7FE9
+
+//$$$ Unlimited cash: $10,000,000							- This is not needed(?).
+//patch=1,EE,205C6F5C,extended,00989680
+
+//$$$ Money always $1,234 & Hold Select to increase Cash to 65535 (FFFF on final line).		- would be good if it was start at $0 and hold to increase forever.
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,205C8460,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,205C8460,extended,00000000
+//patch=1,EE,D05C1702,extended,00000000
+//patch=1,EE,205C845C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,205C845C,extended,0000FFFF
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------			                   AI  & NPC 		                      --------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+//TOOD: Unknown - At the same memory regions as the other cheats.
+//patch=1,EE,20278748,extended,14400048
+
+//AI NPC: Peds Attack You 	- (L3+UP)
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,202787B4,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202787B4,extended,14400048
+
+//AI NPC: Peds Riots: Peds Attack Each Other (takes some time to kick in) - (SELECT+UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,202786B4,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202786B4,extended,1440003C
+
+//AI NPC: Peds have weapons
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,202788E4,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202788E4,extended,14400015
+
+//Bikini chicks With Guns (Your Vercetti Gang Members) at your mansion, printworks, etc.
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278B9C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278B9C,extended,14400027
+
+//Chick Magnet	(1)	- (L3+RIGHT+RIGHT)				-	this area may also have addresses for changing pedestrian pools etc.
+//patch=1,EE,D05C1702,extended,0000FFDD || //patch=1,EE,202792D8,extended,14E0000F
+//Chick Magnet - Correct Version  (Select+UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,202792D8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202792D8,extended,1440000F
+
+//AI: FUK DA POLICE (1) - Turn Off Cops. // No Wanted Level.
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000
+
+//AI: FUK DA POLICE (2) - Turn Off Cops. (Cops No AI, Ignore you (unless provoked)) || 27BDFED0 --> 03E00008 || 3C02005D --> 00000000
+//patch=1,EE,20199580,extended,03E00008
+//patch=1,EE,20199584,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------		         Game: Missions, Clock & Timers 		              --------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+
+//### 'Ice Cream Sold'
+//patch=1,EE,204B21E8,extended,0000029A
+
+//Number of Garbage Pickups Made - THIS WAS NEVER IMPLEMENTED - BUT we have space in the main.scm to add these missions.
+//patch=1,EE,204B21E4,extended,41700000
+
+//Number of stores held up - progress. (15 total) || 3F800000 = 1. || 41700000 = 1 5
+//patch=1,EE,204B21D4,extended,41700000
+
+//Number of Movie Stunts
+//patch=1,EE,204B21D8,extended,41700000
+
+//Number of Assassination Contracts Completed
+//patch=1,EE,204B21DC,extended,41700000
+
+// -- Ambulance --
+//Ambulance: Set Time Bonuses Ambulance Missions. 			- (string only?)
+//patch=1,EE,204E37D0,extended,0000029A
+
+//Ambulance: Ambulance Timer Ambulance
+//...			//patch=1,EE,205531B8,extended,00000000
+//patch=1,EE,205531BC,extended,0002EB94
+
+//Ambulance: Number of People Left to Save || Set to 0 to auto complete all missions
+//patch=1,EE,205531CC,extended,00000000
+
+//Ambulance Auto-Save People Auto-Complete Missions.	|| Enable first then start missions. || Based on "slymods.info writing_pnach_files": the only place i found that has useful info.
+//Note: This Decrements the 8-Bit Value (number of people left to save) at address "205531CC" by a value of "01"
+//patch=1,EE,30100001,extended,205531CC
+
+// -- Fire-Truck --
+//Fire-Truck Mission Level.
+//patch=1,EE,2055336C,extended,00000000
+
+//Fire-Truck Mission Number of Fires Left to put out. || Set 0 to Auto-Complete.
+//patch=1,EE,20553388,extended,00000000
+
+//Fire-Truck Mission Decrement, by one, the Number of Fires Left to put out.
+//TODO: Not Tested, based on the ambulance one it should work.
+//patch=1,EE,30100001,extended,20553388
+
+// -- Pizza Boy --
+//Mission: Pizza Boy: Auto-Complete (Level 10)
+//...	//Notes: Start Pizza Missions, Set to 0000000A - Then return to Pizza Place - also set STATS "Pizza's Delivered" below!
+//patch=1,EE,20554584,extended,0000000A
+//patch=1,EE,20554554,extended,0000000A
+
+//Mission: Pizza Boy: Number of Pizzas Left
+//patch=1,EE,2055458C,extended,00000006
+
+//### STATS: Pizza Boy: Pizza's Delivered [425C0000 = 55 (Complete)]
+//patch=1,EE,204B21E0,extended,425C0000
+
+//Pizza Boy Timer
+//patch=1,EE,2055459C,extended,0004615A
+
+//not sure why this stopped working			//Taxi Timer. (No taxi timer)		|| Default Value  = 3C080055 --> 3C080090
+//not sure why this stopped working			//patch=1,EE,202B60F8,extended,3C080090
+
+//Taxi Timer.
+//patch=1,EE,20553154,extended,0000BD58
+
+//Taxi Number of passengers dropped off ||  // Start mission Set to 99dec (62hex) then pickup one passenger. ||Note: Increment & decrement does not work here!
+//patch=1,EE,2054CE44,extended,00000063
+
+//...			//Taxi ### Passengers Dropped off (Part 1)						-	[(PAL 2002: 204B2280) - (PAL 2003: 204B2170) = (hex 110 | dec 272)]
+//...			//patch=1,EE,204B2170,extended,00000000
+//...
+//...			//Taxi ### Passengers Dropped off  (Part 2)
+//...			//### Fares (Taxi) - 2 addresses i think -?					- * COMPLETE 1 MISSION AFTER Enable then disable this
+//...			//...			//patch=1,EE,2055314C,extended,00000000 // 00000000 means on mission This gets Set to 00000001 When Complete
+//...			//patch=1,EE,2054CE44,extended,00000063 // Set to 99dec (62hex) then pickup one passenger.
+
+// -- Vigilante --
+//Vigilante Timer Outside Vehicle
+//patch=1,EE,20553438,extended,0000FE9D
+
+//Vigilante Timer
+//patch=1,EE,2055343C,extended,0002ABA9
+
+//Vigilante Kills - May only work as joker command or with cheat engine, same as Ambulance People left to save.
+//patch=1,EE,20553478,extended,00000000
+
+//...			//Vigilante Mission Level is also linked to timer ? Outside Vehicle
+//...			//patch=1,EE,204E3880,extended,00000041 // 1/3 Countdown timers //Vigilante Mission Level
+//...			//patch=1,EE,204E39D4,extended,00000041 // 2/3 Countdown timers
+//...			//patch=1,EE,20553450,extended,00000041 // 3/3 Countdown timers
+//...			//patch=1,EE,204E387C,extended,00037F7E
+
+// -- Rampages --
+//Rampages: Set Rampages kill number to 1		|| Find Line 1 --> check writes --> ESI=00203650 , change to "2x0" -- then NOP so we can set number as const instead of var.
+//patch=1,EE,2054E038,00000001 // set number
+//patch=1,EE,20203650,8E039090 // stop writes to the number ^^ 8E030010 --> 8E039090 - so we can set it.
+
+//Rampages: Set Rampages PED TYPE number #		|| should be force_random_ped_type $1508 but doesnt do much.
+//patch=1,EE,2054E00C,00000001
+
+// -- Shooting Range --
+//### Top Shooting Range Score
+//patch=1,EE,204B21EC,extended,0000029A
+
+//### Shooting Range Rank
+//patch=1,EE,204B21F0,extended,0000029A
+
+//Mission: Phil Cassidy, Shooting Range, Targets. || Note: To unlock Shooting Range at art of game, Modify "Main.scm" to run "start_script @SHOOT" early. The hybrid gives the player a new button combo to execute the script at any time.
+//Round 1
+//patch=1,EE,205501D8,extended,0000029A
+//Round Total
+//patch=1,EE,20550670,extended,0000029A
+
+//Mission: "Pole Position Club" - Cash Spent on Lap-Dances
+//patch=1,EE,2054D974,extended,0000029A
+
+//Mission: Set Fastest Time on "Allow Wheels of Steel" || "31303A30" = "0:01"
+//patch=1,EE,2067A3AF,extended,31303A30
+
+//Clock: Set Time on Mission: "Stunt Boat Challenge" - (Hold timer on 3mins)
+//patch=1,EE,20551CA4,extended,0002C308
+
+//Clock: Set Time - Frozen, so you set time always ##:## || Default Value = 000003E8 || remove call using NOP  - 90909090
+//patch=1,EE,204B1770,extended,90909090
+
+//---- Clock set time always ##:## ----
+//Clock: Set Time - Hours (e.g: 8am)	 || 23 dec = 17 hex || set tinme always ##:##
+//patch=1,EE,204B1778,extended,00000008
+//Clock: Set Time - Minutes (00000000) OR Freeze Clock Time 	|| 000003E8 -> E3000008 || set tinme always ##:##
+//patch=1,EE,204B177C,extended,00000000
+
+//Clock: Fast
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,2027858C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027858C,extended,14400010
+
+//Clock: Freeze Mission Timers (Side Quests) || Default Value: 0C0AEA2C
+//patch=1,EE,20270238,extended,00000000
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------			                  Property Codes		                  --------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+//TODO: Update STRINGS "$####" also when changing property costs.
+
+//$$$ Ocean Heights Apartment $1						-	[206AE548 - 34 = 206AE514]
+//patch=1,EE,206AE548,extended,00000001
+
+//$$$ Hyman Condo Apartment $1
+//patch=1,EE,206AE514,extended,00000001					- 	[206AE514 - 34 = 206AE4E0]
+
+//$$$ Links View Apartment $1							-
+//patch=1,EE,206AE4E0,extended,00000001
+
+//$$$ [Vice Point 3321] [$1]
+//patch=1,EE,206AE5B0,extended,00000001
+
+//  ---- 1102 Washington Street ----
+
+//$$$ 1102 Washington Street: $0	(Cost)
+//patch=1,EE,206AE57C,extended,00000000
+
+//$$$ 1102 Washington Street: $0	(Display Message) 		- 00000BB8 ($3,000) --> 01 ($1)
+//patch=1,EE,2054D2A8,extended,00000000
+
+//$$$ 1102 Washington Street: Teleport To & Save (Without Purchase) || Set to All 0's	|| 0002001D --> 00000000 --> 0003001D
+//patch=1,EE,2054D2AC,extended,00000000
+
+//$$$1102 Washington Street - After Purchase
+//patch=1,EE,2054D2A4,extended,0025000C // 00160000 --> 0025000C
+//patch=1,EE,2054D2AC,extended,0003001D
+
+//--------------------------------------------------------------------------------------------------------------------
+//------------								Weapons: 							                ----------------------
+//--------------------------------------------------------------------------------------------------------------------
+//* Weapons: Add Zoom To Weapons: Sniper Zoom with Minigun, Rocket Launcher, Sniper;-
+
+//Weapons: TearGas Fix Test
+//patch=1,EE,206BE1E5,extended,2C3F8000
+
+//Weapons: TearGas (Fix, Work-around) || Reduce radius, count, remove collison, or make invisible - TEST :: 206BE1C5, 60568312
+//patch=1,EE,20258530,extended,60568312
+//patch=1,EE,206BE1D9,extended,01111111
+//patch=1,EE,206BE1E5,extended,2C3F8000
+
+//Weapons: * Sniper (Default)
+//patch=1,EE,20258530,extended,0C0941E0
+
+//Weapons: * Minigun with Sniper Zoom			|| Default = 0C0946D8 || New = 0C0941E0
+//patch=1,EE,20258568,extended,0C0941E0
+
+//Weapons: * Rocket Launcher with Sniper Zoom 	|| Default = 0C0944F8 || New = 0C0941E0
+//patch=1,EE,2025854C,extended,0C0941E0
+
+//Weapon Cheat: Cycle through (1-3)  (Select+UP) - by TKBS
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279374,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279374,extended,14E00003
+
+//Weapons 1 (Set 1) Press L3+UP					- NOTES:	ntsc 20278278 - pal 202780C8 = 1B0 || NOTES:	ntsc weapons + 400 = weather
+//patch=1,EE,D05C1702,extended,0000FFED			- ntsc 2027D168 - 50A0 = 202780C8	|| 	ntsc "weapons" - "tyres" = FFDFC
+//patch=1,EE,202780C8,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202780C8,extended,14400004
+
+//Weapons 2 (Set 2) Press L3+DOWN (RL)
+//patch=1,EE,D05C1702,extended,0000FFBD
+//patch=1,EE,202780EC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202780EC,extended,14400004
+
+//Weapons 3 (Set 3) Press L3+LEFT
+//patch=1,EE,D05C1702,extended,0000FF7D
+//patch=1,EE,20278110,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278110,extended,14400006
+
+//--------------------------------------------------------------------
+// ----  Weapons: Ammo. ---
+//--------------------------------------------------------------------
+//Weapon: Camera Ammo (Mission: Candy Photos - Film Studio "Marthas mug shot")
+//patch=1,EE,20550E9C,extended,0000029A
+//patch=1,EE,20B5118C,extended,0000029A
+//patch=1,EE,20B51190,extended,0000029A
+
+//Weapons: Rocket Launcher Ammo 		- Addresses Change - you must use save game state.
+//patch=1,EE,20B51160,extended,0000029A
+//Super Fast (Firing Rockets): ALWAYS 4 bytes before.
+//patch=1,EE,20B5115C,extended,0E300008
+
+//--------------------------------------------------------------------------------------------------------------------
+//------------								Wanted Level					                    ----------------------
+//--------------------------------------------------------------------------------------------------------------------
+//Chaos Level values - scraped from a video that showed the reVC source.
+// integers
+//case 0:
+//	m_nchaos = 0
+//	1 = 70
+//	2 = 200
+//	3 = 570
+//  4 = 1220
+//	5 = 2420
+//	6 = 4820
+//max wanted levels =  || 1 = 115, 2=365, 3=365, 4=1800, 5=3600, 6=7200
+
+//Wanted level cheat down
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,2027838C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027838C,extended,14400012
+
+//Wanted level cheat up
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278300,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278300,extended,1440001F
+
+//No Wanted level (Never Wanted) 1
+//patch=1,EE,2029F03C,extended,24060000
+//patch=1,EE,2029F038,extended,24060000			- this line probably not needed.
+
+//No Wanted level (Never Wanted) 2 				- made by using -4 steps down until no effect or crash
+//patch=1,EE,2029F030,extended,03E00008
+//patch=1,EE,2029F034,extended,00000000
+
+//[NTSC] Never Wanted							- offset ntsc - pal may be wrong becuas enot sure the pal code is correct, but it works.
+//2029E5F0 03E00008
+//2029E5F4 00000000
+
+//Wanted level - Set number of stars.
+//patch=1,EE,21901840,extended,00000000 // Current Number of Wanted Stars 1/2 || This sets the next line.
+//...	//patch=1,EE,204B1E64,extended,00000000 // Current Number of Wanted Stars 2/2
+
+
+//--------------------------------------------------------------------------------------------------------------------
+//---------------                Character Modifier Codes                                           ------------------
+//--------------------------------------------------------------------------------------------------------------------
+//KNOWN ISSUE: There is no way to turn back to Tommy!
+
+//*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) ***
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027868C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027868C,extended,14400006
+
+//Character Model - Diaz (fixed) //- fix crash by TKBS. The "DE, ger" region codes crashed game.
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279324,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279324,extended,14E00005
+
+//Character Model - Love fist 1 (Jezz) -
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278F94,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278F94,extended,14400007
+
+//Character Model - Love fist 2 (Guy in Kilt) - Corrected Version
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279098,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279098,extended,1440003F
+
+//Character Model - Love fist 2 (Guy in Kilt) - Old Version
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279228,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279228,extended,14400007
+
+//Character Model - mercedes
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,202791FC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202791FC,extended,14400007
+
+//Character Model - Cassidy -
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278FC0,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278FC0,extended,14400007
+
+//Character Model - Sonny
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278FEC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278FEC,extended,14400007
+
+//Character Model - sonny
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278F68,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278F68,extended,14400007
+
+//Character Model - Ken Rosenberg-
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278F3C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278F3C,extended,14400007
+
+//Character Model - Candy Suxx-
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278F10,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278F10,extended,14400007
+
+//Character Model - Lance Vance-
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278EE4,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278EE4,extended,14400007
+
+//Fat Guy (?) L1+L2+DOWN							- 	//note: "0F" instead of 05 or 07
+//patch=1,EE,D05C1702,extended,0000FABF
+//patch=1,EE,20278F68,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278F68,extended,1440000F
+
+//Character List: 									- Diaz Sonny candy buddy ken hilary jezz phil merc dick player
+//Sonny 		= 	20278FEC
+//Lance Dance	= 	20278EE4
+//Candy Suxx	= 	20278F10
+//Ken Rosenberg = 	20278F3C
+//Jezz Torrent	=	20278F94
+//X  (hilary) ? = 	20278FC0
+//Prostitute 	=	202791FC
+//Hooligan 		=	20279228
+//Phil Cassidy?	=	20278F68
+//Ricardo Diaz  = 	20279324					- codes online crash game. see fix below.
+//NOT WORKING   = 	Invisible (cinematic); only works with Glitch, or scm mod - see free roam mod.
+//NOT WORKING   = 	LuvFist Guy 3 ? && Several other 3DModels & character models through the games missions, like concrete shoes guy..
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Traffic. ---
+//--------------------------------------------------------------------
+
+//Clean Streets: Both Traffic & Pedestrians removed
+//Clean Streets: No Pedestrians						|| Default = 3F800000
+//patch=1,EE,204AB578,extended,00000000
+//Clean Streets: No Traffic							|| Default = 3F800000
+//patch=1,EE,204AB610,extended,00000000
+
+//[PAL] Aggressive Traffic (OFF) 00 ||  (on) 01			- Made using [(NTSC) 004BA27C - (OFFSET) 9000 = (PAL) 004B127C]
+//patch=1,EE,004B127C,extended,00000000
+
+//[NTSC] Aggressive Traffic: //patch=1,EE,004BA27C,extended,00000001					- an offset: 1FCCC5F0
+
+//Traffc Rage (Aggressive)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278CFC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278CFC,extended,1440000E
+
+//These 2 are  12 x 4 byte blocks from black traffic, the same is present for purple, this would be the expected location fo the next address, i suspect it is boats and planes.
+//No Code effect? - Unknown - Should be something ?  after traffic black where normally there would be a cheat (2C)
+//patch=1,EE,20278DB0,extended,0040202D
+//No Code effect? - Unknown - Should be something ?  after traffic purple where normally there would be a cheat (2C)
+//patch=1,EE,20278D64,extended,0040202D
+
+//Vehicles: Traffic Black
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278D90,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278D90,extended,1440000F
+
+//Vehicles: Traffic Purple
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278D44,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278D44,extended,1440000F
+
+//Traffic: Combining these 2 Lines Will give you Black Traffic With Purple Trim Taxi
+//Black or Purple Traffic - With Black or Purple Trim Taxi (change line 1: 00 to 01)
+//patch=1,EE,204B1BC8,extended,00000000
+//patch=1,EE,204B1BCC,extended,00000001
+//...
+//patch=1,EE,004B1BC8,extended,00000000
+//patch=1,EE,004B1BCC,extended,00000001
+//...
+//patch=1,EE,004B1BC8,extended,00000001
+//patch=1,EE,004B1BCC,extended,00000000
+//...
+//patch=1,EE,004B1BD0,extended,00000001 || 00000000
+
+//Vehicles: Sparks, tyres, handbrake always on or broken wheel ? 			- Original Value = 03D80C04 || 2016A484 - 20169434	= 1050  was supposed to be super nitro boost from ntsc
+//* Note: I think this is gravity OR "vehicle always trying to reach angle" like for skidding code etc 30 degrees
+//patch=1,EE,2016AA46,extended,00000000
+
+//NTSC - [Misc. Codes\Tires Always Generate Sparks] || //author=Code Master, GameMasterZer0, GFCC, DA
+//patch=1,EE,2015E780,extended,00000000
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Spawn. ---
+//--------------------------------------------------------------------
+
+//Spawn Any Car: 					|| (Using the Spawn ("xxx"-e.g.Tank) Lines).
+//Line 1: Spawn 						== 14400007 --> 00000000
+//Line 2: Last 2 Bytes VH UID			== Vehicle ID.		|| e.g:	A2 = Tank || EC = Cheetah.
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,2027856C,extended,240400A2
+
+//Spawn Any CAR: with joker Press & Hold L3 + Press UP 	- by TKBS || (not bike, spawns with no wheels ?) || (Using the Spawn ("xxx"-e.g.Tank) Lines).
+//patch=1,EE,2027856C,extended,240400A2
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,14400007
+
+//Spawn Car: Original Values:
+//Line 1 - original Value = 00000FBA - Note: Probably Not required.
+//Line 2 - original Value = 00000FAB - Note: Probably Not required.
+//Line 3 - original Value = 0C09E018
+//Line 4 - original Value = 24050054 - Note: Last 2 BYTES == Vehicle ID.
+
+//										//Spawn Car: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//										//Line Not Needed							//patch=1,EE,1027B63C,extended,0000001A
+//										//Line Not Needed							//patch=1,EE,1027B64C,extended,00000042
+//										//patch=1,EE,20276970,extended,0C09E798
+//										//patch=1,EE,20276974,extended,240400EC
+//										//* Then put back to normal
+//										//patch=1,EE,20276970,extended,0C09E018
+//										//patch=1,EE,20276974,extended,24050054
+
+//Spawn Bike: Original Values:
+//Line 1 - original Value = 0C05CCB4
+//Line 2 - original Value = 00000FBA - Note: Probably Not required.
+//Line 3 - original Value = 00000FAB - Note: Probably Not required.
+//Line 4 - original Value = 0C09E018
+//Line 5 - original Value = 24050054 - Note: Last 2 BYTES == Vehicle ID.
+
+//Spawn Bike: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//patch=1,EE,20279F70,extended,0C0E60E8
+//patch=1,EE,20276974,extended,240400BF
+//* Then put back to normal
+//patch=1,EE,20279F70,extended,0C05CCB4
+//patch=1,EE,20276974,extended,24050054
+
+//										//Spawn Bike: 		(Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//										//patch=1,EE,20279F70,extended,0C0E60E8
+//										//Line Not Needed							//patch=1,EE,1027B63C,extended,0000001A
+//										//Line Not Needed							//patch=1,EE,1027B64C,extended,00000042
+//										//Line Not Needed							//patch=1,EE,20276970,extended,0C09E798
+//										//patch=1,EE,20276974,extended,240400BF
+//										//* Then put back to normal
+//										//patch=1,EE,20279F70,extended,0C05CCB4
+//										//Line Not Needed							//patch=1,EE,20276970,extended,0C09E018
+//										//patch=1,EE,20276974,extended,24050054
+
+//Spawn Vehicle: Tank 	(Select + UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,14400007
+
+//Spawn Vehicle: Bloodring Banger		(L1+L2+UP)			- [Love fist - "2C"  = Bloodring]
+//patch=1,EE,D05C1702,extended,0000FAEF
+//patch=1,EE,20279254,extended,14400000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279254,extended,14400007
+
+//Spawn Vehicle: TrashMaster	(Select+UP)			- by TKBS	Converted From NTSC to PAL
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278E60,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278E60,extended,14400007
+
+//Spawn Vehicle: Hearse			(L1+L2+UP)
+//patch=1,EE,D05C1702,extended,0000FAEF
+//patch=1,EE,20278E08,extended,14400000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278E08,extended,14400007
+
+//Spawn Vehicle List: 								- Most are +2C for each vehicle. but then some weird stuff with Blood- & Hotring bangers.
+//No Code effect	- 20278DB0
+//Bloodring 1 		- 20278DDC			+2C = 	||	20279254 - 20278DDC = 478
+//Herse				- 20278E08	||		+2C =	|| 	20278E08 + 44C = 20279254	|| 20278E08 + 478 = 20279280
+//Love Fist 		- 20278E34	||		+2C =
+//Trashmaster 		- 20278E60	||		+2C =
+//Sabre Turbo 		- 20278E8C	||		+2C =
+//Caddy 			- 20278EB8	||		+2C = 	...Character Modifiers after this.
+//Bloodring 2 		- 20279254
+//Hotring Racer 1 	- 20279280				- 20279280 - 20278DDC =	4A4
+//Hotring Racer 2	- 202792AC
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Attrributes &  Properties. ---
+//--------------------------------------------------------------------
+
+//TODO NOT TESTED: Port from 2004 ntsc: //Glass does not break (Vehicles or maybe shops ?)
+//patch=1,EE,2037C7C0,extended,03E00008 // 27BDFFB0 --> 03E00008
+//patch=1,EE,2037C7C4,extended,00000000 // 3C060060 --> 00000000
+
+//Vehicles:  No Damage from Weapons (All Cars)
+//patch=1,EE,20186300,extended,03E00008 //27BDFF70 --> 03E00008
+//patch=1,EE,20186304,extended,00000000 //FFBF0070 --> 00000000
+
+//Vehicles: No Collision Damage (All Cars)				|| from ntsc 2002 --> pal 2003 by TKBS
+//Note: "No contact collision explosion" - allows "all vehicles are tanks" to be used
+//patch=1,EE,2016F4A0,extended,03E00008 //27BDFF60 --> 03E00008
+//patch=1,EE,2016F4A4,extended,00000000 //3C033EAA --> 00000000
+
+//Cars no collision damage to your vehicle - With contact explosion.
+// * Do not use this one with the one above if you want to also enable vehicles are tanks (can shoot projectiles)
+//patch=1,EE,2016F908,extended,00000000
+//patch=1,EE,2016F91C,extended,00000000
+
+//Vehicles: Cars Damage Proof | Never Explode ???				- Flip over no explode, Fire Proof, melee proof, but not weapon or tank proof Vehicles. ****
+//[27BDFFC0 -> 03E00008] || //[FFBF0020 -> 00000000]
+//Default Values: A0830004 -->  03E00008 || A0850004 --> 00000000
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//Vehicles: Cars & Helis Never Explode
+//patch=1,EE,2015C9F0,extended,03E00008
+//patch=1,EE,2015C9F4,extended,00000000
+
+//Vehicles: Boats & Planes Never Explode 			- NTSC 2.03 used as reference
+//Line 1: [27BDFF80 -> 03E00008] || Line 2: [FFBF0050 -> 00000000]
+//patch=1,EE,20174550,extended,03E00008
+//patch=1,EE,20174554,extended,00000000
+
+//Vehicles: No Collision Damage			- (fists etc still do dmg, tank still causes contact_Explosion damage)
+//patch=1,EE,2016819C,extended,00000000
+//TODO: Test with last line added:
+//patch=1,EE,20197824,extended,00000000
+
+//Cranes?
+//crazy stuff happens. For some reason, i think this effects the Crane attached to the massive non-vehicle boat at the boat yard, it starts moving.
+//patch=1,EE,20168284,extended,00000000
+
+//Vehicles: Tyres Invulnerable - No Tyre Damage (Cars) | TYRES Do Not Pop	- made using MEMORY REGION snippet from NTSC. || (ntsc 2017D36C) - 2017C4C8 = EA4
+//* Part 1 - no impact movement
+//patch=1,EE,2017C4B4,extended,03E00008 //03E00008 --> 03E00008
+//patch=1,EE,2017C4B8,extended,00000000 //90420005 --> 00000000
+//patch=1,EE,2017C4C0,extended,00000000 //00A41821 --> 00000000
+//* Part 2 - no damage
+//patch=1,EE,2017C4C4,extended,03E00008 //03E00008 --> 03E00008
+//patch=1,EE,2017C4C8,extended,00000000 //A0660005 --> 00000000
+//* Part 3 - can be deleted?
+//patch=1,EE,2017C4D0,extended,00000000 //00051080 --> 00000000
+
+//Vehicles: No Weapons Damage
+//patch=1,EE,20186300,extended,03E00008
+//patch=1,EE,20186304,extended,00000000
+
+//TODO:  Vehciles can do ambulance missions
+//note - aBOVE THE 14620005 tyes values will be a value that ends in the vehicle id for ambulance hex "89"
+// see the tank and firetruk examples that show there ID the line above the one we 000000
+
+//Vehicles: Can do Vigilante Missions			-	  created using off NTSC - 1F0 = PAL - ["NTSC 2002" (10184B5A)] - 1F0 = PAL 1018496A
+//patch=1,EE,1018496A,extended,00001000
+
+//Vehicles: Can Spray Firetruck hose.			-|| Default Value = 14620005	 || created using off NTSC - 1F0 = PAL - ["NTSC 2002" (2016839C)] - 1F0 = PAL 201681AC
+//patch=1,EE,201681AC,extended,00000000
+
+//TODO: //Vehicles: Helicopters Have Hunter Properties see pal 2002 beta hyrbid pnach for example.
+
+//Vehicles: All Vehicles have Tank Properties			- (NTSC //patch=1,EE,201683B4,extended,00000000) - 1F0 = 201681C4
+//Note: Useless - unless you can stop contact explosions
+//Note: Line 1  00000200 --> 00001000 || Line 2  14620046 --> 00000000
+//... probably not needed 				//patch=1,EE,1016839E,extended,00001000
+//patch=1,EE,201681C4,extended,00000000
+
+//Vehicles: Handling	-	Select + left or right  does something crazy
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278AF0,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278AF0,extended,14400015
+
+//Vehicles: Cars Fly: (Select+UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278A8C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278A8C,extended,14400015
+
+//[PAL] Cars Invisible:	(press any button to toggle)			- coverted using [2027DAC8 - 50A0 = 20278A28]
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278A28,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278A28,extended,14400015
+
+//[NTSC] Cars Invisible See Through Cars: (Press Select+Right) 		- by Codejunkies
+//patch=1,EE,D05CA682,extended,0000FFDE
+//patch=1,EE,2027DAC8,extended,00000000
+//patch=1,EE,D05CA682,extended,0000FFFF
+//patch=1,EE,2027DAC8,extended,14400015
+
+//Vehicles: Explode Vehicles (1)	with cheat notification 	(Select + LEFT)
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400028
+
+//--------------------------------------------------------------------
+// ----  Vehicles: ---- In Game Cheats (button comobs) ----
+//--------------------------------------------------------------------
+//** PAL VICE CITY 2003 MEMORY REGION FOR IN-GAME CHEATS = "205C18F7"
+
+//*** Cars Float On Water (1) ***						-	[(by skiller + TKBS) NTSC -> PAL (-9000)].
+//patch=1,EE,004B1050,extended,00000001
+
+//*** Cars Float On Water (2) ***						- TKBS
+//patch=1,EE,204B1050,extended,00000001
+
+//Invisible Cars & boats
+//patch=1,EE,204B1038,extended,00000001
+
+//Cars can fly								TODO: +18 == Boats fly ?
+//patch=1,EE,204B103C,extended,00000001
+
+//Change Tyre Size (Not All Vehicles)
+//patch=1,EE,204B1058,extended,00000001
+
+//Cars can bunny hop
+//patch=1,EE,204B1040,extended,00000001
+
+//Cars have Hydraulics  					||	14620005 --> 00000000
+//patch=1,EE,201682E4,extended,00000000
+
+//TODO: unknown cheats all at this memory region:
+//patch=1,EE,204B1054,extended,00000001
+//TODO: Possible tweak vehicle handling: //204B1068
+//TODO: Cars: Black
+//TODO: Cars: Purple
+//TODO: Cars: Explode
+//TODO: Boats: Fly
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Street Parking. ---
+//--------------------------------------------------------------------
+// * IT is possible to change temporary Model components
+// * Example: Enforcer can have A bumper and police license or normal.
+//--------------------------------------------------------------------
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Fix Vehicle Locations Parking. ---
+//--------------------------------------------------------------------
+//[Vehicle]:Fix - "Pizza Boy Reward Bike"	[Location]: Vercetti Mansion
+//* Fixes the Location under map Bug 		[Z- Axis must be 12.00+.]
+//patch=1,EE,2067B5D0,extended,000000B2
+//patch=1,EE,2067B5D4,extended,C3AF6666
+//patch=1,EE,2067B5D8,extended,C405B99A
+//patch=1,EE,2067B5DC,extended,41466666
+//patch=1,EE,2067B5E0,extended,43960000
+//patch=1,EE,2067B5E4,extended,FFFFFFFF
+//patch=1,EE,2067B5E8,extended,00000000 // IMMEDIATE SPAWN = 00000010
+//patch=1,EE,2067B5EC,extended,27100000
+//patch=1,EE,2067B5F0,extended,00B6CA0E
+//patch=1,EE,2067B5F4,extended,00002E63
+//patch=1,EE,2067B5F8,extended,0000FFFF
+
+//[Vehicle]: Fix - "Boxville Van" 			[Location]: Near Boatyard, just after, by the containers.
+//* Fixes the Location under map Bug 		[Z- Axis must be 12.00+.]
+//patch=1,EE,2067B680,extended,000000E4
+//patch=1,EE,2067B684,extended,C460BFD0
+//patch=1,EE,2067B688,extended,C4B6C17C
+//patch=1,EE,2067B68C,extended,415F0A3D
+//patch=1,EE,2067B690,extended,412D205C
+//patch=1,EE,2067B694,extended,FFFFFFFF
+//patch=1,EE,2067B698,extended,00000000 // IMMEDIATE SPAWN = 00000010
+//patch=1,EE,2067B69C,extended,27100000
+//patch=1,EE,2067B6A0,extended,00D49FA8
+//patch=1,EE,2067B6A4,extended,FFFFFFFF
+//patch=1,EE,2067B6A8,extended,0000FFFF
+
+//[Vehicle]: Fix - "PCJ-600" 				[Location]: Prawn Island
+//* Fixes the Location under map Bug 		[Z- Axis must be 12.00+.]
+//patch=1,EE,2067B368,extended,000000BF
+//patch=1,EE,2067B36C,extended,C0CCCCCD
+//patch=1,EE,2067B370,extended,446F4666
+//patch=1,EE,2067B374,extended,41566666
+//patch=1,EE,2067B378,extended,43B18CCD
+//patch=1,EE,2067B37C,extended,FFFFFFFF
+//patch=1,EE,2067B380,extended,00000010 // IMMEDIATE SPAWN = 00000010
+//patch=1,EE,2067B384,extended,27100000
+//patch=1,EE,2067B388,extended,00CCA026
+//patch=1,EE,2067B38C,extended,00001302
+//patch=1,EE,2067B390,extended,0000FFFF
+
+//[Vehicle]:"Pizza Boy Bike" Location: 1st Island
+//patch=1,EE,2067B0D4,extended,000000B2 //VH ID
+//patch=1,EE,2067B0D8,extended,43CEE666 //X
+//patch=1,EE,2067B0DC,extended,42C36666 //Y
+//patch=1,EE,2067B0E0,extended,41280000 //Z
+//patch=1,EE,2067B0E4,extended,4396A666 //H
+//patch=1,EE,2067B0E8,extended,FFFFFFFF
+//patch=1,EE,2067B0EC,extended,00000010 // IMMEDIATE SPAWN = 00000010
+//patch=1,EE,2067B0F0,extended,27100000
+//patch=1,EE,2067B0F4,extended,000DC23B //colour 1
+//patch=1,EE,2067B0F5,extended,000DC23B //colour 2
+//patch=1,EE,2067B0F8,extended,00002B27
+//patch=1,EE,2067B0F8,extended,0000FFFF
+
+//Cop Cars - Washington Beach 1 (left - faces building)
+//Default Values == 0000009C 43B1D99A C3FFB333 4139999A 43A00000 FFFFFFFF 001E0000 27100000 0000007D FFFFFFFF 0000FFFF
+//patch=1,EE,2067C0A4,extended,000000EC // VH ID E.g. Cheetah (EC) instead of Cop Car (9C)
+//patch=1,EE,2067C0A8,extended,43B1D99A // X
+//patch=1,EE,2067C0AC,extended,C3FFB333 // Y
+//patch=1,EE,2067C0B0,extended,4139999A // Z
+//patch=1,EE,2067C0B4,extended,43A00000 // H
+//patch=1,EE,2067C0B8,extended,FFFFFFFF // colors probably -1,-1 || 00010203 colors 1,2,3.
+//patch=1,EE,2067C0BC,extended,001E0000	// IMMEDIATE SPAWN = 00000010
+//patch=1,EE,2067C0C0,extended,27100000	//spawn stuff time, available, etc
+//patch=1,EE,2067C0C4,extended,0000007D	//spawn stuff time, available, etc
+//patch=1,EE,2067C0C8,extended,FFFFFFFF	//spawn stuff time, available, etc
+//patch=1,EE,2067C0CC,extended,0000FFFF	//spawn stuff time, available, etc
+
+//Cop Cars - Washington Beach 2 (right - faces Road)
+//Default Values == 0000009C 43BA2666 C4036CCD 4139999A 430C0000 FFFFFFFF 001E0000 27100000 0000007D FFFFFFFF 0000FFFF
+//patch=1,EE,2067C0D0,extended,0000009D // VH ID E.g. Enforcer (9D) instead of Cop Car (9C)
+//patch=1,EE,2067C0D4,extended,43BA2666 // X
+//patch=1,EE,2067C0D8,extended,C4036CCD // Y
+//patch=1,EE,2067C0DC,extended,4139999A // Z
+//patch=1,EE,2067C0E0,extended,430C0000 // H
+//patch=1,EE,2067C0E4,extended,FFFFFFFF // colors probably -1,-1 || 00010203 colors 1,2,3.
+//patch=1,EE,2067C0E8,extended,001E0000	//Set to 00000010 - IMMEDIATE SPAWN
+//patch=1,EE,2067C0EC,extended,27100000	//spawn stuff time, available, etc
+//patch=1,EE,2067C0F0,extended,0003B107	//spawn stuff time, available, etc
+//patch=1,EE,2067C0F4,extended,00001203	//spawn stuff time, available, etc
+//patch=1,EE,2067C0F8,extended,0000FFFF	//spawn stuff time, available, etc
+
+//Cop Cars - Location Unknown - use the coords x y z to see where it is or open the beta verison as show coords and teleprot to it.
+//Default Values == 0000009C C455D99A C426599A 4129999A 00000000 FFFFFFFF 001E0000 27100000 0000007D FFFFFFFF 0000FFFF 0000009C
+//patch=1,EE,2067C0FC,extended,0000009C
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Boat moarings (Parking). ---
+//--------------------------------------------------------------------
+//Boat Parking - By Golf Place - Police Predator	- Default is hex "A0" (dec 160)
+//patch=1,EE,2067A734,extended,0002C308
+
+//--------------------------------------------------------------------
+// ----  Vehicles: GARAGE EDITOR. ---
+//--------------------------------------------------------------------
+//* Use Cheat Engine ".ct" file For All garages, heli-pads, boat moorings, street parking, car parks, emergency VH locations etc
+
+// ---- [Garage Editor Explained]; ----
+//* Colours 	0-94	||	00-5E - see colors.dat
+//* Vehicles	130-236	||	82-EC - see default.ide
+
+// Ocean Beach - "GARAGE"
+//Line 1	=	VH ID 1
+//Line 2	=	X
+//Line 3	=	Y
+//Line 4	=	Z
+//Line 5	=	H
+//Line 6	=	Spawn Time or allow colours
+//Line 7	=	Immediate Spawn 00000010
+//Line 8	=	0000001F = DMG PROOF
+//Line 9	=	Colours 1 & 2 || FF014E44
+//	Line 9a	=	Colours 1 || FF01|4E|44
+//	Line 9b	=	Colours 2 || FFFF01|4E
+//Line 10	=	//Make available  000000FF || 0001FFFF when just taken, set back to 0000FFFF to spawn again.
+
+// Hyman Condo - "HELI-PAD"
+//Line 1	=	VH ID 1
+//Line 2	=	X
+//Line 3	=	Y
+//Line 4	=	Z
+//Line 5	=	00000000 = UNKNOWN
+//Line 6	=	FFFFFFFF = UNKNOWN		| Possibly (-1, -1)
+//Line 7	=	00000010 = Immediate Spawn
+//Line 8	=	27010000 = UNKNOWN  - Possibly change of locked, i.e. always unlocked ?
+//Line 9	=	041E8EA6 = UNKNOWN	- Colours ? -- or -- Spawn Timers ? Related to Immediate Spawn ?
+//Line 10	=	00000719 = UNKNOWN	- Colours ? -- or -- Spawn Timers ? Related to Immediate Spawn ?
+//Line 11	=	0000FFFF = //Make available  || 0001FFFF when just taken, set back to FFFF to spawn again.
+
+//---- Full Version ---- Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
+//patch=1,EE,206B6070,extended,000000EC 	//|| Vehicle ID
+//patch=1,EE,206B6074,extended,-FLOAT- 		//|| X
+//patch=1,EE,206B6078,extended,-FLOAT- 		//|| Y
+//patch=1,EE,206B607C,extended,-FLOAT- 		//|| Z
+//patch=1,EE,206B6080,extended,-FLOAT- 		//|| H
+//patch=1,EE,206B6084,extended,3DE93BB1 	//||
+//patch=1,EE,206B6088,extended,3F7E55A2 	//||
+//patch=1,EE,206B608C,extended,0000001F 	//|| Damage Proof = "1F"
+//patch=1,EE,206B6090,extended,FF014E44 	//|| Vehicle Colours 1 ... & 2 	== FF00|#1|#2|
+//patch=1,EE,206B6091,extended,FFFF014E 	//|| Vehicle Colours 2			== FFFF00|#2
+//patch=1,EE,206B6094,extended,000000FF 	//|| //Make available  || 0001FFFF when just taken, set back to FFFF to spawn again.
+
+//---- Slim Version ---- Spawn Vehicle in Garage "Ocean Beach" [Right VH 1]
+//VH ID
+//patch=1,EE,206B6070,extended,000000EC
+//colours
+//patch=1,EE,206B6090,extended,FF09012E
+//DAMAGE PROOF
+//patch=1,EE,206B608C,extended,0000001F
+
+//Spawn Vehicle in Garage "Ocean Beach" [Left VH 1]
+//patch=1,EE,206B6098,extended,000000AF
+//patch=1,EE,206B60B8,extended,00000001
+//patch=1,EE,206B60B9,extended,00000002
+//patch=1,EE,206B60B4,extended,0000001F
+//patch=1,EE,206B60AC,extended,########
+//patch=1,EE,206B60A8,extended,########
+
+//Spawn Vehicle in Garage "Links View "
+//patch=1,EE,206B6110,extended,000000AF
+//patch=1,EE,206B6120,extended,00000031
+//patch=1,EE,206B6130,extended,0000001F
+
+//Spawn Vehicle in Garage "Vice Point"
+//patch=1,EE,206B6110,extended,000000EC
+
+//Spawn Vehicle "SunShine Auto Show Room"
+//2067A4A0 000000D3 //VH ID
+//2067A4A4 C47FA666 //X
+//2067A4A8 C4592666 //Y
+//2067A4AC 41433333 //Z
+//2067A4B0 432F0000 //H
+//2067A4B4 00000000 //colours
+//2067A4B8 00000010 //IS
+//2067A4BC 27100000
+//2067A4C0 0010B7B6 //time
+//2067A4C4 00001D03 //time
+//2067A4C8 0000FFFF //Make available  || 0001FFFF when just taken, set back to FFFF to spawn again.
+
+//Spawn Vehicle in HeliPad "Hyman Condo HeliPad"  || maverick = 000000D9 || Hunter = 0000009B
+//0000009B C4556A4C 44A9391F 42893886 00000000 00000000 00000010 27100000 000B0303 00001467 0000FFFF 000000A0
+//patch=1,EE,2067A708,extended,0000009B
+//patch=1,EE,2067A70C,extended,C4556A4C
+//patch=1,EE,2067A710,extended,44A9391F
+//patch=1,EE,2067A714,extended,42893886
+//patch=1,EE,2067A718,extended,00000000
+//patch=1,EE,2067A71C,extended,FFFFFFFF
+//patch=1,EE,2067A720,extended,00000000 //Hyman Condo HeliPad || 00000010 = Immediate Spawn
+//patch=1,EE,2067A724,extended,27100000
+//patch=1,EE,2067A728,extended,00025BA1
+//patch=1,EE,2067A72C,extended,00003812
+
+//Spawn Vehicle in Garage "Hyman Condo [Left VH 1]"		-		Colour: 206B5E90 + 20 = 206B5EB0	|| Damage proof: 206B5E90 + 1C = 206B5EAC
+//patch=1,EE,206B5E90,extended,000000EC
+//patch=1,EE,206B5EB0,extended,00000034
+//patch=1,EE,206B5EB1,extended,00000003
+//patch=1,EE,206B5EAC,extended,0000001F
+
+//Spawn Vehicle in Garage "Hyman Condo [Left VH 2]"
+//patch=1,EE,206B5EB8,extended,000000EC
+//...
+
+//Spawn Vehicle in Garage "Hyman Condo [Middle VH 1]"
+//patch=1,EE,206B5F30,extended,000000EC
+//...
+
+//Spawn Vehicle in Garage "Hyman Condo [Right VH 1]"
+//patch=1,EE,206B5FD0,extended,000000EC
+//...
+
+//--------------------------------------------------------------------------------------------------------------------
+//-----------------	               STATS .£££ $$$, ###.		                          --------------------------------
+//--------------------------------------------------------------------------------------------------------------------
+
+//* Hex Edit the ".elf" File: (SLES_510.61) to Set Criminal Rating to "NAME" (string) instead of numbers "%d". || This example uses "TKBS".
+//[NEW]
+//[003ADE70] -- ...........2E 2E
+//[003ADE80] -- 54 4B 42 53
+//[ORIGINAL]
+//[003ADE70] -- ...........00 00
+//[003ADE80] -- 28 25 64 29
+
+//### Criminal Rating - Set to "TKBS" instead of "%d"
+//patch=1,EE,204ADDF8,extended,4D495243
+//patch=1,EE,204ADDFC,extended,2E2E4152
+//patch=1,EE,204ADE00,extended,53424B54
+//patch=1,EE,204ADE04,extended,00000000
+
+//###$$$ Property Budget (This is a Float ?)
+//patch=1,EE,204B2218,extended,000F423F
+
+//###$$$ Property Owned
+//patch=1,EE,204B21F4,extended,00000001
+
+//###$$$ Daily POLICE Spending - by TKBS
+//patch=1,EE,204B2264,extended,00000000
+
+//### Number of Bloodring Kills || Longest Time in Bloodring
+//patch=1,EE,204B21F8,extended,0001123F
+
+//### Longest Time in Bloodring
+//patch=1,EE,204B21FC,extended,0001123F
+
+//### Longest Wheelie Time
+//patch=1,EE,204B2200,extended,00000000
+
+//### Longest Stoppie Time
+//patch=1,EE,204B2204,extended,00000000
+
+//### Longest 2 wheels Time
+//patch=1,EE,204B2204,extended,00000000
+
+//### £££ $$$ Fashion Budget
+//patch=1,EE,204B21CC,extended,00000000
+
+//### Hotring Best Result
+//patch=1,EE,204B2224,extended,00000000
+
+//### CRIMINAL RATING: GODFATHER (42200000)		|| 0007F000	= "DON"		||		- 204B2224 + 10
+//patch=1,EE,204B2234,extended,42200000
+
+//### [PAL][BETA 2002]### CRIMINAL RATING					- 204B95D8 - 73A4 = PAL 2003
+//patch=1,EE,204B95D8,extended,42200000
+
+//### Boats Destroyed 										- "ntsc Boats Destroyed"  (204B139C) + D70
+//patch=1,EE,204B210C,extended,0000029A
+
+//### Kgs of Explosives used 								- 204B13B4 +  D70
+//patch=1,EE,204B2124,extended,00000000
+
+//### HotRing Best Result 									- 204B2124 + 10
+//patch=1,EE,204B2224,extended,0000029A
+
+//### Hospital Visits 										- Made by "NTSC Number Of Head Shots" - "OFFSET" (-9000)
+//patch=1,EE,204B213C,extended,00000000
+
+//### Rampages Passed SIDE 1 Left Value
+//patch=1,EE,204B21B0,extended,0000029A
+
+//### Rampages Passed SIDE 2 Right Value
+//patch=1,EE,204B21B4,extended,0000029A
+
+//### Photographs Taken
+//patch=1,EE,204B21AC,extended,000F423F
+
+//### Fishes Fed - Mabe by converting "Ice Cream Sold"
+//patch=1,EE,204B21C0,extended,0000029A
+
+//### Headshots												- "NTSC 100% COMPLETE" (204B13AC) + D80 = "PAL Headshots" (204B212C). -  NTSC version 1
+//patch=1,EE,204B212C,extended,00000001
+
+//### Percentage Completion	100%:							- "NTSC 100% COMPLETE" (204B13AC) + D70 = "PAL Percentage Completion" (204B211C). -  NTSC version 1
+//patch=1,EE,204B211C,extended,431A0000
+//### Percentage Completion	100%: 							|| default value already 431A0000 ||* This was Required after using 1st code - then reset to 00000000 and wanting to go back to 100%
+//patch=1,EE,204B2120,extended,431A0000
+
+//### Hospital Visits 										- PAL Headshots (204B212C) + 10 = 204B213C
+//patch=1,EE,204B213C,extended,00000000
+
+//### seagulls
+//patch=1,EE,204B21C4,extended,00000001
+
+//### Bullets fired
+//patch=1,EE,204B2114,extended,00000000
+
+//### Bullets that hit 666
+//patch=1,EE,204B2128,extended,00000000
+
+//### $$$ Property Destroyed
+//patch=1,EE,204B2220,extended,00000000
+
+//### "Total Number of Wanted Stars attained" (Obtained)
+//patch=1,EE,204B2130,extended,00000000
+
+//### "Total Number of Wanted Stars Evaded"  	+4 from stars obtained
+//patch=1,EE,204B2134,extended,00000000
+
+//### "People You've Wasted"
+//patch=1,EE,204B2100,extended,00000000
+
+//### "People Wasted by Others"
+//patch=1,EE,204B2104,extended,00000000
+
+//### Road Vehicles Destroyed
+//patch=1,EE,204B2108,extended,00000000
+
+//### Tyres popped (tires - incorrect spelling in game) 	- ntsc (204BB120) diff = 9010
+//patch=1,EE,204B2110,extended,00000000
+
+//### Bullets that hit 	(29A = 666)
+//patch=1,EE,204B2128,extended,00000000
+
+//### Bullets fired		(29A = 666)
+//patch=1,EE,204B2114,extended,00000000
+
+//### Bullets Fired No count = Accuracy 0%.
+//patch=1,EE,204B211D,extended,00000000
+//patch=1,EE,204B2113,extended,00000000
+
+//### Mission Attempts
+//patch=1,EE,204B2168,extended,00000000
+
+//### Number of Criminals Wasted							- This address is totally out of range compared the others.
+//patch=1,EE,206ADEA8,extended,00000000
+
+//### Unique Jumps Completed Part 1 - Left Side Value
+//patch=1,EE,204B2160,extended,00000064
+//### Unique Jumps Completed Part 2 - Right Side Value
+//patch=1,EE,204B2164,extended,00000064
+
+//### Max. Insane Jump Flips
+//patch=1,EE,204B2154,extended,00000000
+
+//### Max Insane Jump Height [m] 		-1 from Insane Jump Flips
+//patch=1,EE,204B2153,extended,00000000
+
+//### Sprayings
+//patch=1,EE,204B2148,extended,00000000
+
+//### Max Insane Jump Distance
+//patch=1,EE,204B214E,extended,00000000
+
+//### Max INSANE Jump Rotation
+//patch=1,EE,204B2158,extended,00000000
+
+//### Ice Cream 'Deals'
+//patch=1,EE,20554328,extended,0000029A
+
+//$$$ Taxi (Cash Made in Taxi) - by TKBS
+//patch=1,EE,204B2174,extended,00000000
+
+//### Higest Vigilante Mission (00000064)
+//patch=1,EE,204B21A0,extended,00000000
+
+//### People Saved in Ambulance
+//patch=1,EE,204B2194,extended,00000000
+
+//### Total Fires Extinguished
+//patch=1,EE,204B219C,extended,00000000
+//### Total Fires Extinguished +2
+//patch=1,EE,204B219E,extended,00000000
+
+//### Highest Paramedic Mission Level
+//patch=1,EE,204B21A4,extended,00000000
+
+//### Highest Media Attention  (7FFFFFFF = "Stuff Of Legends")
+//patch=1,EE,204B2228,extended,7FFFFFFF
+
+//### Fire Truck Mission Level
+//patch=1,EE,204B21A8,extended,00000000
+
+//### Longest 2 Wheels Time [secs]
+//patch=1,EE,204B2208,extended,00000000
+
+//### Criminals Killed on Vigilante Mission
+//patch=1,EE,204B2198,extended,00000000
+
+//### Safehouse visits (Save Game number) 		- set to -1 for perfect starter save stats.
+//patch=1,EE,204B2144,extended,FFFFFFFF
+
+//### Days passed in game
+//patch=1,EE,204B2140,extended,FFFFFFFF
+
+//### [PAL] Distance Travelled. (by bike)		- (PAL - D70 = NTSC)
+//patch=1,EE,204B2180,extended,00000000
+
+//### [PAL] Distance Travelled. (by car)		- (PAL - D70 = NTSC)
+//patch=1,EE,204B217C,extended,00000000
+
+//### [NTSC] Distance Travelled. (by car)		- 204B140C + D70 = PAL
+//patch=1,EE,204B140C,extended,00000000
+
+//### [PAL] Total Distance Travelled by helicopter. || 408220C6 - 0.01
+//patch=1,EE,204B218C,extended,45C97119
+
+//### [PAL] Total Distance Travelled by boat ?
+//patch=1,EE,204B2184,extended,45C97119
+
+//### [PAL] Total Distance Travelled by golf cart ?
+//patch=1,EE,204B2188,extended,45C97119
+
+//### [PAL] Distance Travelled. (on foot)		- (PAL - NTSC = D70) || Was found by comparing the 2002 version in CE and just wiggling the thumbstick about.
+//patch=1,EE,204B2178,extended,00000000
+
+//### [NTSC] Distance Travelled. (on foot)		- 204B1408 + D70 = PAL
+//patch=1,EE,204B1408,extended,00000000
+
+-------------------------------------------
+//New codes to add to other scetions
+-------------------------------------------
+
+//Vehicles: EFFECTS Smoke from tyres || Default Value = 00A01D54
+//patch=1,EE,204B1D14,extended,00000000
+
+-------------------------------------------
+//junk
+-------------------------------------------
+//TODO: EDIT: Crashed game. Test new port of widescren fron ntsc 2004 to pal 2003:
+//patch=1,EE,2013222C,extended,3c013f9d
+//patch=1,EE,20132230,extended,44810000
+//patch=1,EE,20132234,extended,46006302
+//patch=1,EE,20132238,extended,03e00008
+//patch=1,EE,2013223C,extended,e78c86f8
+//patch=1,EE,202431EC,extended,0c04c8cf
+//patch=1,EE,202703CC,extended,0c04c8d2
+//patch=1,EE,20270930,extended,0c04c8d2

@@ -1,0 +1,89 @@
+gametitle=Grand Theft Auto - Vice City (PAL-M5) (Europe) (SLES-51061)
+comment=2002 DVD (version 1.05. Not 2003, or 2004).
+
+// ---- Disc Info ----
+//Game CRC = 0xC498A04F, EntryPoint = 0x00100008
+//SLES_510.61;1
+//PAL 2002	version = 1.50
+
+// ---- Notes  ----
+//* Some Codes Can be converted from the 2003 Version using:	PAL 2003 + Hex 110, or 1B0 = 2002 version.
+//* Codes to Be converted for this version://http://uk.codejunkies.com/search/codes/grand-theft-auto--vice-city-(uk-version)_action-replay-max_13631658-13___.aspx
+
+
+//-------------------- Confirmed Working CODES	--------------------------------------------------//
+
+//Infinite Sprint. 										|| from https://web.archive.org/web/20030206082029/http://www.xploder.net:80/ChristmasPressi
+//patch=1,EE,005C7E7C,extended,00000001					|| Default Value 0875007F - It does not change.		|| jg 005C7E7E
+//Note: 	The actual address in pcsx2 is 205C7E7C 	|| Default value 64000000 --> 64000001				|| add [eax],al	-->	add [eax],eax
+//patch=1,EE,205C7E7C,extended,64000001
+
+//Weather 4 					-	Press L1+L2+Left to activate.
+//patch=1,EE,D05C1002,extended,0000FA7F
+//patch=1,EE,20278678,extended,00000000
+//patch=1,EE,D05C1002,extended,0000FFFF
+//patch=1,EE,20278678,extended,1440000F
+
+//Play as Lance (White Suit)	-	Press L2+L1+Down - White Suit
+//patch=1,EE,D05C1002,extended,0000FABF
+//patch=1,EE,20279094,extended,00000000
+//patch=1,EE,D05C1002,extended,0000FFFF
+//patch=1,EE,20279094,extended,14400007
+
+//Never Lose Weapons:
+//patch=1,EE,201B2AD0,extended,03E00008
+//patch=1,EE,201B2AD4,extended,00000000
+
+//miles on foot
+//patch=1,EE,204B228C,extended,55C80000
+
+//Hypermode 					- Press L2+R2+Up to activate. press x run super fast.
+//patch=1,EE,D05C1002,extended,0000FCEF
+//patch=1,EE,204B1C58,extended,41000000
+
+//-------------------	Widescreen 	------------------------------//
+//Widescreen -- (fix by nemesis2000 (converted to PAL by Riiaz)?)
+patch=1,EE,001325BC,word,3C013F9D
+patch=1,EE,001325C0,word,44810000
+patch=1,EE,001325C4,word,46006302
+patch=1,EE,001325C8,word,03E00008
+patch=1,EE,001325CC,word,E78C87F8
+//+11 0F20
+patch=1,EE,002434EC,word,0C04C96F
+//+2 D3A0
+patch=1,EE,0027088C,word,0C04C972
+//+5D8
+patch=1,EE,00270E64,word,0C04C972
+
+//[Instructions]
+//1 / 5 || 00000000 --> 3C013F9D 			//add [eax],al		--> popfd 
+//2 / 5 || 03E00008 --> 44810000 			//or [eax],al		--> add [eax],al
+//3 / 5 || E78C87F8 --> 46006302  			//clc 				--> add ah,[ebx+00]
+//4 / 5 || 00000000 --> 03E00008  			//add [eax],al		--> or [eax],al
+//5 / 5 || 00000000 --> E78C87F8  			//add [eax],al		--> clc
+//Set FOV ? 1/3 || 0C04C970 --> 0C04C96F	//jo 202434B7		--> outsd
+//Set FOV ? 2/3 || 0C04C970 --> 0C04C972	//jo 20270857		--> jb 20270857
+//Set FOV ? 3/3 || 0C04C970 --> 0C04C972	//jo 20270E2F		--> jb 20270E2F
+
+
+//-------------------	Misc 	------------------------------//
+//From codejunkie site UK version 2002	converted			ntsc unknown GH 		PAL 2.03 											Diference
+//Passengers Dropped Off				
+//45XY-C2UK-Z17WM						204B2280 05F5E0FF	204BB180 05F5E0FF		//patch=1,EE,204B2170,extended,00000064				NTSC - PAL = 9010 |   PAL + 9010 = NTSC  || 110 from converted
+//7WUV-FVQ0-VQK7K
+
+//Mission Attempts
+//1387-5AZH-8J65K														
+//KJA8-ZGFA-ET647						204B2278 05F5E0FF	204BB178 05F5E0FF		204B2168											9010	|| 110 from converted
+
+//### Passengers Dropped Off
+//patch=1,EE,204B2280,extended,0000029A
+
+//### Total Fires Extinguished ##						- TEST Converted with 110 - succes.
+//patch=1,EE,204B22AC,extended,0000029A
+
+//TODO: test me infinite air:
+//patch=1,EE,201F315C,extended,00000000
+
+//freeze mission timer
+//patch=1,EE,202703E8,extended,00000000

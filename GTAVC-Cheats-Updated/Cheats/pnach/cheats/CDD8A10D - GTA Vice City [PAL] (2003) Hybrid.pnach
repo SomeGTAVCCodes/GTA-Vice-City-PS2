@@ -1,0 +1,440 @@
+gametitle=Grand Theft Auto: Vice City (PAL) (2003) (SLES-51061)
+comment=PAL 2003 Modified 60Hz, YPOS & GTA3 removal.
+
+// * This file is specifically for the New Cheats added to the "main.scm" for the PAL 2003 Upgraded Hybrid Version.
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Cheats For our Hybrid - New "Main.scm" Code ONLY  (New Button input Cheats) ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//patch=1,EE,2054D2AC,extended,00000000
+
+//Suicide: Correct version. - (Select + UP)
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20278C48,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278C48,extended,14400017
+
+//--------------------------------------------------------------------------------------------------------------------
+// ---- Cheats For our Hybrid - New "Main.scm" Code ONLY  (New Button input Cheats) ----
+//--------------------------------------------------------------------------------------------------------------------
+
+//Change weather
+//Input: Press Select + L1 	=	Change weather 1 - 7
+//patch=1,EE,20555060,extended,00000001 // This is our "Main.scm" Custom Change Weather Cheat (1-7) || Actual Weather Number
+//patch=1,EE,204E3670,extended,00000001 // This is our "Main.scm" Custom Change Weather Cheat (1-7) || Number DISPLAYED
+
+//Dynamic Brightness Cheat == Comparative of weather num with Menu Option "Brightness".
+//...	If aaaaaaaa(WeatherNum Address) == vv01 --> Set aaaaaaaa(brightness Address)  == vvMAX (00000180) || also set bars displayed in menu.
+
+//...			//Adjust Brightness (Menu Option)
+//...			//patch=1,EE,204ADB88,extended,0000011C
+
+//TESTED & WORKS.: TODO: need to find actual address for other stuff related to this, specifically the actual in game weather cheat.
+//...			//Dynamic Brightness Cheat 			|| IF value @ 20555060 == 0x01 --> Write 0x0180 TO 204ADB88
+//...			//... 								|| If weather sunny set brightness Max.
+//...			//patch=1,EE,E1010001,extended,00555060
+//...			//patch=1,EE,004ADB88,extended,00000180
+//...			//
+//...			//patch=1,EE,E1010004,extended,00555060
+//...			//patch=1,EE,004ADB88,extended,00000100
+
+//Dynamic Brightness Cheat 			|| IF value @ 20555060 == 0x01 --> Write 0x0180 TO 204ADB88
+//... 			If weather Sunny set brightness Max -2.
+patch=1,EE,E1010001,extended,00555060
+patch=1,EE,204ADB88,extended,0000014E
+//... 			If weather Extra Sunny set brightness Max.
+patch=1,EE,E1010002,extended,00555060
+patch=1,EE,204ADB88,extended,00000180
+//... 			If weather Cloudy set brightness Max -6.
+patch=1,EE,E1010003,extended,00555060
+patch=1,EE,204ADB88,extended,000000EA
+//... 			If weather Rainy set brightness Max -8.
+patch=1,EE,E1010004,extended,00555060
+patch=1,EE,204ADB88,extended,000000B8
+//... 			If weather Foggy set brightness -4.
+patch=1,EE,E1010005,extended,00555060
+patch=1,EE,204ADB88,extended,000000D1
+//... 			If weather normal 1 (hurricanes off) set brightness Default (max -5).
+patch=1,EE,E1010006,extended,00555060
+patch=1,EE,204ADB88,extended,00000100
+//... 			If weather normal 2  (hurricanes on) set brightness Default (max -5).
+patch=1,EE,E1010007,extended,00555060
+patch=1,EE,204ADB88,extended,00000100
+
+//--------------------------------------------------------------------
+// ---- Information ----
+//--------------------------------------------------------------------
+//Author 	= TKBS
+//Compatible CRC's;-
+//CRC	=	"EBDF9921" is from Patching PAL 2003 with NTSC V-Mode, 60hz, YPos. Using hex edit or Adrenalin Patcher.
+//CRC	=	"CDD8A10D" is from Patching 60hz & gta3#2-6.img removal.
+//CRC	=	"CFCB0D20" is PAL 2003: All "PAL 2003" Cheats should be compatible.
+
+//--------------------------------------------------------------------
+// ---- Permanently Enabled. ----
+//--------------------------------------------------------------------
+//PAL --> NTSC 60hz YPOS Patch (hex edit or adrenalin Patcher)
+//[Original]	[00010A00]	-- 03 94 06 00
+//[New]: 		[00010A00] 	-- 02 00 12 24
+
+//patch=1,EE,202E8820,extended,24070001 	//GTA_#2-6.IMG REMOVAL || 0200382D --> 24070001 || "SLES_510.61.elf" :: 2D 38 00 02 --> 01 00 07 24 @ [001E88AO]
+patch=1,EE,20272AD4,extended,28420001 		//60 FPS
+patch=1,EE,201123C4,extended,00000000 		//interlacing none
+
+//--------------------------------------------------------------------
+// ---- Widescreen ----
+//--------------------------------------------------------------------
+
+// ---- Widescreen 1 ---
+patch=1,EE,20252BA0,extended,3C0242AC 		//Widescreen 1: || Edit Last 2 Bytes to adjust camera: Examples: AC | CD | DE | EF | FF
+
+// ---- Widescreen 2 ---
+patch=1,EE,201323AC,word,3C013F9D 			//Widescreen 2: 1/8 || TKBS: port and fix from 20+year old "Snake356 (fix)" thing
+patch=1,EE,201323B0,word,44810000 			//Widescreen 2: 2/8
+patch=1,EE,201323B4,word,46006302 			//Widescreen 2: 3/8 || 46006300 or 46006302
+patch=1,EE,201323B8,word,03E00008 			//Widescreen 2: 4/8
+patch=1,EE,201323BC,word,E78C87F8 			//Widescreen 2: 5/8
+patch=1,EE,2024335C,word,0C04C8EB 			//Widescreen 2: 6/8
+patch=1,EE,202706DC,word,0C04C8EE 			//Widescreen 2: 7/8
+patch=1,EE,20270CB4,word,0C04C8EE 			//Widescreen 2: 8/8
+
+// ---- Widescreen 3 ---
+// * See Menu Options
+
+//--------------------------------------------------------------------
+// ----  Menu Options. ----
+//--------------------------------------------------------------------
+
+patch=1,EE,205B1F75,extended,00000000 		//Toggle Widescreen CUTSCENE Black Borders
+patch=1,EE,204B17B8,extended,00000000 		//Toggle Widescreen (Menu Option)	|| Looks better disabled. Enabling decreases the viewing area
+patch=1,EE,204ADB8C,extended,00000001 		//Toggle Subtitles 	(Menu Option)
+patch=1,EE,204AFB8C,extended,00000000 		//Toggle Trails 	(Menu Option)
+//patch=1,EE,204ADBA4,extended,00000000 	//Toggle HUD: 		(Menu Option) - Health, Armour, Time, Stars
+patch=1,EE,204B1E24,extended,00000001 	//Toggle HUD: 		(Menu Option) - 00 disable icons & map legend || 01 disables icons [0,1,2] || 2 = both.
+//patch=1,EE,204ADB88,extended,0000011C 	//Adjust Brightness (Menu Option)
+//patch=1,EE,204B1E3C,extended,00000000 	//Toggle HUD: Show vehicle names
+
+//--------------------------------------------------------------------
+// ----  Audio. ---
+//--------------------------------------------------------------------
+
+//patch=1,EE,206AD725,extended,00000001 	//Music Manager "Beats on the streets" || 00000001
+
+//--------------------------------------------------------------------
+// ----  Visuals. ---
+//--------------------------------------------------------------------
+
+//patch=1,EE,204B0C00,extended,DFDFDFDF 	//See Through Walls || Default Value FFFFFFFF
+
+//--------------------------------------------------------------------
+// ----  Player. ---
+//--------------------------------------------------------------------
+
+//*** Character Select (Cycle - Press & Hold L3 + Press UP (or any button?) ) ***
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,2027868C,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,2027868C,extended,14400006
+
+//Infinite Sprint 02 & Fast Reload 					|| @ Game progress address
+//patch=1,EE,205C84FA,extended,01010000
+
+//Fireproof (use once At start of game only)
+//patch=1,EE,205C84FE,extended,00646401
+
+// ----  Infinite Ammo. ---
+//Infinite Ammo	On foot						- by TKBS	|| TODO - infinite uzi slot for drive-by's in vehicles. See pal 2002 beta hyrbid.
+//patch=1,EE,20158674,extended,00000000 		//AE220008 --> 00000000 ||
+//...Not needed -->							//patch=1,EE,20158678,extended,00000000 //8E22000C --> 00000000
+//patch=1,EE,201586DC,extended,00000000 		//AE22000C --> 00000000 || CLIP Ammo - left side.
+
+//Infinite Ammo	Drive by's - uzi slot 		|| (clip adds to magazine etc)
+//patch=1,EE,20B50A10,extended,00000001
+
+//Player: No Fall Damage 0C0D2EE4  --> 00000000
+//patch=1,EE,201B9EF0,extended,00000000 // No Fall DMG 1/2 || 201B9EF0  | | 0C0D2EE4 --> 00000000
+//patch=1,EE,201B9FA4,extended,00000000 // No Fall DMG 1/2 || 201B9EF0 + B4 == 201B9FA4  | | 0C0D2EE4 --> 00000000
+
+//Max Money (AR MAX CD) -      05F5E0FF | 00001B58 etc
+//patch=1,EE,205C845C,extended,3B9AC9FF 	//$$$ Set Money (2) 1/3
+//patch=1,EE,205C8460,extended,3B9AC9FF 	//$$$ Set Money (2) 2/3
+//patch=1,EE,204B1E54,extended,3B9AC9FF 	//optional: Infinite $$$ Set Money (2) 3/3 & No Reduction: freeze it
+
+//patch=1,EE,201B2930,extended,03E00008 		//PAL 2003: Never Lose Weapons
+//patch=1,EE,201B2934,extended,00000000 		//PAL 2003: Never Lose Weapons
+
+// ---- Infinite Jump (moon jump) || Hold Square to ascend. ---
+//patch=1,EE,200FFF40,extended,3C01005C //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF44,extended,80211703 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF48,extended,2403007F //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF4C,extended,1461000C //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF54,extended,3C013E00 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF58,extended,9384F108 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF5C,extended,2403016C //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF60,extended,3C02005D //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF64,extended,244283C0 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF68,extended,00831818 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF70,extended,00431021 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF74,extended,8C420000 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF7C,extended,AC410074 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF80,extended,080487E4 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,200FFF84,extended,24030070 //Infinite Jump - Hold Square to ascend (Moon Jump)
+//patch=1,EE,20121F8C,extended,0803FFD0 //Infinite Jump - Hold Square to ascend (Moon Jump)
+
+//			//Infinite Health & Armour Set value to show 200
+//			//patch=1,EE,20B50FF8,extended,43480000
+//			//patch=1,EE,20B50FFC,extended,43480000
+
+//Infinite Health 						- Ported from PAL 2002
+//patch=1,EE,200C0220,extended,3C0142C8
+//patch=1,EE,200C0224,extended,AC410368
+//patch=1,EE,200C0228,extended,03E00008
+//patch=1,EE,200C022C,extended,44020000 //44020000
+//patch=1,EE,202D2F14,extended,0C030088 //[NTSC 2002] //patch=1,EE,202D2034,extended,0C030088 || 202D2034 + EE0 = 202D2F14
+
+//Infinite Armor 						- Ported from PAL 2002
+//patch=1,EE,200C0230,extended,3C0142C8
+//patch=1,EE,200C0234,extended,AC41036C
+//patch=1,EE,200C0238,extended,03E00008
+//patch=1,EE,200C023C,extended,46000836
+//patch=1,EE,202D30EC,extended,0C03008C //[NTSC 2002] //patch=1,EE,202D220C,extended,0C03008C //  || 202D220C + EE0 = 202D30EC
+
+//--------------------------------------------------------------------
+// ----  Ai, NPC, Peds. ---
+//--------------------------------------------------------------------
+
+//FUK DA POLICE (1)
+//patch=1,EE,2029F03C,extended,24060000 //AI: FUK DA POLICE (1) 1/2
+//patch=1,EE,2029F038,extended,24060000 //AI: FUK DA POLICE (1) 1/2
+
+//patch=1,EE,20199580,extended,03E00008 //AI: FUK DA POLICE (2) 1/2 - Turn Off Cops. (Cops No AI, Ignore you (unless provoked)) || 27BDFED0 --> 03E00008 || 3C02005D --> 00000000
+//patch=1,EE,20199584,extended,00000000 //AI: FUK DA POLICE (2) 2/2 - Turn Off Cops. (Cops No AI, Ignore you (unless provoked)) || 27BDFED0 --> 03E00008 || 3C02005D --> 00000000
+
+//patch=1,EE,204AB578,extended,00000000 //Clean Streets: No Pedestrians
+//patch=1,EE,204AB610,extended,00000000 //Clean Streets: No Traffic
+
+//--------------------------------------------------------------------
+// ---- Missions, Clocks, Game Clock & Timers. ----
+//--------------------------------------------------------------------
+
+//Clock: Freeze Mission Timers (Side Quests) || Default Value: 0C0AEA2C
+//patch=1,EE,20270238,extended,00000000
+
+//Ambulance Timer
+//patch=1,EE,205531BC,extended,0002EB94
+
+//Ambulance Auto-Save People (01) || Seto 0 to Auto-Complete. || This might only work in cheat engine or as joker
+// When people need saving this is 1,2,3 etc. Set to 0 and lock it to auto complete all missions
+//patch=1,EE,205531CC,extended,00000000
+
+//Ambulance Auto-Save People Auto-Complete Missions.	|| Based on "slymods.info writing_pnach_files": the only place i found that has useful info.
+//Note: This Decrements the 8-Bit Value (number of people left to save) at address "205531CC" by a value of "01"
+//patch=1,EE,30100001,extended,205531CC
+
+//Ambulance Auto-Save People - (Press & Hold L3 + Press UP) 	- by TKBS
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,205531CC,extended,00000001
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,205531CC,extended,00000000
+
+//Fire-Truck Mission Level.
+//patch=1,EE,2055336C,extended,00000000
+
+//Fire-Truck Mission Number of Fires Left to put out. || Seto 0 to Auto-Complete.
+//patch=1,EE,20553388,extended,00000000
+
+//Pizza Boy: Auto-Complete (Level 10)
+//...	//Notes: Start Pizza Missions, Set to 0000000A - Then return to Pizza Place - also set STATS "Pizza's Delivered" below!
+//patch=1,EE,20554584,extended,0000000A
+//patch=1,EE,20554554,extended,0000000A
+
+//Pizza Boy: Pizza's Delivered [425C0000 = 55 (Complete)] || ### STATS:
+//patch=1,EE,204B21E0,extended,425C0000
+
+//Pizza Boy Timer
+//patch=1,EE,2055459C,extended,0004615A
+
+//Rampages: Set Rampages kill number to 1		|| Find Line 1 --> check writes --> ESI=00203650 , change to "2x0" -- then NOP so we can set number as const instead of var.
+//patch=1,EE,2054E038,00000001 // set number
+//patch=1,EE,20203650,8E039090 // stop writes to the number ^^ 8E030010 --> 8E039090 - so we can set it.
+
+//Rampages: Set Rampages PED TYPE number #		|| should be force_random_ped_type $1508 but doesnt do much.
+//patch=1,EE,2054E00C,00000001
+
+//Taxi Timer.
+//patch=1,EE,20553154,extended,0000BD58
+
+//Taxi Number of passengers dropped off ||  // Start mission Set to 99dec (62hex) then pickup one passenger.
+//patch=1,EE,2054CE44,extended,00000063
+
+//Vigilante Timer Outside Vehicle
+//patch=1,EE,20553438,extended,0000FE9D
+
+//Vigilante Timer
+//patch=1,EE,2055343C,extended,0002ABA9
+
+//Vigilante Kills - May only work as joker command or with cheat engine, same as amubalnce peopel saved.
+//patch=1,EE,20553478,extended,00000000
+
+//...			//Vigilante Mission Level is also linked to timer ? Outside Vehicle
+//...			//patch=1,EE,204E3880,extended,00000041 // 1/3 Countdown timers //Vigilante Mission Level
+//...			//patch=1,EE,204E39D4,extended,00000041 // 2/3 Countdown timers
+//...			//patch=1,EE,20553450,extended,00000041 // 3/3 Countdown timers
+//...			//patch=1,EE,204E387C,extended,00037F7E
+
+//--------------------------------------------------------------------
+// ----  Vehicles. ---
+//--------------------------------------------------------------------
+
+//patch=1,EE,201681C4,extended,00000000 //cars are tanks
+//patch=1,EE,204B103C,extended,00000001 //Vehicles: Cars can fly  (1)
+//patch=1,EE,204B1050,extended,00000001 //Vehicles: Cars can Float On Water  (1)
+//patch=1,EE,204B1040,extended,00000000 //Vehicles: Cars bunny hop hydraulics (1)
+//patch=1,EE,201682E4,extended,00000000 //Cars have Hydraulics  (2)
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Damage ---
+//--------------------------------------------------------------------
+
+//Vehicles: New Damage Proof
+//patch=1,EE,2017C480,extended,03E00008
+//patch=1,EE,2017C484,extended,00000000
+
+//Vehicles: No Tyre Damage (Cars) | TYRES Do Not Pop
+//* Part 1 - no impact movement
+//patch=1,EE,2017C4B4,extended,03E00008 //Vehicles: Tyres Invulnerable   no impact movement 1/3(/6)
+//patch=1,EE,2017C4B8,extended,00000000 //Vehicles: Tyres Invulnerable   no impact movement 2/3(/6)
+//patch=1,EE,2017C4C0,extended,00000000 //Vehicles: Tyres Invulnerable   no impact movement 3/3(/6)
+//* Part 2 - no damage
+//patch=1,EE,2017C4C4,extended,03E00008 //Vehicles: Tyres Invulnerable   no damage  1/3(/6)
+//patch=1,EE,2017C4C8,extended,00000000 //Vehicles: Tyres Invulnerable   no damage  2/3(/6)
+//...			//patch=1,EE,2017C4D0,extended,00000000 //Vehicles: Tyres Invulnerable   can be deleted?  3/3(/6)
+
+//Vehicles:  No collision damage to your vehicle or others
+//Note: with No contact collision explosion your car, maybe allows all vehicles are tanks to be used without contact_explosions.
+//patch=1,EE,2016F4A0,extended,03E00008 //27BDFF60 --> 03E00008
+//patch=1,EE,2016F4A4,extended,00000000 //3C033EAA --> 00000000
+
+//Vehicles:  No Damage from Weapons (All Cars)
+//patch=1,EE,20186300,extended,03E00008 //27BDFF70
+//patch=1,EE,20186304,extended,00000000 //FFBF0070
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Spawn ---
+//--------------------------------------------------------------------
+
+//Vehicles: Spawn Any CAR - (Press Triangle) 				|| (Using the Spawn ("xxx"-e.g.Tank) Lines).
+//Line 1: Spawn 						== 14400007 --> 00000000
+//Line 2: Last 2 Bytes VH UID			== Vehicle ID.		|| e.g:	A2 = Tank || EC = Cheetah.
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,2027856C,extended,240400A2
+
+//Vehicles: Spawn Bike - (Press Triangle)		- Edit Last Line, Last 2 Bytes.
+//patch=1,EE,20279F70,extended,0C0E60E8 //0C05CCB4 --> 0C0E60E8
+//patch=1,EE,20276974,extended,240400BF //24050054 --> 240400BF
+//* Then put back to normal
+//patch=1,EE,20279F70,extended,0C05CCB4
+//patch=1,EE,20276974,extended,24050054
+
+//*** Spawn Any CAR with joker ***  - (Press & Hold L3 + Press UP) 	- by TKBS
+//patch=1,EE,2027856C,extended,24040089
+//patch=1,EE,D05C1702,extended,0000FFED
+//patch=1,EE,20278560,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20278560,extended,14400007
+
+//*** Explode Vehicles - (Select + LEFT) ***
+//patch=1,EE,D05C1702,extended,0000FF7E
+//patch=1,EE,202785DC,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,202785DC,extended,14400028
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Garages. ---
+//--------------------------------------------------------------------
+
+//Spawn Vehicle in Garage "Ocean Beach" [Right VH 1] ("Ocean Heights")
+//VH ID
+//patch=1,EE,206B6070,extended,00000096
+//colours
+//patch=1,EE,206B6090,extended,FF09012E
+//DAMAGE PROOF
+//patch=1,EE,206B608C,extended,0000001F
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Street Parking. ---
+//--------------------------------------------------------------------
+// * IT is possible to change temporary model components
+// * Example: Enforcer can have A bumper and license or normal.
+// * Not sure what the adress are. soem are confusign comapred to garages and helipads.
+// - see pal 2003 for full details.
+
+//Cop Cars - Washington Beach 1 (left - faces building)
+//Default Values == 0000009C 43B1D99A C3FFB333 4139999A 43A00000 FFFFFFFF 001E0000 27100000 0000007D FFFFFFFF 0000FFFF
+//patch=1,EE,2067C0A4,extended,000000EC // VH ID E.g. Cheetah (9D) instead of Cop Car (9C)
+//patch=1,EE,2067C0A8,extended,43B1D99A // X
+//patch=1,EE,2067C0AC,extended,C3FFB333 // Y
+//patch=1,EE,2067C0B0,extended,4139999A // Z
+//patch=1,EE,2067C0B4,extended,43A00000 // H
+//patch=1,EE,2067C0B8,extended,FFFFFFFF // colors probably -1,-1 || 00010203 colors 1,2,3.
+//patch=1,EE,2067C0BC,extended,001E0000	//spawn stuff time, available, etc
+//patch=1,EE,2067C0C0,extended,27100000	//spawn stuff time, available, etc
+//patch=1,EE,2067C0C4,extended,0000007D	//spawn stuff time, available, etc
+//patch=1,EE,2067C0C8,extended,FFFFFFFF	//spawn stuff time, available, etc
+//patch=1,EE,2067C0CC,extended,0000FFFF	//spawn stuff time, available, etc
+
+//Cop Cars - Washington Beach 2 (right - faces Road)
+//Default Values == 0000009C 43BA2666 C4036CCD 4139999A 430C0000 FFFFFFFF 001E0000 27100000 0000007D FFFFFFFF 0000FFFF
+//patch=1,EE,2067C0D0,extended,0000009D // VH ID E.g. Enforcer (9D) instead of Cop Car (9C) || Fire-truk = 00000089
+//patch=1,EE,2067C0D4,extended,43BA2666 // X
+//patch=1,EE,2067C0D8,extended,C4036CCD // Y
+//patch=1,EE,2067C0DC,extended,4139999A // Z
+//patch=1,EE,2067C0E0,extended,430C0000 // H
+//patch=1,EE,2067C0E4,extended,FFFFFFFF // colors probably -1,-1 || 00010203 colors 1,2,3.
+//patch=1,EE,2067C0E8,extended,001E0000	//Set to 00000010 - IMMEDIATE SPAWN
+//patch=1,EE,2067C0EC,extended,27100000	//spawn stuff time, available, etc
+//patch=1,EE,2067C0F0,extended,0003B107	//spawn stuff time, available, etc
+//patch=1,EE,2067C0F4,extended,00001203	//spawn stuff time, available, etc
+//patch=1,EE,2067C0F8,extended,0000FFFF	//spawn stuff time, available, etc
+
+//Cop Cars - Location Unknown - use the coords x y z to se ewhere it is
+//Default Values == 0000009C C455D99A C426599A 4129999A 00000000 FFFFFFFF 001E0000 27100000 0000007D FFFFFFFF 0000FFFF 0000009C
+//patch=1,EE,2067C0FC,extended,0000009C
+
+//--------------------------------------------------------------------
+// ---- Weapons ----
+//--------------------------------------------------------------------
+
+//Weapon Cheat: Cycle through.	   (Select+UP)		- by TKBS
+//patch=1,EE,D05C1702,extended,0000FFEE
+//patch=1,EE,20279374,extended,00000000
+//patch=1,EE,D05C1702,extended,0000FFFF
+//patch=1,EE,20279374,extended,14E00003
+
+// ---- Sniper Zoom for Minigun, Rocket Launcher. ---- - by TKBS
+//Sniper (Default)
+//patch=1,EE,20258530,extended,0C0941E0
+//Minigun with Sniper Zoom
+//patch=1,EE,20258568,extended,0C0941E0
+//Rocket Launcher with Sniper Zoom
+//patch=1,EE,2025854C,extended,0C0941E0
+
+//...			//Weapons: TearGas Fix (Test) - see .ct file for full fix, workaround.
+//...			//patch=1,EE,206BE1E5,extended,2C3F8000
+
+//Wanted level - Set number of stars.
+//patch=1,EE,21901840,extended,00000000 // Current Number of Wanted Stars 1/2 || This sets the next line.
+//patch=1,EE,204B1E64,extended,00000000 // Current Number of Wanted Stars 2/2
+
+//--------------------------------------------------------------------
+// ----  Vehicles: Garages. ---
+//--------------------------------------------------------------------
+
+//Spawn Vehicle in Garage "Ocean Beach" [Right VH 1] ("Ocean Heights")
+//VH ID
+//patch=1,EE,206B6070,extended,00000089
+//colours
+//patch=1,EE,206B6090,extended,FF09012E
+//DAMAGE PROOF
+//patch=1,EE,206B608C,extended,0000001F
